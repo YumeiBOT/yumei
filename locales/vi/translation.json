@@ -1,0 +1,138 @@
+{
+	"common": {
+		"on": "On",
+		"off": "Off",
+		"voice": {
+			"not_joined": "**{{-emoji}} | {{-username}} | **Không tìm thấy kênh trò chuyện bạn đang tham gia!!!",
+			"not_same_room": "**{{- emoji}} | {{- author}}, ** Bạn đang không cùng phòng trò chuyện với tôi"
+		},
+		"music": {
+			"nothing_playing": "**{{- emoji}} | {{-author}}, ** Không có bài hát nào đang được phát"
+		}
+	},
+	"precondition": {
+		"owner_only": "**{{- icon }} | {{- author }},** Lệnh chỉ dùng cho chủ sở hữu BOT",
+		"server_created": {
+			"error": "**{{- icon }} | {{- author }},** Không có hoặc không thể tạo bản ghi của server"
+		}
+	},
+	"general": {
+		"ping": {
+			"name": "Mã lệnh Ping",
+			"example": "```{{-prefix}}{{alias}}```",
+			"description": "Ping pong"
+		},
+		"server_info": {
+			"name": "Mã lệnh Server Information",
+			"embed_title": "Thông tin server",
+			"embed_id": "ID",
+			"embed_owner": "Chủ quản",
+			"embed_verification": "Cấp độ xác thực",
+			"embed_channels": "Mục kênh",
+			"embed_voice_channels": "Kênh trò chuyện",
+			"embed_chat_channels": "Kênh nhắn tin",
+			"embed_role": "Quyền hành",
+			"embed_members": "Thành viên",
+			"embed_emojis": "Biểu cảm",
+			"embed_emojis_animate": "Biểu cảm động",
+			"example": "```{{-prefix}}{{alias}}```",
+			"description": "Thông tin server"
+		},
+		"bot_info": {
+			"name": "Mã lệnh Bot Information",
+			"embed__key": "Thông tin bot",
+			"embed__id": "ID",
+			"embed__username": "Tên",
+			"embed__verified": "Đã xác thực",
+			"embed__default_language": "Ngôn ngữ mặc định",
+			"cannot_find_info": "Chưa lưu thông tin Bot",
+			"un_synchronized": "Thông tin đã lưu chưa được cập nhật",
+			"already_exist": "Thông tin bot đã cập nhật",
+			"create_success": "Lưu thông tin bot thành công",
+			"example": "```{{-prefix}}{{alias}} upadte \n{{-prefix}}{{alias}} create \n{{-prefix}}{{alias}} show```",
+			"description": "Cài đặt thông tin bot"
+		},
+		"db": {
+			"db_unreachable": "Chưa kết nối cơ sở dữ liệu!"
+		},
+		"set_server_lng": {
+			"name": "Mã lệnh Set Server Language",
+			"success": "**{{-icon}} | **Ngôn ngữ hiện tại: {{-lng}}",
+			"error": "**{{-icon}} | **Có lỗi xảy ra, vui lòng thử lại sau nha",
+			"no_support_lng": "**{{-icon}} | **Hiện tại **{{-botName}}** chưa hỗ trợ ngôn ngữ này nha!!!",
+			"example": "```{{-prefix}}{{alias}} vi \n{{-prefix}}{{alias}} en```",
+			"description": "Cài đặt ngôn ngữ"
+		},
+		"prefix": {
+			"name": "Mã lệnh Prefix",
+			"add": "**{{-icon}} | **Đã thêm tiếp đầu ngữ `{{-prefix}}` ",
+			"list_prefixes": "Danh sách tiếp đầu ngữ nàaa: `{{-prefixes}}`",
+			"duplicate_prefix": "**{{-icon}} | {{-username}} | **Bạn đang sử dụng tiếp đầu ngữ `{{-prefix}}` rồi!!!",
+			"not_found_prefix": "**{{-icon}} | **Không tìm thấy tiếp đầu ngữ `{{-prefix}}`!!!",
+			"can_not_remove": "**{{-icon}} | **Không thể xóa tiếp đầu ngữ`{{-prefix}}`!!! Phải có ít nhất một tiếp đầu ngữ.",
+			"remove": "**{{-icon}} | **Đã xóa tiếp đầu ngữ `{{-prefix}}`",
+			"example": "```{{-prefix}}{{alias}} add {prefix}```",
+			"description": "Cài đặt tiếp đầu ngữ"
+		},
+		"help": {
+			"name": "Mã lệnh Help",
+			"embed_list": "Danh sách mã lệnh của **{{-botName}}** nà!!! \n Chi tiết mã lệnh, sử dụng `{{-prefix}}help {mã lệnh}`",
+			"embed_title": "Mã lệnh {{-command}}",
+			"embed_aliases": "Bí danh",
+			"embed_description": "Mô tả",
+			"embed_example": "Mẫu lệnh",
+			"not_have_command": "**{{-icon}} | {{-botName}}**chưa hỗ trợ mã lệnh này nhaaa!!!",
+			"not_have_permission": " **{{-icon}} | {{-username}} | **Bạn cần được cấp quyền để sử dụng mã lệnh này!!!",
+			"example": "```{{-prefix}}{{alias}}```",
+			"description": "Danh sách mã lệnh"
+		}
+	},
+	"voice": {
+		"set_bitrate": {
+			"name": "Mã lệnh Set bitrate",
+			"example": "```{{-prefix}}{{alias}} {bitrate}```",
+			"description": "Cài đặt bitrate của kênh trò chuyện",
+			"illegal": "**{{-icon}} | {{-username}} | **Kênh trò chuyện có bitrate hợp lệ {{-min_bitrate}} - {{-max_bitrate}}!!!"
+		},
+		"change_region": {
+			"name": "Mã lệnh Change Region",
+			"example": "```{{-prefix}}{{alias}} {region} | {list}```",
+			"description": "Cài đặt khu vực cho kênh trò chuyện và lấy danh sách khu vực",
+			"illegal": "**{{-icon}} | {{-username}} | **Khu vực không hợp lệ!!! \n Sử dụng `{{-prefix}}{{alias}} {list}` để lấy danh sách khu vực."
+		}
+	},
+	"soundboard": {
+		"tts": {
+			"min_char": "**🚫 | {{- author }},** Không có chữ thì làm sao nói?",
+			"max_char": "**🚫 | {{- author }},** Hiện tại BOT chỉ hỗ trợ tối đa 100 kí tự"
+		},
+		"join": {
+			"used": "**🚫 | {{- author }},** Bot đang được sử dụng ở một kênh khác",
+			"speaking": "**🚫 | {{- author }},** Vui lòng chờ câu nói trước hoàn thành",
+			"join_success": "**✅ | {{- author }},** Đã tham gia phòng trò chuyện"
+		},
+		"leave": {
+			"success": "**✅ | {{- author }},** Đã thoát khỏi phòng trò chuyện"
+		},
+		"stop": {
+			"success": "**✅ | {{- author }},** Đã dừng câu nói trước đó"
+		},
+		"tts_default": {
+			"current_language": "**ℹ️ | {{- author }},** Ngôn ngữ hiện tại khi đọc là `{{- lang}}`",
+			"not_supported": "**🚫 | {{- author }},** Ngôn ngữ bạn nhập vào hiện không được hỗ trợ",
+			"success": "**✅ | {{- author }},** Đã chuyển ngôn ngữ khi đọc sang `{{- lang}}`"
+		},
+		"tts_languages": {
+			"title": "Danh sách các ngôn ngữ hỗ trợ",
+			"change_language_tutorial": "Hướng dẫn chỉnh ngôn ngữ",
+			"change_language_tutorial2": "Sử dụng lệnh `{{- prefix}}tts_default <code>` để thay đổi ngôn ngữ"
+		}
+	},
+	"event": {
+		"message_create": {
+			"warning_invite_link": "**{{-icon}} | {{-author}} | **Bạn ơi đừng gửi link server khác nha!!!"
+		},
+		"mention_prefix": "Tiếp đầu ngữ trong server: `{{-prefixes}}`",
+		"global_error": "**{{-icon}} | {{-author}} | **Đã xảy ra lỗi, thử lại sau nhaaa!!!"
+	}
+}
