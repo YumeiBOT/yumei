@@ -1,8 +1,10 @@
 ---
-description: This section will let you know about Yoshino's Permissions
+description: This section will let you know about Yumei's Permissions
 ---
 
 # Permissions
+
+
 
 {% hint style="info" %}
 Yuna public invitations don't generate a useless role when joining your server.
