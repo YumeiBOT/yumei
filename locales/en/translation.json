@@ -8,6 +8,66 @@
 		},
 		"music": {
 			"nothing_playing": "**{{- emoji}} | {{-author}}, ** Oi!! Baka!! No Music On Queue!"
+		},
+		"user": {
+			"not_exist": "**{{- emoji}} | {{-author}}, ** Can't find information of user"
+		},
+		"guild": {
+			"required": "**{{- emoji}} | {{-author}}, ** This command can only be used in servers.",
+			"not_exist": "**{{- emoji}} | {{-author}}, ** Can't find information of server"
+		},
+		"slash": {
+			"require_permission": {
+				"title": "**{{- emoji}} | ** I am missing `applications.commands`",
+				"description": "You can re-invite BOT to approve permission with the following link:\n [Click here to re-invite]({{- url}})"
+			}
+		},
+		"command_denied": {
+			"precondition_guild_only": "**{{- emoji}} | {{-author}}, ** You cannot run this command in DMs. Please run in Server (Guild)",
+			"precondition_client_permission": "**{{- emoji}} | {{-author}}, ** I am missing the following permissions to run this command: {{-list_permission}}"
+		},
+		"permission_flag": {
+			"ADD_REACTIONS": "Add Reactions",
+			"ADMINISTRATOR": "Administrator",
+			"ATTACH_FILES": "Attach Files",
+			"BAN_MEMBERS": "Ban Members",
+			"CHANGE_NICKNAME": "Change Nickname",
+			"CONNECT": "Connect",
+			"CREATE_INSTANT_INVITE": "Create Instant Invite",
+			"CREATE_PRIVATE_THREADS": "Create Private Threads",
+			"CREATE_PUBLIC_THREADS": "Create Public Threads",
+			"DEAFEN_MEMBERS": "Deafen Members",
+			"EMBED_LINKS": "Embed Links",
+			"KICK_MEMBERS": "Kick Members",
+			"MANAGE_CHANNELS": "Manage Channels",
+			"MANAGE_EMOJIS_AND_STICKERS": "Manage Emojis and Stickers",
+			"MANAGE_GUILD": "Manage Server",
+			"MANAGE_MESSAGES": "Manage Messages",
+			"MANAGE_NICKNAMES": "Manage Nicknames",
+			"MANAGE_ROLES": "Manage Roles",
+			"MANAGE_THREADS": "Manage Threads",
+			"MANAGE_WEBHOOKS": "Manage Webhooks",
+			"MENTION_EVERYONE": "Mention Everyone",
+			"MOVE_MEMBERS": "Move Members",
+			"MUTE_MEMBERS": "Mute Members",
+			"PRIORITY_SPEAKER": "Priority Speaker",
+			"READ_MESSAGE_HISTORY": "Read Message History",
+			"REQUEST_TO_SPEAK": "Request to Speak",
+			"SEND_MESSAGES": "Send Messages",
+			"SEND_MESSAGES_IN_THREADS": "Send Messages in Threads",
+			"SEND_TTS_MESSAGES": "Send TTS Messages",
+			"SPEAK": "Speak",
+			"START_EMBEDDED_ACTIVITIES": "Start Activities",
+			"STREAM": "Stream",
+			"USE_APPLICATION_COMMANDS": "Use Application Commands",
+			"USE_EXTERNAL_EMOJIS": "Use External Emojis",
+			"USE_EXTERNAL_STICKERS": "Use External Stickers",
+			"USE_PRIVATE_THREADS": "Use Private Threads",
+			"USE_PUBLIC_THREADS": "Use Public Threads",
+			"USE_VAD": "Use Voice Activity",
+			"VIEW_AUDIT_LOG": "View Audit Log",
+			"VIEW_CHANNEL": "Read Messages",
+			"VIEW_GUILD_INSIGHTS": "View Guild Insights"
 		}
 	},
 	"framework": {
@@ -43,28 +103,41 @@
 		},
 		"bot_info": {
 			"name": "Bot Information command",
-			"embed_key": "Bot information",
-			"embed_id": "ID",
-			"embed_username": "Username",
-			"embed_verified": "Verified",
-			"embed_default_language": "Default language",
+			"prefix": "**Prefix:** `{{prefixes}}`",
+			"support": {
+				"name": "{{-emoji}} Support Server",
+				"detail": "{{-emoji}} [Click here to join]({{- url}})"
+			},
 			"cannot_find_info": "Cannot find BotInfo in DB",
 			"un_synchronized": "Saved info has some changes need to be updated",
 			"already_exist": "Bot Info already exist and updated",
 			"create_success": "Successfully created Bot Info",
 			"example": "```{{-prefix}}{{alias}} upadte \n{{-prefix}}{{alias}} create \n{{-prefix}}{{alias}} show```",
-			"description": "Setting bot information"
-		},
-		"db": {
-			"db_unreachable": "Database unreachable!"
-		},
-		"set_server_lng": {
-			"name": "Set Server Language command",
-			"success": "**{{-icon}} | **Current language: {{-lng}}",
-			"error": "**{{-icon}} | **Some error, please try again",
-			"no_support_lng": "**{{-icon}} | {{-botName}}** Does not support this language!!!",
-			"example": "```{{-prefix}}{{alias}} vi \n{{-prefix}}{{alias}} en```",
-			"description": "Set language server"
+			"description": "Setting bot information",
+			"basic": {
+				"name": "**📇 Basic Info**",
+				"details": "**・Name:** `{{tag}}`\n**・Uptime:** `{{time}}`"
+			},
+			"stats": {
+				"name": "**📊 Stats**",
+				"details": "**・Servers:** `{{server}}`\n**・Users:** `{{user}}`"
+			},
+			"version": {
+				"name": "**🔎 Version**",
+				"details": "**・D.JS:** `{{djs}}`\n**・Node:** `{{njs}}`"
+			},
+			"cpu": {
+				"name": "**🖥️ CPU**",
+				"details": "**・Cores:** `{{total}}`\n**・Speed:** `{{speed}}`"
+			},
+			"other": {
+				"name": "**{{-emoji}} Other**",
+				"details": "**・OS:** `{{os}}`"
+			},
+			"ram": {
+				"name": "**{{-emoji}} RAM**",
+				"details": "**・Total:** `{{total}}`\n**・Free:** `{{free}}`"
+			}
 		},
 		"prefix": {
 			"name": "Prefix command",
@@ -90,6 +163,20 @@
 			"description": "List of command"
 		}
 	},
+	"server": {
+		"set_server_language": {
+			"name": "Set Server Language command",
+			"success": "**{{-icon}} | **Current language: {{-lng}}",
+			"error": "**{{-icon}} | **Some error, please try again",
+			"no_support_lng": "**{{-icon}} | {{-botName}}** Does not support this language!!!",
+			"example": "```{{-prefix}}{{alias}} vi \n{{-prefix}}{{alias}} en```",
+			"description": "Set language server"
+		},
+		"set_server_channel": {
+			"success": "**{{-emoji}}  | {{- author }},** I have set **{{type}}** at <#{{channelId}}>",
+			"error": "**{{-emoji}} | {{- author }},** Input type **{{type}}** is not supported \n**{{-blankEmoji}} |** List support type: {{supportTypes}}"
+		}
+	},
 	"voice": {
 		"set_bitrate": {
 			"name": "Set bitrate command",
@@ -110,5 +197,39 @@
 		},
 		"mention_prefix": "My prefix(es) in this guild is: `{{-prefixes}}`",
 		"global_error": "**{{-icon}} | {{-author}} | **Something went wrong, try it later!!!"
+	},
+	"user": {
+		"inventory": {
+			"description": "Danh sách item trong kho đồ",
+			"describle": "Hướng dần sử dụng item:",
+			"tutorial": "use <item_code> để sử dụng",
+			"item_content": "{{- itemIcon }}: **{{quantity}}**",
+			"pagination": "Trang {{ current_page }}/{{ total_page }}"
+		},
+		"use": {
+			"err1": "Vui lòng nhập mã của item cần sử dụng",
+			"err2": "Không tìm thấy item cần dùng",
+			"err3": "Bạn không sở hữu item này",
+			"err4": "Số lượng của item không đủ để dùng"
+		}
+	},
+	"yearly_event": {
+		"list_participant": "Những người tham gia:",
+		"xmas": {
+			"snowball": "Cầu tuyết",
+			"e001": "Người tuyết",
+			"e002": "Mũ giáng sinh",
+			"e003": "Kẹo ngọt"
+		},
+		"xmas_box": {
+			"ghost": "** {{-emoji }}| {{- author }},** Ồ không! Ai lại bỏ {{-item}} vào hộp quà thế này. Chúc bạn may mắn lần sau",
+			"appear": "** {{-emoji }}| Xmas box!!** Gõ lệnh `pick` để giành lấy **Hộp quà giáng sinh** nha",
+			"winner": "** {{-emoji }}|** Chúc mừng <@{{- member }}> đã nhặt được {{- boxIcon }}!!",
+			"usebox": "** {{-emoji }}|** Dùng lệnh `{{- command}}` để mở {{- boxIcon}} nhé",
+			"opening": "**{{- boxIcon }}| {{- author }},** đang mở **Hộp quà giáng sinh**...",
+			"opened": "**{{- boxIcon }}| {{- author }},** đã mở **Hộp quà giáng sinh** và nhận được **{{-itemIcon }}**",
+			"voice_log": "<@{{userId}}> đã treo voice trong {{hour}} giờ {{min}} phút!!! Bạn nhận được {{numOfBox}} **Hộp quà giáng sinh**",
+			"chat_log": "<@{{userId}}> Đã may mắn nhận được **Hộp quà giáng sinh** khi hoạt động tại {{serverName}}"
+		}
 	}
 }
