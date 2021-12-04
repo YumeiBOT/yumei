@@ -225,7 +225,7 @@
 	"user": {
 		"inventory": {
 			"description": "Danh sách item trong kho đồ",
-			"describle": "Hướng dần sử dụng item:",
+			"describle": "Hướng dẫn sử dụng item:",
 			"tutorial": "use <item_code> để sử dụng",
 			"item_content": "{{- itemIcon }}: **{{quantity}}**",
 			"pagination": "Trang {{ current_page }}/{{ total_page }}"
@@ -239,6 +239,10 @@
 	},
 	"yearly_event": {
 		"list_participant": "Những người tham gia:",
+		"leaderboard": {
+			"not_found": "**{{- emoji }}| {{- author }},** Không tìm thấy kiểu cần truy cứu",
+			"title": "{{- emoji }} **Bảng xếp hạng** {{- emoji }}"
+		},
 		"xmas": {
 			"snowball": "Cầu tuyết",
 			"e001": "Người tuyết",

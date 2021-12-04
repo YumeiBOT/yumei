@@ -1,7 +1,7 @@
 {
 	"common": {
-		"on": "Bật",
-		"off": "Tắt",
+		"on": "On",
+		"off": "Off",
 		"voice": {
 			"not_joined": "**{{- emoji}} | {{- author}}, ** You're not in voice channel",
 			"not_same_room": "**{{- emoji}} | {{- author}}, ** You're not in the same voice channel!"
@@ -200,36 +200,40 @@
 	},
 	"user": {
 		"inventory": {
-			"description": "Danh sách item trong kho đồ",
-			"describle": "Hướng dần sử dụng item:",
-			"tutorial": "use <item_code> để sử dụng",
+			"description": "Inventory's item",
+			"describle": "Item usage tutorial:",
+			"tutorial": "use <item_code> to use item",
 			"item_content": "{{- itemIcon }}: **{{quantity}}**",
-			"pagination": "Trang {{ current_page }}/{{ total_page }}"
+			"pagination": "Page {{ current_page }}/{{ total_page }}"
 		},
 		"use": {
-			"err1": "Vui lòng nhập mã của item cần sử dụng",
-			"err2": "Không tìm thấy item cần dùng",
-			"err3": "Bạn không sở hữu item này",
-			"err4": "Số lượng của item không đủ để dùng"
+			"err1": "Please input item code you want to use",
+			"err2": "Can't found item you want to use",
+			"err3": "You don't have that item",
+			"err4": "Quantity of item is not enough to use"
 		}
 	},
 	"yearly_event": {
-		"list_participant": "Những người tham gia:",
+		"list_participant": "List of participants:",
+		"leaderboard": {
+			"not_found": "**{{- emoji }}| {{- author }},** Can't get request type",
+			"title": "{{- emoji }} **Leaderboard** {{- emoji }}"
+		},
 		"xmas": {
-			"snowball": "Cầu tuyết",
-			"e001": "Người tuyết",
-			"e002": "Mũ giáng sinh",
-			"e003": "Kẹo ngọt"
+			"snowball": "Snowball",
+			"e001": "Snowman",
+			"e002": "Xmas Hat",
+			"e003": "Candy Cane"
 		},
 		"xmas_box": {
-			"ghost": "** {{-emoji }}| {{- author }},** Ồ không! Ai lại bỏ {{-item}} vào hộp quà thế này. Chúc bạn may mắn lần sau",
-			"appear": "** {{-emoji }}| Xmas box!!** Gõ lệnh `pick` để giành lấy **Hộp quà giáng sinh** nha",
-			"winner": "** {{-emoji }}|** Chúc mừng <@{{- member }}> đã nhặt được {{- boxIcon }}!!",
-			"usebox": "** {{-emoji }}|** Dùng lệnh `{{- command}}` để mở {{- boxIcon}} nhé",
-			"opening": "**{{- boxIcon }}| {{- author }},** đang mở **Hộp quà giáng sinh**...",
-			"opened": "**{{- boxIcon }}| {{- author }},** đã mở **Hộp quà giáng sinh** và nhận được **{{-itemIcon }}**",
-			"voice_log": "<@{{userId}}> đã treo voice trong {{hour}} giờ {{min}} phút!!! Bạn nhận được {{numOfBox}} **Hộp quà giáng sinh**",
-			"chat_log": "<@{{userId}}> Đã may mắn nhận được **Hộp quà giáng sinh** khi hoạt động tại {{serverName}}"
+			"ghost": "** {{-emoji }}| {{- author }},** Oh no! Who put {{-item}} into gift box. Good luck next times",
+			"appear": "** {{-emoji }}| Xmas box!!** Write down `pick` to get **Xmas Box**",
+			"winner": "** {{-emoji }}|** Congratulation <@{{- member }}> for captured {{- boxIcon }}!!",
+			"usebox": "** {{-emoji }}|** Use command `{{- command}}` to open {{- boxIcon}}",
+			"opening": "**{{- boxIcon }}| {{- author }},** opening **Xmas Box**...",
+			"opened": "**{{- boxIcon }}| {{- author }},** opened **Xmas Box** and get **{{-itemIcon }}**",
+			"voice_log": "<@{{userId}}> has been in voice channel for {{hour}} hour {{min}} minute!!! You get {{numOfBox}} **Xmas Box**",
+			"chat_log": "<@{{userId}}> get **Xmas Box** while having activity in {{serverName}}"
 		}
 	}
 }
