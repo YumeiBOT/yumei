@@ -172,6 +172,32 @@
 		"set_server_channel": {
 			"success": "**{{-emoji}} | {{- author }},** Đã thiết lập **{{type}}** tại <#{{channelId}}>",
 			"error": "**{{-emoji}} | {{- author }},** danh mục **{{type}}** không được hỗ trợ\n**{{-blankEmoji}} |** Danh mục hỗ trợ: {{supportTypes}}"
+		},
+		"set_server_temp_voice": {
+			"ask": {
+				"initial_room": "Vui lòng chọn phòng khởi tạo `( Kênh tham gia sẽ tạo ra phòng tạm )`. \n**Hướng dẫn : Nhập ** `<!tên_phòng>` hoặc `<#id_phòng>` hoặc `id_phòng`",
+				"limit": "Vui lòng nhập vào số người tối đa của room tự động tạo",
+				"type_room": "Vui lòng chọn loại phòng"
+			},
+			"room_type": {
+				"private": {
+					"label": "Riêng tư",
+					"description": "Phòng riêng tư chỉ người được cho phép mới có thể vào"
+				},
+				"public": {
+					"label": "Công khai",
+					"description": "Phòng công khai ai cũng có thể vào"
+				}
+			},
+			"answer": {
+				"initial_room": "Phòng khởi tạo được chọn là : <#{{-id}}>",
+				"type_room": "Bạn đã chọn phòng loại: ",
+				"limit": "Số lượng thành viên tối đa của phòng tự động là : {{-limit}}"
+			},
+			"error": {
+				"initial_room": "Phòng vừa chọn không hợp lệ vui lòng chọn phòng trò chuyện",
+				"timeout": "Hết thời gian cài đặt vui lòng làm lại từ đầu"
+			}
 		}
 	},
 	"voice": {
