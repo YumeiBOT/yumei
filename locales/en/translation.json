@@ -175,6 +175,32 @@
 		"set_server_channel": {
 			"success": "**{{-emoji}}  | {{- author }},** I have set **{{type}}** at <#{{channelId}}>",
 			"error": "**{{-emoji}} | {{- author }},** Input type **{{type}}** is not supported \n**{{-blankEmoji}} |** List support type: {{supportTypes}}"
+		},
+		"set_server_temp_voice": {
+			"ask": {
+				"initial_room": "Vui lòng chọn phòng khởi tạo `( Kênh tham gia sẽ tạo ra phòng tạm )`. \n**Hướng dẫn : Nhập ** `<!tên_phòng>` hoặc `<#id_phòng>` hoặc `id_phòng`",
+				"limit": "Vui lòng nhập vào số người tối đa của room tự động tạo",
+				"type_room": "Vui lòng chọn loại phòng"
+			},
+			"room_type": {
+				"private": {
+					"label": "Riêng tư",
+					"description": "Phòng riêng tư chỉ người được cho phép mới có thể vào"
+				},
+				"public": {
+					"label": "Công khai",
+					"description": "Phòng công khai ai cũng có thể vào"
+				}
+			},
+			"answer": {
+				"initial_room": "Phòng khởi tạo được chọn là : <#{{-id}}>",
+				"type_room": "Bạn đã chọn phòng loại: ",
+				"limit": "Số lượng thành viên tối đa của phòng tự động là : {{-limit}}"
+			},
+			"error": {
+				"initial_room": "Phòng vừa chọn không hợp lệ vui lòng chọn phòng trò chuyện",
+				"timeout": "Hết thời gian cài đặt vui lòng làm lại từ đầu"
+			}
 		}
 	},
 	"voice": {
@@ -195,13 +221,52 @@
 				"description": "Create clan(team) room",
 				"req_team_name": "**{{-emoji}} | {{- author }},** Please input Clan(Team) Name",
 				"req_clan_settings": "**{{-emoji}} | {{- author }},** Server setting for clan is not setup yet. Contact admin for setup Clan Voice Setting",
-				"success":  "**{{-emoji}}  | {{- author }}, Create room successfully!"
+				"success": "**{{-emoji}}  | {{- author }}, Create room successfully!",
+				"having_room": "**{{-emoji}}  | {{- author }},** Bạn đã sở hữu cho mình một phòng trò truyện"
 			},
 			"room_member": {
 				"no_permission": "**{{-icon}}  | {{- author }}, ** You don't have permission to add/remove member",
 				"add": "**{{-icon}}  | {{- author }}, ** Added member successfully ",
 				"remove": "**{{-icon}}  | {{- author }}, ** Removed member successfully "
 			}
+		},
+		"server_clan_voice_setting": {
+			"success": "**✅ | {{- author }},** Lưu cài đặt phòng trò chuyện clan thành công\nNếu bạn cần thêm nhiều category hơn hãy dùng lệnh \\` \\``"
+		}
+	},
+	"soundboard": {
+		"tts": {
+			"min_char": "**🚫 | {{- author }},** Không có chữ thì làm sao nói?",
+			"max_char": "**🚫 | {{- author }},** Hiện tại BOT chỉ hỗ trợ tối đa 100 kí tự"
+		},
+		"join": {
+			"used": "**🚫 | {{- author }},** Bot đang được sử dụng ở một kênh khác",
+			"speaking": "**🚫 | {{- author }},** Vui lòng chờ câu nói trước hoàn thành",
+			"join_success": "**✅ | {{- author }},** Đã tham gia phòng trò chuyện"
+		},
+		"leave": {
+			"success": "**✅ | {{- author }},** Đã thoát khỏi phòng trò chuyện"
+		},
+		"stop": {
+			"success": "**✅ | {{- author }},** Đã dừng câu nói trước đó"
+		},
+		"tts_default": {
+			"current_language": "**ℹ️ | {{- author }},** Ngôn ngữ hiện tại khi đọc là `{{- lang}}`",
+			"not_supported": "**🚫 | {{- author }},** Ngôn ngữ bạn nhập vào hiện không được hỗ trợ",
+			"success": "**✅ | {{- author }},** Đã chuyển ngôn ngữ khi đọc sang `{{- lang}}`"
+		},
+		"tts_languages": {
+			"title": "Danh sách các ngôn ngữ hỗ trợ",
+			"change_language_tutorial": "Hướng dẫn chỉnh ngôn ngữ",
+			"change_language_tutorial2": "Sử dụng lệnh `{{- prefix}}tts_default <code>` để thay đổi ngôn ngữ"
+		}
+	},
+	"moderation": {
+		"kick": {
+			"name": "kick"
+		},
+		"ban": {
+			"name": "ban"
 		}
 	},
 	"event": {

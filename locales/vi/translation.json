@@ -70,6 +70,9 @@
 			"VIEW_GUILD_INSIGHTS": "View Guild Insights"
 		}
 	},
+	"framework": {
+		"cooldown": "**⏰ | {{-author}}, **Please wait `{{remaining}}` s before you can use `{{commandName}}`"
+	},
 	"precondition": {
 		"owner_only": "**{{- icon }} | {{- author }},** Lệnh chỉ dùng cho chủ sở hữu BOT",
 		"server_created": {
@@ -258,6 +261,14 @@
 			"change_language_tutorial2": "Sử dụng lệnh `{{- prefix}}tts_default <code>` để thay đổi ngôn ngữ"
 		}
 	},
+	"moderation": {
+		"kick": {
+			"name": "kick"
+		},
+		"ban": {
+			"name": "ban"
+		}
+	},
 	"event": {
 		"message_create": {
 			"warning_invite_link": "**{{-icon}} | {{-author}} | **Bạn ơi đừng gửi link server khác nha!!!"
@@ -293,6 +304,7 @@
 			"e003": "Kẹo ngọt"
 		},
 		"xmas_box": {
+			"ghost": "** {{-emoji }}| {{- author }},** Oh no! Who put {{-item}} into gift box. Good luck next times",
 			"appear": "{{-emoji }}**| Xmas box!!** Gõ lệnh `pick` để giành lấy **Hộp quà giáng sinh** nha",
 			"winner": "{{-emoji }}**|** Chúc mừng <@{{- member }}> đã nhặt được {{- boxIcon }}!!",
 			"usebox": "{{-emoji }}**|** Dùng lệnh `{{- command}}` để mở {{- boxIcon}} nhé",
