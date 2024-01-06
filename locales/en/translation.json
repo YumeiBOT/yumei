@@ -275,7 +275,7 @@
 			"description": "Clear message of some channel",
 			"more_than_100": "I cannot delete more than 100 messages at a time!",
 			"less_than_1": "I cannot delete less than 1 message!",
-			"old_than_14": "You can only bulk delete messages that are under 14 days old.",
+			"older_than_14d": "You can only bulk delete messages that are under 14 days old.",
 			"success": "I have successfully deleted {{amount}} the messages",
 			"error": "There was an error trying to delete messages in this channel!"
 		},
@@ -296,7 +296,7 @@
 			"name": "timeout",
 			"example": "",
 			"description": "Mute users for a certain time",
-			"more_than_28": "Invalid input time or time is larger than 28 days"
+			"more_than_28d": "Invalid input time or time is larger than 28 days"
 		},
 		"warn": {
 			"name": "warn",

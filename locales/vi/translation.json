@@ -275,7 +275,7 @@
 			"description":"Xóa tin nhắn trong một nhóm",
 			"more_than_100":"Tôi không thể xóa nhiều hơn 100 tin nhắn !",
 			"less_than_1":"Tôi không thể xóa ít hơn 1 tin nhắn !",
-			"old_than_14":"Bạn chỉ có thể xóa tin nhắn cách đây dưới 14 ngày",
+			"older_than_14d":"Bạn chỉ có thể xóa tin nhắn cách đây dưới 14 ngày",
 			"error": "Đã xảy ra lỗi khi xóa tin nhắn trong kênh này!"
 		},
 		"clearuser": {
@@ -295,7 +295,7 @@
 			"name": "timeout",
 			"example": "",
 			"description": "Tắt tiếng người dùng trong một khoảng thời gian nhất định",
-			"more_than_28": "Thời gian nhập vào không hợp lệ hoặc lớn hơn 28 ngày"
+			"more_than_28d": "Thời gian nhập vào không hợp lệ hoặc lớn hơn 28 ngày"
 		},
 		"warn":{
 			"name": "warn",
