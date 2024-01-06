@@ -265,29 +265,30 @@
 		"ban": {
 			"name": "ban",
 			"example": "",
-			"description":"Ban users from the server",
+			"description": "Ban users from the server",
 			"success": "The specified user has been successfully banned and successfully received a notification!",
 			"success_no_notification": "The given user has been successfully banned, but has not received a notification!"
 		},
 		"clear": {
 			"name": "clear",
 			"example": "",
-			"description":"Clear message of some channel",
-			"more_than_100":"I cannot delete more than 100 messages at a time!",
-			"less_than_1":"I cannot delete less than 1 message!",
-			"old_than_14":"You can only bulk delete messages that are under 14 days old.",
+			"description": "Clear message of some channel",
+			"more_than_100": "I cannot delete more than 100 messages at a time!",
+			"less_than_1": "I cannot delete less than 1 message!",
+			"old_than_14": "You can only bulk delete messages that are under 14 days old.",
+			"success": "I have successfully deleted {{amount}} the messages",
 			"error": "There was an error trying to delete messages in this channel!"
 		},
 		"clearuser": {
 			"name": "clearuser",
 			"example": "",
-			"description":"Clear message of someone",
-			"update_soon":"Update Soon"
+			"description": "Clear message of someone",
+			"update_soon": "Update Soon"
 		},
 		"kick": {
 			"name": "kick",
 			"example": "",
-			"description":"Kick users from the server",
+			"description": "Kick users from the server",
 			"success": "The specified user has been successfully banned and successfully received a notification!",
 			"success_no_notification": "The given user has been successfully banned, but has not received a notification!"
 		},
@@ -297,12 +298,12 @@
 			"description": "Mute users for a certain time",
 			"more_than_28": "Invalid input time or time is larger than 28 days"
 		},
-		"warn":{
+		"warn": {
 			"name": "warn",
-			"example":"",
-			"description":"Warning user for something",
-			"success":"User has received a warning!"
-		}	
+			"example": "",
+			"description": "Warning user for something",
+			"success": "User has received a warning!"
+		}
 	},
 	"event": {
 		"message_create": {
