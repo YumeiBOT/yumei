@@ -71,7 +71,7 @@
 		}
 	},
 	"framework": {
-		"cooldown": "**⏰ | {{-author}}, **Please wait `{{remaining}}` s before you can use `{{commandName}}`"
+		"cooldown": "**⏰ | {{-author}}, **Hãy chờ `{{remaining}}` s trước khi bạn có thể sử dụng `{{commandName}}`"
 	},
 	"precondition": {
 		"owner_only": "**{{- icon }} | {{- author }},** Lệnh chỉ dùng cho chủ sở hữu BOT",
@@ -262,18 +262,47 @@
 		}
 	},
 	"moderation": {
-		"kick": {
-			"name": "kick"
-		},
 		"ban": {
-			"name": "ban"
+			"name": "ban",
+			"example": "",
+			"description":"Cấm người dùng khỏi server",
+			"success": "Người dùng được chỉ định đã bị cấm thành công và nhận được thông báo!",
+			"success_no_notification": "Người dùng cụ thể đã bị cấm thành công nhưng chưa nhận được thông báo!"
 		},
 		"clear": {
-			"name": "clear"
+			"name": "clear",
+			"example": "",
+			"description":"Xóa tin nhắn trong một nhóm",
+			"more_than_100":"Tôi không thể xóa nhiều hơn 100 tin nhắn !",
+			"less_than_1":"Tôi không thể xóa ít hơn 1 tin nhắn !",
+			"old_than_14":"Bạn chỉ có thể xóa tin nhắn cách đây dưới 14 ngày",
+			"error": "Đã xảy ra lỗi khi xóa tin nhắn trong kênh này!"
 		},
 		"clearuser": {
-			"name": "clearuser"
-		}
+			"name": "clearuser",
+			"example": "",
+			"description":"Xóa tin nhắn của một người dùng nào đó",
+			"update_soon":"Sẽ sớm cập nhật thêm..."
+		},
+		"kick": {
+			"name": "kick",
+			"example": "",
+			"description":"Xóa người dùng khỏi server",
+			"success": "Người dùng được chỉ định đã bị xóa thành công và nhận được thông báo!",
+			"success_no_notification": "Người dùng cụ thể đã bị xóa thành công nhưng chưa nhận được thông báo!"
+		},
+		"mute": {
+			"name": "timeout",
+			"example": "",
+			"description": "Tắt tiếng người dùng trong một khoảng thời gian nhất định",
+			"more_than_28": "Thời gian nhập vào không hợp lệ hoặc lớn hơn 28 ngày"
+		},
+		"warn":{
+			"name": "warn",
+			"example":"",
+			"description":"Cảnh báo người dùng",
+			"success":"Người dùng đã nhận được cảnh báo!"
+		}	
 	},
 	"event": {
 		"message_create": {
@@ -299,16 +328,16 @@
 	},
 	"service": {
 		"voice": {
-			"private_join_request": "{{-owner}} **|** {{-user}} is request to join your room",
-			"reject_request": "** {{-user}} | ** Reject your request to join room",
-			"private_join_request_timeout": "** {{-user}} | ** Seem like there is not response to your request",
+			"private_join_request": "{{-owner}} **|** {{-user}} yêu cầu tham gia phòng của bạn",
+			"reject_request": "** {{-user}} | ** Từ chối yêu cầu tham gia phòng của bạn",
+			"private_join_request_timeout": "** {{-user}} | ** Có vẻ như không có phản hồi nào cho yêu cầu của bạn",
 			"interaction": {
-				"lock": "**{{-icon}} | {{-author}} , ** Your room have been locked successfully",
-				"unlock": "**{{-icon}} | {{-author}} , ** Your room have been unlocked successfully",
-				"hide": "**{{-icon}} | {{-author}} , ** Your room have been hided successfully",
-				"show": "**{{-icon}} | {{-author}} , ** Your room have been showed successfully",
-				"mute": "**{{-icon}} | {{-author}} , ** Your room have been muted successfully",
-				"unmute": "**{{-icon}} | {{-author}} , ** Your room have been unmuteed successfully"
+				"lock": "**{{-icon}} | {{-author}} , ** Phòng của bạn đã được khóa thành công",
+				"unlock": "**{{-icon}} | {{-author}} , ** Phòng của bạn đã được mở khóa thành công",
+				"hide": "**{{-icon}} | {{-author}} , ** Phòng của bạn đã được ẩn thành công",
+				"show": "**{{-icon}} | {{-author}} , ** Phòng của bạn đã được hiển thị thành công",
+				"mute": "**{{-icon}} | {{-author}} , ** Phòng của bạn đã được tắt tiếng thành công",
+				"unmute": "**{{-icon}} | {{-author}} , ** Phòng của bạn đã được bật tiếng thành công"
 			}
 		}
 	},

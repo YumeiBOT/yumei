@@ -222,7 +222,7 @@
 				"req_team_name": "**{{-emoji}} | {{- author }},** Please input Clan(Team) Name",
 				"req_clan_settings": "**{{-emoji}} | {{- author }},** Server setting for clan is not setup yet. Contact admin for setup Clan Voice Setting",
 				"success": "**{{-emoji}}  | {{- author }},** Create room successfully!",
-				"having_room": "**{{-emoji}}  | {{- author }},** Bạn đã sở hữu cho mình một phòng trò truyện"
+				"having_room": "**{{-emoji}}  | {{- author }},** You already own your own story room"
 			},
 			"room_member": {
 				"no_permission": "**{{-icon}}  | {{- author }}, ** You don't have permission to add/remove member",
@@ -231,12 +231,12 @@
 			}
 		},
 		"server_clan_voice_setting": {
-			"success": "**✅ | {{- author }},** Lưu cài đặt phòng trò chuyện clan thành công\nNếu bạn cần thêm nhiều category hơn hãy dùng lệnh \\` \\``"
+			"success": "**✅ | {{- author }},** Saved clan chat room settings successfully\nIf you need to add more categories use the command \\` \\``"
 		}
 	},
 	"soundboard": {
 		"tts": {
-			"min_char": "**🚫 | {{- author }},** Không có chữ thì làm sao nói?",
+			"min_char": "**🚫 | {{- author }},** Nothing to say",
 			"max_char": "**🚫 | {{- author }},** Hiện tại BOT chỉ hỗ trợ tối đa 100 kí tự"
 		},
 		"join": {
@@ -262,18 +262,47 @@
 		}
 	},
 	"moderation": {
-		"kick": {
-			"name": "kick"
-		},
 		"ban": {
-			"name": "ban"
+			"name": "ban",
+			"example": "",
+			"description":"Ban users from the server",
+			"success": "The specified user has been successfully banned and successfully received a notification!",
+			"success_no_notification": "The given user has been successfully banned, but has not received a notification!"
 		},
 		"clear": {
-			"name": "clear"
+			"name": "clear",
+			"example": "",
+			"description":"Clear message of some channel",
+			"more_than_100":"I cannot delete more than 100 messages at a time!",
+			"less_than_1":"I cannot delete less than 1 message!",
+			"old_than_14":"You can only bulk delete messages that are under 14 days old.",
+			"error": "There was an error trying to delete messages in this channel!"
 		},
 		"clearuser": {
-			"name": "clearuser"
-		}
+			"name": "clearuser",
+			"example": "",
+			"description":"Clear message of someone",
+			"update_soon":"Update Soon"
+		},
+		"kick": {
+			"name": "kick",
+			"example": "",
+			"description":"Kick users from the server",
+			"success": "The specified user has been successfully banned and successfully received a notification!",
+			"success_no_notification": "The given user has been successfully banned, but has not received a notification!"
+		},
+		"mute": {
+			"name": "timeout",
+			"example": "",
+			"description": "Mute users for a certain time",
+			"more_than_28": "Invalid input time or time is larger than 28 days"
+		},
+		"warn":{
+			"name": "warn",
+			"example":"",
+			"description":"Warning user for something",
+			"success":"User has received a warning!"
+		}	
 	},
 	"event": {
 		"message_create": {
