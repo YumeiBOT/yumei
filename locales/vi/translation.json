@@ -269,6 +269,9 @@
 			"success_ban_from":"Bạn đã bị cấm tại {{guildName}}",
 			"success": "Người dùng được chỉ định đã bị cấm thành công và nhận được thông báo!",
 			"success_no_notification": "Người dùng cụ thể đã bị cấm thành công nhưng chưa nhận được thông báo!",
+			"banned_by": "👤┆Bị cấm bởi",
+			"user_who_banned": "👤┆Người bị cấm",
+			"reason": "💬┆Lý do",
 			"not_given": "Không có lý do cụ thể"
 		},
 		"clear": {
@@ -292,7 +295,11 @@
 			"example": "",
 			"description":"Xóa người dùng khỏi server",
 			"success": "Người dùng được chỉ định đã bị xóa thành công và nhận được thông báo!",
+			"success_kick_from": "Bạn đã bị xóa khỏi server {{guildName}}",
 			"success_no_notification": "Người dùng cụ thể đã bị xóa thành công nhưng chưa nhận được thông báo!",
+			"kicked_by": "👤┆Bị xóa bởi",
+			"reason": "💬┆Lý do",
+			"user_who_kicked": "👤┆Người bị xóa",
 			"not_given": "Không có lý do cụ thể"
 		},
 		"mute": {
