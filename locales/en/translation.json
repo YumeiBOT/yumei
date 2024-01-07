@@ -266,8 +266,10 @@
 			"name": "ban",
 			"example": "",
 			"description": "Ban users from the server",
+			"success_ban_from":"You've been banned in {{guildName}}",
 			"success": "The specified user has been successfully banned and successfully received a notification!",
-			"success_no_notification": "The given user has been successfully banned, but has not received a notification!"
+			"success_no_notification": "The given user has been successfully banned, but has not received a notification!",
+			"not_given": "Not given"
 		},
 		"clear": {
 			"name": "clear",
@@ -290,19 +292,30 @@
 			"example": "",
 			"description": "Kick users from the server",
 			"success": "The specified user has been successfully banned and successfully received a notification!",
-			"success_no_notification": "The given user has been successfully banned, but has not received a notification!"
+			"success_no_notification": "The given user has been successfully banned, but has not received a notification!",
+			"not_given": "Not given"
 		},
 		"mute": {
 			"name": "timeout",
 			"example": "",
 			"description": "Mute users for a certain time",
-			"more_than_28d": "Invalid input time or time is larger than 28 days"
+			"more_than_28d": "Invalid input time or time is larger than 28 days",
+			"success": "{{userName}} successfully timed out {{prettyMilliseconds}}",
+			"not_given": "Not given",
+			"reason": "💬┆Reason"
 		},
 		"warn": {
 			"name": "warn",
 			"example": "",
 			"description": "Warning user for something",
-			"success": "User has received a warning!"
+			"success": "User has received a warning!",
+			"not_given": "Not given",
+			"title": "🔨・Warn",
+			"success_warn_from": "You have been warned from {{guildName}}",
+			"moderator": "👤┆Moderator",
+			"reason": "💬┆Reason",
+			"user_who_warned":"👤┆User",
+			"number_warn": "💬┆Number of warn"
 		}
 	},
 	"event": {
