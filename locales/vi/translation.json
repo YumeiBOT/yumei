@@ -240,6 +240,9 @@
 			},
 			"claim-room": {
 				"description": "Phòng mà người dùng muốn yêu cầu"
+			},
+			"voice_setting":{
+				"description": "Voice Setting"
 			}
 		},
 		"server_clan_voice_setting": {
@@ -276,6 +279,12 @@
 			"change_language_tutorial2": "Sử dụng lệnh `{{- prefix}}tts_default <code>` để thay đổi ngôn ngữ"
 		}
 	},
+	"images": {
+		"avatar": {
+			"description": "Get avatar of user",
+			"select_user": "The user you want the avatar from"
+		}
+	},
 	"moderation": {
 		"ban": {
 			"name": "ban",
@@ -307,7 +316,8 @@
 			"example": "",
 			"description": "Xóa tin nhắn của một người dùng nào đó",
 			"update_soon": "Sẽ sớm cập nhật thêm...",
-			"amount": "Số lượng tin nhắn"
+			"amount": "Số lượng tin nhắn",
+			"select_user": "Chọn một người dùng"
 		},
 		"kick": {
 			"name": "kick",

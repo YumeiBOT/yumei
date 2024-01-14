@@ -238,8 +238,11 @@
 				"removed_user": "User that will be removed from room",
 				"description": "Remove user from room"
 			},
-			"claim-room": {
+			"claim_room": {
 				"description": "Room user want to claim"
+			},
+			"voice_setting":{
+				"description": "Voice Setting"
 			}
 		},
 		"server_clan_voice_setting": {
@@ -278,7 +281,8 @@
 	},
 	"images": {
 		"avatar": {
-			"description": "The user you want the avatar from"
+			"description": "Get avatar of user",
+			"select_user": "The user you want the avatar from"
 		}
 	},
 	"moderation": {
@@ -312,7 +316,8 @@
 			"example": "",
 			"description": "Clear message of someone",
 			"update_soon": "Update Soon",
-			"amount": "Amount of messages"
+			"amount": "Amount of messages",
+			"select_user": "Select a user"
 		},
 		"kick": {
 			"name": "kick",
