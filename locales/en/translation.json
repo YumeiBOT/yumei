@@ -242,7 +242,21 @@
 				"description": "Room user want to claim"
 			},
 			"voice_setting":{
-				"description": "Voice Setting"
+				"description": "Voice Setting",
+				"tempVCs": "TempVCs by HellCatVN#1111 (a.k.a @hellcatvn) | ver 2023",
+				"chat_control": "Temporary private voice chat control",
+				"chat_control_description": "**Use the buttons below to quickly change some settings! **.\nHere are the button descriptions:\n\nUse `Lock/Unlock` to lock the VC so that only whitelisted users can connect.\nUse `Hide/Unhide` to make the VC private so that Only whitelisted users can see VC. \nUse `Mute/Unmute` to only allow whitelist users to speak, and only affect new users.\nUse `Ban/Unban` to prohibit specified users from joining VC. \nUse `Whitelist/Remove` to whitelist.\nUse `Limit` limits the number of users that can join.\nUse `Change Owner` to transfer box owner.\nUse `Change Name` to change the name of the VC to whatever you want. (Remember to follow the rules)\nUse `Get Mention` to get the voice invitation URL, invite them to join the voice channel immediately! !\n\n Transferring the owner will clear the original restricted permissions!!.",
+				"label_type": "Whitelist/Remove",
+				"label_owner": "Change Owner",
+				"label_changeName": "Change Name",
+				"label_lock": "Lock / Unlock",
+				"label_hide": "Hide / Show",
+				"label_mute": "Mute / Unmute",
+				"label_ban": "Ban / Unban",
+				"label_limit": "Limit",
+				"label_kick": "Kick",
+				"label_deleteVC": "Delete VC",
+				"label_changeRegion": "Change Region"
 			}
 		},
 		"server_clan_voice_setting": {
@@ -384,6 +398,10 @@
 		},
 		"afk": {
 			"description": "The reason for the warn"
+		},
+		"chat": {
+			"description": "Say comment which will allow user to use bot as a speaker",
+			"content": "Enter content you want to send"
 		}
 	},
 	"tools": {

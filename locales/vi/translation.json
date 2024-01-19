@@ -194,7 +194,6 @@
 				},
 				"description": "Loại phòng sẽ được tạo",
 				"limit_description": "Số lượng người được phép tham gia phòng"
-				
 			},
 			"answer": {
 				"initial_room": "Phòng khởi tạo được chọn là : <#{{-id}}>",
@@ -224,6 +223,7 @@
 		"clan": {
 			"create_team": {
 				"description": "Tạo phòng CLB(nhóm)",
+				"clan_name": "Tên Clan",
 				"req_team_name": "**{{-emoji}} | {{- author }},** Vui lòng nhập tên CLB(nhóm)",
 				"req_clan_settings": "**{{-emoji}} | {{- author }},** Máy chủ chưa thiết lập cài đặt cho CLB. Vui lòng liên hệ quản lí máy chủ để cài đặt",
 				"success": "**{{-emoji}}  | {{- author }},** Tạo phòng thành công",
@@ -242,7 +242,21 @@
 				"description": "Phòng mà người dùng muốn yêu cầu"
 			},
 			"voice_setting":{
-				"description": "Voice Setting"
+				"description": "Cài đặt voice",
+				"tempVCs": "TempVCs by HellCatVN#1111 (a.k.a @hellcatvn) | ver 2023",
+				"chat_control": "Điều khiển cuộc trò chuyện bằng giọng nói riêng",
+				"chat_control_description": "**Sử dụng các nút bên dưới để thay đổi một số cài đặt! **.\nDưới đây là nút thay đổi mô tả:\n\nSử dụng `Khóa/Mở khóa` để khóa VC để những người dùng trong danh sách có thể kết nối.\nSử dụng `Ẩn/Bỏ ẩn` để đặt VC ở chế độ riêng tư để những người dùng trong danh sách mới có thể nhìn thấy VC. \nSử dụng `Mute/Unmute` để chỉ cho phép người dùng trong danh sách nói và chỉ ảnh hưởng đến người dùng mới.\nSử dụng `Cấm/Bỏ cấm` để cấm những người dùng chỉ định tham gia VC. \nSử dụng `Danh sách/Xóa` thành danh sách.\nSử dụng `Giới hạn` để giới hạn số lượng người dùng có thể tham gia.\nSử dụng `Thay đổi chủ sở hữu` để chuyển chủ sở hữu.\nSử dụng `Thay đổi tên` để thay đổi tên của VC thành bất kỳ tên nào bạn muốn. (Nhớ tuân thủ nội quy)\nSử dụng `Nhận đề cập` để nhận URL lời mời, mời họ tham gia kênh thoại ngay lập tức! !\n\n Việc chuyển chủ sở hữu sẽ xóa các quyền hạn chế ban đầu!!.",
+				"label_type": "Danh sách / Xóa",
+				"label_owner": "Đổi chủ sở hữu",
+				"label_changeName": "Đổi tên",
+				"label_lock": "Khóa / Mở khóa",
+				"label_hide": "Ẩn / Hiển thị",
+				"label_mute": "Tắt tiếng/Bật tiếng",
+				"label_ban": "Cấm / Bỏ cấm",
+				"label_limit": "Giới hạn",
+				"label_kick": "Đá",
+				"label_deleteVC": "Xóa VC",
+				"label_changeRegion": "Thay đổi khu vực"
 			}
 		},
 		"server_clan_voice_setting": {
@@ -384,11 +398,15 @@
 		},
 		"afk": {
 			"description": "The reason for the warn"
+		},
+		"chat": {
+			"description": "Lệnh này sẽ cho phép người dùng sử dụng bot như một người đối thoại",
+			"content": "Nhập nội dung bạn muốn gửi"
 		}
 	},
 	"tools": {
 		"emojify": {
-			"description": "Text to convert into emoji"
+			"description": "Chuyển văn bản thành biểu tượng cảm xúc"
 		}
 	},
 	"service": {
