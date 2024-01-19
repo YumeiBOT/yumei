@@ -179,6 +179,7 @@
 		"set_server_temp_voice": {
 			"ask": {
 				"initial_room": "Vui lòng chọn phòng khởi tạo `( Kênh tham gia sẽ tạo ra phòng tạm )`. \n**Hướng dẫn : Nhập ** `<!tên_phòng>` hoặc `<#id_phòng>` hoặc `id_phòng`",
+				"intitial_room_description": "Người dùng phòng sẽ tham gia để tạo kênh riêng",
 				"limit": "Vui lòng nhập vào số người tối đa của room tự động tạo",
 				"type_room": "Vui lòng chọn loại phòng"
 			},
@@ -190,7 +191,9 @@
 				"public": {
 					"label": "Công khai",
 					"description": "Phòng công khai ai cũng có thể vào"
-				}
+				},
+				"description": "Loại phòng sẽ được tạo",
+				"limit_description": "Số lượng người được phép tham gia phòng"
 			},
 			"answer": {
 				"initial_room": "Phòng khởi tạo được chọn là : <#{{-id}}>",
@@ -200,7 +203,8 @@
 			"error": {
 				"initial_room": "Phòng vừa chọn không hợp lệ vui lòng chọn phòng trò chuyện",
 				"timeout": "Hết thời gian cài đặt vui lòng làm lại từ đầu"
-			}
+			},
+			"description": "Cài đặt máy chủ thoại"
 		}
 	},
 	"voice": {
@@ -219,6 +223,7 @@
 		"clan": {
 			"create_team": {
 				"description": "Tạo phòng CLB(nhóm)",
+				"clan_name": "Tên Clan",
 				"req_team_name": "**{{-emoji}} | {{- author }},** Vui lòng nhập tên CLB(nhóm)",
 				"req_clan_settings": "**{{-emoji}} | {{- author }},** Máy chủ chưa thiết lập cài đặt cho CLB. Vui lòng liên hệ quản lí máy chủ để cài đặt",
 				"success": "**{{-emoji}}  | {{- author }},** Tạo phòng thành công",
@@ -227,11 +232,38 @@
 			"room_member": {
 				"no_permission": "**{{-emoji}}  | {{- author }}, ** Bạn không có quyền thêm/xóa thành viên phòng này",
 				"add": "**{{-emoji}}  | {{- author }}, ** Thêm thành viên thành công",
-				"remove": "**{{-emoji}}  | {{- author }}, ** Xóa thành viên thành công"
+				"remove": "**{{-emoji}}  | {{- author }}, ** Xóa thành viên thành công",
+				"add_user": "Thêm người dùng vào phòng",
+				"added_user": "Người dùng sẽ được thêm vào phòng",
+				"removed_user": "Người dùng sẽ bị xóa khỏi phòng",
+				"description": "Xóa người dùng khỏi phòng"
+			},
+			"claim-room": {
+				"description": "Phòng mà người dùng muốn yêu cầu"
+			},
+			"voice_setting":{
+				"description": "Cài đặt voice",
+				"tempVCs": "TempVCs by HellCatVN#1111 (a.k.a @hellcatvn) | ver 2023",
+				"chat_control": "Điều khiển cuộc trò chuyện bằng giọng nói riêng",
+				"chat_control_description": "**Sử dụng các nút bên dưới để thay đổi một số cài đặt! **.\nDưới đây là nút thay đổi mô tả:\n\nSử dụng `Khóa/Mở khóa` để khóa VC để những người dùng trong danh sách có thể kết nối.\nSử dụng `Ẩn/Bỏ ẩn` để đặt VC ở chế độ riêng tư để những người dùng trong danh sách mới có thể nhìn thấy VC. \nSử dụng `Mute/Unmute` để chỉ cho phép người dùng trong danh sách nói và chỉ ảnh hưởng đến người dùng mới.\nSử dụng `Cấm/Bỏ cấm` để cấm những người dùng chỉ định tham gia VC. \nSử dụng `Danh sách/Xóa` thành danh sách.\nSử dụng `Giới hạn` để giới hạn số lượng người dùng có thể tham gia.\nSử dụng `Thay đổi chủ sở hữu` để chuyển chủ sở hữu.\nSử dụng `Thay đổi tên` để thay đổi tên của VC thành bất kỳ tên nào bạn muốn. (Nhớ tuân thủ nội quy)\nSử dụng `Nhận đề cập` để nhận URL lời mời, mời họ tham gia kênh thoại ngay lập tức! !\n\n Việc chuyển chủ sở hữu sẽ xóa các quyền hạn chế ban đầu!!.",
+				"label_type": "Danh sách / Xóa",
+				"label_owner": "Đổi chủ sở hữu",
+				"label_changeName": "Đổi tên",
+				"label_lock": "Khóa / Mở khóa",
+				"label_hide": "Ẩn / Hiển thị",
+				"label_mute": "Tắt tiếng/Bật tiếng",
+				"label_ban": "Cấm / Bỏ cấm",
+				"label_limit": "Giới hạn",
+				"label_kick": "Đá",
+				"label_deleteVC": "Xóa VC",
+				"label_changeRegion": "Thay đổi khu vực"
 			}
 		},
 		"server_clan_voice_setting": {
-			"success": "**✅ | {{- author }},** Lưu cài đặt phòng trò chuyện clan thành công\nNếu bạn cần thêm nhiều category hơn hãy dùng lệnh \\` \\``"
+			"success": "**✅ | {{- author }},** Lưu cài đặt phòng trò chuyện clan thành công\nNếu bạn cần thêm nhiều category hơn hãy dùng lệnh \\` \\``",
+			"allow_bot": "Cho phép bot xóa nếu người dùng không phải là thành viên",
+			"allow_user": "Cho phép người dùng quản lý kênh",
+			"category_option": "Kênh danh mục sẽ xuất hiện"
 		}
 	},
 	"soundboard": {
@@ -261,46 +293,59 @@
 			"change_language_tutorial2": "Sử dụng lệnh `{{- prefix}}tts_default <code>` để thay đổi ngôn ngữ"
 		}
 	},
+	"images": {
+		"avatar": {
+			"description": "Get avatar of user",
+			"select_user": "The user you want the avatar from"
+		}
+	},
 	"moderation": {
 		"ban": {
 			"name": "ban",
 			"example": "",
-			"description":"Cấm người dùng khỏi server",
-			"success_ban_from":"Bạn đã bị cấm tại {{guildName}}",
+			"description": "Cấm người dùng khỏi server",
+			"success_ban_from": "Bạn đã bị cấm tại {{guildName}}",
 			"success": "Người dùng được chỉ định đã bị cấm thành công và nhận được thông báo!",
 			"success_no_notification": "Người dùng cụ thể đã bị cấm thành công nhưng chưa nhận được thông báo!",
 			"banned_by": "👤┆Bị cấm bởi",
 			"user_who_banned": "👤┆Người bị cấm",
 			"reason": "💬┆Lý do",
-			"not_given": "Không có lý do cụ thể"
+			"not_given": "Không có lý do cụ thể",
+			"select_user": "Chọn một người dùng",
+			"reason_for_ban": "Lý do cấm"
 		},
 		"clear": {
 			"name": "clear",
 			"example": "",
-			"description":"Xóa tin nhắn trong một nhóm",
-			"more_than_100":"Tôi không thể xóa nhiều hơn 100 tin nhắn !",
-			"less_than_1":"Tôi không thể xóa ít hơn 1 tin nhắn !",
+			"description": "Xóa tin nhắn trong một nhóm",
+			"more_than_100": "Tôi không thể xóa nhiều hơn 100 tin nhắn !",
+			"less_than_1": "Tôi không thể xóa ít hơn 1 tin nhắn !",
 			"success": "Tôi đã xóa thành công {{amount}} tin nhắn",
-			"older_than_14d":"Bạn chỉ có thể xóa tin nhắn cách đây dưới 14 ngày",
-			"error": "Đã xảy ra lỗi khi xóa tin nhắn trong kênh này!"
+			"older_than_14d": "Bạn chỉ có thể xóa tin nhắn cách đây dưới 14 ngày",
+			"error": "Đã xảy ra lỗi khi xóa tin nhắn trong kênh này!",
+			"amount": "Số lượng tin nhắn"
 		},
 		"clearuser": {
 			"name": "clearuser",
 			"example": "",
-			"description":"Xóa tin nhắn của một người dùng nào đó",
-			"update_soon":"Sẽ sớm cập nhật thêm..."
+			"description": "Xóa tin nhắn của một người dùng nào đó",
+			"update_soon": "Sẽ sớm cập nhật thêm...",
+			"amount": "Số lượng tin nhắn",
+			"select_user": "Chọn một người dùng"
 		},
 		"kick": {
 			"name": "kick",
 			"example": "",
-			"description":"Xóa người dùng khỏi server",
+			"description": "Xóa người dùng khỏi server",
 			"success": "Người dùng được chỉ định đã bị xóa thành công và nhận được thông báo!",
 			"success_kick_from": "Bạn đã bị xóa khỏi server {{guildName}}",
 			"success_no_notification": "Người dùng cụ thể đã bị xóa thành công nhưng chưa nhận được thông báo!",
 			"kicked_by": "👤┆Bị xóa bởi",
 			"reason": "💬┆Lý do",
 			"user_who_kicked": "👤┆Người bị xóa",
-			"not_given": "Không có lý do cụ thể"
+			"not_given": "Không có lý do cụ thể",
+			"select_user": "Chọn một người dùng",
+			"reason_for_kick": "Lý do cấm"
 		},
 		"mute": {
 			"name": "timeout",
@@ -309,21 +354,26 @@
 			"more_than_28d": "Thời gian nhập vào không hợp lệ hoặc lớn hơn 28 ngày",
 			"success": "{{userName}} đã bị tắt tiếng trong {{prettyMilliseconds}}",
 			"not_given": "Không có lý do cụ thể",
-			"reason": "💬┆Lý do"
+			"reason": "💬┆Lý do",
+			"select_user": "Chọn một người dùng",
+			"number_minutes": "Số phút",
+			"reason_for_timeOut": "Lý do tắt tiếng"
 		},
-		"warn":{
+		"warn": {
 			"name": "warn",
-			"example":"",
-			"description":"Cảnh báo người dùng",
-			"success":"Người dùng đã nhận được cảnh báo!",
+			"example": "",
+			"description": "Cảnh báo người dùng",
+			"success": "Người dùng đã nhận được cảnh báo!",
 			"not_given": "Không có lý do cụ thể",
 			"title": "🔨・Cảnh báo",
 			"success_warn_from": "Bạn đã bị cảnh cáo trong {{guildName}}",
 			"moderator": "👤┆Người điều hành",
 			"reason": "💬┆Lý do",
-			"user_who_warned":"👤┆Người dùng",
-			"number_warn": "💬┆Số lần cảnh báo"
-		}	
+			"user_who_warned": "👤┆Người dùng",
+			"number_warn": "💬┆Số lần cảnh báo",
+			"select_user": "Chọn một người dùng",
+			"reason_for_warn": "Lý do cảnh báo"
+		}
 	},
 	"event": {
 		"message_create": {
@@ -345,6 +395,18 @@
 			"err2": "Không tìm thấy item cần dùng",
 			"err3": "Bạn không sở hữu item này",
 			"err4": "Số lượng của item không đủ để dùng"
+		},
+		"afk": {
+			"description": "The reason for the warn"
+		},
+		"chat": {
+			"description": "Lệnh này sẽ cho phép người dùng sử dụng bot như một người đối thoại",
+			"content": "Nhập nội dung bạn muốn gửi"
+		}
+	},
+	"tools": {
+		"emojify": {
+			"description": "Chuyển văn bản thành biểu tượng cảm xúc"
 		}
 	},
 	"service": {

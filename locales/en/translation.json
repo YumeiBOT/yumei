@@ -178,29 +178,33 @@
 		},
 		"set_server_temp_voice": {
 			"ask": {
-				"initial_room": "Vui lòng chọn phòng khởi tạo `( Kênh tham gia sẽ tạo ra phòng tạm )`. \n**Hướng dẫn : Nhập ** `<!tên_phòng>` hoặc `<#id_phòng>` hoặc `id_phòng`",
-				"limit": "Vui lòng nhập vào số người tối đa của room tự động tạo",
-				"type_room": "Vui lòng chọn loại phòng"
+				"initial_room": "Please select the initialization room `( The participating channel will create a temporary room )`. \n**Tutorial: Input ** `<!tên_phòng>` or `<#id_phòng>` or `id_phòng`",
+				"intitial_room_description": "Room user will join to create their own channel",
+				"limit": "Please enter the maximum number of people for room",
+				"type_room": "Please select room type"
 			},
 			"room_type": {
 				"private": {
-					"label": "Riêng tư",
-					"description": "Phòng riêng tư chỉ người được cho phép mới có thể vào"
+					"label": "Private",
+					"description": "Private room that only authorized people can enter"
 				},
 				"public": {
-					"label": "Công khai",
-					"description": "Phòng công khai ai cũng có thể vào"
-				}
+					"label": "Public",
+					"description": "Public room, everyone can join"
+				},
+				"description": "Type of room will be created",
+				"limit_description": "Number of user allow to join room"
 			},
 			"answer": {
-				"initial_room": "Phòng khởi tạo được chọn là : <#{{-id}}>",
-				"type_room": "Bạn đã chọn phòng loại: ",
-				"limit": "Số lượng thành viên tối đa của phòng tự động là : {{-limit}}"
+				"initial_room": "The initialization room selected is : <#{{-id}}>",
+				"type_room": "You have selected room type: ",
+				"limit": "The maximum number of members for room is : {{-limit}}"
 			},
 			"error": {
-				"initial_room": "Phòng vừa chọn không hợp lệ vui lòng chọn phòng trò chuyện",
-				"timeout": "Hết thời gian cài đặt vui lòng làm lại từ đầu"
-			}
+				"initial_room": "The room you just selected is not valid. Please select a chat room",
+				"timeout": "Please start again from the beginning"
+			},
+			"description": "Setting voice server" 
 		}
 	},
 	"voice": {
@@ -219,6 +223,7 @@
 		"clan": {
 			"create_team": {
 				"description": "Create clan(team) room",
+				"clan_name": "Clan Name",
 				"req_team_name": "**{{-emoji}} | {{- author }},** Please input Clan(Team) Name",
 				"req_clan_settings": "**{{-emoji}} | {{- author }},** Server setting for clan is not setup yet. Contact admin for setup Clan Voice Setting",
 				"success": "**{{-emoji}}  | {{- author }},** Create room successfully!",
@@ -227,38 +232,71 @@
 			"room_member": {
 				"no_permission": "**{{-icon}}  | {{- author }}, ** You don't have permission to add/remove member",
 				"add": "**{{-icon}}  | {{- author }}, ** Added member successfully ",
-				"remove": "**{{-icon}}  | {{- author }}, ** Removed member successfully "
+				"remove": "**{{-icon}}  | {{- author }}, ** Removed member successfully ",
+				"add_user": "Add user to room",
+				"added_user": "User that will be added to room",
+				"removed_user": "User that will be removed from room",
+				"description": "Remove user from room"
+			},
+			"claim_room": {
+				"description": "Room user want to claim"
+			},
+			"voice_setting":{
+				"description": "Voice Setting",
+				"tempVCs": "TempVCs by HellCatVN#1111 (a.k.a @hellcatvn) | ver 2023",
+				"chat_control": "Temporary private voice chat control",
+				"chat_control_description": "**Use the buttons below to quickly change some settings! **.\nHere are the button descriptions:\n\nUse `Lock/Unlock` to lock the VC so that only whitelisted users can connect.\nUse `Hide/Unhide` to make the VC private so that Only whitelisted users can see VC. \nUse `Mute/Unmute` to only allow whitelist users to speak, and only affect new users.\nUse `Ban/Unban` to prohibit specified users from joining VC. \nUse `Whitelist/Remove` to whitelist.\nUse `Limit` limits the number of users that can join.\nUse `Change Owner` to transfer box owner.\nUse `Change Name` to change the name of the VC to whatever you want. (Remember to follow the rules)\nUse `Get Mention` to get the voice invitation URL, invite them to join the voice channel immediately! !\n\n Transferring the owner will clear the original restricted permissions!!.",
+				"label_type": "Whitelist/Remove",
+				"label_owner": "Change Owner",
+				"label_changeName": "Change Name",
+				"label_lock": "Lock / Unlock",
+				"label_hide": "Hide / Show",
+				"label_mute": "Mute / Unmute",
+				"label_ban": "Ban / Unban",
+				"label_limit": "Limit",
+				"label_kick": "Kick",
+				"label_deleteVC": "Delete VC",
+				"label_changeRegion": "Change Region"
 			}
 		},
 		"server_clan_voice_setting": {
-			"success": "**✅ | {{- author }},** Saved clan chat room settings successfully\nIf you need to add more categories use the command \\` \\``"
+			"success": "**✅ | {{- author }},** Saved clan chat room settings successfully\nIf you need to add more categories use the command \\` \\``",
+			"allow_bot": "Allow Bot To Remove If User Is Not Member",
+			"allow_user": "Allow User To Manage Channel",
+			"category_option": "Category Channel Will Spawn In"
 		}
 	},
 	"soundboard": {
 		"tts": {
 			"min_char": "**🚫 | {{- author }},** Nothing to say",
-			"max_char": "**🚫 | {{- author }},** Hiện tại BOT chỉ hỗ trợ tối đa 100 kí tự"
+			"max_char": "**🚫 | {{- author }},** BOT only supports a maximum of 100 characters"
 		},
 		"join": {
-			"used": "**🚫 | {{- author }},** Bot đang được sử dụng ở một kênh khác",
-			"speaking": "**🚫 | {{- author }},** Vui lòng chờ câu nói trước hoàn thành",
-			"join_success": "**✅ | {{- author }},** Đã tham gia phòng trò chuyện"
+			"used": "**🚫 | {{- author }},** The bot is being used in another channel",
+			"speaking": "**🚫 | {{- author }},** Please wait for the previous sentence to complete",
+			"join_success": "**✅ | {{- author }},** Joined the chat room"
 		},
 		"leave": {
-			"success": "**✅ | {{- author }},** Đã thoát khỏi phòng trò chuyện"
+			"success": "**✅ | {{- author }},** Exited the chat room"
 		},
 		"stop": {
-			"success": "**✅ | {{- author }},** Đã dừng câu nói trước đó"
+			"success": "**✅ | {{- author }},** Stopped the previous statement"
 		},
 		"tts_default": {
-			"current_language": "**ℹ️ | {{- author }},** Ngôn ngữ hiện tại khi đọc là `{{- lang}}`",
-			"not_supported": "**🚫 | {{- author }},** Ngôn ngữ bạn nhập vào hiện không được hỗ trợ",
-			"success": "**✅ | {{- author }},** Đã chuyển ngôn ngữ khi đọc sang `{{- lang}}`"
+			"current_language": "**ℹ️ | {{- author }},** Current language when reading is `{{- lang}}`",
+			"not_supported": "**🚫 | {{- author }},** The language you entered is not currently supported",
+			"success": "**✅ | {{- author }},** Changed language when reading `{{- lang}}`"
 		},
 		"tts_languages": {
-			"title": "Danh sách các ngôn ngữ hỗ trợ",
-			"change_language_tutorial": "Hướng dẫn chỉnh ngôn ngữ",
-			"change_language_tutorial2": "Sử dụng lệnh `{{- prefix}}tts_default <code>` để thay đổi ngôn ngữ"
+			"title": "List of supported languages",
+			"change_language_tutorial": "Instructions for adjusting language",
+			"change_language_tutorial2": "Use command `{{- prefix}}tts_default <code>` to change language"
+		}
+	},
+	"images": {
+		"avatar": {
+			"description": "Get avatar of user",
+			"select_user": "The user you want the avatar from"
 		}
 	},
 	"moderation": {
@@ -266,13 +304,15 @@
 			"name": "ban",
 			"example": "",
 			"description": "Ban users from the server",
-			"success_ban_from":"You've been banned in {{guildName}}",
+			"success_ban_from": "You've been banned in {{guildName}}",
 			"success": "The specified user has been successfully banned and successfully received a notification!",
 			"success_no_notification": "The given user has been successfully banned, but has not received a notification!",
 			"banned_by": "👤┆Banned by",
 			"user_who_banned": "👤┆Banned user",
 			"reason": "💬┆Reason",
-			"not_given": "Not given"
+			"not_given": "Not given",
+			"select_user": "Select a user",
+			"reason_for_ban": "Reason for the ban"
 		},
 		"clear": {
 			"name": "clear",
@@ -282,13 +322,16 @@
 			"less_than_1": "I cannot delete less than 1 message!",
 			"older_than_14d": "You can only bulk delete messages that are under 14 days old.",
 			"success": "I have successfully deleted {{amount}} the messages",
-			"error": "There was an error trying to delete messages in this channel!"
+			"error": "There was an error trying to delete messages in this channel!",
+			"amount": "Amount of messages"
 		},
 		"clearuser": {
 			"name": "clearuser",
 			"example": "",
 			"description": "Clear message of someone",
-			"update_soon": "Update Soon"
+			"update_soon": "Update Soon",
+			"amount": "Amount of messages",
+			"select_user": "Select a user"
 		},
 		"kick": {
 			"name": "kick",
@@ -300,7 +343,9 @@
 			"kicked_by": "👤┆Kicked by",
 			"reason": "💬┆Reason",
 			"user_who_kicked": "👤┆Kicked user",
-			"not_given": "Not given"
+			"not_given": "Not given",
+			"select_user": "Select a user",
+			"reason_for_kick": "Reason for the ban"
 		},
 		"mute": {
 			"name": "timeout",
@@ -309,7 +354,10 @@
 			"more_than_28d": "Invalid input time or time is larger than 28 days",
 			"success": "{{userName}} successfully timed out {{prettyMilliseconds}}",
 			"not_given": "Not given",
-			"reason": "💬┆Reason"
+			"reason": "💬┆Reason",
+			"select_user": "Select a user",
+			"number_minutes": "Number of minutes",
+			"reason_for_timeOut": "Reason for the time out"
 		},
 		"warn": {
 			"name": "warn",
@@ -321,8 +369,10 @@
 			"success_warn_from": "You have been warned from {{guildName}}",
 			"moderator": "👤┆Moderator",
 			"reason": "💬┆Reason",
-			"user_who_warned":"👤┆User",
-			"number_warn": "💬┆Number of warn"
+			"user_who_warned": "👤┆User",
+			"number_warn": "💬┆Number of warn",
+			"select_user": "Select a user",
+			"reason_for_warn": "The reason for the warn"
 		}
 	},
 	"event": {
@@ -345,6 +395,18 @@
 			"err2": "Can't found item you want to use",
 			"err3": "You don't have that item",
 			"err4": "Quantity of item is not enough to use"
+		},
+		"afk": {
+			"description": "The reason for the warn"
+		},
+		"chat": {
+			"description": "Say comment which will allow user to use bot as a speaker",
+			"content": "Enter content you want to send"
+		}
+	},
+	"tools": {
+		"emojify": {
+			"description": "Text to convert into emoji"
 		}
 	},
 	"service": {
