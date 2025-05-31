@@ -1,388 +1,404 @@
 {
-	"common": {
-		"on": "On",
-		"off": "Off",
-		"voice": {
-			"not_joined": "**{{-emoji}} | {{-author}} | **Không tìm thấy kênh trò chuyện bạn đang tham gia!!!",
-			"not_same_room": "**{{- emoji}} | {{- author}}, ** Bạn đang không cùng phòng trò chuyện với tôi"
-		},
-		"music": {
-			"nothing_playing": "**{{- emoji}} | {{-author}}, ** Không có bài hát nào đang được phát"
-		},
-		"user": {
-			"not_exist": "**{{- emoji}} | {{-author}}, ** Không tìm thông tin thấy người dùng"
-		},
-		"guild": {
-			"required": "**{{- emoji}} | {{-author}}, ** Lệnh chỉ có thể được dùng trong server",
-			"not_exist": "**{{- emoji}} | {{-author}}, ** Không tìm thông tin máy chủ"
-		},
-		"slash": {
-			"require_permission": {
-				"title": "**{{- emoji}} | ** Mình đang thiếu quyền `applications.commands`",
-				"description": "Bạn có thể mời lại BOT để cập nhật quyền theo đường dẫn dưới đây:\n [Ấn vào đây để mời]({{- url}})"
-			}
-		},
-		"command_denied": {
-			"precondition_guild_only": "English Only",
-			"precondition_client_permission": "**{{- emoji}} | {{-author}}, ** Mình hiện tại đang thiếu các quyền sau để thực hiện lệnh : {{-list_permission}}"
-		},
-		"permission_flag": {
-			"ADD_REACTIONS": "Add Reactions",
-			"ADMINISTRATOR": "Administrator",
-			"ATTACH_FILES": "Attach Files",
-			"BAN_MEMBERS": "Ban Members",
-			"CHANGE_NICKNAME": "Change Nickname",
-			"CONNECT": "Connect",
-			"CREATE_INSTANT_INVITE": "Create Instant Invite",
-			"CREATE_PRIVATE_THREADS": "Create Private Threads",
-			"CREATE_PUBLIC_THREADS": "Create Public Threads",
-			"DEAFEN_MEMBERS": "Deafen Members",
-			"EMBED_LINKS": "Embed Links",
-			"KICK_MEMBERS": "Kick Members",
-			"MANAGE_CHANNELS": "Manage Channels",
-			"MANAGE_EMOJIS_AND_STICKERS": "Manage Emojis and Stickers",
-			"MANAGE_GUILD": "Manage Server",
-			"MANAGE_MESSAGES": "Manage Messages",
-			"MANAGE_NICKNAMES": "Manage Nicknames",
-			"MANAGE_ROLES": "Manage Roles",
-			"MANAGE_THREADS": "Manage Threads",
-			"MANAGE_WEBHOOKS": "Manage Webhooks",
-			"MENTION_EVERYONE": "Mention Everyone",
-			"MOVE_MEMBERS": "Move Members",
-			"MUTE_MEMBERS": "Mute Members",
-			"PRIORITY_SPEAKER": "Priority Speaker",
-			"READ_MESSAGE_HISTORY": "Read Message History",
-			"REQUEST_TO_SPEAK": "Request to Speak",
-			"SEND_MESSAGES": "Send Messages",
-			"SEND_MESSAGES_IN_THREADS": "Send Messages in Threads",
-			"SEND_TTS_MESSAGES": "Send TTS Messages",
-			"SPEAK": "Speak",
-			"START_EMBEDDED_ACTIVITIES": "Start Activities",
-			"STREAM": "Stream",
-			"USE_APPLICATION_COMMANDS": "Use Application Commands",
-			"USE_EXTERNAL_EMOJIS": "Use External Emojis",
-			"USE_EXTERNAL_STICKERS": "Use External Stickers",
-			"USE_PRIVATE_THREADS": "Use Private Threads",
-			"USE_PUBLIC_THREADS": "Use Public Threads",
-			"USE_VAD": "Use Voice Activity",
-			"VIEW_AUDIT_LOG": "View Audit Log",
-			"VIEW_CHANNEL": "Read Messages",
-			"VIEW_GUILD_INSIGHTS": "View Guild Insights"
-		}
-	},
-	"framework": {
-		"cooldown": "**⏰ | {{-author}}, **Hãy chờ `{{remaining}}` s trước khi bạn có thể sử dụng `{{commandName}}`"
-	},
-	"precondition": {
-		"owner_only": "**{{- icon }} | {{- author }},** Lệnh chỉ dùng cho chủ sở hữu BOT",
-		"server_created": {
-			"error": "**{{- icon }} | {{- author }},** Không có hoặc không thể tạo bản ghi của server"
-		}
-	},
-	"general": {
-		"ping": {
-			"name": "Mã lệnh Ping",
-			"example": "```{{-prefix}}{{alias}}```",
-			"description": "Ping pong"
-		},
-		"server_info": {
-			"name": "Mã lệnh Server Information",
-			"embed_title": "Thông tin server",
-			"embed_id": "ID",
-			"embed_owner": "Chủ quản",
-			"embed_verification": "Cấp độ xác thực",
-			"embed_channels": "Mục kênh",
-			"embed_voice_channels": "Kênh trò chuyện",
-			"embed_chat_channels": "Kênh nhắn tin",
-			"embed_role": "Quyền hành",
-			"embed_members": "Thành viên",
-			"embed_emojis": "Biểu cảm",
-			"embed_emojis_animate": "Biểu cảm động",
-			"example": "```{{-prefix}}{{alias}}```",
-			"description": "Thông tin server"
-		},
-		"bot_info": {
-			"name": "Tra cứu thông tin BOT",
-			"prefix": "**Prefix:** `{{prefixes}}`",
-			"support": {
-				"name": "{{-emoji}} Máy chủ hỗ trợ",
-				"detail": "{{-emoji}} [Ấn vào đây để tham gia]({{- url}})"
-			},
-			"cannot_find_info": "Chưa lưu thông tin Bot",
-			"un_synchronized": "Thông tin đã lưu chưa được cập nhật",
-			"already_exist": "Thông tin bot đã cập nhật",
-			"create_success": "Lưu thông tin bot thành công",
-			"example": "```{{-prefix}}{{alias}} upadte \n{{-prefix}}{{alias}} create \n{{-prefix}}{{alias}} show```",
-			"description": "Cài đặt thông tin bot",
-			"basic": {
-				"name": "**📇 Thông tin**",
-				"details": "**・Tên:** `{{tag}}`\n**・Uptime:** `{{time}}`"
-			},
-			"stats": {
-				"name": "**📊 Thông số**",
-				"details": "**・Máy chủ:** `{{server}}`\n**・Người dùng:** `{{user}}`"
-			},
-			"version": {
-				"name": "**🔎 Phiên bản**",
-				"details": "**・D.JS:** `{{djs}}`\n**・Node:** `{{njs}}`"
-			},
-			"cpu": {
-				"name": "**🖥️ CPU**",
-				"details": "**・Cores:** `{{total}}`\n**・Tốc độ:** `{{speed}} GHz`"
-			},
-			"other": {
-				"name": "**{{-emoji}} Khác**",
-				"details": "**・OS:** `{{os}}`"
-			},
-			"ram": {
-				"name": "**{{-emoji}} RAM**",
-				"details": "**・Tổng:** `{{total}}`\n**・Trống:** `{{free}}`"
-			}
-		},
-		"prefix": {
-			"name": "Mã lệnh Prefix",
-			"add": "**{{-icon}} | **Đã thêm tiếp đầu ngữ `{{-prefix}}` ",
-			"list_prefixes": "Danh sách tiếp đầu ngữ nàaa: `{{-prefixes}}`",
-			"duplicate_prefix": "**{{-icon}} | {{-username}} | **Bạn đang sử dụng tiếp đầu ngữ `{{-prefix}}` rồi!!!",
-			"not_found_prefix": "**{{-icon}} | **Không tìm thấy tiếp đầu ngữ `{{-prefix}}`!!!",
-			"can_not_remove": "**{{-icon}} | **Không thể xóa tiếp đầu ngữ`{{-prefix}}`!!! Phải có ít nhất một tiếp đầu ngữ.",
-			"remove": "**{{-icon}} | **Đã xóa tiếp đầu ngữ `{{-prefix}}`",
-			"example": "```{{-prefix}}{{alias}} add {prefix}```",
-			"description": "Cài đặt tiếp đầu ngữ"
-		},
-		"help": {
-			"name": "Mã lệnh Help",
-			"embed_list": "Danh sách mã lệnh của **{{-botName}}** nà!!! \n Chi tiết mã lệnh, sử dụng `{{-prefix}}help {mã lệnh}`",
-			"embed_title": "Mã lệnh {{-command}}",
-			"embed_aliases": "Bí danh",
-			"embed_description": "Mô tả",
-			"embed_example": "Mẫu lệnh",
-			"not_have_command": "**{{-icon}} | {{-botName}}**chưa hỗ trợ mã lệnh này nhaaa!!!",
-			"not_have_permission": " **{{-icon}} | {{-username}} | **Bạn cần được cấp quyền để sử dụng mã lệnh này!!!",
-			"example": "```{{-prefix}}{{alias}}```",
-			"description": "Danh sách mã lệnh"
-		}
-	},
-	"server": {
-		"set_server_language": {
-			"name": "Mã lệnh Set Server Language",
-			"success": "**{{-icon}} | **Ngôn ngữ hiện tại: {{-lng}}",
-			"error": "**{{-icon}} | **Có lỗi xảy ra, vui lòng thử lại sau nha",
-			"no_support_lng": "**{{-icon}} | **Hiện tại **{{-botName}}** chưa hỗ trợ ngôn ngữ này nha!!!",
-			"example": "```{{-prefix}}{{alias}} vi \n{{-prefix}}{{alias}} en```",
-			"description": "Cài đặt ngôn ngữ"
-		},
-		"set_server_channel": {
-			"success": "**{{-emoji}} | {{- author }},** Đã thiết lập **{{type}}** tại <#{{channelId}}>",
-			"error": "**{{-emoji}} | {{- author }},** danh mục **{{type}}** không được hỗ trợ\n**{{-blankEmoji}} |** Danh mục hỗ trợ: {{supportTypes}}"
-		},
-		"set_server_temp_voice": {
-			"ask": {
-				"initial_room": "Vui lòng chọn phòng khởi tạo `( Kênh tham gia sẽ tạo ra phòng tạm )`. \n**Hướng dẫn : Nhập ** `<!tên_phòng>` hoặc `<#id_phòng>` hoặc `id_phòng`",
-				"limit": "Vui lòng nhập vào số người tối đa của room tự động tạo",
-				"type_room": "Vui lòng chọn loại phòng"
-			},
-			"room_type": {
-				"private": {
-					"label": "Riêng tư",
-					"description": "Phòng riêng tư chỉ người được cho phép mới có thể vào"
-				},
-				"public": {
-					"label": "Công khai",
-					"description": "Phòng công khai ai cũng có thể vào"
-				}
-			},
-			"answer": {
-				"initial_room": "Phòng khởi tạo được chọn là : <#{{-id}}>",
-				"type_room": "Bạn đã chọn phòng loại: ",
-				"limit": "Số lượng thành viên tối đa của phòng tự động là : {{-limit}}"
-			},
-			"error": {
-				"initial_room": "Phòng vừa chọn không hợp lệ vui lòng chọn phòng trò chuyện",
-				"timeout": "Hết thời gian cài đặt vui lòng làm lại từ đầu"
-			}
-		}
-	},
-	"voice": {
-		"set_bitrate": {
-			"name": "Mã lệnh Set bitrate",
-			"example": "```{{-prefix}}{{alias}} {bitrate}```",
-			"description": "Cài đặt bitrate của kênh trò chuyện",
-			"illegal": "**{{-icon}} | {{-username}} | **Kênh trò chuyện có bitrate hợp lệ {{-min_bitrate}} - {{-max_bitrate}}!!!"
-		},
-		"change_region": {
-			"name": "Mã lệnh Change Region",
-			"example": "```{{-prefix}}{{alias}} {region} | {list}```",
-			"description": "Cài đặt khu vực cho kênh trò chuyện và lấy danh sách khu vực",
-			"illegal": "**{{-icon}} | {{-username}} | **Khu vực không hợp lệ!!! \n Sử dụng `{{-prefix}}{{alias}} {list}` để lấy danh sách khu vực."
-		},
-		"clan": {
-			"create_team": {
-				"description": "Tạo phòng CLB(nhóm)",
-				"req_team_name": "**{{-emoji}} | {{- author }},** Vui lòng nhập tên CLB(nhóm)",
-				"req_clan_settings": "**{{-emoji}} | {{- author }},** Máy chủ chưa thiết lập cài đặt cho CLB. Vui lòng liên hệ quản lí máy chủ để cài đặt",
-				"success": "**{{-emoji}}  | {{- author }},** Tạo phòng thành công",
-				"having_room": "**{{-emoji}}  | {{- author }},** Bạn đã sở hữu cho mình một phòng trò truyện"
-			},
-			"room_member": {
-				"no_permission": "**{{-emoji}}  | {{- author }}, ** Bạn không có quyền thêm/xóa thành viên phòng này",
-				"add": "**{{-emoji}}  | {{- author }}, ** Thêm thành viên thành công",
-				"remove": "**{{-emoji}}  | {{- author }}, ** Xóa thành viên thành công"
-			}
-		},
-		"server_clan_voice_setting": {
-			"success": "**✅ | {{- author }},** Lưu cài đặt phòng trò chuyện clan thành công\nNếu bạn cần thêm nhiều category hơn hãy dùng lệnh \\` \\``"
-		}
-	},
-	"soundboard": {
-		"tts": {
-			"min_char": "**🚫 | {{- author }},** Không có chữ thì làm sao nói?",
-			"max_char": "**🚫 | {{- author }},** Hiện tại BOT chỉ hỗ trợ tối đa 100 kí tự"
-		},
-		"join": {
-			"used": "**🚫 | {{- author }},** Bot đang được sử dụng ở một kênh khác",
-			"speaking": "**🚫 | {{- author }},** Vui lòng chờ câu nói trước hoàn thành",
-			"join_success": "**✅ | {{- author }},** Đã tham gia phòng trò chuyện"
-		},
-		"leave": {
-			"success": "**✅ | {{- author }},** Đã thoát khỏi phòng trò chuyện"
-		},
-		"stop": {
-			"success": "**✅ | {{- author }},** Đã dừng câu nói trước đó"
-		},
-		"tts_default": {
-			"current_language": "**ℹ️ | {{- author }},** Ngôn ngữ hiện tại khi đọc là `{{- lang}}`",
-			"not_supported": "**🚫 | {{- author }},** Ngôn ngữ bạn nhập vào hiện không được hỗ trợ",
-			"success": "**✅ | {{- author }},** Đã chuyển ngôn ngữ khi đọc sang `{{- lang}}`"
-		},
-		"tts_languages": {
-			"title": "Danh sách các ngôn ngữ hỗ trợ",
-			"change_language_tutorial": "Hướng dẫn chỉnh ngôn ngữ",
-			"change_language_tutorial2": "Sử dụng lệnh `{{- prefix}}tts_default <code>` để thay đổi ngôn ngữ"
-		}
-	},
-	"moderation": {
-		"ban": {
-			"name": "ban",
-			"example": "",
-			"description":"Cấm người dùng khỏi server",
-			"success_ban_from":"Bạn đã bị cấm tại {{guildName}}",
-			"success": "Người dùng được chỉ định đã bị cấm thành công và nhận được thông báo!",
-			"success_no_notification": "Người dùng cụ thể đã bị cấm thành công nhưng chưa nhận được thông báo!",
-			"banned_by": "👤┆Bị cấm bởi",
-			"user_who_banned": "👤┆Người bị cấm",
-			"reason": "💬┆Lý do",
-			"not_given": "Không có lý do cụ thể"
-		},
-		"clear": {
-			"name": "clear",
-			"example": "",
-			"description":"Xóa tin nhắn trong một nhóm",
-			"more_than_100":"Tôi không thể xóa nhiều hơn 100 tin nhắn !",
-			"less_than_1":"Tôi không thể xóa ít hơn 1 tin nhắn !",
-			"success": "Tôi đã xóa thành công {{amount}} tin nhắn",
-			"older_than_14d":"Bạn chỉ có thể xóa tin nhắn cách đây dưới 14 ngày",
-			"error": "Đã xảy ra lỗi khi xóa tin nhắn trong kênh này!"
-		},
-		"clearuser": {
-			"name": "clearuser",
-			"example": "",
-			"description":"Xóa tin nhắn của một người dùng nào đó",
-			"update_soon":"Sẽ sớm cập nhật thêm..."
-		},
-		"kick": {
-			"name": "kick",
-			"example": "",
-			"description":"Xóa người dùng khỏi server",
-			"success": "Người dùng được chỉ định đã bị xóa thành công và nhận được thông báo!",
-			"success_kick_from": "Bạn đã bị xóa khỏi server {{guildName}}",
-			"success_no_notification": "Người dùng cụ thể đã bị xóa thành công nhưng chưa nhận được thông báo!",
-			"kicked_by": "👤┆Bị xóa bởi",
-			"reason": "💬┆Lý do",
-			"user_who_kicked": "👤┆Người bị xóa",
-			"not_given": "Không có lý do cụ thể"
-		},
-		"mute": {
-			"name": "timeout",
-			"example": "",
-			"description": "Tắt tiếng người dùng trong một khoảng thời gian nhất định",
-			"more_than_28d": "Thời gian nhập vào không hợp lệ hoặc lớn hơn 28 ngày",
-			"success": "{{userName}} đã bị tắt tiếng trong {{prettyMilliseconds}}",
-			"not_given": "Không có lý do cụ thể",
-			"reason": "💬┆Lý do"
-		},
-		"warn":{
-			"name": "warn",
-			"example":"",
-			"description":"Cảnh báo người dùng",
-			"success":"Người dùng đã nhận được cảnh báo!",
-			"not_given": "Không có lý do cụ thể",
-			"title": "🔨・Cảnh báo",
-			"success_warn_from": "Bạn đã bị cảnh cáo trong {{guildName}}",
-			"moderator": "👤┆Người điều hành",
-			"reason": "💬┆Lý do",
-			"user_who_warned":"👤┆Người dùng",
-			"number_warn": "💬┆Số lần cảnh báo"
-		}	
-	},
-	"event": {
-		"message_create": {
-			"warning_invite_link": "**{{-icon}} | {{-author}} | **Bạn ơi đừng gửi link server khác nha!!!"
-		},
-		"mention_prefix": "Tiếp đầu ngữ trong server: `{{-prefixes}}`",
-		"global_error": "**{{-icon}} | {{-author}} | **Đã xảy ra lỗi, thử lại sau nhaaa!!!"
-	},
-	"user": {
-		"inventory": {
-			"description": "Danh sách item trong kho đồ",
-			"describle": "Hướng dẫn sử dụng item:",
-			"tutorial": "use <item_code> để sử dụng",
-			"item_content": "{{- itemIcon }}: **{{quantity}}**",
-			"pagination": "Trang {{ current_page }}/{{ total_page }}"
-		},
-		"use": {
-			"err1": "Vui lòng nhập mã của item cần sử dụng",
-			"err2": "Không tìm thấy item cần dùng",
-			"err3": "Bạn không sở hữu item này",
-			"err4": "Số lượng của item không đủ để dùng"
-		}
-	},
-	"service": {
-		"voice": {
-			"private_join_request": "{{-owner}} **|** {{-user}} yêu cầu tham gia phòng của bạn",
-			"reject_request": "** {{-user}} | ** Từ chối yêu cầu tham gia phòng của bạn",
-			"private_join_request_timeout": "** {{-user}} | ** Có vẻ như không có phản hồi nào cho yêu cầu của bạn",
-			"interaction": {
-				"lock": "**{{-icon}} | {{-author}} , ** Phòng của bạn đã được khóa thành công",
-				"unlock": "**{{-icon}} | {{-author}} , ** Phòng của bạn đã được mở khóa thành công",
-				"hide": "**{{-icon}} | {{-author}} , ** Phòng của bạn đã được ẩn thành công",
-				"show": "**{{-icon}} | {{-author}} , ** Phòng của bạn đã được hiển thị thành công",
-				"mute": "**{{-icon}} | {{-author}} , ** Phòng của bạn đã được tắt tiếng thành công",
-				"unmute": "**{{-icon}} | {{-author}} , ** Phòng của bạn đã được bật tiếng thành công"
-			}
-		}
-	},
-	"yearly_event": {
-		"list_participant": "Những người tham gia:",
-		"leaderboard": {
-			"not_found": "**{{- emoji }}| {{- author }},** Không tìm thấy kiểu cần truy cứu",
-			"title": "{{- emoji }} **Bảng xếp hạng** {{- emoji }}"
-		},
-		"xmas": {
-			"snowball": "Cầu tuyết",
-			"e001": "Người tuyết",
-			"e002": "Mũ giáng sinh",
-			"e003": "Kẹo ngọt"
-		},
-		"xmas_box": {
-			"ghost": "** {{-emoji }}| {{- author }},** Oh no! Who put {{-item}} into gift box. Good luck next times",
-			"appear": "{{-emoji }}**| Xmas box!!** Gõ lệnh `pick` để giành lấy **Hộp quà giáng sinh** nha",
-			"winner": "{{-emoji }}**|** Chúc mừng <@{{- member }}> đã nhặt được {{- boxIcon }}!!",
-			"usebox": "{{-emoji }}**|** Dùng lệnh `{{- command}}` để mở {{- boxIcon}} nhé",
-			"opening": "**{{- boxIcon }}| {{- author }}** đang mở **Hộp quà giáng sinh**...",
-			"opened": "**{{- boxIcon }}| {{- author }}** đã mở **Hộp quà giáng sinh** và nhận được **{{-itemIcon }}**",
-			"voice_log": "<@{{userId}}> đã treo voice trong {{hour}} giờ {{min}} phút!!! Bạn nhận được {{numOfBox}} **Hộp quà giáng sinh**",
-			"chat_log": "<@{{userId}}> Đã may mắn nhận được **Hộp quà giáng sinh** khi hoạt động tại {{serverName}}"
-		}
-	}
+  "common": {
+    "on": "On",
+    "off": "Off",
+    "voice": {
+      "not_joined": "**{{-emoji}} | {{-author}} | **Không tìm thấy kênh trò chuyện bạn đang tham gia!!!",
+      "not_same_room": "**{{- emoji}} | {{- author}}, ** Bạn đang không cùng phòng trò chuyện với tôi"
+    },
+    "music": {
+      "nothing_playing": "**{{- emoji}} | {{-author}}, ** Không có bài hát nào đang được phát"
+    },
+    "user": {
+      "not_exist": "**{{- emoji}} | {{-author}}, ** Không tìm thông tin thấy người dùng"
+    },
+    "guild": {
+      "required": "**{{- emoji}} | {{-author}}, ** Lệnh chỉ có thể được dùng trong server",
+      "not_exist": "**{{- emoji}} | {{-author}}, ** Không tìm thông tin máy chủ"
+    },
+    "slash": {
+      "require_permission": {
+        "title": "**{{- emoji}} | ** Mình đang thiếu quyền `applications.commands`",
+        "description": "Bạn có thể mời lại BOT để cập nhật quyền theo đường dẫn dưới đây:\n [Ấn vào đây để mời]({{- url}})"
+      }
+    },
+    "command_denied": {
+      "precondition_guild_only": "**{{- emoji}} | {{-author}}, ** Lệnh này chỉ có thể sử dụng trong máy chủ (Server)",
+      "precondition_client_permission": "**{{- emoji}} | {{-author}}, ** Mình hiện tại đang thiếu các quyền sau để thực hiện lệnh : {{-list_permission}}"
+    },
+    "permission_flag": {
+      "ADD_REACTIONS": "Add Reactions",
+      "ADMINISTRATOR": "Administrator",
+      "ATTACH_FILES": "Attach Files",
+      "BAN_MEMBERS": "Ban Members",
+      "CHANGE_NICKNAME": "Change Nickname",
+      "CONNECT": "Connect",
+      "CREATE_INSTANT_INVITE": "Create Instant Invite",
+      "CREATE_PRIVATE_THREADS": "Create Private Threads",
+      "CREATE_PUBLIC_THREADS": "Create Public Threads",
+      "DEAFEN_MEMBERS": "Deafen Members",
+      "EMBED_LINKS": "Embed Links",
+      "KICK_MEMBERS": "Kick Members",
+      "MANAGE_CHANNELS": "Manage Channels",
+      "MANAGE_EMOJIS_AND_STICKERS": "Manage Emojis and Stickers",
+      "MANAGE_GUILD": "Manage Server",
+      "MANAGE_MESSAGES": "Manage Messages",
+      "MANAGE_NICKNAMES": "Manage Nicknames",
+      "MANAGE_ROLES": "Manage Roles",
+      "MANAGE_THREADS": "Manage Threads",
+      "MANAGE_WEBHOOKS": "Manage Webhooks",
+      "MENTION_EVERYONE": "Mention Everyone",
+      "MOVE_MEMBERS": "Move Members",
+      "MUTE_MEMBERS": "Mute Members",
+      "PRIORITY_SPEAKER": "Priority Speaker",
+      "READ_MESSAGE_HISTORY": "Read Message History",
+      "REQUEST_TO_SPEAK": "Request to Speak",
+      "SEND_MESSAGES": "Send Messages",
+      "SEND_MESSAGES_IN_THREADS": "Send Messages in Threads",
+      "SEND_TTS_MESSAGES": "Send TTS Messages",
+      "SPEAK": "Speak",
+      "START_EMBEDDED_ACTIVITIES": "Start Activities",
+      "STREAM": "Stream",
+      "USE_APPLICATION_COMMANDS": "Use Application Commands",
+      "USE_EXTERNAL_EMOJIS": "Use External Emojis",
+      "USE_EXTERNAL_STICKERS": "Use External Stickers",
+      "USE_PRIVATE_THREADS": "Use Private Threads",
+      "USE_PUBLIC_THREADS": "Use Public Threads",
+      "USE_VAD": "Use Voice Activity",
+      "VIEW_AUDIT_LOG": "View Audit Log",
+      "VIEW_CHANNEL": "Read Messages",
+      "VIEW_GUILD_INSIGHTS": "View Guild Insights"
+    }
+  },
+  "framework": {
+    "cooldown": "**⏰ | {{-author}}, **Hãy chờ `{{remaining}}` s trước khi bạn có thể sử dụng `{{commandName}}`"
+  },
+  "precondition": {
+    "owner_only": "**{{- icon }} | {{-author }},** Lệnh chỉ dùng cho chủ sở hữu BOT",
+    "server_created": {
+      "error": "**{{- icon }} | {{-author }},** Không có hoặc không thể tạo bản ghi của server"
+    }
+  },
+  "general": {
+    "ping": {
+      "name": "Mã lệnh Ping",
+      "example": "```{{-prefix}}{{alias}}```",
+      "description": "Ping pong"
+    },
+    "server_info": {
+      "name": "Mã lệnh Server Information",
+      "embed_title": "Thông tin server",
+      "embed_id": "ID",
+      "embed_owner": "Chủ quản",
+      "embed_verification": "Cấp độ xác thực",
+      "embed_channels": "Mục kênh",
+      "embed_voice_channels": "Kênh trò chuyện",
+      "embed_chat_channels": "Kênh nhắn tin",
+      "embed_role": "Quyền hành",
+      "embed_members": "Thành viên",
+      "embed_emojis": "Biểu cảm",
+      "embed_emojis_animate": "Biểu cảm động",
+      "example": "```{{-prefix}}{{alias}}```",
+      "description": "Thông tin server"
+    },
+    "bot_info": {
+      "name": "Tra cứu thông tin BOT",
+      "prefix": "**Prefix:** `{{prefixes}}`",
+      "support": {
+        "name": "{{-emoji}} Máy chủ hỗ trợ",
+        "detail": "{{-emoji}} [Ấn vào đây để tham gia]({{- url}})"
+      },
+      "cannot_find_info": "Chưa lưu thông tin Bot",
+      "un_synchronized": "Thông tin đã lưu chưa được cập nhật",
+      "already_exist": "Thông tin bot đã cập nhật",
+      "create_success": "Lưu thông tin bot thành công",
+      "example": "```{{-prefix}}{{alias}} upadte \n{{-prefix}}{{alias}} create \n{{-prefix}}{{alias}} show```",
+      "description": "Cài đặt thông tin bot",
+      "basic": {
+        "name": "**📇 Thông tin**",
+        "details": "**・Tên:** `{{tag}}`\n**・Uptime:** `{{time}}`"
+      },
+      "stats": {
+        "name": "**📊 Thông số**",
+        "details": "**・Máy chủ:** `{{server}}`\n**・Người dùng:** `{{user}}`"
+      },
+      "version": {
+        "name": "**🔎 Phiên bản**",
+        "details": "**・D.JS:** `{{djs}}`\n**・Node:** `{{njs}}`"
+      },
+      "cpu": {
+        "name": "**🖥️ CPU**",
+        "details": "**・Cores:** `{{total}}`\n**・Tốc độ:** `{{speed}} GHz`"
+      },
+      "other": {
+        "name": "**{{-emoji}} Khác**",
+        "details": "**・OS:** `{{os}}`"
+      },
+      "ram": {
+        "name": "**{{-emoji}} RAM**",
+        "details": "**・Tổng:** `{{total}}`\n**・Trống:** `{{free}}`"
+      }
+    },
+    "prefix": {
+      "name": "Mã lệnh Prefix",
+      "server_not_found": "**{{-icon}} | ** Không tìm thấy cấu hình máy chủ",
+      "error_log": "Lỗi lệnh prefix: {{error}}",
+      "add": "**{{-icon}} | **Đã thêm tiếp đầu ngữ `{{-prefix}}` ",
+      "list_prefixes": "Danh sách tiếp đầu ngữ nàaa: `{{-prefixes}}`",
+      "duplicate_prefix": "**{{-icon}} | {{-username}} | **Bạn đang sử dụng tiếp đầu ngữ `{{-prefix}}` rồi!!!",
+      "not_found_prefix": "**{{-icon}} | **Không tìm thấy tiếp đầu ngữ `{{-prefix}}`!!!",
+      "can_not_remove": "**{{-icon}} | **Không thể xóa tiếp đầu ngữ`{{-prefix}}`!!! Phải có ít nhất một tiếp đầu ngữ.",
+      "remove": "**{{-icon}} | **Đã xóa tiếp đầu ngữ `{{-prefix}}`",
+      "example": "```{{-prefix}}{{alias}} add {prefix}```",
+      "description": "Cài đặt tiếp đầu ngữ",
+      "no_prefix": "TODO",
+      "action_description": "TODO",
+      "prefix_option": "TODO"
+    },
+    "help": {
+      "name": "Mã lệnh Help",
+      "embed_list": "Danh sách mã lệnh của **{{-botName}}** nà!!! \n Chi tiết mã lệnh, sử dụng `{{-prefix}}help {mã lệnh}`",
+      "embed_title": "Mã lệnh {{-command}}",
+      "embed_aliases": "Bí danh",
+      "embed_description": "Mô tả",
+      "embed_example": "Mẫu lệnh",
+      "not_have_command": "**{{-icon}} | {{-botName}}**chưa hỗ trợ mã lệnh này nhaaa!!!",
+      "not_have_permission": " **{{-icon}} | {{-username}} | **Bạn cần được cấp quyền để sử dụng mã lệnh này!!!",
+      "example": "```{{-prefix}}{{alias}}```",
+      "description": "Danh sách mã lệnh"
+    }
+  },
+  "server": {
+    "set_server_language": {
+      "name": "Mã lệnh Set Server Language",
+      "success": "**{{-icon}} | **Ngôn ngữ hiện tại: {{-lng}}",
+      "error": "**{{-icon}} | **Có lỗi xảy ra, vui lòng thử lại sau nha",
+      "no_support_lng": "**{{-icon}} | **Hiện tại **{{-botName}}** chưa hỗ trợ ngôn ngữ này nha!!!",
+      "example": "```{{-prefix}}{{alias}} vi \n{{-prefix}}{{alias}} en```",
+      "description": "Cài đặt ngôn ngữ"
+    },
+    "set_server_channel": {
+      "success": "**{{-emoji}} | {{-author }},** Đã thiết lập **{{type}}** tại <#{{channelId}}>",
+      "error": "**{{-emoji}} | {{-author }},** danh mục **{{type}}** không được hỗ trợ\n**{{-blankEmoji}} |** Danh mục hỗ trợ: {{supportTypes}}"
+    },
+    "set_server_temp_voice": {
+      "ask": {
+        "initial_room": "Vui lòng chọn phòng khởi tạo `( Kênh tham gia sẽ tạo ra phòng tạm )`. \n**Hướng dẫn : Nhập ** `<!tên_phòng>` hoặc `<#id_phòng>` hoặc `id_phòng`",
+        "limit": "Vui lòng nhập vào số người tối đa của room tự động tạo",
+        "type_room": "Vui lòng chọn loại phòng"
+      },
+      "room_type": {
+        "private": {
+          "label": "Riêng tư",
+          "description": "Phòng riêng tư chỉ người được cho phép mới có thể vào"
+        },
+        "public": {
+          "label": "Công khai",
+          "description": "Phòng công khai ai cũng có thể vào"
+        }
+      },
+      "answer": {
+        "initial_room": "Phòng khởi tạo được chọn là : <#{{-id}}>",
+        "type_room": "Bạn đã chọn phòng loại: ",
+        "limit": "Số lượng thành viên tối đa của phòng tự động là : {{-limit}}"
+      },
+      "error": {
+        "initial_room": "Phòng vừa chọn không hợp lệ vui lòng chọn phòng trò chuyện",
+        "timeout": "Hết thời gian cài đặt vui lòng làm lại từ đầu"
+      }
+    }
+  },
+  "voice": {
+    "set_bitrate": {
+      "name": "Mã lệnh Set bitrate",
+      "example": "```{{-prefix}}{{alias}} {bitrate}```",
+      "description": "Cài đặt bitrate của kênh trò chuyện",
+      "illegal": "**{{-icon}} | {{-username}} | **Kênh trò chuyện có bitrate hợp lệ {{-min_bitrate}} - {{-max_bitrate}}!!!"
+    },
+    "change_region": {
+      "name": "Mã lệnh Change Region",
+      "example": "```{{-prefix}}{{alias}} {region} | {list}```",
+      "description": "Cài đặt khu vực cho kênh trò chuyện và lấy danh sách khu vực",
+      "illegal": "**{{-icon}} | {{-username}} | **Khu vực không hợp lệ!!! \n Sử dụng `{{-prefix}}{{alias}} {list}` để lấy danh sách khu vực."
+    },
+    "clan": {
+      "create_team": {
+        "description": "Tạo phòng CLB(nhóm)",
+        "req_team_name": "**{{-emoji}} | {{-author }},** Vui lòng nhập tên CLB(nhóm)",
+        "req_clan_settings": "**{{-emoji}} | {{-author }},** Máy chủ chưa thiết lập cài đặt cho CLB. Vui lòng liên hệ quản lí máy chủ để cài đặt",
+        "success": "**{{-emoji}}  | {{-author }},** Tạo phòng thành công",
+        "having_room": "**{{-emoji}}  | {{-author }},** Bạn đã sở hữu cho mình một phòng trò truyện"
+      },
+      "room_member": {
+        "no_permission": "**{{-emoji}}  | {{-author }}, ** Bạn không có quyền thêm/xóa thành viên phòng này",
+        "add": "**{{-emoji}}  | {{-author }}, ** Thêm thành viên thành công",
+        "remove": "**{{-emoji}}  | {{-author }}, ** Xóa thành viên thành công"
+      }
+    },
+    "server_clan_voice_setting": {
+      "success": "**✅ | {{-author }},** Lưu cài đặt phòng trò chuyện clan thành công\nNếu bạn cần thêm nhiều category hơn hãy dùng lệnh \\` \\``"
+    }
+  },
+  "soundboard": {
+    "tts": {
+      "min_char": "**🚫 | {{-author }},** Không có chữ thì làm sao nói?",
+      "max_char": "**🚫 | {{-author }},** Hiện tại BOT chỉ hỗ trợ tối đa 100 kí tự",
+      "invalid_input": "**🚫 | {{-author }},** Vui lòng nhập văn bản từ 1-100 ký tự",
+      "playing": "**✅ | Đang phát văn bản thành giọng nói",
+      "voice_error": "**🚫 | Lỗi phát âm thanh trong kênh thoại",
+      "error": "**🚫 | Đã xảy ra lỗi với chức năng chuyển văn bản thành giọng nói"
+    },
+    "join": {
+      "used": "**🚫 | {{-author }},** Bot đang được sử dụng ở một kênh khác",
+      "speaking": "**🚫 | {{-author }},** Vui lòng chờ câu nói trước hoàn thành",
+      "join_success": "**✅ | {{-author }},** Đã tham gia phòng trò chuyện"
+    },
+    "leave": {
+      "success": "**✅ | {{-author }},** Đã thoát khỏi phòng trò chuyện"
+    },
+    "stop": {
+      "success": "**✅ | {{-author }},** Đã dừng câu nói trước đó"
+    },
+    "tts_default": {
+      "current_language": "**ℹ️ | {{-author }},** Ngôn ngữ hiện tại khi đọc là `{{- lang}}`",
+      "not_supported": "**🚫 | {{-author }},** Ngôn ngữ bạn nhập vào hiện không được hỗ trợ",
+      "success": "**{{-icon }} | {{-author }},** Đã chuyển ngôn ngữ khi đọc sang `{{- lang}}`"
+    },
+    "tts_languages": {
+      "title": "Danh sách các ngôn ngữ hỗ trợ",
+      "change_language_tutorial": "Hướng dẫn chỉnh ngôn ngữ",
+      "change_language_tutorial2": "Sử dụng lệnh `{{- prefix}}tts_default <code>` để thay đổi ngôn ngữ"
+    }
+  },
+  "moderation": {
+    "ban": {
+      "name": "ban",
+      "example": "",
+      "description": "Cấm người dùng khỏi server",
+      "success_ban_from": "Bạn đã bị cấm tại {{guildName}}",
+      "success": "Người dùng được chỉ định đã bị cấm thành công và nhận được thông báo!",
+      "success_no_notification": "Người dùng cụ thể đã bị cấm thành công nhưng chưa nhận được thông báo!",
+      "banned_by": "👤┆Bị cấm bởi",
+      "user_who_banned": "👤┆Người bị cấm",
+      "reason": "💬┆Lý do",
+      "not_given": "Không có lý do cụ thể"
+    },
+    "clear": {
+      "name": "clear",
+      "example": "",
+      "description": "Xóa tin nhắn trong một nhóm",
+      "more_than_100": "Tôi không thể xóa nhiều hơn 100 tin nhắn !",
+      "less_than_1": "Tôi không thể xóa ít hơn 1 tin nhắn !",
+      "success": "Tôi đã xóa thành công {{amount}} tin nhắn",
+      "older_than_14d": "Bạn chỉ có thể xóa tin nhắn cách đây dưới 14 ngày",
+      "error": "Đã xảy ra lỗi khi xóa tin nhắn trong kênh này!",
+      "invalid_amount": "TODO"
+    },
+    "clearuser": {
+      "name": "clearuser",
+      "example": "",
+      "description": "Xóa tin nhắn của một người dùng nào đó",
+      "update_soon": "Sẽ sớm cập nhật thêm...",
+      "invalid_args": "TODO",
+      "user_not_found": "TODO"
+    },
+    "kick": {
+      "name": "kick",
+      "example": "",
+      "description": "Xóa người dùng khỏi server",
+      "success": "Người dùng được chỉ định đã bị xóa thành công và nhận được thông báo!",
+      "success_kick_from": "Bạn đã bị xóa khỏi server {{guildName}}",
+      "success_no_notification": "Người dùng cụ thể đã bị xóa thành công nhưng chưa nhận được thông báo!",
+      "kicked_by": "👤┆Bị xóa bởi",
+      "reason": "💬┆Lý do",
+      "user_who_kicked": "👤┆Người bị xóa",
+      "not_given": "Không có lý do cụ thể"
+    },
+    "mute": {
+      "name": "timeout",
+      "example": "",
+      "description": "Tắt tiếng người dùng trong một khoảng thời gian nhất định",
+      "more_than_28d": "Thời gian nhập vào không hợp lệ hoặc lớn hơn 28 ngày",
+      "success": "{{userName}} đã bị tắt tiếng trong {{prettyMilliseconds}}",
+      "not_given": "Không có lý do cụ thể",
+      "reason": "💬┆Lý do"
+    },
+    "warn": {
+      "name": "warn",
+      "example": "",
+      "description": "Cảnh báo người dùng",
+      "success": "Người dùng đã nhận được cảnh báo!",
+      "not_given": "Không có lý do cụ thể",
+      "title": "🔨・Cảnh báo",
+      "success_warn_from": "Bạn đã bị cảnh cáo trong {{guildName}}",
+      "moderator": "👤┆Người điều hành",
+      "reason": "💬┆Lý do",
+      "user_who_warned": "👤┆Người dùng",
+      "number_warn": "💬┆Số lần cảnh báo"
+    }
+  },
+  "errors": {
+    "server_not_found": "**🚫 | Không tìm thấy cấu hình máy chủ",
+    "command_execution": "**🚫 | Đã xảy ra lỗi khi thực hiện lệnh"
+  },
+  "event": {
+    "message_create": {
+      "warning_invite_link": "**{{-icon}} | {{-author}} | **Bạn ơi đừng gửi link server khác nha!!!"
+    },
+    "mention_prefix": "Tiếp đầu ngữ trong server: `{{-prefixes}}`",
+    "global_error": "**{{-icon}} | {{-author}} | **Đã xảy ra lỗi, thử lại sau nhaaa!!!"
+  },
+  "user": {
+    "inventory": {
+      "description": "Danh sách item trong kho đồ",
+      "describle": "Hướng dẫn sử dụng item:",
+      "tutorial": "use <item_code> để sử dụng",
+      "item_content": "{{- itemIcon }}: **{{quantity}}**",
+      "pagination": "Trang {{ current_page }}/{{ total_page }}"
+    },
+    "use": {
+      "err1": "Vui lòng nhập mã của item cần sử dụng",
+      "err2": "Không tìm thấy item cần dùng",
+      "err3": "Bạn không sở hữu item này",
+      "err4": "Số lượng của item không đủ để dùng"
+    }
+  },
+  "service": {
+    "voice": {
+      "private_join_request": "{{-owner}} **|** {{-user}} yêu cầu tham gia phòng của bạn",
+      "reject_request": "** {{-user}} | ** Từ chối yêu cầu tham gia phòng của bạn",
+      "private_join_request_timeout": "** {{-user}} | ** Có vẻ như không có phản hồi nào cho yêu cầu của bạn",
+      "interaction": {
+        "lock": "**{{-icon}} | {{-author}} , ** Phòng của bạn đã được khóa thành công",
+        "unlock": "**{{-icon}} | {{-author}} , ** Phòng của bạn đã được mở khóa thành công",
+        "hide": "**{{-icon}} | {{-author}} , ** Phòng của bạn đã được ẩn thành công",
+        "show": "**{{-icon}} | {{-author}} , ** Phòng của bạn đã được hiển thị thành công",
+        "mute": "**{{-icon}} | {{-author}} , ** Phòng của bạn đã được tắt tiếng thành công",
+        "unmute": "**{{-icon}} | {{-author}} , ** Phòng của bạn đã được bật tiếng thành công"
+      }
+    }
+  },
+  "yearly_event": {
+    "list_participant": "Những người tham gia:",
+    "leaderboard": {
+      "not_found": "**{{- emoji }}| {{-author }},** Không tìm thấy kiểu cần truy cứu",
+      "title": "{{- emoji }} **Bảng xếp hạng** {{- emoji }}"
+    },
+    "xmas": {
+      "snowball": "Cầu tuyết",
+      "e001": "Người tuyết",
+      "e002": "Mũ giáng sinh",
+      "e003": "Kẹo ngọt"
+    },
+    "xmas_box": {
+      "ghost": "** {{-emoji }}| {{-author }},** Oh no! Who put {{-item}} into gift box. Good luck next times",
+      "appear": "{{-emoji }}**| Xmas box!!** Gõ lệnh `pick` để giành lấy **Hộp quà giáng sinh** nha",
+      "winner": "{{-emoji }}**|** Chúc mừng <@{{- member }}> đã nhặt được {{- boxIcon }}!!",
+      "usebox": "{{-emoji }}**|** Dùng lệnh `{{- command}}` để mở {{- boxIcon}} nhé",
+      "opening": "**{{- boxIcon }}| {{-author }}** đang mở **Hộp quà giáng sinh**...",
+      "opened": "**{{- boxIcon }}| {{-author }}** đã mở **Hộp quà giáng sinh** và nhận được **{{-itemIcon }}**",
+      "voice_log": "<@{{userId}}> đã treo voice trong {{hour}} giờ {{min}} phút!!! Bạn nhận được {{numOfBox}} **Hộp quà giáng sinh**",
+      "chat_log": "<@{{userId}}> Đã may mắn nhận được **Hộp quà giáng sinh** khi hoạt động tại {{serverName}}"
+    }
+  }
 }

@@ -1,388 +1,404 @@
 {
-	"common": {
-		"on": "On",
-		"off": "Off",
-		"voice": {
-			"not_joined": "**{{- emoji}} | {{- author}}, ** You're not in voice channel",
-			"not_same_room": "**{{- emoji}} | {{- author}}, ** You're not in the same voice channel!"
-		},
-		"music": {
-			"nothing_playing": "**{{- emoji}} | {{-author}}, ** Oi!! Baka!! No Music On Queue!"
-		},
-		"user": {
-			"not_exist": "**{{- emoji}} | {{-author}}, ** Can't find information of user"
-		},
-		"guild": {
-			"required": "**{{- emoji}} | {{-author}}, ** This command can only be used in servers.",
-			"not_exist": "**{{- emoji}} | {{-author}}, ** Can't find information of server"
-		},
-		"slash": {
-			"require_permission": {
-				"title": "**{{- emoji}} | ** I am missing `applications.commands`",
-				"description": "You can re-invite BOT to approve permission with the following link:\n [Click here to re-invite]({{- url}})"
-			}
-		},
-		"command_denied": {
-			"precondition_guild_only": "**{{- emoji}} | {{-author}}, ** You cannot run this command in DMs. Please run in Server (Guild)",
-			"precondition_client_permission": "**{{- emoji}} | {{-author}}, ** I am missing the following permissions to run this command: {{-list_permission}}"
-		},
-		"permission_flag": {
-			"ADD_REACTIONS": "Add Reactions",
-			"ADMINISTRATOR": "Administrator",
-			"ATTACH_FILES": "Attach Files",
-			"BAN_MEMBERS": "Ban Members",
-			"CHANGE_NICKNAME": "Change Nickname",
-			"CONNECT": "Connect",
-			"CREATE_INSTANT_INVITE": "Create Instant Invite",
-			"CREATE_PRIVATE_THREADS": "Create Private Threads",
-			"CREATE_PUBLIC_THREADS": "Create Public Threads",
-			"DEAFEN_MEMBERS": "Deafen Members",
-			"EMBED_LINKS": "Embed Links",
-			"KICK_MEMBERS": "Kick Members",
-			"MANAGE_CHANNELS": "Manage Channels",
-			"MANAGE_EMOJIS_AND_STICKERS": "Manage Emojis and Stickers",
-			"MANAGE_GUILD": "Manage Server",
-			"MANAGE_MESSAGES": "Manage Messages",
-			"MANAGE_NICKNAMES": "Manage Nicknames",
-			"MANAGE_ROLES": "Manage Roles",
-			"MANAGE_THREADS": "Manage Threads",
-			"MANAGE_WEBHOOKS": "Manage Webhooks",
-			"MENTION_EVERYONE": "Mention Everyone",
-			"MOVE_MEMBERS": "Move Members",
-			"MUTE_MEMBERS": "Mute Members",
-			"PRIORITY_SPEAKER": "Priority Speaker",
-			"READ_MESSAGE_HISTORY": "Read Message History",
-			"REQUEST_TO_SPEAK": "Request to Speak",
-			"SEND_MESSAGES": "Send Messages",
-			"SEND_MESSAGES_IN_THREADS": "Send Messages in Threads",
-			"SEND_TTS_MESSAGES": "Send TTS Messages",
-			"SPEAK": "Speak",
-			"START_EMBEDDED_ACTIVITIES": "Start Activities",
-			"STREAM": "Stream",
-			"USE_APPLICATION_COMMANDS": "Use Application Commands",
-			"USE_EXTERNAL_EMOJIS": "Use External Emojis",
-			"USE_EXTERNAL_STICKERS": "Use External Stickers",
-			"USE_PRIVATE_THREADS": "Use Private Threads",
-			"USE_PUBLIC_THREADS": "Use Public Threads",
-			"USE_VAD": "Use Voice Activity",
-			"VIEW_AUDIT_LOG": "View Audit Log",
-			"VIEW_CHANNEL": "Read Messages",
-			"VIEW_GUILD_INSIGHTS": "View Guild Insights"
-		}
-	},
-	"framework": {
-		"cooldown": "**⏰ | {{-author}}, **Please wait `{{remaining}}` s before you can use `{{commandName}}`"
-	},
-	"precondition": {
-		"owner_only": "**{{- icon }} | {{- author }},** This command can only be used by the owner.",
-		"server_created": {
-			"error": "**{{- icon }} | {{- author }},** Not found or can not create server record"
-		}
-	},
-	"general": {
-		"ping": {
-			"name": "Ping command",
-			"example": "```{{-prefix}}{{alias}}```",
-			"description": "Ping pong"
-		},
-		"server_info": {
-			"name": "Server Information command",
-			"embed_title": "Server information",
-			"embed_id": "ID",
-			"embed_owner": "Owner",
-			"embed_verification": "Verification level",
-			"embed_channels": "Channels",
-			"embed_voice_channels": "Voice channels",
-			"embed_chat_channels": "Chat channels",
-			"embed_role": "Role",
-			"embed_members": "Members",
-			"embed_emojis": "Emojis",
-			"embed_emojis_animate": "Emojis animated",
-			"example": "```{{-prefix}}{{alias}}```",
-			"description": "Get server information"
-		},
-		"bot_info": {
-			"name": "Bot Information command",
-			"prefix": "**Prefix:** `{{prefixes}}`",
-			"support": {
-				"name": "{{-emoji}} Support Server",
-				"detail": "{{-emoji}} [Click here to join]({{- url}})"
-			},
-			"cannot_find_info": "Cannot find BotInfo in DB",
-			"un_synchronized": "Saved info has some changes need to be updated",
-			"already_exist": "Bot Info already exist and updated",
-			"create_success": "Successfully created Bot Info",
-			"example": "```{{-prefix}}{{alias}} upadte \n{{-prefix}}{{alias}} create \n{{-prefix}}{{alias}} show```",
-			"description": "Setting bot information",
-			"basic": {
-				"name": "**📇 Basic Info**",
-				"details": "**・Name:** `{{tag}}`\n**・Uptime:** `{{time}}`"
-			},
-			"stats": {
-				"name": "**📊 Stats**",
-				"details": "**・Servers:** `{{server}}`\n**・Users:** `{{user}}`"
-			},
-			"version": {
-				"name": "**🔎 Version**",
-				"details": "**・D.JS:** `{{djs}}`\n**・Node:** `{{njs}}`"
-			},
-			"cpu": {
-				"name": "**🖥️ CPU**",
-				"details": "**・Cores:** `{{total}}`\n**・Speed:** `{{speed}}`"
-			},
-			"other": {
-				"name": "**{{-emoji}} Other**",
-				"details": "**・OS:** `{{os}}`"
-			},
-			"ram": {
-				"name": "**{{-emoji}} RAM**",
-				"details": "**・Total:** `{{total}}`\n**・Free:** `{{free}}`"
-			}
-		},
-		"prefix": {
-			"name": "Prefix command",
-			"add": "**{{-icon}} | **Added `{{-prefix}}` as new prefix",
-			"list_prefixes": "List of prefixes: `{{-prefixes}}`",
-			"duplicate_prefix": "**{{-icon}} | **`{{-prefix}}` have used!!!",
-			"not_found_prefix": "**{{-icon}} | **Prefix `{{-prefix}}` not found!!!",
-			"can_not_remove": "**{{-icon}} | **Can not remove prefix `{{-prefix}}`!!! At least one prefix in guild.",
-			"remove": "**{{-icon}} | **Prefix `{{-prefix}}` has been removed",
-			"example": "```{{-prefix}}{{alias}} add {prefix}```",
-			"description": "Config bot prefix"
-		},
-		"help": {
-			"name": "Help command",
-			"embed_list": "Here is the list of commands of **{{-botName}}**!!! \n For more info on a specific command, use `{{-prefix}}help {command}`",
-			"embed_title": "{{-command}} command",
-			"embed_aliases": "Aliases",
-			"embed_description": "Description",
-			"embed_example": "Example command",
-			"not_have_command": "**{{-icon}} | {{-botName}}** does not supported this command!!!",
-			"not_have_permission": "**{{-icon}} | {{-username}} | **You do not have permission to use this command!!!",
-			"example": "```{{-prefix}}{{alias}}```",
-			"description": "List of command"
-		}
-	},
-	"server": {
-		"set_server_language": {
-			"name": "Set Server Language command",
-			"success": "**{{-icon}} | **Current language: {{-lng}}",
-			"error": "**{{-icon}} | **Some error, please try again",
-			"no_support_lng": "**{{-icon}} | {{-botName}}** Does not support this language!!!",
-			"example": "```{{-prefix}}{{alias}} vi \n{{-prefix}}{{alias}} en```",
-			"description": "Set language server"
-		},
-		"set_server_channel": {
-			"success": "**{{-emoji}}  | {{- author }},** I have set **{{type}}** at <#{{channelId}}>",
-			"error": "**{{-emoji}} | {{- author }},** Input type **{{type}}** is not supported \n**{{-blankEmoji}} |** List support type: {{supportTypes}}"
-		},
-		"set_server_temp_voice": {
-			"ask": {
-				"initial_room": "Vui lòng chọn phòng khởi tạo `( Kênh tham gia sẽ tạo ra phòng tạm )`. \n**Hướng dẫn : Nhập ** `<!tên_phòng>` hoặc `<#id_phòng>` hoặc `id_phòng`",
-				"limit": "Vui lòng nhập vào số người tối đa của room tự động tạo",
-				"type_room": "Vui lòng chọn loại phòng"
-			},
-			"room_type": {
-				"private": {
-					"label": "Riêng tư",
-					"description": "Phòng riêng tư chỉ người được cho phép mới có thể vào"
-				},
-				"public": {
-					"label": "Công khai",
-					"description": "Phòng công khai ai cũng có thể vào"
-				}
-			},
-			"answer": {
-				"initial_room": "Phòng khởi tạo được chọn là : <#{{-id}}>",
-				"type_room": "Bạn đã chọn phòng loại: ",
-				"limit": "Số lượng thành viên tối đa của phòng tự động là : {{-limit}}"
-			},
-			"error": {
-				"initial_room": "Phòng vừa chọn không hợp lệ vui lòng chọn phòng trò chuyện",
-				"timeout": "Hết thời gian cài đặt vui lòng làm lại từ đầu"
-			}
-		}
-	},
-	"voice": {
-		"set_bitrate": {
-			"name": "Set bitrate command",
-			"example": "```{{-prefix}}{{alias}} {bitrate}```",
-			"description": "Set bitrate of voice channel",
-			"illegal": "**{{-icon}} | {{-username}} | **Your channel only allow bitrate {{-min_bitrate}}kbps - {{-max_bitrate}}kbps!!!"
-		},
-		"change_region": {
-			"name": "Change Region command",
-			"example": "```{{-prefix}}{{alias}} {region} | {list}```",
-			"description": "Set region for voice channel and get regions list",
-			"illegal": "**{{-icon}} | {{-username}} | **Region is illegal!!! \n Use `{{-prefix}}{{alias}} {list}` to get list regions."
-		},
-		"clan": {
-			"create_team": {
-				"description": "Create clan(team) room",
-				"req_team_name": "**{{-emoji}} | {{- author }},** Please input Clan(Team) Name",
-				"req_clan_settings": "**{{-emoji}} | {{- author }},** Server setting for clan is not setup yet. Contact admin for setup Clan Voice Setting",
-				"success": "**{{-emoji}}  | {{- author }},** Create room successfully!",
-				"having_room": "**{{-emoji}}  | {{- author }},** You already own your own story room"
-			},
-			"room_member": {
-				"no_permission": "**{{-icon}}  | {{- author }}, ** You don't have permission to add/remove member",
-				"add": "**{{-icon}}  | {{- author }}, ** Added member successfully ",
-				"remove": "**{{-icon}}  | {{- author }}, ** Removed member successfully "
-			}
-		},
-		"server_clan_voice_setting": {
-			"success": "**✅ | {{- author }},** Saved clan chat room settings successfully\nIf you need to add more categories use the command \\` \\``"
-		}
-	},
-	"soundboard": {
-		"tts": {
-			"min_char": "**🚫 | {{- author }},** Nothing to say",
-			"max_char": "**🚫 | {{- author }},** Hiện tại BOT chỉ hỗ trợ tối đa 100 kí tự"
-		},
-		"join": {
-			"used": "**🚫 | {{- author }},** Bot đang được sử dụng ở một kênh khác",
-			"speaking": "**🚫 | {{- author }},** Vui lòng chờ câu nói trước hoàn thành",
-			"join_success": "**✅ | {{- author }},** Đã tham gia phòng trò chuyện"
-		},
-		"leave": {
-			"success": "**✅ | {{- author }},** Đã thoát khỏi phòng trò chuyện"
-		},
-		"stop": {
-			"success": "**✅ | {{- author }},** Đã dừng câu nói trước đó"
-		},
-		"tts_default": {
-			"current_language": "**ℹ️ | {{- author }},** Ngôn ngữ hiện tại khi đọc là `{{- lang}}`",
-			"not_supported": "**🚫 | {{- author }},** Ngôn ngữ bạn nhập vào hiện không được hỗ trợ",
-			"success": "**✅ | {{- author }},** Đã chuyển ngôn ngữ khi đọc sang `{{- lang}}`"
-		},
-		"tts_languages": {
-			"title": "Danh sách các ngôn ngữ hỗ trợ",
-			"change_language_tutorial": "Hướng dẫn chỉnh ngôn ngữ",
-			"change_language_tutorial2": "Sử dụng lệnh `{{- prefix}}tts_default <code>` để thay đổi ngôn ngữ"
-		}
-	},
-	"moderation": {
-		"ban": {
-			"name": "ban",
-			"example": "",
-			"description": "Ban users from the server",
-			"success_ban_from":"You've been banned in {{guildName}}",
-			"success": "The specified user has been successfully banned and successfully received a notification!",
-			"success_no_notification": "The given user has been successfully banned, but has not received a notification!",
-			"banned_by": "👤┆Banned by",
-			"user_who_banned": "👤┆Banned user",
-			"reason": "💬┆Reason",
-			"not_given": "Not given"
-		},
-		"clear": {
-			"name": "clear",
-			"example": "",
-			"description": "Clear message of some channel",
-			"more_than_100": "I cannot delete more than 100 messages at a time!",
-			"less_than_1": "I cannot delete less than 1 message!",
-			"older_than_14d": "You can only bulk delete messages that are under 14 days old.",
-			"success": "I have successfully deleted {{amount}} the messages",
-			"error": "There was an error trying to delete messages in this channel!"
-		},
-		"clearuser": {
-			"name": "clearuser",
-			"example": "",
-			"description": "Clear message of someone",
-			"update_soon": "Update Soon"
-		},
-		"kick": {
-			"name": "kick",
-			"example": "",
-			"description": "Kick users from the server",
-			"success": "The specified user has been successfully banned and successfully received a notification!",
-			"success_kick_from": "You've been banned in {{guildName}}",
-			"success_no_notification": "The given user has been successfully banned, but has not received a notification!",
-			"kicked_by": "👤┆Kicked by",
-			"reason": "💬┆Reason",
-			"user_who_kicked": "👤┆Kicked user",
-			"not_given": "Not given"
-		},
-		"mute": {
-			"name": "timeout",
-			"example": "",
-			"description": "Mute users for a certain time",
-			"more_than_28d": "Invalid input time or time is larger than 28 days",
-			"success": "{{userName}} successfully timed out {{prettyMilliseconds}}",
-			"not_given": "Not given",
-			"reason": "💬┆Reason"
-		},
-		"warn": {
-			"name": "warn",
-			"example": "",
-			"description": "Warning user for something",
-			"success": "User has received a warning!",
-			"not_given": "Not given",
-			"title": "🔨・Warn",
-			"success_warn_from": "You have been warned from {{guildName}}",
-			"moderator": "👤┆Moderator",
-			"reason": "💬┆Reason",
-			"user_who_warned":"👤┆User",
-			"number_warn": "💬┆Number of warn"
-		}
-	},
-	"event": {
-		"message_create": {
-			"warning_invite_link": "**{{-icon}} | {{-author}} | **Please don't send the invite links from another server!!!"
-		},
-		"mention_prefix": "My prefix(es) in this guild is: `{{-prefixes}}`",
-		"global_error": "**{{-icon}} | {{-author}} | **Something went wrong, try it later!!!"
-	},
-	"user": {
-		"inventory": {
-			"description": "Inventory's item",
-			"describle": "Item usage tutorial:",
-			"tutorial": "use <item_code> to use item",
-			"item_content": "{{- itemIcon }}: **{{quantity}}**",
-			"pagination": "Page {{ current_page }}/{{ total_page }}"
-		},
-		"use": {
-			"err1": "Please input item code you want to use",
-			"err2": "Can't found item you want to use",
-			"err3": "You don't have that item",
-			"err4": "Quantity of item is not enough to use"
-		}
-	},
-	"service": {
-		"voice": {
-			"private_join_request": "{{-owner}} **|** {{-user}} is request to join your room",
-			"reject_request": "** {{-user}} | ** Reject your request to join room",
-			"private_join_request_timeout": "** {{-user}} | ** Seem like there is not response to your request",
-			"interaction": {
-				"lock": "**{{-icon}} | {{-author}} , ** Your room have been locked successfully",
-				"unlock": "**{{-icon}} | {{-author}} , ** Your room have been unlocked successfully",
-				"hide": "**{{-icon}} | {{-author}} , ** Your room have been hided successfully",
-				"show": "**{{-icon}} | {{-author}} , ** Your room have been showed successfully",
-				"mute": "**{{-icon}} | {{-author}} , ** Your room have been muted successfully",
-				"unmute": "**{{-icon}} | {{-author}} , ** Your room have been unmuteed successfully"
-			}
-		}
-	},
-	"yearly_event": {
-		"list_participant": "List of participants:",
-		"leaderboard": {
-			"not_found": "**{{- emoji }}| {{- author }},** Can't get request type",
-			"title": "{{- emoji }} **Leaderboard** {{- emoji }}"
-		},
-		"xmas": {
-			"snowball": "Snowball",
-			"e001": "Snowman",
-			"e002": "Xmas Hat",
-			"e003": "Candy Cane"
-		},
-		"xmas_box": {
-			"ghost": "** {{-emoji }}| {{- author }},** Oh no! Who put {{-item}} into gift box. Good luck next times",
-			"appear": "** {{-emoji }}| Xmas box!!** Write down `pick` to get **Xmas Box**",
-			"winner": "** {{-emoji }}|** Congratulation <@{{- member }}> for captured {{- boxIcon }}!!",
-			"usebox": "** {{-emoji }}|** Use command `{{- command}}` to open {{- boxIcon}}",
-			"opening": "**{{- boxIcon }}| {{- author }},** opening **Xmas Box**...",
-			"opened": "**{{- boxIcon }}| {{- author }},** opened **Xmas Box** and get **{{-itemIcon }}**",
-			"voice_log": "<@{{userId}}> has been in voice channel for {{hour}} hour {{min}} minute!!! You get {{numOfBox}} **Xmas Box**",
-			"chat_log": "<@{{userId}}> get **Xmas Box** while having activity in {{serverName}}"
-		}
-	}
+  "common": {
+    "on": "On",
+    "off": "Off",
+    "voice": {
+      "not_joined": "**{{-icon }} | {{-author}}, ** You're not in voice channel",
+      "not_same_room": "**{{-emoji}} | {{-author}}, ** You're not in the same voice channel!"
+    },
+    "music": {
+      "nothing_playing": "**{{-emoji}} | {{-author}}, ** Oi!! Baka!! No Music On Queue!"
+    },
+    "user": {
+      "not_exist": "**{{- emoji}} | {{-author}}, ** Can't find information of user"
+    },
+    "guild": {
+      "required": "**{{- emoji}} | {{-author}}, ** This command can only be used in servers.",
+      "not_exist": "**{{- emoji}} | {{-author}}, ** Can't find information of server"
+    },
+    "slash": {
+      "require_permission": {
+        "title": "**{{- emoji}} | ** I am missing `applications.commands`",
+        "description": "You can re-invite BOT to approve permission with the following link:\n [Click here to re-invite]({{- url}})"
+      }
+    },
+    "command_denied": {
+      "precondition_guild_only": "**{{- emoji}} | {{-author}}, ** You cannot run this command in DMs. Please run in Server (Guild)",
+      "precondition_client_permission": "**{{- emoji}} | {{-author}}, ** I am missing the following permissions to run this command: {{-list_permission}}"
+    },
+    "permission_flag": {
+      "ADD_REACTIONS": "Add Reactions",
+      "ADMINISTRATOR": "Administrator",
+      "ATTACH_FILES": "Attach Files",
+      "BAN_MEMBERS": "Ban Members",
+      "CHANGE_NICKNAME": "Change Nickname",
+      "CONNECT": "Connect",
+      "CREATE_INSTANT_INVITE": "Create Instant Invite",
+      "CREATE_PRIVATE_THREADS": "Create Private Threads",
+      "CREATE_PUBLIC_THREADS": "Create Public Threads",
+      "DEAFEN_MEMBERS": "Deafen Members",
+      "EMBED_LINKS": "Embed Links",
+      "KICK_MEMBERS": "Kick Members",
+      "MANAGE_CHANNELS": "Manage Channels",
+      "MANAGE_EMOJIS_AND_STICKERS": "Manage Emojis and Stickers",
+      "MANAGE_GUILD": "Manage Server",
+      "MANAGE_MESSAGES": "Manage Messages",
+      "MANAGE_NICKNAMES": "Manage Nicknames",
+      "MANAGE_ROLES": "Manage Roles",
+      "MANAGE_THREADS": "Manage Threads",
+      "MANAGE_WEBHOOKS": "Manage Webhooks",
+      "MENTION_EVERYONE": "Mention Everyone",
+      "MOVE_MEMBERS": "Move Members",
+      "MUTE_MEMBERS": "Mute Members",
+      "PRIORITY_SPEAKER": "Priority Speaker",
+      "READ_MESSAGE_HISTORY": "Read Message History",
+      "REQUEST_TO_SPEAK": "Request to Speak",
+      "SEND_MESSAGES": "Send Messages",
+      "SEND_MESSAGES_IN_THREADS": "Send Messages in Threads",
+      "SEND_TTS_MESSAGES": "Send TTS Messages",
+      "SPEAK": "Speak",
+      "START_EMBEDDED_ACTIVITIES": "Start Activities",
+      "STREAM": "Stream",
+      "USE_APPLICATION_COMMANDS": "Use Application Commands",
+      "USE_EXTERNAL_EMOJIS": "Use External Emojis",
+      "USE_EXTERNAL_STICKERS": "Use External Stickers",
+      "USE_PRIVATE_THREADS": "Use Private Threads",
+      "USE_PUBLIC_THREADS": "Use Public Threads",
+      "USE_VAD": "Use Voice Activity",
+      "VIEW_AUDIT_LOG": "View Audit Log",
+      "VIEW_CHANNEL": "Read Messages",
+      "VIEW_GUILD_INSIGHTS": "View Guild Insights"
+    }
+  },
+  "framework": {
+    "cooldown": "**⏰ | {{-author}}, **Please wait `{{remaining}}` s before you can use `{{commandName}}`"
+  },
+  "precondition": {
+    "owner_only": "**{{- icon }} | {{- author }},** This command can only be used by the owner.",
+    "server_created": {
+      "error": "**{{- icon }} | {{- author }},** Not found or can not create server record"
+    }
+  },
+  "general": {
+    "ping": {
+      "name": "Ping command",
+      "example": "```{{-prefix}}{{alias}}```",
+      "description": "Ping pong"
+    },
+    "server_info": {
+      "name": "Server Information command",
+      "embed_title": "Server information",
+      "embed_id": "ID",
+      "embed_owner": "Owner",
+      "embed_verification": "Verification level",
+      "embed_channels": "Channels",
+      "embed_voice_channels": "Voice channels",
+      "embed_chat_channels": "Chat channels",
+      "embed_role": "Role",
+      "embed_members": "Members",
+      "embed_emojis": "Emojis",
+      "embed_emojis_animate": "Emojis animated",
+      "example": "```{{-prefix}}{{alias}}```",
+      "description": "Get server information"
+    },
+    "bot_info": {
+      "name": "Bot Information command",
+      "prefix": "**Prefix:** `{{prefixes}}`",
+      "support": {
+        "name": "{{-emoji}} Support Server",
+        "detail": "{{-emoji}} [Click here to join]({{- url}})"
+      },
+      "cannot_find_info": "Cannot find BotInfo in DB",
+      "un_synchronized": "Saved info has some changes need to be updated",
+      "already_exist": "Bot Info already exist and updated",
+      "create_success": "Successfully created Bot Info",
+      "example": "```{{-prefix}}{{alias}} upadte \n{{-prefix}}{{alias}} create \n{{-prefix}}{{alias}} show```",
+      "description": "Setting bot information",
+      "basic": {
+        "name": "**📇 Basic Info**",
+        "details": "**・Name:** `{{tag}}`\n**・Uptime:** `{{time}}`"
+      },
+      "stats": {
+        "name": "**📊 Stats**",
+        "details": "**・Servers:** `{{server}}`\n**・Users:** `{{user}}`"
+      },
+      "version": {
+        "name": "**🔎 Version**",
+        "details": "**・D.JS:** `{{djs}}`\n**・Node:** `{{njs}}`"
+      },
+      "cpu": {
+        "name": "**🖥️ CPU**",
+        "details": "**・Cores:** `{{total}}`\n**・Speed:** `{{speed}}`"
+      },
+      "other": {
+        "name": "**{{-emoji}} Other**",
+        "details": "**・OS:** `{{os}}`"
+      },
+      "ram": {
+        "name": "**{{-emoji}} RAM**",
+        "details": "**・Total:** `{{total}}`\n**・Free:** `{{free}}`"
+      }
+    },
+    "prefix": {
+      "name": "Prefix command",
+      "server_not_found": "**{{-icon}} | ** Server configuration not found",
+      "error_log": "Prefix command error: {{error}}",
+      "add": "**{{-icon}} | **Added `{{-prefix}}` as new prefix",
+      "list_prefixes": "List of prefixes: `{{-prefixes}}`",
+      "no_prefix": "**{{-icon}} | ** Please input valid prefix",
+      "duplicate_prefix": "**{{-icon}} | **`{{-prefix}}` have used!!!",
+      "not_found_prefix": "**{{-icon}} | **Prefix `{{-prefix}}` not found!!!",
+      "can_not_remove": "**{{-icon}} | **Can not remove prefix `{{-prefix}}`!!! At least one prefix in guild.",
+      "remove": "**{{-icon}} | **Prefix `{{-prefix}}` has been removed",
+      "example": "```{{-prefix}}{{alias}} add {prefix}```",
+      "description": "Config bot prefix",
+      "action_description": "Please choose action you want to do",
+      "prefix_option": "Please input prefix you want to add/remove"
+    },
+    "help": {
+      "name": "Help command",
+      "embed_list": "Here is the list of commands of **{{-botName}}**!!! \n For more info on a specific command, use `{{-prefix}}help {command}`",
+      "embed_title": "{{-command}} command",
+      "embed_aliases": "Aliases",
+      "embed_description": "Description",
+      "embed_example": "Example command",
+      "not_have_command": "**{{-icon}} | {{-botName}}** does not supported this command!!!",
+      "not_have_permission": "**{{-icon}} | {{-username}} | **You do not have permission to use this command!!!",
+      "example": "```{{-prefix}}{{alias}}```",
+      "description": "List of command"
+    }
+  },
+  "server": {
+    "set_server_language": {
+      "name": "Set Server Language command",
+      "success": "**{{-icon}} | **Current language: {{-lng}}",
+      "error": "**{{-icon}} | **Some error, please try again",
+      "no_support_lng": "**{{-icon}} | {{-botName}}** Does not support this language!!!",
+      "example": "```{{-prefix}}{{alias}} vi \n{{-prefix}}{{alias}} en```",
+      "description": "Set language server"
+    },
+    "set_server_channel": {
+      "success": "**{{-emoji}}  | {{- author }},** I have set **{{type}}** at <#{{channelId}}>",
+      "error": "**{{-emoji}} | {{- author }},** Input type **{{type}}** is not supported \n**{{-blankEmoji}} |** List support type: {{supportTypes}}"
+    },
+    "set_server_temp_voice": {
+      "ask": {
+        "initial_room": "Vui lòng chọn phòng khởi tạo `( Kênh tham gia sẽ tạo ra phòng tạm )`. \n**Hướng dẫn : Nhập ** `<!tên_phòng>` hoặc `<#id_phòng>` hoặc `id_phòng`",
+        "limit": "Vui lòng nhập vào số người tối đa của room tự động tạo",
+        "type_room": "Vui lòng chọn loại phòng"
+      },
+      "room_type": {
+        "private": {
+          "label": "Riêng tư",
+          "description": "Phòng riêng tư chỉ người được cho phép mới có thể vào"
+        },
+        "public": {
+          "label": "Công khai",
+          "description": "Phòng công khai ai cũng có thể vào"
+        }
+      },
+      "answer": {
+        "initial_room": "Phòng khởi tạo được chọn là : <#{{-id}}>",
+        "type_room": "Bạn đã chọn phòng loại: ",
+        "limit": "Số lượng thành viên tối đa của phòng tự động là : {{-limit}}"
+      },
+      "error": {
+        "initial_room": "Phòng vừa chọn không hợp lệ vui lòng chọn phòng trò chuyện",
+        "timeout": "Hết thời gian cài đặt vui lòng làm lại từ đầu"
+      }
+    }
+  },
+  "voice": {
+    "set_bitrate": {
+      "name": "Set bitrate command",
+      "example": "```{{-prefix}}{{alias}} {bitrate}```",
+      "description": "Set bitrate of voice channel",
+      "illegal": "**{{-icon}} | {{-username}} | **Your channel only allow bitrate {{-min_bitrate}}kbps - {{-max_bitrate}}kbps!!!"
+    },
+    "change_region": {
+      "name": "Change Region command",
+      "example": "```{{-prefix}}{{alias}} {region} | {list}```",
+      "description": "Set region for voice channel and get regions list",
+      "illegal": "**{{-icon}} | {{-username}} | **Region is illegal!!! \n Use `{{-prefix}}{{alias}} {list}` to get list regions."
+    },
+    "clan": {
+      "create_team": {
+        "description": "Create clan(team) room",
+        "req_team_name": "**{{-emoji}} | {{- author }},** Please input Clan(Team) Name",
+        "req_clan_settings": "**{{-emoji}} | {{- author }},** Server setting for clan is not setup yet. Contact admin for setup Clan Voice Setting",
+        "success": "**{{-emoji}}  | {{- author }},** Create room successfully!",
+        "having_room": "**{{-emoji}}  | {{- author }},** You already own your own story room"
+      },
+      "room_member": {
+        "no_permission": "**{{-icon}}  | {{- author }}, ** You don't have permission to add/remove member",
+        "add": "**{{-icon}}  | {{- author }}, ** Added member successfully ",
+        "remove": "**{{-icon}}  | {{- author }}, ** Removed member successfully "
+      }
+    },
+    "server_clan_voice_setting": {
+      "success": "**✅ | {{- author }},** Saved clan chat room settings successfully\nIf you need to add more categories use the command \\` \\``"
+    }
+  },
+  "soundboard": {
+    "tts": {
+      "min_char": "**🚫 | {{- author }},** Nothing to say",
+      "max_char": "**🚫 | {{- author }},** Hiện tại BOT chỉ hỗ trợ tối đa 100 kí tự",
+      "invalid_input": "**🚫 | {{- author }},** Please enter text between 1-100 characters",
+      "playing": "**✅ | Playing text-to-speech",
+      "voice_error": "**🚫 | Error playing audio in voice channel",
+      "error": "**🚫 | An error occurred with text-to-speech"
+    },
+    "join": {
+      "used": "**🚫 | {{- author }},** Bot đang được sử dụng ở một kênh khác",
+      "speaking": "**🚫 | {{- author }},** Vui lòng chờ câu nói trước hoàn thành",
+      "join_success": "**✅ | {{- author }},** Đã tham gia phòng trò chuyện"
+    },
+    "leave": {
+      "success": "**✅ | {{- author }},** Đã thoát khỏi phòng trò chuyện"
+    },
+    "stop": {
+      "success": "**✅ | {{- author }},** Đã dừng câu nói trước đó"
+    },
+    "tts_default": {
+      "current_language": "**ℹ️ | {{- author }},** Ngôn ngữ hiện tại khi đọc là `{{- lang}}`",
+      "not_supported": "**🚫 | {{- author }},** Ngôn ngữ bạn nhập vào hiện không được hỗ trợ",
+      "success": "**{{-icon }} | {{-author }},** Đã chuyển ngôn ngữ khi đọc sang `{{- lang}}`"
+    },
+    "tts_languages": {
+      "title": "Danh sách các ngôn ngữ hỗ trợ",
+      "change_language_tutorial": "Hướng dẫn chỉnh ngôn ngữ",
+      "change_language_tutorial2": "Sử dụng lệnh `{{- prefix}}tts_default <code>` để thay đổi ngôn ngữ"
+    }
+  },
+  "moderation": {
+    "ban": {
+      "name": "ban",
+      "example": "",
+      "description": "Ban users from the server",
+      "success_ban_from": "You've been banned in {{guildName}}",
+      "success": "The specified user has been successfully banned and successfully received a notification!",
+      "success_no_notification": "The given user has been successfully banned, but has not received a notification!",
+      "banned_by": "👤┆Banned by",
+      "user_who_banned": "👤┆Banned user",
+      "reason": "💬┆Reason",
+      "not_given": "Not given"
+    },
+    "clear": {
+      "name": "clear",
+      "example": "",
+      "description": "Clear message of some channel",
+      "more_than_100": "I cannot delete more than 100 messages at a time!",
+      "less_than_1": "I cannot delete less than 1 message!",
+      "invalid_amount": "Please specify a valid number between 1 and 100",
+      "older_than_14d": "You can only bulk delete messages that are under 14 days old.",
+      "success": "I have successfully deleted {{amount}} the messages",
+      "error": "There was an error trying to delete messages in this channel!"
+    },
+    "clearuser": {
+      "name": "clearuser",
+      "example": "",
+      "description": "Clear message of someone",
+      "invalid_args": "Please specify a valid number between 1 and 100 or a user mention",
+      "user_not_found": "I cannot find the user you mentioned",
+      "update_soon": "TODO"
+    },
+    "kick": {
+      "name": "kick",
+      "example": "",
+      "description": "Kick users from the server",
+      "success": "The specified user has been successfully banned and successfully received a notification!",
+      "success_kick_from": "You've been banned in {{guildName}}",
+      "success_no_notification": "The given user has been successfully banned, but has not received a notification!",
+      "kicked_by": "👤┆Kicked by",
+      "reason": "💬┆Reason",
+      "user_who_kicked": "👤┆Kicked user",
+      "not_given": "Not given"
+    },
+    "mute": {
+      "name": "timeout",
+      "example": "",
+      "description": "Mute users for a certain time",
+      "more_than_28d": "Invalid input time or time is larger than 28 days",
+      "success": "{{userName}} successfully timed out {{prettyMilliseconds}}",
+      "not_given": "Not given",
+      "reason": "💬┆Reason"
+    },
+    "warn": {
+      "name": "warn",
+      "example": "",
+      "description": "Warning user for something",
+      "success": "User has received a warning!",
+      "not_given": "Not given",
+      "title": "🔨・Warn",
+      "success_warn_from": "You have been warned from {{guildName}}",
+      "moderator": "👤┆Moderator",
+      "reason": "💬┆Reason",
+      "user_who_warned": "👤┆User",
+      "number_warn": "💬┆Number of warn"
+    }
+  },
+  "errors": {
+    "server_not_found": "**🚫 | Server configuration not found",
+    "command_execution": "**🚫 | An error occurred executing the command"
+  },
+  "event": {
+    "message_create": {
+      "warning_invite_link": "**{{-icon}} | {{-author}} | **Please don't send the invite links from another server!!!"
+    },
+    "mention_prefix": "My prefix(es) in this guild is: `{{-prefixes}}`",
+    "global_error": "**{{-icon}} | {{-author}} | **Something went wrong, try it later!!!"
+  },
+  "user": {
+    "inventory": {
+      "description": "Inventory's item",
+      "describle": "Item usage tutorial:",
+      "tutorial": "use <item_code> to use item",
+      "item_content": "{{- itemIcon }}: **{{quantity}}**",
+      "pagination": "Page {{ current_page }}/{{ total_page }}"
+    },
+    "use": {
+      "err1": "Please input item code you want to use",
+      "err2": "Can't found item you want to use",
+      "err3": "You don't have that item",
+      "err4": "Quantity of item is not enough to use"
+    }
+  },
+  "service": {
+    "voice": {
+      "private_join_request": "{{-owner}} **|** {{-user}} is request to join your room",
+      "reject_request": "** {{-user}} | ** Reject your request to join room",
+      "private_join_request_timeout": "** {{-user}} | ** Seem like there is not response to your request",
+      "interaction": {
+        "lock": "**{{-icon}} | {{-author}} , ** Your room have been locked successfully",
+        "unlock": "**{{-icon}} | {{-author}} , ** Your room have been unlocked successfully",
+        "hide": "**{{-icon}} | {{-author}} , ** Your room have been hided successfully",
+        "show": "**{{-icon}} | {{-author}} , ** Your room have been showed successfully",
+        "mute": "**{{-icon}} | {{-author}} , ** Your room have been muted successfully",
+        "unmute": "**{{-icon}} | {{-author}} , ** Your room have been unmuteed successfully"
+      }
+    }
+  },
+  "yearly_event": {
+    "list_participant": "List of participants:",
+    "leaderboard": {
+      "not_found": "**{{- emoji }}| {{- author }},** Can't get request type",
+      "title": "{{- emoji }} **Leaderboard** {{- emoji }}"
+    },
+    "xmas": {
+      "snowball": "Snowball",
+      "e001": "Snowman",
+      "e002": "Xmas Hat",
+      "e003": "Candy Cane"
+    },
+    "xmas_box": {
+      "ghost": "** {{-emoji }}| {{- author }},** Oh no! Who put {{-item}} into gift box. Good luck next times",
+      "appear": "** {{-emoji }}| Xmas box!!** Write down `pick` to get **Xmas Box**",
+      "winner": "** {{-emoji }}|** Congratulation <@{{- member }}> for captured {{- boxIcon }}!!",
+      "usebox": "** {{-emoji }}|** Use command `{{- command}}` to open {{- boxIcon}}",
+      "opening": "**{{- boxIcon }}| {{- author }},** opening **Xmas Box**...",
+      "opened": "**{{- boxIcon }}| {{- author }},** opened **Xmas Box** and get **{{-itemIcon }}**",
+      "voice_log": "<@{{userId}}> has been in voice channel for {{hour}} hour {{min}} minute!!! You get {{numOfBox}} **Xmas Box**",
+      "chat_log": "<@{{userId}}> get **Xmas Box** while having activity in {{serverName}}"
+    }
+  }
 }
