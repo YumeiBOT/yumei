@@ -1,0 +1,15 @@
+{
+  "voice": {
+    "private_join_request": "{{-owner}} **|** {{-user}} yêu cầu tham gia phòng của bạn",
+    "reject_request": "** {{-user}} | ** Từ chối yêu cầu tham gia phòng của bạn",
+    "private_join_request_timeout": "** {{-user}} | ** Có vẻ như không có phản hồi nào cho yêu cầu của bạn",
+    "interaction": {
+      "lock": "**{{-icon}} | {{-author}} , ** Phòng của bạn đã được khóa thành công",
+      "unlock": "**{{-icon}} | {{-author}} , ** Phòng của bạn đã được mở khóa thành công",
+      "hide": "**{{-icon}} | {{-author}} , ** Phòng của bạn đã được ẩn thành công",
+      "show": "**{{-icon}} | {{-author}} , ** Phòng của bạn đã được hiển thị thành công",
+      "mute": "**{{-icon}} | {{-author}} , ** Phòng của bạn đã được tắt tiếng thành công",
+      "unmute": "**{{-icon}} | {{-author}} , ** Phòng của bạn đã được bật tiếng thành công"
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "ping": {
+    "name": "Mã lệnh Ping",
+    "example": "```{{-prefix}}{{alias}}```",
+    "description": "Ping pong"
+  },
+  "server_info": {
+    "name": "Mã lệnh Server Information",
+    "embed_title": "Thông tin server",
+    "embed_id": "ID",
+    "embed_owner": "Chủ quản",
+    "embed_verification": "Cấp độ xác thực",
+    "embed_channels": "Mục kênh",
+    "embed_voice_channels": "Kênh trò chuyện",
+    "embed_chat_channels": "Kênh nhắn tin",
+    "embed_role": "Quyền hành",
+    "embed_members": "Thành viên",
+    "embed_emojis": "Biểu cảm",
+    "embed_emojis_animate": "Biểu cảm động",
+    "example": "```{{-prefix}}{{alias}}```",
+    "description": "Thông tin server"
+  },
+  "bot_info": {
+    "name": "Tra cứu thông tin BOT",
+    "prefix": "**Prefix:** `{{prefixes}}`",
+    "support": {
+      "name": "{{-emoji}} Máy chủ hỗ trợ",
+      "detail": "{{-emoji}} [Ấn vào đây để tham gia]({{- url}})"
+    },
+    "cannot_find_info": "Chưa lưu thông tin Bot",
+    "un_synchronized": "Thông tin đã lưu chưa được cập nhật",
+    "already_exist": "Thông tin bot đã cập nhật",
+    "create_success": "Lưu thông tin bot thành công",
+    "example": "```{{-prefix}}{{alias}} upadte \n{{-prefix}}{{alias}} create \n{{-prefix}}{{alias}} show```",
+    "description": "Cài đặt thông tin bot",
+    "basic": {
+      "name": "**📇 Thông tin**",
+      "details": "**・Tên:** `{{tag}}`\n**・Uptime:** `{{time}}`"
+    },
+    "stats": {
+      "name": "**📊 Thông số**",
+      "details": "**・Máy chủ:** `{{server}}`\n**・Người dùng:** `{{user}}`"
+    },
+    "version": {
+      "name": "**🔎 Phiên bản**",
+      "details": "**・D.JS:** `{{djs}}`\n**・Node:** `{{njs}}`"
+    },
+    "cpu": {
+      "name": "**🖥️ CPU**",
+      "details": "**・Cores:** `{{total}}`\n**・Tốc độ:** `{{speed}} GHz`"
+    },
+    "other": {
+      "name": "**{{-emoji}} Khác**",
+      "details": "**・OS:** `{{os}}`"
+    },
+    "ram": {
+      "name": "**{{-emoji}} RAM**",
+      "details": "**・Tổng:** `{{total}}`\n**・Trống:** `{{free}}`"
+    }
+  },
+  "prefix": {
+    "name": "Mã lệnh Prefix",
+    "server_not_found": "**{{-icon}} | ** Không tìm thấy cấu hình máy chủ",
+    "error_log": "Lỗi lệnh prefix: {{error}}",
+    "add": "**{{-icon}} | **Đã thêm tiếp đầu ngữ `{{-prefix}}` ",
+    "list_prefixes": "Danh sách tiếp đầu ngữ nàaa: `{{-prefixes}}`",
+    "duplicate_prefix": "**{{-icon}} | {{-username}} | **Bạn đang sử dụng tiếp đầu ngữ `{{-prefix}}` rồi!!!",
+    "not_found_prefix": "**{{-icon}} | **Không tìm thấy tiếp đầu ngữ `{{-prefix}}`!!!",
+    "can_not_remove": "**{{-icon}} | **Không thể xóa tiếp đầu ngữ`{{-prefix}}`!!! Phải có ít nhất một tiếp đầu ngữ.",
+    "remove": "**{{-icon}} | **Đã xóa tiếp đầu ngữ `{{-prefix}}`",
+    "example": "```{{-prefix}}{{alias}} add {prefix}```",
+    "description": "Cài đặt tiếp đầu ngữ",
+    "no_prefix": "TODO",
+    "action_description": "TODO",
+    "prefix_option": "TODO"
+  },
+  "help": {
+    "name": "Mã lệnh Help",
+    "embed_list": "Danh sách mã lệnh của **{{-botName}}** nà!!! \n Chi tiết mã lệnh, sử dụng `{{-prefix}}help {mã lệnh}`",
+    "embed_title": "Mã lệnh {{-command}}",
+    "embed_aliases": "Bí danh",
+    "embed_description": "Mô tả",
+    "embed_example": "Mẫu lệnh",
+    "not_have_command": "**{{-icon}} | {{-botName}}**chưa hỗ trợ mã lệnh này nhaaa!!!",
+    "not_have_permission": " **{{-icon}} | {{-username}} | **Bạn cần được cấp quyền để sử dụng mã lệnh này!!!",
+    "example": "```{{-prefix}}{{alias}}```",
+    "description": "Danh sách mã lệnh"
+  }
+}

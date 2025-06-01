@@ -1,0 +1,31 @@
+{
+  "set_bitrate": {
+    "name": "Set bitrate command",
+    "example": "```{{-prefix}}{{alias}} {bitrate}```",
+    "description": "Set bitrate of voice channel",
+    "illegal": "**{{-icon}} | {{-username}} | **Your channel only allow bitrate {{-min_bitrate}}kbps - {{-max_bitrate}}kbps!!!"
+  },
+  "change_region": {
+    "name": "Change Region command",
+    "example": "```{{-prefix}}{{alias}} {region} | {list}```",
+    "description": "Set region for voice channel and get regions list",
+    "illegal": "**{{-icon}} | {{-username}} | **Region is illegal!!! \n Use `{{-prefix}}{{alias}} {list}` to get list regions."
+  },
+  "clan": {
+    "create_team": {
+      "description": "Create clan(team) room",
+      "req_team_name": "**{{-emoji}} | {{- author }},** Please input Clan(Team) Name",
+      "req_clan_settings": "**{{-emoji}} | {{- author }},** Server setting for clan is not setup yet. Contact admin for setup Clan Voice Setting",
+      "success": "**{{-emoji}}  | {{- author }},** Create room successfully!",
+      "having_room": "**{{-emoji}}  | {{- author }},** You already own your own story room"
+    },
+    "room_member": {
+      "no_permission": "**{{-icon}}  | {{- author }}, ** You don't have permission to add/remove member",
+      "add": "**{{-icon}}  | {{- author }}, ** Added member successfully ",
+      "remove": "**{{-icon}}  | {{- author }}, ** Removed member successfully "
+    }
+  },
+  "server_clan_voice_setting": {
+    "success": "**✅ | {{- author }},** Saved clan chat room settings successfully\nIf you need to add more categories use the command \\` \\``"
+  }
+}

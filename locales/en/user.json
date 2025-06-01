@@ -1,0 +1,15 @@
+{
+  "inventory": {
+    "description": "Inventory's item",
+    "describle": "Item usage tutorial:",
+    "tutorial": "use <item_code> to use item",
+    "item_content": "{{- itemIcon }}: **{{quantity}}**",
+    "pagination": "Page {{ current_page }}/{{ total_page }}"
+  },
+  "use": {
+    "err1": "Please input item code you want to use",
+    "err2": "Can't found item you want to use",
+    "err3": "You don't have that item",
+    "err4": "Quantity of item is not enough to use"
+  }
+}

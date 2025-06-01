@@ -1,0 +1,15 @@
+{
+  "inventory": {
+    "description": "Danh sách item trong kho đồ",
+    "describle": "Hướng dẫn sử dụng item:",
+    "tutorial": "use <item_code> để sử dụng",
+    "item_content": "{{- itemIcon }}: **{{quantity}}**",
+    "pagination": "Trang {{ current_page }}/{{ total_page }}"
+  },
+  "use": {
+    "err1": "Vui lòng nhập mã của item cần sử dụng",
+    "err2": "Không tìm thấy item cần dùng",
+    "err3": "Bạn không sở hữu item này",
+    "err4": "Số lượng của item không đủ để dùng"
+  }
+}

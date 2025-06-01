@@ -1,0 +1,31 @@
+{
+  "tts": {
+    "min_char": "**🚫 | {{-author }},** Không có chữ thì làm sao nói?",
+    "max_char": "**🚫 | {{-author }},** Hiện tại BOT chỉ hỗ trợ tối đa 100 kí tự",
+    "invalid_input": "**🚫 | {{-author }},** Vui lòng nhập văn bản từ 1-100 ký tự",
+    "playing": "**✅ | Đang phát văn bản thành giọng nói",
+    "voice_error": "**🚫 | Lỗi phát âm thanh trong kênh thoại",
+    "error": "**🚫 | Đã xảy ra lỗi với chức năng chuyển văn bản thành giọng nói"
+  },
+  "join": {
+    "used": "**🚫 | {{-author }},** Bot đang được sử dụng ở một kênh khác",
+    "speaking": "**🚫 | {{-author }},** Vui lòng chờ câu nói trước hoàn thành",
+    "join_success": "**✅ | {{-author }},** Đã tham gia phòng trò chuyện"
+  },
+  "leave": {
+    "success": "**✅ | {{-author }},** Đã thoát khỏi phòng trò chuyện"
+  },
+  "stop": {
+    "success": "**✅ | {{-author }},** Đã dừng câu nói trước đó"
+  },
+  "tts_default": {
+    "current_language": "**ℹ️ | {{-author }},** Ngôn ngữ hiện tại khi đọc là `{{- lang}}`",
+    "not_supported": "**🚫 | {{-author }},** Ngôn ngữ bạn nhập vào hiện không được hỗ trợ",
+    "success": "**{{-icon }} | {{-author }},** Đã chuyển ngôn ngữ khi đọc sang `{{- lang}}`"
+  },
+  "tts_languages": {
+    "title": "Danh sách các ngôn ngữ hỗ trợ",
+    "change_language_tutorial": "Hướng dẫn chỉnh ngôn ngữ",
+    "change_language_tutorial2": "Sử dụng lệnh `{{- prefix}}tts_default <code>` để thay đổi ngôn ngữ"
+  }
+}

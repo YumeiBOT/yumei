@@ -1,0 +1,23 @@
+{
+  "list_participant": "List of participants:",
+  "leaderboard": {
+    "not_found": "**{{- emoji }}| {{- author }},** Can't get request type",
+    "title": "{{- emoji }} **Leaderboard** {{- emoji }}"
+  },
+  "xmas": {
+    "snowball": "Snowball",
+    "e001": "Snowman",
+    "e002": "Xmas Hat",
+    "e003": "Candy Cane"
+  },
+  "xmas_box": {
+    "ghost": "** {{-emoji }}| {{- author }},** Oh no! Who put {{-item}} into gift box. Good luck next times",
+    "appear": "** {{-emoji }}| Xmas box!!** Write down `pick` to get **Xmas Box**",
+    "winner": "** {{-emoji }}|** Congratulation <@{{- member }}> for captured {{- boxIcon }}!!",
+    "usebox": "** {{-emoji }}|** Use command `{{- command}}` to open {{- boxIcon}}",
+    "opening": "**{{- boxIcon }}| {{- author }},** opening **Xmas Box**...",
+    "opened": "**{{- boxIcon }}| {{- author }},** opened **Xmas Box** and get **{{-itemIcon }}**",
+    "voice_log": "<@{{userId}}> has been in voice channel for {{hour}} hour {{min}} minute!!! You get {{numOfBox}} **Xmas Box**",
+    "chat_log": "<@{{userId}}> get **Xmas Box** while having activity in {{serverName}}"
+  }
+}

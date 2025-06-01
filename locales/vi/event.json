@@ -1,0 +1,7 @@
+{
+  "message_create": {
+    "warning_invite_link": "**{{-icon}} | {{-author}} | **Bạn ơi đừng gửi link server khác nha!!!"
+  },
+  "mention_prefix": "Tiếp đầu ngữ trong server: `{{-prefixes}}`",
+  "global_error": "**{{-icon}} | {{-author}} | **Đã xảy ra lỗi, thử lại sau nhaaa!!!"
+}

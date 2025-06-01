@@ -1,0 +1,23 @@
+{
+  "list_participant": "Những người tham gia:",
+  "leaderboard": {
+    "not_found": "**{{- emoji }}| {{-author }},** Không tìm thấy kiểu cần truy cứu",
+    "title": "{{- emoji }} **Bảng xếp hạng** {{- emoji }}"
+  },
+  "xmas": {
+    "snowball": "Cầu tuyết",
+    "e001": "Người tuyết",
+    "e002": "Mũ giáng sinh",
+    "e003": "Kẹo ngọt"
+  },
+  "xmas_box": {
+    "ghost": "** {{-emoji }}| {{-author }},** Oh no! Who put {{-item}} into gift box. Good luck next times",
+    "appear": "{{-emoji }}**| Xmas box!!** Gõ lệnh `pick` để giành lấy **Hộp quà giáng sinh** nha",
+    "winner": "{{-emoji }}**|** Chúc mừng <@{{- member }}> đã nhặt được {{- boxIcon }}!!",
+    "usebox": "{{-emoji }}**|** Dùng lệnh `{{- command}}` để mở {{- boxIcon}} nhé",
+    "opening": "**{{- boxIcon }}| {{-author }}** đang mở **Hộp quà giáng sinh**...",
+    "opened": "**{{- boxIcon }}| {{-author }}** đã mở **Hộp quà giáng sinh** và nhận được **{{-itemIcon }}**",
+    "voice_log": "<@{{userId}}> đã treo voice trong {{hour}} giờ {{min}} phút!!! Bạn nhận được {{numOfBox}} **Hộp quà giáng sinh**",
+    "chat_log": "<@{{userId}}> Đã may mắn nhận được **Hộp quà giáng sinh** khi hoạt động tại {{serverName}}"
+  }
+}

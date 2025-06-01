@@ -1,0 +1,15 @@
+{
+  "voice": {
+    "private_join_request": "{{-owner}} **|** {{-user}} is request to join your room",
+    "reject_request": "** {{-user}} | ** Reject your request to join room",
+    "private_join_request_timeout": "** {{-user}} | ** Seem like there is not response to your request",
+    "interaction": {
+      "lock": "**{{-icon}} | {{-author}} , ** Your room have been locked successfully",
+      "unlock": "**{{-icon}} | {{-author}} , ** Your room have been unlocked successfully",
+      "hide": "**{{-icon}} | {{-author}} , ** Your room have been hided successfully",
+      "show": "**{{-icon}} | {{-author}} , ** Your room have been showed successfully",
+      "mute": "**{{-icon}} | {{-author}} , ** Your room have been muted successfully",
+      "unmute": "**{{-icon}} | {{-author}} , ** Your room have been unmuteed successfully"
+    }
+  }
+}

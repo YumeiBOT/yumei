@@ -1,0 +1,31 @@
+{
+  "set_bitrate": {
+    "name": "Mã lệnh Set bitrate",
+    "example": "```{{-prefix}}{{alias}} {bitrate}```",
+    "description": "Cài đặt bitrate của kênh trò chuyện",
+    "illegal": "**{{-icon}} | {{-username}} | **Kênh trò chuyện có bitrate hợp lệ {{-min_bitrate}} - {{-max_bitrate}}!!!"
+  },
+  "change_region": {
+    "name": "Mã lệnh Change Region",
+    "example": "```{{-prefix}}{{alias}} {region} | {list}```",
+    "description": "Cài đặt khu vực cho kênh trò chuyện và lấy danh sách khu vực",
+    "illegal": "**{{-icon}} | {{-username}} | **Khu vực không hợp lệ!!! \n Sử dụng `{{-prefix}}{{alias}} {list}` để lấy danh sách khu vực."
+  },
+  "clan": {
+    "create_team": {
+      "description": "Tạo phòng CLB(nhóm)",
+      "req_team_name": "**{{-emoji}} | {{-author }},** Vui lòng nhập tên CLB(nhóm)",
+      "req_clan_settings": "**{{-emoji}} | {{-author }},** Máy chủ chưa thiết lập cài đặt cho CLB. Vui lòng liên hệ quản lí máy chủ để cài đặt",
+      "success": "**{{-emoji}}  | {{-author }},** Tạo phòng thành công",
+      "having_room": "**{{-emoji}}  | {{-author }},** Bạn đã sở hữu cho mình một phòng trò truyện"
+    },
+    "room_member": {
+      "no_permission": "**{{-emoji}}  | {{-author }}, ** Bạn không có quyền thêm/xóa thành viên phòng này",
+      "add": "**{{-emoji}}  | {{-author }}, ** Thêm thành viên thành công",
+      "remove": "**{{-emoji}}  | {{-author }}, ** Xóa thành viên thành công"
+    }
+  },
+  "server_clan_voice_setting": {
+    "success": "**✅ | {{-author }},** Lưu cài đặt phòng trò chuyện clan thành công\nNếu bạn cần thêm nhiều category hơn hãy dùng lệnh \\` \\``"
+  }
+}
