@@ -3,5 +3,49 @@
     "warning_invite_link": "**{{-icon}} | {{-author}} | **Bạn ơi đừng gửi link server khác nha!!!"
   },
   "mention_prefix": "Tiếp đầu ngữ trong server: `{{-prefixes}}`",
-  "global_error": "**{{-icon}} | {{-author}} | **Đã xảy ra lỗi, thử lại sau nhaaa!!!"
+  "global_error": "**{{-icon}} | {{-author}} | **Đã xảy ra lỗi, thử lại sau nhaaa!!!",
+  "guild_ban_add": {
+    "title": "Thành viên bị cấm",
+    "desc": "{{-executor}} đã cấm {{-target}} khỏi máy chủ."
+  },
+  "guild_ban_remove": {
+    "title": "Thành viên được gỡ cấm",
+    "desc": "{{-executor}} đã gỡ cấm {{-target}} khỏi máy chủ."
+  },
+  "guild_update": {
+    "title": "Máy chủ được cập nhật",
+    "desc": "{{-executor}} đã cập nhật thông tin máy chủ."
+  },
+  "guild_member_add": {
+    "title": "Thành viên mới",
+    "desc": "{{-target}} đã tham gia máy chủ."
+  },
+  "guild_member_remove": {
+    "title": "Thành viên rời đi",
+    "desc": "{{-target}} đã rời khỏi máy chủ."
+  },
+  "guild_member_update": {
+    "title": "Cập nhật thành viên",
+    "desc": "{{-executor}} đã cập nhật thông tin của {{-target}}."
+  },
+  "guild_member_prune": {
+    "title": "Thành viên bị loại bỏ",
+    "desc": "{{-executor}} đã loại bỏ các thành viên không hoạt động."
+  },
+  "guild_role_create": {
+    "title": "Tạo vai trò mới",
+    "desc": "{{-executor}} đã tạo vai trò {{-role}}."
+  },
+  "guild_role_update": {
+    "title": "Cập nhật vai trò",
+    "desc": "{{-executor}} đã cập nhật vai trò {{-role}}."
+  },
+  "guild_role_delete": {
+    "title": "Xóa vai trò",
+    "desc": "{{-executor}} đã xóa vai trò {{-role}}."
+  },
+  "guild_bot_add": {
+    "title": "Bot được thêm vào",
+    "desc": "{{-executor}} đã thêm bot {{-target}} vào máy chủ."
+  }
 }

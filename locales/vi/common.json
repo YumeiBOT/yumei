@@ -1,9 +1,13 @@
 {
-  "on": "On",
-  "off": "Off",
+  "on": "Bật",
+  "off": "Tắt",
+  "time": "Thời gian",
+  "reason": "Lý do",
+  "changes": "Thay đổi",
   "voice": {
     "not_joined": "**{{-emoji}} | {{-author}} | **Không tìm thấy kênh trò chuyện bạn đang tham gia!!!",
-    "not_same_room": "**{{- emoji}} | {{- author}}, ** Bạn đang không cùng phòng trò chuyện với tôi"
+    "not_same_room": "**{{- emoji}} | {{- author}}, ** Bạn đang không cùng phòng trò chuyện với tôi",
+    "not_owner": "**{{-icon}} | {{-author}}, ** Bạn không có quyền chuyển quyền sở hữu kênh thoại này"
   },
   "music": {
     "nothing_playing": "**{{- emoji}} | {{-author}}, ** Không có bài hát nào đang được phát"

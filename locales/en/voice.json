@@ -1,4 +1,21 @@
 {
+  "interaction": {
+    "lock": "**🔒 | {{-author}}** Locked the voice channel",
+    "unlock": "**🔓 | {{-author}}** Unlocked the voice channel",
+    "hide": "**👁️ | {{-author}}** Hidden the voice channel",
+    "show": "**👁️ | {{-author}}** Shown the voice channel",
+    "mute": "**🔇 | {{-author}}** Muted the voice channel",
+    "unmute": "**🔊 | {{-author}}** Unmuted the voice channel",
+    "user_mute": "**{{-icon}} | {{-author}}** Muted {{-target}} in the voice channel",
+    "user_unmute": "**{{-icon}} | {{-author}}** Unmuted {{-target}} in the voice channel",
+    "user_deafen": "**{{-icon}} | {{-author}}** Deafened {{-target}} in the voice channel",
+    "user_undeafen": "**{{-icon}} | {{-author}}** Undeafened {{-target}} in the voice channel",
+    "ban": "**🚫 | {{-author}}** Banned {{-target}} from the voice channel",
+    "kick": "**{{-icon}} | {{-author}}** Kicked {{-target}} from the voice channel",
+    "transfer": "**{{-icon}} | {{-author}}** Transferred ownership to {{-target}}",
+    "select_new_owner": "Please select the new owner.",
+    "no_users_found": "Error: Cannot find users to transfer ownership to."
+  },
   "set_bitrate": {
     "name": "Set bitrate command",
     "example": "```{{-prefix}}{{alias}} {bitrate}```",

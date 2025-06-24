@@ -1,9 +1,13 @@
 {
   "on": "On",
   "off": "Off",
+  "time": "Time",
+  "reason": "Reason",
+  "changes": "Changes",
   "voice": {
     "not_joined": "**{{-icon }} | {{-author}}, ** You're not in voice channel",
-    "not_same_room": "**{{-emoji}} | {{-author}}, ** You're not in the same voice channel!"
+    "not_same_room": "**{{-emoji}} | {{-author}}, ** You're not in the same voice channel!",
+    "not_owner": "**{{-icon}} | {{-author}}, ** You don't have permission to transfer ownership of this voice channel"
   },
   "music": {
     "nothing_playing": "**{{-emoji}} | {{-author}}, ** Oi!! Baka!! No Music On Queue!"

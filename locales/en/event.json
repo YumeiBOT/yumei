@@ -3,5 +3,47 @@
     "warning_invite_link": "**{{-icon}} | {{-author}} | **Please don't send the invite links from another server!!!"
   },
   "mention_prefix": "My prefix(es) in this guild is: `{{-prefixes}}`",
-  "global_error": "**{{-icon}} | {{-author}} | **Something went wrong, try it later!!!"
+  "global_error": "**{{-icon}} | {{-author}} | **Something went wrong, try it later!!!",
+  "action_log": {
+    "ban_add": {
+      "title": "User Banned",
+      "desc": "{{-moderator}} banned {{-target}}."
+    },
+    "ban_remove": {
+      "title": "User Unbanned",
+      "desc": "{{-moderator}} unbanned {{-target}}."
+    },
+    "kick": {
+      "title": "User Kicked",
+      "desc": "{{-moderator}} kicked {{-target}}."
+    },
+    "guild_update": {
+      "title": "Server Updated",
+      "desc": "{{-moderator}} updated the server."
+    },
+    "member_update": {
+      "title": "Member Updated",
+      "desc": "{{-moderator}} updated {{-target}}."
+    },
+    "member_remove": {
+      "title": "Member Removed",
+      "desc": "{{-moderator}} removed {{-target}}."
+    },
+    "member_add": {
+      "title": "Member Joined",
+      "desc": "{{-target}} joined the server."
+    },
+    "role_create": {
+      "title": "Role Created",
+      "desc": "{{-moderator}} created role {{-target}}."
+    },
+    "role_update": {
+      "title": "Role Updated",
+      "desc": "{{-moderator}} updated role {{-target}}."
+    },
+    "role_delete": {
+      "title": "Role Deleted",
+      "desc": "{{-moderator}} deleted role {{-target}}."
+    }
+  }
 }

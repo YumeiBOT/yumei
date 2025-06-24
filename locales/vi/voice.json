@@ -1,4 +1,21 @@
 {
+  "interaction": {
+    "lock": "**🔒 | {{-author}}** Đã khóa kênh thoại",
+    "unlock": "**🔓 | {{-author}}** Đã mở khóa kênh thoại", 
+    "hide": "**👁️ | {{-author}}** Đã ẩn kênh thoại",
+    "show": "**👁️ | {{-author}}** Đã hiện kênh thoại",
+    "mute": "**🔇 | {{-author}}** Đã tắt tiếng kênh thoại",
+    "unmute": "**🔊 | {{-author}}** Đã bật tiếng kênh thoại",
+    "user_mute": "**{{-icon}} | {{-author}}** Đã tắt tiếng {{-target}} trong kênh thoại",
+    "user_unmute": "**{{-icon}} | {{-author}}** Đã bật tiếng {{-target}} trong kênh thoại",
+    "user_deafen": "**{{-icon}} | {{-author}}** Đã tắt tai nghe của {{-target}} trong kênh thoại",
+    "user_undeafen": "**{{-icon}} | {{-author}}** Đã bật tai nghe của {{-target}} trong kênh thoại",
+    "ban": "**🚫 | {{-author}}** Đã cấm {{-target}} vào kênh thoại",
+    "kick": "**👢 | {{-author}}** Đã đuổi {{-target}} khỏi kênh thoại",
+    "transfer": "**{{-icon}} | {{-author}}** Đã chuyển quyền sở hữu cho {{-target}}",
+    "select_new_owner": "Vui lòng chọn chủ sở hữu mới.",
+    "no_users_found": "Lỗi: Không tìm thấy người dùng để chuyển quyền sở hữu."
+  },
   "set_bitrate": {
     "name": "Mã lệnh Set bitrate",
     "example": "```{{-prefix}}{{alias}} {bitrate}```",

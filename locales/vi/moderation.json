@@ -1,4 +1,7 @@
 {
+  "links": {
+    "blocked": "❌ {author}, tin nhắn của bạn đã bị xóa vì chứa liên kết."
+  },
   "ban": {
     "name": "ban",
     "example": "",
