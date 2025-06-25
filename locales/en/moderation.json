@@ -1,6 +1,6 @@
 {
   "links": {
-    "blocked": "❌ {author}, your message was removed because it contained a link."
+    "blocked": "❌ {{-author}}, your message was removed because it contained a link."
   },
   "ban": {
     "name": "ban",
