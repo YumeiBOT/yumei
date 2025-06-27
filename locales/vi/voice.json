@@ -57,13 +57,13 @@
       "description": "Tạo phòng CLB(nhóm)",
       "req_team_name": "**{{-icon}} | {{-author}},** Vui lòng nhập tên CLB(nhóm)",
       "req_clan_settings": "**{{-icon}} | {{-author}},** Máy chủ chưa thiết lập cài đặt cho CLB. Vui lòng liên hệ quản lí máy chủ để cài đặt",
-      "success": "**{{-icon}}  | {{-author}},** Tạo phòng thành công",
-      "having_room": "**{{-icon}}  | {{-author}},** Bạn đã sở hữu cho mình một phòng trò truyện"
+      "success": "**{{-icon}} | {{-author}},** Tạo phòng thành công",
+      "having_room": "**{{-icon}} | {{-author}},** Bạn đã sở hữu cho mình một phòng trò truyện"
     },
     "room_member": {
-      "no_permission": "**{{-icon}}  | {{-author}}, ** Bạn không có quyền thêm/xóa thành viên phòng này",
-      "add": "**{{-icon}}  | {{-author}}, ** Thêm thành viên thành công",
-      "remove": "**{{-icon}}  | {{-author}}, ** Xóa thành viên thành công"
+      "no_permission": "**{{-icon}} | {{-author}}, ** Bạn không có quyền thêm/xóa thành viên phòng này",
+      "add": "**{{-icon}} | {{-author}}, ** Thêm thành viên thành công",
+      "remove": "**{{-icon}} | {{-author}}, ** Xóa thành viên thành công"
     }
   },
   "server_clan_voice_setting": {

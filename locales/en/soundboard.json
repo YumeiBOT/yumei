@@ -26,6 +26,6 @@
   "tts_languages": {
     "title": "Danh sách các ngôn ngữ hỗ trợ",
     "change_language_tutorial": "Hướng dẫn chỉnh ngôn ngữ",
-    "change_language_tutorial2": "Sử dụng lệnh `{{- prefix}}tts_default <code>` để thay đổi ngôn ngữ"
+    "change_language_tutorial2": "Sử dụng lệnh `{{-prefix}}tts_default <code>` để thay đổi ngôn ngữ"
   }
 }

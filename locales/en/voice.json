@@ -57,13 +57,13 @@
       "description": "Create clan(team) room",
       "req_team_name": "**{{-icon}} | {{-author}},** Please input Clan(Team) Name",
       "req_clan_settings": "**{{-icon}} | {{-author}},** Server setting for clan is not setup yet. Contact admin for setup Clan Voice Setting",
-      "success": "**{{-icon}}  | {{-author}},** Create room successfully!",
-      "having_room": "**{{-icon}}  | {{-author}},** You already own your own story room"
+      "success": "**{{-icon}} | {{-author}},** Create room successfully!",
+      "having_room": "**{{-icon}} | {{-author}},** You already own your own story room"
     },
     "room_member": {
-      "no_permission": "**{{-icon}}  | {{-author}}, ** You don't have permission to add/remove member",
-      "add": "**{{-icon}}  | {{-author}}, ** Added member successfully ",
-      "remove": "**{{-icon}}  | {{-author}}, ** Removed member successfully "
+      "no_permission": "**{{-icon}} | {{-author}}, ** You don't have permission to add/remove member",
+      "add": "**{{-icon}} | {{-author}}, ** Added member successfully ",
+      "remove": "**{{-icon}} | {{-author}}, ** Removed member successfully "
     }
   },
   "server_clan_voice_setting": {
