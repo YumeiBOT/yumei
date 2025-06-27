@@ -28,12 +28,16 @@
     "change_name": {
       "title": "Change VC Name",
       "label": "Name",
-      "placeholder": "Type name here"
+      "placeholder": "Type name here",
+      "invalid_input": "**{{-emoji}} | {{-author}}** Invalid name input. Name must be between 1-100 characters.",
+      "success": "**{{-icon}} | {{-author}}** Changed voice channel name to: {{-name}}"
     },
     "set_limit": {
       "title": "Set User limit",
       "label": "User limit",
-      "placeholder": "Type number here"
+      "placeholder": "Type number here",
+      "invalid_input": "**{{-emoji}} | {{-author}}** Invalid limit input. Please enter a number between 0-99.",
+      "success": "**{{-icon}} | {{-author}}** Set voice channel user limit to: {{-limit}}"
     }
   },
   "set_bitrate": {

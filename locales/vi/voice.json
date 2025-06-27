@@ -28,12 +28,16 @@
     "change_name": {
       "title": "Đổi tên kênh thoại",
       "label": "Tên",
-      "placeholder": "Nhập tên ở đây"
+      "placeholder": "Nhập tên ở đây",
+      "invalid_input": "**{{-emoji}} | {{-author}}** Tên không hợp lệ. Tên phải có từ 1-100 ký tự.",
+      "success": "**{{-icon}} | {{-author}}** Đã đổi tên kênh thoại thành: {{-name}}"
     },
     "set_limit": {
       "title": "Đặt giới hạn người dùng",
       "label": "Giới hạn người dùng",
-      "placeholder": "Nhập số ở đây"
+      "placeholder": "Nhập số ở đây",
+      "invalid_input": "**{{-emoji}} | {{-author}}** Giới hạn không hợp lệ. Vui lòng nhập số từ 0-99.",
+      "success": "**{{-icon}} | {{-author}}** Đã đặt giới hạn người dùng kênh thoại thành: {{-limit}}"
     }
   },
   "set_bitrate": {
