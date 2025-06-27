@@ -1,27 +1,27 @@
 {
   "tts": {
-    "min_char": "**🚫 | {{- author }},** Nothing to say",
-    "max_char": "**🚫 | {{- author }},** Hiện tại BOT chỉ hỗ trợ tối đa 100 kí tự",
-    "invalid_input": "**🚫 | {{- author }},** Please enter text between 1-100 characters",
+    "min_char": "**🚫 | {{-author}},** Nothing to say",
+    "max_char": "**🚫 | {{-author}},** Hiện tại BOT chỉ hỗ trợ tối đa 100 kí tự",
+    "invalid_input": "**🚫 | {{-author}},** Please enter text between 1-100 characters",
     "playing": "**✅ | Playing text-to-speech",
     "voice_error": "**🚫 | Error playing audio in voice channel",
     "error": "**🚫 | An error occurred with text-to-speech"
   },
   "join": {
-    "used": "**🚫 | {{- author }},** Bot đang được sử dụng ở một kênh khác",
-    "speaking": "**🚫 | {{- author }},** Vui lòng chờ câu nói trước hoàn thành",
-    "join_success": "**✅ | {{- author }},** Đã tham gia phòng trò chuyện"
+    "used": "**🚫 | {{-author}},** Bot đang được sử dụng ở một kênh khác",
+    "speaking": "**🚫 | {{-author}},** Vui lòng chờ câu nói trước hoàn thành",
+    "join_success": "**✅ | {{-author}},** Đã tham gia phòng trò chuyện"
   },
   "leave": {
-    "success": "**✅ | {{- author }},** Đã thoát khỏi phòng trò chuyện"
+    "success": "**✅ | {{-author}},** Đã thoát khỏi phòng trò chuyện"
   },
   "stop": {
-    "success": "**✅ | {{- author }},** Đã dừng câu nói trước đó"
+    "success": "**✅ | {{-author}},** Đã dừng câu nói trước đó"
   },
   "tts_default": {
-    "current_language": "**ℹ️ | {{- author }},** Ngôn ngữ hiện tại khi đọc là `{{- lang}}`",
-    "not_supported": "**🚫 | {{- author }},** Ngôn ngữ bạn nhập vào hiện không được hỗ trợ",
-    "success": "**{{-icon }} | {{-author }},** Đã chuyển ngôn ngữ khi đọc sang `{{- lang}}`"
+    "current_language": "**ℹ️ | {{-author}},** Ngôn ngữ hiện tại khi đọc là `{{-lang}}`",
+    "not_supported": "**🚫 | {{-author}},** Ngôn ngữ bạn nhập vào hiện không được hỗ trợ",
+    "success": "**{{-icon}} | {{-author}},** Đã chuyển ngôn ngữ khi đọc sang `{{-lang}}`"
   },
   "tts_languages": {
     "title": "Danh sách các ngôn ngữ hỗ trợ",

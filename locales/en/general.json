@@ -24,8 +24,8 @@
     "name": "Bot Information command",
     "prefix": "**Prefix:** `{{prefixes}}`",
     "support": {
-      "name": "{{-emoji}} Support Server",
-      "detail": "{{-emoji}} [Click here to join]({{- url}})"
+      "name": "{{-icon}} Support Server",
+      "detail": "{{-icon}} [Click here to join]({{- url}})"
     },
     "cannot_find_info": "Cannot find BotInfo in DB",
     "un_synchronized": "Saved info has some changes need to be updated",
@@ -50,11 +50,11 @@
       "details": "**・Cores:** `{{total}}`\n**・Speed:** `{{speed}}`"
     },
     "other": {
-      "name": "**{{-emoji}} Other**",
+      "name": "{{-icon}} Other",
       "details": "**・OS:** `{{os}}`"
     },
     "ram": {
-      "name": "**{{-emoji}} RAM**",
+      "name": "{{-icon}} RAM",
       "details": "**・Total:** `{{total}}`\n**・Free:** `{{free}}`"
     }
   },

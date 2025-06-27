@@ -29,14 +29,14 @@
       "title": "Change VC Name",
       "label": "Name",
       "placeholder": "Type name here",
-      "invalid_input": "**{{-emoji}} | {{-author}}** Invalid name input. Name must be between 1-100 characters.",
+      "invalid_input": "**{{-icon}} | {{-author}}** Invalid name input. Name must be between 1-100 characters.",
       "success": "**{{-icon}} | {{-author}}** Changed voice channel name to: {{-name}}"
     },
     "set_limit": {
       "title": "Set User limit",
       "label": "User limit",
       "placeholder": "Type number here",
-      "invalid_input": "**{{-emoji}} | {{-author}}** Invalid limit input. Please enter a number between 0-99.",
+      "invalid_input": "**{{-icon}} | {{-author}}** Invalid limit input. Please enter a number between 0-99.",
       "success": "**{{-icon}} | {{-author}}** Set voice channel user limit to: {{-limit}}"
     }
   },
@@ -55,18 +55,18 @@
   "clan": {
     "create_team": {
       "description": "Create clan(team) room",
-      "req_team_name": "**{{-emoji}} | {{- author }},** Please input Clan(Team) Name",
-      "req_clan_settings": "**{{-emoji}} | {{- author }},** Server setting for clan is not setup yet. Contact admin for setup Clan Voice Setting",
-      "success": "**{{-emoji}}  | {{- author }},** Create room successfully!",
-      "having_room": "**{{-emoji}}  | {{- author }},** You already own your own story room"
+      "req_team_name": "**{{-icon}} | {{-author}},** Please input Clan(Team) Name",
+      "req_clan_settings": "**{{-icon}} | {{-author}},** Server setting for clan is not setup yet. Contact admin for setup Clan Voice Setting",
+      "success": "**{{-icon}}  | {{-author}},** Create room successfully!",
+      "having_room": "**{{-icon}}  | {{-author}},** You already own your own story room"
     },
     "room_member": {
-      "no_permission": "**{{-icon}}  | {{- author }}, ** You don't have permission to add/remove member",
-      "add": "**{{-icon}}  | {{- author }}, ** Added member successfully ",
-      "remove": "**{{-icon}}  | {{- author }}, ** Removed member successfully "
+      "no_permission": "**{{-icon}}  | {{-author}}, ** You don't have permission to add/remove member",
+      "add": "**{{-icon}}  | {{-author}}, ** Added member successfully ",
+      "remove": "**{{-icon}}  | {{-author}}, ** Removed member successfully "
     }
   },
   "server_clan_voice_setting": {
-    "success": "**✅ | {{- author }},** Saved clan chat room settings successfully\nIf you need to add more categories use the command \\` \\``"
+    "success": "**✅ | {{-author}},** Saved clan chat room settings successfully\nIf you need to add more categories use the command \\` \\`"
   }
 }

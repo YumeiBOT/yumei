@@ -24,8 +24,8 @@
     "name": "Tra cứu thông tin BOT",
     "prefix": "**Prefix:** `{{prefixes}}`",
     "support": {
-      "name": "{{-emoji}} Máy chủ hỗ trợ",
-      "detail": "{{-emoji}} [Ấn vào đây để tham gia]({{- url}})"
+      "name": "{{-icon}} Máy chủ hỗ trợ",
+      "detail": "{{-icon}} [Nhấn vào đây để tham gia]({{- url}})"
     },
     "cannot_find_info": "Chưa lưu thông tin Bot",
     "un_synchronized": "Thông tin đã lưu chưa được cập nhật",
@@ -50,12 +50,12 @@
       "details": "**・Cores:** `{{total}}`\n**・Tốc độ:** `{{speed}} GHz`"
     },
     "other": {
-      "name": "**{{-emoji}} Khác**",
+      "name": "{{-icon}} Khác",
       "details": "**・OS:** `{{os}}`"
     },
     "ram": {
-      "name": "**{{-emoji}} RAM**",
-      "details": "**・Tổng:** `{{total}}`\n**・Trống:** `{{free}}`"
+      "name": "{{-icon}} RAM",
+      "details": "**・Tổng:** `{{total}}`\n**・Còn lại:** `{{free}}`"
     }
   },
   "prefix": {

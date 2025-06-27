@@ -29,14 +29,14 @@
       "title": "Đổi tên kênh thoại",
       "label": "Tên",
       "placeholder": "Nhập tên ở đây",
-      "invalid_input": "**{{-emoji}} | {{-author}}** Tên không hợp lệ. Tên phải có từ 1-100 ký tự.",
+      "invalid_input": "**{{-icon}} | {{-author}}** Tên không hợp lệ. Tên phải có từ 1-100 ký tự.",
       "success": "**{{-icon}} | {{-author}}** Đã đổi tên kênh thoại thành: {{-name}}"
     },
     "set_limit": {
       "title": "Đặt giới hạn người dùng",
       "label": "Giới hạn người dùng",
       "placeholder": "Nhập số ở đây",
-      "invalid_input": "**{{-emoji}} | {{-author}}** Giới hạn không hợp lệ. Vui lòng nhập số từ 0-99.",
+      "invalid_input": "**{{-icon}} | {{-author}}** Giới hạn không hợp lệ. Vui lòng nhập số từ 0-99.",
       "success": "**{{-icon}} | {{-author}}** Đã đặt giới hạn người dùng kênh thoại thành: {{-limit}}"
     }
   },
@@ -55,18 +55,18 @@
   "clan": {
     "create_team": {
       "description": "Tạo phòng CLB(nhóm)",
-      "req_team_name": "**{{-emoji}} | {{-author }},** Vui lòng nhập tên CLB(nhóm)",
-      "req_clan_settings": "**{{-emoji}} | {{-author }},** Máy chủ chưa thiết lập cài đặt cho CLB. Vui lòng liên hệ quản lí máy chủ để cài đặt",
-      "success": "**{{-emoji}}  | {{-author }},** Tạo phòng thành công",
-      "having_room": "**{{-emoji}}  | {{-author }},** Bạn đã sở hữu cho mình một phòng trò truyện"
+      "req_team_name": "**{{-icon}} | {{-author}},** Vui lòng nhập tên CLB(nhóm)",
+      "req_clan_settings": "**{{-icon}} | {{-author}},** Máy chủ chưa thiết lập cài đặt cho CLB. Vui lòng liên hệ quản lí máy chủ để cài đặt",
+      "success": "**{{-icon}}  | {{-author}},** Tạo phòng thành công",
+      "having_room": "**{{-icon}}  | {{-author}},** Bạn đã sở hữu cho mình một phòng trò truyện"
     },
     "room_member": {
-      "no_permission": "**{{-emoji}}  | {{-author }}, ** Bạn không có quyền thêm/xóa thành viên phòng này",
-      "add": "**{{-emoji}}  | {{-author }}, ** Thêm thành viên thành công",
-      "remove": "**{{-emoji}}  | {{-author }}, ** Xóa thành viên thành công"
+      "no_permission": "**{{-icon}}  | {{-author}}, ** Bạn không có quyền thêm/xóa thành viên phòng này",
+      "add": "**{{-icon}}  | {{-author}}, ** Thêm thành viên thành công",
+      "remove": "**{{-icon}}  | {{-author}}, ** Xóa thành viên thành công"
     }
   },
   "server_clan_voice_setting": {
-    "success": "**✅ | {{-author }},** Lưu cài đặt phòng trò chuyện clan thành công\nNếu bạn cần thêm nhiều category hơn hãy dùng lệnh \\` \\``"
+    "success": "**✅ | {{-author}},** Lưu cài đặt phòng trò chuyện clan thành công\nNếu bạn cần thêm nhiều category hơn hãy dùng lệnh \\` \\`"
   }
 }
