@@ -9,14 +9,14 @@
     "user_option": "The user to ban from the server",
     "reason_option": "The reason for banning the user",
     "success_ban_from": "You've been banned in {{guildName}}",
-    "success": "{{icon}} The specified user has been successfully banned and received a notification!",
-    "success_no_notification": "{{icon}} The user has been successfully banned, but has not received a notification!",
+    "success": "{{-icon}} The specified user has been successfully banned and received a notification!",
+    "success_no_notification": "{{-icon}} The user has been successfully banned, but has not received a notification!",
     "banned_by": "👤┆Banned by",
     "user_who_banned": "👤┆Banned user",
     "reason": "💬┆Reason",
     "not_given": "Not given",
-    "invalid_member": "{{icon}} Invalid member specified",
-    "error": "{{icon}} Failed to ban the user"
+    "invalid_member": "{{-icon}} Invalid member specified",
+    "error": "{{-icon}} Failed to ban the user"
   },
   "clear": {
     "name": "clear",
@@ -43,15 +43,15 @@
     "description": "Kick users from the server",
     "user_option": "The user to kick from the server",
     "reason_option": "The reason for kicking the user",
-    "success": "{{icon}} The specified user has been successfully kicked and received a notification!",
+    "success": "{{-icon}} The specified user has been successfully kicked and received a notification!",
     "success_kick_from": "You've been kicked from {{guildName}}",
-    "success_no_notification": "{{icon}} The user has been successfully kicked, but has not received a notification!",
+    "success_no_notification": "{{-icon}} The user has been successfully kicked, but has not received a notification!",
     "kicked_by": "👤┆Kicked by",
     "reason": "💬┆Reason",
     "user_who_kicked": "👤┆Kicked user",
     "not_given": "Not given",
-    "invalid_member": "{{icon}} Invalid member specified",
-    "error": "{{icon}} Failed to kick the user"
+    "invalid_member": "{{-icon}} Invalid member specified",
+    "error": "{{-icon}} Failed to kick the user"
   },
   "mute": {
     "name": "timeout",
@@ -70,16 +70,16 @@
     "duration_option": "The duration of the timeout (e.g., 1h, 30m, 1d)",
     "reason_option": "The reason for the timeout",
     "success_timeout_from": "You've been timed out in {{guildName}}",
-    "success": "{{icon}} The user has been successfully timed out!",
+    "success": "{{-icon}} The user has been successfully timed out!",
     "timed_out_by": "👤┆Timed out by",
     "duration": "⏰┆Duration",
     "user_who_timed_out": "👤┆Timed out user",
     "reason": "💬┆Reason",
     "not_given": "Not given",
-    "invalid_member": "{{icon}} Invalid member specified",
-    "already_timed_out": "{{icon}} User is already timed out",
-    "invalid_duration": "{{icon}} Invalid duration. Maximum is {{maxDays}} days",
-    "error": "{{icon}} Failed to timeout the user"
+    "invalid_member": "{{-icon}} Invalid member specified",
+    "already_timed_out": "{{-icon}} User is already timed out",
+    "invalid_duration": "{{-icon}} Invalid duration. Maximum is {{maxDays}} days",
+    "error": "{{-icon}} Failed to timeout the user"
   },
   "warn": {
     "name": "warn",
