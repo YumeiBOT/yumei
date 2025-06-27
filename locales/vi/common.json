@@ -5,31 +5,31 @@
   "reason": "Lý do",
   "changes": "Thay đổi",
   "voice": {
-    "not_joined": "**{{-emoji}} | {{-author}} | **Không tìm thấy kênh trò chuyện bạn đang tham gia!!!",
-    "not_same_room": "**{{- emoji}} | {{- author}}, ** Bạn đang không cùng phòng trò chuyện với tôi",
+    "not_joined": "**{{-icon}} | {{-author}} | **Không tìm thấy kênh trò chuyện bạn đang tham gia!!!",
+    "not_same_room": "**{{-icon}} | {{-author}}, ** Bạn đang không cùng phòng trò chuyện với tôi",
     "not_owner": "**{{-icon}} | {{-author}}, ** Bạn không có quyền chuyển quyền sở hữu kênh thoại này",
-    "not_in_channel": "**{{-emoji}} | {{-author}}, ** Bạn không ở trong kênh thoại",
-    "permission_fetch_error": "**{{-emoji}} | {{-author}}, ** Lỗi khi lấy quyền kênh"
+    "not_in_channel": "**{{-icon}} | {{-author}}, ** Bạn không ở trong kênh thoại",
+    "permission_fetch_error": "**{{-icon}} | {{-author}}, ** Lỗi khi lấy quyền kênh"
   },
   "music": {
-    "nothing_playing": "**{{- emoji}} | {{-author}}, ** Không có bài hát nào đang được phát"
+    "nothing_playing": "**{{-icon}} | {{-author}}, ** Không có bài hát nào đang được phát"
   },
   "user": {
-    "not_exist": "**{{- emoji}} | {{-author}}, ** Không tìm thông tin thấy người dùng"
+    "not_exist": "**{{-icon}} | {{-author}}, ** Không tìm thông tin thấy người dùng"
   },
   "guild": {
-    "required": "**{{- emoji}} | {{-author}}, ** Lệnh chỉ có thể được dùng trong server",
-    "not_exist": "**{{- emoji}} | {{-author}}, ** Không tìm thông tin máy chủ"
+    "required": "**{{-icon}} | {{-author}}, ** Lệnh chỉ có thể được dùng trong server",
+    "not_exist": "**{{-icon}} | {{-author}}, ** Không tìm thông tin máy chủ"
   },
   "slash": {
     "require_permission": {
-      "title": "**{{- emoji}} | ** Mình đang thiếu quyền `applications.commands`",
+      "title": "**{{-icon}} | ** Mình đang thiếu quyền `applications.commands`",
       "description": "Bạn có thể mời lại BOT để cập nhật quyền theo đường dẫn dưới đây:\n [Ấn vào đây để mời]({{- url}})"
     }
   },
   "command_denied": {
-    "precondition_guild_only": "**{{- emoji}} | {{-author}}, ** Lệnh này chỉ có thể sử dụng trong máy chủ (Server)",
-    "precondition_client_permission": "**{{- emoji}} | {{-author}}, ** Mình hiện tại đang thiếu các quyền sau để thực hiện lệnh : {{-list_permission}}"
+    "precondition_guild_only": "**{{-icon}} | {{-author}}, ** Lệnh này chỉ có thể sử dụng trong máy chủ (Server)",
+    "precondition_client_permission": "**{{-icon}} | {{-author}}, ** Mình hiện tại đang thiếu các quyền sau để thực hiện lệnh : {{-list_permission}}"
   },
   "permission_flag": {
     "ADD_REACTIONS": "Add Reactions",

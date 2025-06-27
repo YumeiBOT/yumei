@@ -1,6 +1,6 @@
 {
-  "owner_only": "**{{- icon }} | {{- author }},** This command can only be used by the owner.",
+  "owner_only": "**{{-icon}} | {{-author}},** This command can only be used by the owner.",
   "server_created": {
-    "error": "**{{- icon }} | {{- author }},** Not found or can not create server record"
+    "error": "**{{-icon}} | {{-author}},** Not found or can not create server record"
   }
 }

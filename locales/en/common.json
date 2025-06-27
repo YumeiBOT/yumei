@@ -5,31 +5,31 @@
   "reason": "Reason",
   "changes": "Changes",
   "voice": {
-    "not_joined": "**{{-icon }} | {{-author}}, ** You're not in voice channel",
-    "not_same_room": "**{{-emoji}} | {{-author}}, ** You're not in the same voice channel!",
+    "not_joined": "**{{-icon}} | {{-author}}, ** You're not in voice channel",
+    "not_same_room": "**{{-icon}} | {{-author}}, ** You're not in the same voice channel!",
     "not_owner": "**{{-icon}} | {{-author}}, ** You don't have permission to transfer ownership of this voice channel",
-    "not_in_channel": "**{{-emoji}} | {{-author}}, ** You're not in a voice channel",
-    "permission_fetch_error": "**{{-emoji}} | {{-author}}, ** Error fetching channel permissions"
+    "not_in_channel": "**{{-icon}} | {{-author}}, ** You're not in a voice channel",
+    "permission_fetch_error": "**{{-icon}} | {{-author}}, ** Error fetching channel permissions"
   },
   "music": {
-    "nothing_playing": "**{{-emoji}} | {{-author}}, ** Oi!! Baka!! No Music On Queue!"
+    "nothing_playing": "**{{-icon}} | {{-author}}, ** Oi!! Baka!! No Music On Queue!"
   },
   "user": {
-    "not_exist": "**{{- emoji}} | {{-author}}, ** Can't find information of user"
+    "not_exist": "**{{-icon}} | {{-author}}, ** Can't find information of user"
   },
   "guild": {
-    "required": "**{{- emoji}} | {{-author}}, ** This command can only be used in servers.",
-    "not_exist": "**{{- emoji}} | {{-author}}, ** Can't find information of server"
+    "required": "**{{-icon}} | {{-author}}, ** This command can only be used in servers.",
+    "not_exist": "**{{-icon}} | {{-author}}, ** Can't find information of server"
   },
   "slash": {
     "require_permission": {
-      "title": "**{{- emoji}} | ** I am missing `applications.commands`",
+      "title": "**{{-icon}} | ** I am missing `applications.commands`",
       "description": "You can re-invite BOT to approve permission with the following link:\n [Click here to re-invite]({{- url}})"
     }
   },
   "command_denied": {
-    "precondition_guild_only": "**{{- emoji}} | {{-author}}, ** You cannot run this command in DMs. Please run in Server (Guild)",
-    "precondition_client_permission": "**{{- emoji}} | {{-author}}, ** I am missing the following permissions to run this command: {{-list_permission}}"
+    "precondition_guild_only": "**{{-icon}} | {{-author}}, ** You cannot run this command in DMs. Please run in Server (Guild)",
+    "precondition_client_permission": "**{{-icon}} | {{-author}}, ** I am missing the following permissions to run this command: {{-list_permission}}"
   },
   "permission_flag": {
     "ADD_REACTIONS": "Add Reactions",
