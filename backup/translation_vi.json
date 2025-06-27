@@ -3,28 +3,28 @@
     "on": "On",
     "off": "Off",
     "voice": {
-      "not_joined": "**{{-emoji}} | {{-author}} | **Không tìm thấy kênh trò chuyện bạn đang tham gia!!!",
-      "not_same_room": "**{{- emoji}} | {{- author}}, ** Bạn đang không cùng phòng trò chuyện với tôi"
+      "not_joined": "**{{-icon}} | {{-author}} | **Không tìm thấy kênh trò chuyện bạn đang tham gia!!!",
+      "not_same_room": "**{{-icon}} | {{-author}}, ** Bạn đang không cùng phòng trò chuyện với tôi"
     },
     "music": {
-      "nothing_playing": "**{{- emoji}} | {{-author}}, ** Không có bài hát nào đang được phát"
+      "nothing_playing": "**{{-icon}} | {{-author}}, ** Không có bài hát nào đang được phát"
     },
     "user": {
-      "not_exist": "**{{- emoji}} | {{-author}}, ** Không tìm thông tin thấy người dùng"
+      "not_exist": "**{{-icon}} | {{-author}}, ** Không tìm thông tin thấy người dùng"
     },
     "guild": {
-      "required": "**{{- emoji}} | {{-author}}, ** Lệnh chỉ có thể được dùng trong server",
-      "not_exist": "**{{- emoji}} | {{-author}}, ** Không tìm thông tin máy chủ"
+      "required": "**{{-icon}} | {{-author}}, ** Lệnh chỉ có thể được dùng trong server",
+      "not_exist": "**{{-icon}} | {{-author}}, ** Không tìm thông tin máy chủ"
     },
     "slash": {
       "require_permission": {
-        "title": "**{{- emoji}} | ** Mình đang thiếu quyền `applications.commands`",
+        "title": "**{{-icon}} | ** Mình đang thiếu quyền `applications.commands`",
         "description": "Bạn có thể mời lại BOT để cập nhật quyền theo đường dẫn dưới đây:\n [Ấn vào đây để mời]({{- url}})"
       }
     },
     "command_denied": {
-      "precondition_guild_only": "**{{- emoji}} | {{-author}}, ** Lệnh này chỉ có thể sử dụng trong máy chủ (Server)",
-      "precondition_client_permission": "**{{- emoji}} | {{-author}}, ** Mình hiện tại đang thiếu các quyền sau để thực hiện lệnh : {{-list_permission}}"
+      "precondition_guild_only": "**{{-icon}} | {{-author}}, ** Lệnh này chỉ có thể sử dụng trong máy chủ (Server)",
+      "precondition_client_permission": "**{{-icon}} | {{-author}}, ** Mình hiện tại đang thiếu các quyền sau để thực hiện lệnh : {{-list_permission}}"
     },
     "permission_flag": {
       "ADD_REACTIONS": "Add Reactions",
@@ -74,9 +74,9 @@
     "cooldown": "**⏰ | {{-author}}, **Hãy chờ `{{remaining}}` s trước khi bạn có thể sử dụng `{{commandName}}`"
   },
   "precondition": {
-    "owner_only": "**{{- icon }} | {{-author }},** Lệnh chỉ dùng cho chủ sở hữu BOT",
+    "owner_only": "**{{-icon}} | {{-author}},** Lệnh chỉ dùng cho chủ sở hữu BOT",
     "server_created": {
-      "error": "**{{- icon }} | {{-author }},** Không có hoặc không thể tạo bản ghi của server"
+      "error": "**{{-icon}} | {{-author}},** Không có hoặc không thể tạo bản ghi của server"
     }
   },
   "general": {
@@ -105,8 +105,8 @@
       "name": "Tra cứu thông tin BOT",
       "prefix": "**Prefix:** `{{prefixes}}`",
       "support": {
-        "name": "{{-emoji}} Máy chủ hỗ trợ",
-        "detail": "{{-emoji}} [Ấn vào đây để tham gia]({{- url}})"
+        "name": "{{-icon}} Máy chủ hỗ trợ",
+        "detail": "{{-icon}} [Ấn vào đây để tham gia]({{- url}})"
       },
       "cannot_find_info": "Chưa lưu thông tin Bot",
       "un_synchronized": "Thông tin đã lưu chưa được cập nhật",
@@ -131,11 +131,11 @@
         "details": "**・Cores:** `{{total}}`\n**・Tốc độ:** `{{speed}} GHz`"
       },
       "other": {
-        "name": "**{{-emoji}} Khác**",
+        "name": "**{{-icon}} Khác**",
         "details": "**・OS:** `{{os}}`"
       },
       "ram": {
-        "name": "**{{-emoji}} RAM**",
+        "name": "**{{-icon}} RAM**",
         "details": "**・Tổng:** `{{total}}`\n**・Trống:** `{{free}}`"
       }
     },
@@ -178,8 +178,8 @@
       "description": "Cài đặt ngôn ngữ"
     },
     "set_server_channel": {
-      "success": "**{{-emoji}} | {{-author }},** Đã thiết lập **{{type}}** tại <#{{channelId}}>",
-      "error": "**{{-emoji}} | {{-author }},** danh mục **{{type}}** không được hỗ trợ\n**{{-blankEmoji}} |** Danh mục hỗ trợ: {{supportTypes}}"
+      "success": "**{{-icon}} | {{-author }},** Đã thiết lập **{{type}}** tại <#{{channelId}}>",
+      "error": "**{{-icon}} | {{-author }},** danh mục **{{type}}** không được hỗ trợ\n**{{-blankEmoji}} |** Danh mục hỗ trợ: {{supportTypes}}"
     },
     "set_server_temp_voice": {
       "ask": {
@@ -224,15 +224,15 @@
     "clan": {
       "create_team": {
         "description": "Tạo phòng CLB(nhóm)",
-        "req_team_name": "**{{-emoji}} | {{-author }},** Vui lòng nhập tên CLB(nhóm)",
-        "req_clan_settings": "**{{-emoji}} | {{-author }},** Máy chủ chưa thiết lập cài đặt cho CLB. Vui lòng liên hệ quản lí máy chủ để cài đặt",
-        "success": "**{{-emoji}}  | {{-author }},** Tạo phòng thành công",
-        "having_room": "**{{-emoji}}  | {{-author }},** Bạn đã sở hữu cho mình một phòng trò truyện"
+        "req_team_name": "**{{-icon}} | {{-author }},** Vui lòng nhập tên CLB(nhóm)",
+        "req_clan_settings": "**{{-icon}} | {{-author }},** Máy chủ chưa thiết lập cài đặt cho CLB. Vui lòng liên hệ quản lí máy chủ để cài đặt",
+        "success": "**{{-icon}}  | {{-author }},** Tạo phòng thành công",
+        "having_room": "**{{-icon}}  | {{-author }},** Bạn đã sở hữu cho mình một phòng trò truyện"
       },
       "room_member": {
-        "no_permission": "**{{-emoji}}  | {{-author }}, ** Bạn không có quyền thêm/xóa thành viên phòng này",
-        "add": "**{{-emoji}}  | {{-author }}, ** Thêm thành viên thành công",
-        "remove": "**{{-emoji}}  | {{-author }}, ** Xóa thành viên thành công"
+        "no_permission": "**{{-icon}}  | {{-author }}, ** Bạn không có quyền thêm/xóa thành viên phòng này",
+        "add": "**{{-icon}}  | {{-author }}, ** Thêm thành viên thành công",
+        "remove": "**{{-icon}}  | {{-author }}, ** Xóa thành viên thành công"
       }
     },
     "server_clan_voice_setting": {
@@ -381,8 +381,8 @@
   "yearly_event": {
     "list_participant": "Những người tham gia:",
     "leaderboard": {
-      "not_found": "**{{- emoji }}| {{-author }},** Không tìm thấy kiểu cần truy cứu",
-      "title": "{{- emoji }} **Bảng xếp hạng** {{- emoji }}"
+      "not_found": "**{{- icon }}| {{-author }},** Không tìm thấy kiểu cần truy cứu",
+      "title": "{{- icon }} **Bảng xếp hạng** {{- icon }}"
     },
     "xmas": {
       "snowball": "Cầu tuyết",
@@ -391,10 +391,10 @@
       "e003": "Kẹo ngọt"
     },
     "xmas_box": {
-      "ghost": "** {{-emoji }}| {{-author }},** Oh no! Who put {{-item}} into gift box. Good luck next times",
-      "appear": "{{-emoji }}**| Xmas box!!** Gõ lệnh `pick` để giành lấy **Hộp quà giáng sinh** nha",
-      "winner": "{{-emoji }}**|** Chúc mừng <@{{- member }}> đã nhặt được {{- boxIcon }}!!",
-      "usebox": "{{-emoji }}**|** Dùng lệnh `{{- command}}` để mở {{- boxIcon}} nhé",
+      "ghost": "** {{-icon }}| {{-author }},** Oh no! Who put {{-item}} into gift box. Good luck next times",
+      "appear": "{{-icon }}**| Xmas box!!** Gõ lệnh `pick` để giành lấy **Hộp quà giáng sinh** nha",
+      "winner": "{{-icon }}**|** Chúc mừng <@{{- member }}> đã nhặt được {{- boxIcon }}!!",
+      "usebox": "{{-icon }}**|** Dùng lệnh `{{- command}}` để mở {{- boxIcon}} nhé",
       "opening": "**{{- boxIcon }}| {{-author }}** đang mở **Hộp quà giáng sinh**...",
       "opened": "**{{- boxIcon }}| {{-author }}** đã mở **Hộp quà giáng sinh** và nhận được **{{-itemIcon }}**",
       "voice_log": "<@{{userId}}> đã treo voice trong {{hour}} giờ {{min}} phút!!! Bạn nhận được {{numOfBox}} **Hộp quà giáng sinh**",

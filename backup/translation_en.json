@@ -3,28 +3,28 @@
     "on": "On",
     "off": "Off",
     "voice": {
-      "not_joined": "**{{-icon }} | {{-author}}, ** You're not in voice channel",
-      "not_same_room": "**{{-emoji}} | {{-author}}, ** You're not in the same voice channel!"
+      "not_joined": "**{{-icon}} | {{-author}}, ** You're not in voice channel",
+      "not_same_room": "**{{-icon}} | {{-author}}, ** You're not in the same voice channel!"
     },
     "music": {
-      "nothing_playing": "**{{-emoji}} | {{-author}}, ** Oi!! Baka!! No Music On Queue!"
+      "nothing_playing": "**{{-icon}} | {{-author}}, ** Oi!! Baka!! No Music On Queue!"
     },
     "user": {
-      "not_exist": "**{{- emoji}} | {{-author}}, ** Can't find information of user"
+      "not_exist": "**{{-icon}} | {{-author}}, ** Can't find information of user"
     },
     "guild": {
-      "required": "**{{- emoji}} | {{-author}}, ** This command can only be used in servers.",
-      "not_exist": "**{{- emoji}} | {{-author}}, ** Can't find information of server"
+      "required": "**{{-icon}} | {{-author}}, ** This command can only be used in servers.",
+      "not_exist": "**{{-icon}} | {{-author}}, ** Can't find information of server"
     },
     "slash": {
       "require_permission": {
-        "title": "**{{- emoji}} | ** I am missing `applications.commands`",
+        "title": "**{{-icon}} | ** I am missing `applications.commands`",
         "description": "You can re-invite BOT to approve permission with the following link:\n [Click here to re-invite]({{- url}})"
       }
     },
     "command_denied": {
-      "precondition_guild_only": "**{{- emoji}} | {{-author}}, ** You cannot run this command in DMs. Please run in Server (Guild)",
-      "precondition_client_permission": "**{{- emoji}} | {{-author}}, ** I am missing the following permissions to run this command: {{-list_permission}}"
+      "precondition_guild_only": "**{{-icon}} | {{-author}}, ** You cannot run this command in DMs. Please run in Server (Guild)",
+      "precondition_client_permission": "**{{-icon}} | {{-author}}, ** I am missing the following permissions to run this command: {{-list_permission}}"
     },
     "permission_flag": {
       "ADD_REACTIONS": "Add Reactions",
@@ -74,9 +74,9 @@
     "cooldown": "**⏰ | {{-author}}, **Please wait `{{remaining}}` s before you can use `{{commandName}}`"
   },
   "precondition": {
-    "owner_only": "**{{- icon }} | {{- author }},** This command can only be used by the owner.",
+    "owner_only": "**{{-icon}} | {{-author}},** This command can only be used by the owner.",
     "server_created": {
-      "error": "**{{- icon }} | {{- author }},** Not found or can not create server record"
+      "error": "**{{-icon}} | {{-author}},** Not found or can not create server record"
     }
   },
   "general": {
@@ -105,8 +105,8 @@
       "name": "Bot Information command",
       "prefix": "**Prefix:** `{{prefixes}}`",
       "support": {
-        "name": "{{-emoji}} Support Server",
-        "detail": "{{-emoji}} [Click here to join]({{- url}})"
+        "name": "{{-icon}} Support Server",
+        "detail": "{{-icon}} [Click here to join]({{- url}})"
       },
       "cannot_find_info": "Cannot find BotInfo in DB",
       "un_synchronized": "Saved info has some changes need to be updated",
@@ -131,11 +131,11 @@
         "details": "**・Cores:** `{{total}}`\n**・Speed:** `{{speed}}`"
       },
       "other": {
-        "name": "**{{-emoji}} Other**",
+        "name": "**{{-icon}} Other**",
         "details": "**・OS:** `{{os}}`"
       },
       "ram": {
-        "name": "**{{-emoji}} RAM**",
+        "name": "**{{-icon}} RAM**",
         "details": "**・Total:** `{{total}}`\n**・Free:** `{{free}}`"
       }
     },
@@ -178,8 +178,8 @@
       "description": "Set language server"
     },
     "set_server_channel": {
-      "success": "**{{-emoji}}  | {{- author }},** I have set **{{type}}** at <#{{channelId}}>",
-      "error": "**{{-emoji}} | {{- author }},** Input type **{{type}}** is not supported \n**{{-blankEmoji}} |** List support type: {{supportTypes}}"
+      "success": "**{{-icon}}  | {{-author}},** I have set **{{type}}** at <#{{channelId}}>",
+      "error": "**{{-icon}} | {{-author}},** Input type **{{type}}** is not supported \n**{{-blankEmoji}} |** List support type: {{supportTypes}}"
     },
     "set_server_temp_voice": {
       "ask": {
@@ -224,50 +224,50 @@
     "clan": {
       "create_team": {
         "description": "Create clan(team) room",
-        "req_team_name": "**{{-emoji}} | {{- author }},** Please input Clan(Team) Name",
-        "req_clan_settings": "**{{-emoji}} | {{- author }},** Server setting for clan is not setup yet. Contact admin for setup Clan Voice Setting",
-        "success": "**{{-emoji}}  | {{- author }},** Create room successfully!",
-        "having_room": "**{{-emoji}}  | {{- author }},** You already own your own story room"
+        "req_team_name": "**{{-icon}} | {{-author}},** Please input Clan(Team) Name",
+        "req_clan_settings": "**{{-icon}} | {{-author}},** Server setting for clan is not setup yet. Contact admin for setup Clan Voice Setting",
+        "success": "**{{-icon}}  | {{-author}},** Create room successfully!",
+        "having_room": "**{{-icon}}  | {{-author}},** You already own your own story room"
       },
       "room_member": {
-        "no_permission": "**{{-icon}}  | {{- author }}, ** You don't have permission to add/remove member",
-        "add": "**{{-icon}}  | {{- author }}, ** Added member successfully ",
-        "remove": "**{{-icon}}  | {{- author }}, ** Removed member successfully "
+        "no_permission": "**{{-icon}}  | {{-author}}, ** You don't have permission to add/remove member",
+        "add": "**{{-icon}}  | {{-author}}, ** Added member successfully ",
+        "remove": "**{{-icon}}  | {{-author}}, ** Removed member successfully "
       }
     },
     "server_clan_voice_setting": {
-      "success": "**✅ | {{- author }},** Saved clan chat room settings successfully\nIf you need to add more categories use the command \\` \\``"
+      "success": "**✅ | {{-author}},** Saved clan chat room settings successfully\nIf you need to add more categories use the command \\` \\``"
     }
   },
   "soundboard": {
     "tts": {
-      "min_char": "**🚫 | {{- author }},** Nothing to say",
-      "max_char": "**🚫 | {{- author }},** Hiện tại BOT chỉ hỗ trợ tối đa 100 kí tự",
-      "invalid_input": "**🚫 | {{- author }},** Please enter text between 1-100 characters",
+      "min_char": "**🚫 | {{-author}},** Nothing to say",
+      "max_char": "**🚫 | {{-author}},** Hiện tại BOT chỉ hỗ trợ tối đa 100 kí tự",
+      "invalid_input": "**🚫 | {{-author}},** Please enter text between 1-100 characters",
       "playing": "**✅ | Playing text-to-speech",
       "voice_error": "**🚫 | Error playing audio in voice channel",
       "error": "**🚫 | An error occurred with text-to-speech"
     },
     "join": {
-      "used": "**🚫 | {{- author }},** Bot đang được sử dụng ở một kênh khác",
-      "speaking": "**🚫 | {{- author }},** Vui lòng chờ câu nói trước hoàn thành",
-      "join_success": "**✅ | {{- author }},** Đã tham gia phòng trò chuyện"
+      "used": "**🚫 | {{-author}},** Bot đang được sử dụng ở một kênh khác",
+      "speaking": "**🚫 | {{-author}},** Vui lòng chờ câu nói trước hoàn thành",
+      "join_success": "**✅ | {{-author}},** Đã tham gia phòng trò chuyện"
     },
     "leave": {
-      "success": "**✅ | {{- author }},** Đã thoát khỏi phòng trò chuyện"
+      "success": "**✅ | {{-author}},** Đã thoát khỏi phòng trò chuyện"
     },
     "stop": {
-      "success": "**✅ | {{- author }},** Đã dừng câu nói trước đó"
+      "success": "**✅ | {{-author}},** Đã dừng câu nói trước đó"
     },
     "tts_default": {
-      "current_language": "**ℹ️ | {{- author }},** Ngôn ngữ hiện tại khi đọc là `{{- lang}}`",
-      "not_supported": "**🚫 | {{- author }},** Ngôn ngữ bạn nhập vào hiện không được hỗ trợ",
-      "success": "**{{-icon }} | {{-author }},** Đã chuyển ngôn ngữ khi đọc sang `{{- lang}}`"
+      "current_language": "**ℹ️ | {{-author}},** Ngôn ngữ hiện tại khi đọc là `{{-lang}}`",
+      "not_supported": "**🚫 | {{-author}},** Ngôn ngữ bạn nhập vào hiện không được hỗ trợ",
+      "success": "**{{-icon}} | {{-author}},** Đã chuyển ngôn ngữ khi đọc sang `{{-lang}}`"
     },
     "tts_languages": {
       "title": "Danh sách các ngôn ngữ hỗ trợ",
       "change_language_tutorial": "Hướng dẫn chỉnh ngôn ngữ",
-      "change_language_tutorial2": "Sử dụng lệnh `{{- prefix}}tts_default <code>` để thay đổi ngôn ngữ"
+      "change_language_tutorial2": "Sử dụng lệnh `{{-prefix}}tts_default <code>` để thay đổi ngôn ngữ"
     }
   },
   "moderation": {
@@ -353,8 +353,8 @@
       "description": "Inventory's item",
       "describle": "Item usage tutorial:",
       "tutorial": "use <item_code> to use item",
-      "item_content": "{{- itemIcon }}: **{{quantity}}**",
-      "pagination": "Page {{ current_page }}/{{ total_page }}"
+      "item_content": "{{-itemIcon}}: **{{quantity}}**",
+      "pagination": "Page {{current_page}}/{{total_page}}"
     },
     "use": {
       "err1": "Please input item code you want to use",
@@ -381,8 +381,8 @@
   "yearly_event": {
     "list_participant": "List of participants:",
     "leaderboard": {
-      "not_found": "**{{- emoji }}| {{- author }},** Can't get request type",
-      "title": "{{- emoji }} **Leaderboard** {{- emoji }}"
+      "not_found": "**{{-icon}} | {{-author}},** Can't get request type",
+      "title": "{{-icon}} **Leaderboard** {{-icon}}"
     },
     "xmas": {
       "snowball": "Snowball",
@@ -391,12 +391,12 @@
       "e003": "Candy Cane"
     },
     "xmas_box": {
-      "ghost": "** {{-emoji }}| {{- author }},** Oh no! Who put {{-item}} into gift box. Good luck next times",
-      "appear": "** {{-emoji }}| Xmas box!!** Write down `pick` to get **Xmas Box**",
-      "winner": "** {{-emoji }}|** Congratulation <@{{- member }}> for captured {{- boxIcon }}!!",
-      "usebox": "** {{-emoji }}|** Use command `{{- command}}` to open {{- boxIcon}}",
-      "opening": "**{{- boxIcon }}| {{- author }},** opening **Xmas Box**...",
-      "opened": "**{{- boxIcon }}| {{- author }},** opened **Xmas Box** and get **{{-itemIcon }}**",
+      "ghost": "** {{-icon}} | {{-author}},** Oh no! Who put {{-item}} into gift box. Good luck next times",
+      "appear": "** {{-icon}} | Xmas box!!** Write down `pick` to get **Xmas Box**",
+      "winner": "** {{-icon}} |** Congratulation <@{{-member}}> for captured {{-boxIcon}}!!",
+      "usebox": "** {{-icon}} |** Use command `{{-command}}` to open {{-boxIcon}}",
+      "opening": "**{{-boxIcon}} | {{-author}},** opening **Xmas Box**...",
+      "opened": "**{{-boxIcon}} | {{-author}},** opened **Xmas Box** and get **{{-itemIcon}}**",
       "voice_log": "<@{{userId}}> has been in voice channel for {{hour}} hour {{min}} minute!!! You get {{numOfBox}} **Xmas Box**",
       "chat_log": "<@{{userId}}> get **Xmas Box** while having activity in {{serverName}}"
     }
