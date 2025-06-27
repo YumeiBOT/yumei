@@ -1,6 +1,6 @@
 {
   "set_server_language": {
-    "name": "Set Server Language command",
+    "name": "Set Server Language",
     "success": "**{{-icon}} | **Current language: {{-lng}}",
     "error": "**{{-icon}} | **Some error, please try again",
     "no_support_lng": "**{{-icon}} | {{-botName}}** Does not support this language!!!",

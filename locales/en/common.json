@@ -7,7 +7,9 @@
   "voice": {
     "not_joined": "**{{-icon }} | {{-author}}, ** You're not in voice channel",
     "not_same_room": "**{{-emoji}} | {{-author}}, ** You're not in the same voice channel!",
-    "not_owner": "**{{-icon}} | {{-author}}, ** You don't have permission to transfer ownership of this voice channel"
+    "not_owner": "**{{-icon}} | {{-author}}, ** You don't have permission to transfer ownership of this voice channel",
+    "not_in_channel": "**{{-emoji}} | {{-author}}, ** You're not in a voice channel",
+    "permission_fetch_error": "**{{-emoji}} | {{-author}}, ** Error fetching channel permissions"
   },
   "music": {
     "nothing_playing": "**{{-emoji}} | {{-author}}, ** Oi!! Baka!! No Music On Queue!"

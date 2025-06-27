@@ -10,11 +10,31 @@
     "user_unmute": "**{{-icon}} | {{-author}}** Đã bật tiếng {{-target}} trong kênh thoại",
     "user_deafen": "**{{-icon}} | {{-author}}** Đã tắt tai nghe của {{-target}} trong kênh thoại",
     "user_undeafen": "**{{-icon}} | {{-author}}** Đã bật tai nghe của {{-target}} trong kênh thoại",
-    "ban": "**🚫 | {{-author}}** Đã cấm {{-target}} vào kênh thoại",
-    "kick": "**👢 | {{-author}}** Đã đuổi {{-target}} khỏi kênh thoại",
+    "ban": "**{{-icon}} | {{-author}}** Đã cấm {{-target}} vào kênh thoại",
+    "kick": "**{{-icon}} | {{-author}}** Đã đuổi {{-target}} khỏi kênh thoại",
     "transfer": "**{{-icon}} | {{-author}}** Đã chuyển quyền sở hữu cho {{-target}}",
     "select_new_owner": "Vui lòng chọn chủ sở hữu mới.",
-    "no_users_found": "Lỗi: Không tìm thấy người dùng để chuyển quyền sở hữu."
+    "no_users_found": "Lỗi: Không tìm thấy người dùng để chuyển quyền sở hữu.",
+    "select_ban_user": "Vui lòng chọn người bạn muốn cấm.",
+    "select_kick_user": "Vui lòng chọn người bạn muốn đuổi.",
+    "select_mute_user": "Vui lòng chọn người bạn muốn tắt tiếng.",
+    "select_deafen_user": "Vui lòng chọn người bạn muốn tắt tai nghe.",
+    "user_not_found": "Không tìm thấy người dùng trong kênh thoại.",
+    "updating": "Đang cập nhật ...",
+    "select_placeholder": "Chưa chọn gì",
+    "unknown_user": "người dùng"
+  },
+  "modal": {
+    "change_name": {
+      "title": "Đổi tên kênh thoại",
+      "label": "Tên",
+      "placeholder": "Nhập tên ở đây"
+    },
+    "set_limit": {
+      "title": "Đặt giới hạn người dùng",
+      "label": "Giới hạn người dùng",
+      "placeholder": "Nhập số ở đây"
+    }
   },
   "set_bitrate": {
     "name": "Mã lệnh Set bitrate",

@@ -70,9 +70,9 @@
     "remove": "**{{-icon}} | **Đã xóa tiếp đầu ngữ `{{-prefix}}`",
     "example": "```{{-prefix}}{{alias}} add {prefix}```",
     "description": "Cài đặt tiếp đầu ngữ",
-    "no_prefix": "TODO",
-    "action_description": "TODO",
-    "prefix_option": "TODO"
+    "no_prefix": "**{{-icon}} | ** Vui lòng nhập tiếp đầu ngữ hợp lệ",
+    "action_description": "Vui lòng chọn hành động bạn muốn thực hiện",
+    "prefix_option": "Vui lòng nhập tiếp đầu ngữ bạn muốn thêm/xóa"
   },
   "help": {
     "name": "Mã lệnh Help",
@@ -81,6 +81,7 @@
     "embed_aliases": "Bí danh",
     "embed_description": "Mô tả",
     "embed_example": "Mẫu lệnh",
+    "command_option": "Mã lệnh để xem trợ giúp",
     "not_have_command": "**{{-icon}} | {{-botName}}**chưa hỗ trợ mã lệnh này nhaaa!!!",
     "not_have_permission": " **{{-icon}} | {{-username}} | **Bạn cần được cấp quyền để sử dụng mã lệnh này!!!",
     "example": "```{{-prefix}}{{alias}}```",

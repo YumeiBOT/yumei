@@ -81,6 +81,7 @@
     "embed_aliases": "Aliases",
     "embed_description": "Description",
     "embed_example": "Example command",
+    "command_option": "The command to get help for",
     "not_have_command": "**{{-icon}} | {{-botName}}** does not supported this command!!!",
     "not_have_permission": "**{{-icon}} | {{-username}} | **You do not have permission to use this command!!!",
     "example": "```{{-prefix}}{{alias}}```",
