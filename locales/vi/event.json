@@ -4,6 +4,48 @@
   },
   "mention_prefix": "Tiếp đầu ngữ trong server: `{{-prefixes}}`",
   "global_error": "**{{-icon}} | {{-author}} | **Đã xảy ra lỗi, thử lại sau nhaaa!!!",
+  "action_log": {
+    "ban_add": {
+      "title": "Thành viên bị cấm",
+      "desc": "**{{-icon}} | {{-author}} | **{{-moderator}} đã cấm {{-target}} khỏi máy chủ."
+    },
+    "ban_remove": {
+      "title": "Thành viên được gỡ cấm",
+      "desc": "**{{-icon}} | {{-author}} | **{{-moderator}} đã gỡ cấm {{-target}} khỏi máy chủ."
+    },
+    "guild_update": {
+      "title": "Máy chủ được cập nhật",
+      "desc": "**{{-icon}} | {{-author}} | **{{-moderator}} đã cập nhật thông tin máy chủ."
+    },
+    "member_update": {
+      "title": "Cập nhật thành viên",
+      "desc": "**{{-icon}} | {{-author}} | **{{-moderator}} đã cập nhật thông tin của {{-target}}."
+    },
+    "member_remove": {
+      "title": "Thành viên rời đi",
+      "desc": "**{{-icon}} | {{-author}} | **{{-target}} đã rời khỏi máy chủ."
+    },
+    "member_add": {
+      "title": "Thành viên mới",
+      "desc": "**{{-icon}} | {{-author}} | **{{-target}} đã tham gia máy chủ."
+    },
+    "role_create": {
+      "title": "Tạo vai trò mới",
+      "desc": "**{{-icon}} | {{-author}} | **{{-moderator}} đã tạo vai trò {{-target}}."
+    },
+    "role_update": {
+      "title": "Cập nhật vai trò",
+      "desc": "**{{-icon}} | {{-author}} | **{{-moderator}} đã cập nhật vai trò {{-target}}."
+    },
+    "role_delete": {
+      "title": "Xóa vai trò",
+      "desc": "**{{-icon}} | {{-author}} | **{{-moderator}} đã xóa vai trò {{-target}}."
+    },
+    "channel_update": {
+      "title": "Kênh được cập nhật",
+      "desc": "**{{-icon}} | {{-author}} | **{{-moderator}} đã cập nhật kênh {{-target}}."
+    }
+  },
   "guild_ban_add": {
     "title": "Thành viên bị cấm",
     "desc": "{{-executor}} đã cấm {{-target}} khỏi máy chủ."

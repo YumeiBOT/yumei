@@ -7,43 +7,47 @@
   "action_log": {
     "ban_add": {
       "title": "User Banned",
-      "desc": "{{-moderator}} banned {{-target}}."
+      "desc": "**{{-icon}} | {{-author}} | **{{-moderator}} banned {{-target}}."
     },
     "ban_remove": {
       "title": "User Unbanned",
-      "desc": "{{-moderator}} unbanned {{-target}}."
+      "desc": "**{{-icon}} | {{-author}} | **{{-moderator}} unbanned {{-target}}."
     },
     "kick": {
       "title": "User Kicked",
-      "desc": "{{-moderator}} kicked {{-target}}."
+      "desc": "**{{-icon}} | {{-author}} | **{{-moderator}} kicked {{-target}}."
     },
     "guild_update": {
       "title": "Server Updated",
-      "desc": "{{-moderator}} updated the server."
+      "desc": "**{{-icon}} | {{-author}} | **{{-moderator}} updated the server."
     },
     "member_update": {
       "title": "Member Updated",
-      "desc": "{{-moderator}} updated {{-target}}."
+      "desc": "**{{-icon}} | {{-author}} | **{{-moderator}} updated {{-target}}."
     },
     "member_remove": {
       "title": "Member Removed",
-      "desc": "{{-moderator}} removed {{-target}}."
+      "desc": "**{{-icon}} | {{-author}} | **{{-moderator}} removed {{-target}}."
     },
     "member_add": {
       "title": "Member Joined",
-      "desc": "{{-target}} joined the server."
+      "desc": "**{{-icon}} | {{-author}} | **{{-target}} joined the server."
     },
     "role_create": {
       "title": "Role Created",
-      "desc": "{{-moderator}} created role {{-target}}."
+      "desc": "**{{-icon}} | {{-author}} | **{{-moderator}} created role {{-target}}."
     },
     "role_update": {
       "title": "Role Updated",
-      "desc": "{{-moderator}} updated role {{-target}}."
+      "desc": "**{{-icon}} | {{-author}} | **{{-moderator}} updated role {{-target}}."
     },
     "role_delete": {
       "title": "Role Deleted",
-      "desc": "{{-moderator}} deleted role {{-target}}."
+      "desc": "**{{-icon}} | {{-author}} | **{{-moderator}} deleted role {{-target}}."
+    },
+    "channel_update": {
+      "title": "Channel Updated",
+      "desc": "**{{-icon}} | {{-author}} | **{{-moderator}} updated channel {{-target}}."
     }
   }
 }
