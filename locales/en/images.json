@@ -1,0 +1,10 @@
+{
+  "avatar": {
+    "description": "Get the avatar of a user or yourself.",
+    "user_option": "The user to get the avatar for (optional)",
+    "embed_title": "{{username}}'s Avatar",
+    "embed_footer": "User ID: {{userid}}",
+    "error": "An error occurred while fetching the avatar: {{error}}",
+    "example": "/avatar [user]"
+  }
+} 

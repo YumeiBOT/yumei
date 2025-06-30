@@ -23,7 +23,18 @@
     },
     "member_update": {
       "title": "Member Updated",
-      "desc": "**{{-icon}} | {{-author}} | **{{-moderator}} updated {{-target}}."
+      "desc": "**{{-icon}} | {{-author}} | **{{-moderator}} updated {{-target}}.",
+      "nickname_changed": "**Nickname**: `{{-old}}` → `{{-new}}`",
+      "nickname_added": "**Nickname**: Added `{{-new}}`",
+      "nickname_removed": "**Nickname**: Removed `{{-old}}`",
+      "roles_added": "**Roles Added**: {{-roles}}",
+      "roles_removed": "**Roles Removed**: {{-roles}}",
+      "timeout_added": "**Timeout**: Added until {{-until}}",
+      "timeout_removed": "**Timeout**: Removed",
+      "avatar_changed": "**Avatar**: Changed",
+      "username_changed": "**Username**: `{{-old}}` → `{{-new}}`",
+      "discriminator_changed": "**Discriminator**: `{{-old}}` → `{{-new}}`",
+      "no_changes": "No specific changes detected"
     },
     "member_remove": {
       "title": "Member Removed",

@@ -19,7 +19,18 @@
     },
     "member_update": {
       "title": "Cập nhật thành viên",
-      "desc": "**{{-icon}} | {{-author}} | **{{-moderator}} đã cập nhật thông tin của {{-target}}."
+      "desc": "**{{-icon}} | {{-author}} | **{{-moderator}} đã cập nhật thông tin của {{-target}}.",
+      "nickname_changed": "**Biệt danh**: `{{-old}}` → `{{-new}}`",
+      "nickname_added": "**Biệt danh**: Đã thêm `{{-new}}`",
+      "nickname_removed": "**Biệt danh**: Đã xóa `{{-old}}`",
+      "roles_added": "**Vai trò đã thêm**: {{-roles}}",
+      "roles_removed": "**Vai trò đã xóa**: {{-roles}}",
+      "timeout_added": "**Tạm khóa**: Đã thêm đến {{-until}}",
+      "timeout_removed": "**Tạm khóa**: Đã gỡ bỏ",
+      "avatar_changed": "**Ảnh đại diện**: Đã thay đổi",
+      "username_changed": "**Tên người dùng**: `{{-old}}` → `{{-new}}`",
+      "discriminator_changed": "**Mã phân biệt**: `{{-old}}` → `{{-new}}`",
+      "no_changes": "Không phát hiện thay đổi cụ thể"
     },
     "member_remove": {
       "title": "Thành viên rời đi",

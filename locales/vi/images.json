@@ -1,0 +1,10 @@
+{
+  "avatar": {
+    "description": "Lấy ảnh đại diện của bạn hoặc người dùng khác.",
+    "user_option": "Người dùng muốn lấy ảnh đại diện (không bắt buộc)",
+    "embed_title": "Ảnh đại diện của {{username}}",
+    "embed_footer": "ID người dùng: {{userid}}",
+    "error": "Đã xảy ra lỗi khi lấy ảnh đại diện: {{error}}",
+    "example": "/avatar [user]"
+  }
+} 
