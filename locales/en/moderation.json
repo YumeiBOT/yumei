@@ -35,7 +35,7 @@
     "description": "Clear message of someone",
     "invalid_args": "Please specify a valid number between 1 and 100 or a user mention",
     "user_not_found": "I cannot find the user you mentioned",
-    "update_soon": "TODO"
+    "update_soon": "More updates coming soon..."
   },
   "kick": {
     "name": "kick",

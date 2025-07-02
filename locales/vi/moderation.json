@@ -27,15 +27,15 @@
     "success": "Tôi đã xóa thành công {{amount}} tin nhắn",
     "older_than_14d": "Bạn chỉ có thể xóa tin nhắn cách đây dưới 14 ngày",
     "error": "Đã xảy ra lỗi khi xóa tin nhắn trong kênh này!",
-    "invalid_amount": "TODO"
+    "invalid_amount": "Vui lòng nhập một số hợp lệ từ 1 đến 100"
   },
   "clearuser": {
     "name": "clearuser",
     "example": "",
     "description": "Xóa tin nhắn của một người dùng nào đó",
     "update_soon": "Sẽ sớm cập nhật thêm...",
-    "invalid_args": "TODO",
-    "user_not_found": "TODO"
+    "invalid_args": "Vui lòng đề cập người dùng và nhập một số hợp lệ từ 1 đến 100",
+    "user_not_found": "Không thể tìm thấy người dùng bạn đã đề cập"
   },
   "kick": {
     "name": "kick",
