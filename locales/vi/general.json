@@ -86,5 +86,21 @@
     "not_have_permission": " **{{-icon}} | {{-username}} | **Bạn cần được cấp quyền để sử dụng mã lệnh này!!!",
     "example": "```{{-prefix}}{{alias}}```",
     "description": "Danh sách mã lệnh"
+  },
+  "rank": {
+    "description": "Kiểm tra bảng xếp hạng hoạt động thoại hoặc nhắn tin của máy chủ.",
+    "type_description": "Loại xếp hạng: thoại hoặc nhắn tin",
+    "timetype_description": "Loại thời gian: ngày, tuần, tháng, hoặc năm (mặc định: tháng)",
+    "voice": "Thoại",
+    "text": "Nhắn tin",
+    "day": "Ngày",
+    "week": "Tuần",
+    "month": "Tháng",
+    "year": "Năm",
+    "no_data": "Không có dữ liệu xếp hạng cho {{type}} ({{timeType}}).",
+    "entry": "#{{rank}} {{user}}: {{value}}",
+    "result": "**Top {{type}} xếp hạng ({{timeType}}):**\n{{entries}}",
+    "minutes": "phút",
+    "messages": "tin nhắn"
   }
 }

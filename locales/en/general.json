@@ -86,5 +86,21 @@
     "not_have_permission": "**{{-icon}} | {{-username}} | **You do not have permission to use this command!!!",
     "example": "```{{-prefix}}{{alias}}```",
     "description": "List of command"
+  },
+  "rank": {
+    "description": "Check the server's top rankings for voice or text activity.",
+    "type_description": "Ranking type: voice or text",
+    "timetype_description": "Time type: day, week, month, or year (default: month)",
+    "voice": "Voice",
+    "text": "Text",
+    "day": "Day",
+    "week": "Week",
+    "month": "Month",
+    "year": "Year",
+    "no_data": "No ranking data found for {{type}} ({{timeType}}).",
+    "entry": "#{{rank}} {{user}}: {{value}}",
+    "result": "**Top {{type}} rankings ({{timeType}}):**\n{{entries}}",
+    "minutes": "minutes",
+    "messages": "messages"
   }
 }
