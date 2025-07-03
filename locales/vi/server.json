@@ -36,5 +36,31 @@
       "initial_room": "Phòng vừa chọn không hợp lệ vui lòng chọn phòng trò chuyện",
       "timeout": "Hết thời gian cài đặt vui lòng làm lại từ đầu"
     }
-  }
+  },
+  "command_disable": {
+    "description": "Vô hiệu hóa một lệnh trong kênh này.",
+    "command_option": "ID lệnh cần vô hiệu hóa (ví dụ: help, ping)",
+    "success": "{{-icon}} | {{-author}}, lệnh `{{commandId}}` đã được **vô hiệu hóa** tại <#{{channelId}}>",
+    "already_disabled": "{{-icon}} | {{-author}}, lệnh `{{commandId}}` đã bị vô hiệu hóa tại <#{{channelId}}>",
+    "error": "{{-icon}} | {{-author}}, không thể vô hiệu hóa lệnh `{{commandId}}` tại <#{{channelId}}>. Vui lòng thử lại.",
+    "enabled_list": "Các lệnh đang bật trong kênh này: {{commands}}",
+    "no_enabled": "Không có lệnh nào đang bật trong kênh này.",
+    "disabled_title": "Các lệnh đã bị vô hiệu hóa trong kênh này",
+    "disabled_title_single": "Lệnh đã bị vô hiệu hóa: /{{commandId}}",
+    "disabled_list": "{{commands}}",
+    "no_disabled": "Không có lệnh nào bị vô hiệu hóa trong kênh này."
+  },
+  "command_enable": {
+    "description": "Kích hoạt lại một lệnh trong kênh này.",
+    "command_option": "ID lệnh cần kích hoạt (ví dụ: help, ping)",
+    "success": "{{-icon}} | {{-author}}, lệnh `{{commandId}}` đã được **kích hoạt** lại tại <#{{channelId}}>",
+    "not_disabled": "{{-icon}} | {{-author}}, lệnh `{{commandId}}` hiện không bị vô hiệu hóa tại <#{{channelId}}>",
+    "error": "{{-icon}} | {{-author}}, không thể kích hoạt lại lệnh `{{commandId}}` tại <#{{channelId}}>. Vui lòng thử lại.",
+    "disabled_list": "Các lệnh đã bị vô hiệu hóa trong kênh này: {{commands}}",
+    "no_disabled": "Không có lệnh nào bị vô hiệu hóa trong kênh này.",
+    "enabled_title": "Các lệnh đang được bật trong kênh này",
+    "available_list": "{{commands}}",
+    "no_enabled": "Không có lệnh nào đang được bật trong kênh này."
+  },
+  "command_disabled_error": "{{-icon}} | {{-author}}, lệnh `{{commandId}}` đã bị **vô hiệu hóa** trong kênh này."
 }

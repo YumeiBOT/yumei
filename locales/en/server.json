@@ -36,5 +36,31 @@
       "initial_room": "Phòng vừa chọn không hợp lệ vui lòng chọn phòng trò chuyện",
       "timeout": "Hết thời gian cài đặt vui lòng làm lại từ đầu"
     }
-  }
+  },
+  "command_disable": {
+    "description": "Disable a command in this channel.",
+    "command_option": "Command ID to disable (e.g. help, ping)",
+    "success": "{{-icon}} | {{-author}}, command `{{commandId}}` is now **disabled** in <#{{channelId}}>",
+    "already_disabled": "{{-icon}} | {{-author}}, command `{{commandId}}` is already disabled in <#{{channelId}}>",
+    "error": "{{-icon}} | {{-author}}, failed to disable command `{{commandId}}` in <#{{channelId}}>",
+    "enabled_list": "Enabled commands in this channel: {{commands}}",
+    "no_enabled": "No enabled commands in this channel.",
+    "disabled_title": "Disabled commands in this channel",
+    "disabled_title_single": "Disabled command: /{{commandId}}",
+    "disabled_list": "{{commands}}",
+    "no_disabled": "No commands are disabled in this channel."
+  },
+  "command_enable": {
+    "description": "Enable a command in this channel.",
+    "command_option": "Command ID to enable (e.g. help, ping)",
+    "success": "{{-icon}} | {{-author}}, command `{{commandId}}` is now **enabled** in <#{{channelId}}>",
+    "not_disabled": "{{-icon}} | {{-author}}, command `{{commandId}}` is not disabled in <#{{channelId}}>",
+    "error": "{{-icon}} | {{-author}}, failed to enable command `{{commandId}}` in <#{{channelId}}>",
+    "disabled_list": "Disabled commands in this channel: {{commands}}",
+    "no_disabled": "No disabled commands in this channel.",
+    "enabled_title": "Enabled commands in this channel",
+    "available_list": "{{commands}}",
+    "no_enabled": "No commands are enabled in this channel."
+  },
+  "command_disabled_error": "{{-icon}} | {{-author}}, command `{{commandId}}` is **disabled** in this channel."
 }
