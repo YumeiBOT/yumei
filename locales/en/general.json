@@ -102,5 +102,31 @@
     "result": "**Top {{type}} rankings ({{timeType}}):**\n{{entries}}",
     "minutes": "minutes",
     "messages": "messages"
+  },
+  "rank_history": {
+    "description": "View historical rankings for voice or text activity by week or month.",
+    "type_description": "Ranking type: voice or text",
+    "period_description": "Time period: week or month",
+    "month_option_description": "Month number (1-12)",
+    "year_option_description": "Year (2020-current)",
+    "week_option_description": "Week number within the month (1-5)",
+    "voice": "Voice",
+    "text": "Text",
+    "week": "Week",
+    "month": "Month",
+    "select_month": "Please select a month:",
+    "select_week": "Please select a week for {{month}}:",
+    "select_month_placeholder": "Choose a month...",
+    "select_week_placeholder": "Choose a week...",
+    "timeout": "Selection timed out. Please try again.",
+    "invalid_year": "{{-icon}} | {{-author}}, Cannot query data from past years.",
+    "invalid_month": "{{-icon}} | {{-author}}, Cannot query data from future months.",
+    "week_requires_month_and_week": "{{-icon}} | {{-author}}, Week queries require both month and week number.",
+    "invalid_week": "{{-icon}} | {{-author}}, Invalid week number. Maximum weeks in this month: {{maxWeeks}}.",
+    "no_data": "No historical data found for {{type}} rankings in {{period}}.",
+    "week_period_display": "Week {{week}} ({{dateRange}}) of {{monthName}} - {{year}}",
+    "month_period_display": "{{month}} {{year}}",
+    "result": "**Historical {{type}} rankings ({{period}}):**\n{{entries}}",
+    "error": "{{-icon}} | {{-author}}, An error occurred while fetching historical data: {{error}}"
   }
 }

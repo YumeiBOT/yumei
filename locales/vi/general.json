@@ -102,5 +102,31 @@
     "result": "**Top {{type}} xếp hạng ({{timeType}}):**\n{{entries}}",
     "minutes": "phút",
     "messages": "tin nhắn"
+  },
+  "rank_history": {
+    "description": "Xem bảng xếp hạng lịch sử cho hoạt động thoại hoặc nhắn tin theo tuần hoặc tháng.",
+    "type_description": "Loại xếp hạng: thoại hoặc nhắn tin",
+    "period_description": "Khoảng thời gian: tuần hoặc tháng",
+    "month_option_description": "Số tháng (1-12)",
+    "year_option_description": "Năm (2020-hiện tại)",
+    "week_option_description": "Số tuần trong tháng (1-5)",
+    "voice": "Thoại",
+    "text": "Nhắn tin",
+    "week": "Tuần",
+    "month": "Tháng",
+    "select_month": "Vui lòng chọn tháng:",
+    "select_week": "Vui lòng chọn tuần cho {{month}}:",
+    "select_month_placeholder": "Chọn tháng...",
+    "select_week_placeholder": "Chọn tuần...",
+    "timeout": "Hết thời gian chọn. Vui lòng thử lại.",
+    "invalid_year": "{{-icon}} | {{-author}}, Không thể truy vấn dữ liệu từ các năm trước.",
+    "invalid_month": "{{-icon}} | {{-author}}, Không thể truy vấn dữ liệu từ các tháng trong tương lai.",
+    "week_requires_month_and_week": "{{-icon}} | {{-author}}, Truy vấn tuần yêu cầu cả số tháng và số tuần.",
+    "invalid_week": "{{-icon}} | {{-author}}, Số tuần không hợp lệ. Số tuần tối đa trong tháng này: {{maxWeeks}}.",
+    "no_data": "Không tìm thấy dữ liệu lịch sử cho xếp hạng {{type}} trong {{period}}.",
+    "week_period_display": "Tuần {{week}} ({{dateRange}}) của {{monthName}} - {{year}}",
+    "month_period_display": "{{month}} {{year}}",
+    "result": "**Bảng xếp hạng {{type}} lịch sử ({{period}}):**\n{{entries}}",
+    "error": "{{-icon}} | {{-author}}, Đã xảy ra lỗi khi lấy dữ liệu lịch sử: {{error}}"
   }
 }
