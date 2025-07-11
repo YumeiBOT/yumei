@@ -1,0 +1,178 @@
+{
+  "init_reaction_role": {
+    "name": "Initialize Reaction Role",
+    "description": "Create a new reaction role configuration",
+    "example": "```{{-prefix}}{{alias}}```",
+    "success": "{{-icon}} | {{-author}}, reaction role configuration has been **initialized** successfully!",
+    "error": "{{-icon}} | {{-author}}, failed to initialize reaction role configuration. Please try again.",
+    "already_exists": "{{-icon}} | {{-author}}, a reaction role configuration is already in progress. Please complete or cancel the current session first.",
+    "session_not_found": "{{-icon}} | {{-author}}, no active reaction role configuration session found.",
+    "session_cancelled": "{{-icon}} | {{-author}}, reaction role configuration session has been **cancelled**.",
+    "session_completed": "{{-icon}} | {{-author}}, reaction role configuration has been **completed** and saved successfully!",
+    "timeout": "{{-icon}} | {{-author}}, reaction role configuration session has **timed out**. Please start over.",
+    "invalid_input": "{{-icon}} | {{-author}}, invalid input provided. Please try again.",
+    "permission_error": "{{-icon}} | {{-author}}, you don't have permission to manage roles in this server.",
+    "bot_permission_error": "{{-icon}} | {{-author}}, I don't have the required permissions to manage roles.",
+    "channel_not_found": "{{-icon}} | {{-author}}, the specified channel was not found.",
+    "role_not_found": "{{-icon}} | {{-author}}, one or more specified roles were not found.",
+    "message_not_found": "{{-icon}} | {{-author}}, the specified message was not found.",
+    "webhook_error": "{{-icon}} | {{-author}}, failed to create or access webhook. Please check permissions.",
+    "embed_error": "{{-icon}} | {{-author}}, failed to create embed message. Please try again."
+  },
+  "flow": {
+    "welcome": {
+      "title": "🎭 Reaction Role Configuration",
+      "description": "Welcome to the reaction role configuration wizard! I'll guide you through setting up a reaction role system.\n\n**Available Methods:**\n• 🎯 **Reaction (Emoji)** - Users react with emojis to get roles\n• 🔘 **Button** - Users click buttons to get roles\n• 📋 **Select Menu** - Users select from dropdown menus\n\nPlease choose your preferred method:",
+      "footer": "React with the corresponding emoji to continue"
+    },
+    "select_roles": {
+      "title": "🎭 Select Roles",
+      "description": "You've selected: **{{method}}** with **{{roleChangeType}}**, **{{replyType}}**, and **{{messageType}}**\n\n**Available Roles:** {{roleCount}} roles below the bot's highest role\n\nPlease select the roles you want to include in this reaction role system:",
+      "footer": "Select one or more roles from the dropdown menu",
+      "placeholder": "Choose roles to include..."
+    },
+    "roles_selected": {
+      "title": "🎭 Roles Selected",
+      "description": "You've selected: **{{method}}** with **{{roleChangeType}}**, **{{replyType}}**, and **{{messageType}}**\n\n**Selected Roles ({{roleCount}}):**\n{{rolesList}}\n\n**Next Steps:**\n1. Configure message content\n2. Complete setup\n\nPlease choose your next action:",
+      "footer": "Use the buttons below to continue with setup"
+    },
+    "select_method": {
+      "title": "🎭 Select Method",
+      "description": "You've selected: **{{method}}**\n\n**Available Role Change Types:**\n{{roleChangeTypes}}\n\nPlease choose the role change type:",
+      "footer": "React with the corresponding emoji to continue"
+    },
+    "select_reply_type": {
+      "title": "🎭 Select Reply Type",
+      "description": "You've selected: **{{method}}** with **{{roleChangeType}}**\n\n**Available Reply Types:**\n{{replyTypes}}\n\nPlease choose the reply type:",
+      "footer": "React with the corresponding emoji to continue"
+    },
+    "select_message_type": {
+      "title": "🎭 Select Message Type",
+      "description": "You've selected: **{{method}}** with **{{replyType}}**\n\n**Available Message Types:**\n• 🤖 **Bot Message** - I'll send the message\n• 🔗 **Webhook** - Use webhook to send message\n• 📝 **Own Message** - Use existing message (Reaction only)\n\nPlease choose the message type:",
+      "footer": "Select from the dropdown menu to continue",
+      "placeholder": "Choose message type..."
+    },
+    "select_channel": {
+      "title": "🎭 Select Channel",
+      "description": "You've selected: **{{method}}** with **{{messageType}}**\n\n**Next Step:** Choose the channel where the bot/webhook message will be sent.\n\nPlease select a text channel from the dropdown menu:",
+      "footer": "Select a channel to continue"
+    },
+    "configure_message": {
+      "title": "🎭 Configure Message",
+      "description": "You've selected: **{{method}}** with **{{messageType}}**\n\n**Next Step:** Configure the message content and webhook settings.\n\nPlease click the button below to open the configuration modal:",
+      "footer": "Click the configure button to continue"
+    },
+    "open_config_modal": {
+      "title": "🎭 Configure Message Content",
+      "description": "You've selected: **{{method}}** with **{{messageType}}**\n\n**Next Step:** Fill in the message content and webhook URL in the modal.\n\nPlease click the button below to open the configuration modal:",
+      "footer": "Click the open modal button to continue"
+    },
+    "define_roles": {
+      "title": "🎭 Define Roles",
+      "description": "You've selected: **{{method}}** with **{{roleChangeType}}**, **{{replyType}}**, and **{{messageType}}**\n\n**Current Configuration:**\n• Channel: <#{{channelId}}>\n• Message Type: {{messageType}}\n• Reply Type: {{replyType}}\n• Role Change Type: {{roleChangeType}}\n\n**Next Steps:**\n1. Add roles using the buttons below\n2. Configure message content\n3. Complete setup\n\n**Current Roles:**\n{{rolesList}}",
+      "footer": "Use the buttons below to manage roles and complete setup"
+    },
+    "confirm": {
+      "title": "🎭 Confirm Configuration",
+      "description": "**Final Configuration Review:**\n\n**Method:** {{method}}\n**Channel:** <#{{channelId}}>\n**Message Type:** {{messageType}}\n**Reply Type:** {{replyType}}\n**Role Change Type:** {{roleChangeType}}\n\n**Roles:**\n{{rolesList}}\n\n**Message Content:**\n{{messageContent}}\n\nPlease confirm this configuration:",
+      "footer": "React with ✅ to confirm or ❌ to cancel"
+    }
+  },
+  "methods": {
+    "reaction": "Reaction (Emoji)",
+    "button": "Button",
+    "select": "Select Menu"
+  },
+  "role_change_types": {
+    "reaction": {
+      "standard": "**🔄 Standard** - Add/remove roles on reaction",
+      "reverse": "**🔄 Reverse** - Remove/add roles on reaction",
+      "inverse": "**🔄 Inverse** - Opposite of standard behavior",
+      "single_role": "**🎯 Single Role** - Only one role allowed",
+      "single_select": "**🎯 Single Select** - One-time role selection",
+      "select_only": "**➕ Select Only** - Can only add roles",
+      "unselect_only": "**➖ Unselect Only** - Can only remove roles"
+    },
+    "button": {
+      "standard": "**🔄 Standard** - Add/remove roles on click",
+      "single_role": "**🎯 Single Role** - Only one role allowed",
+      "single_select": "**🎯 Single Select** - One-time role selection",
+      "select_only": "**➕ Select Only** - Can only add roles",
+      "unselect_only": "**➖ Unselect Only** - Can only remove roles"
+    },
+    "select": {
+      "selection": "**📋 Selection** - Add/remove based on selection",
+      "standard": "**🔄 Standard** - Add/remove roles on selection",
+      "single_role": "**🎯 Single Role** - Only one role allowed",
+      "single_select": "**🎯 Single Select** - One-time role selection",
+      "select_only": "**➕ Select Only** - Can only add roles",
+      "unselect_only": "**➖ Unselect Only** - Can only remove roles"
+    }
+  },
+  "reply_types": {
+    "dm": "**💬 DM** - Send private message to user",
+    "no_message": "**🔇 No Message** - Silent role changes",
+    "secret_reply": "**🔒 Secret Reply** - Ephemeral interaction reply"
+  },
+  "message_types": {
+    "bot": "**🤖 Bot Message** - I'll send the message",
+    "bot_description": "The bot will send the message with reaction roles",
+    "webhook": "**🔗 Webhook** - Use webhook to send message",
+    "webhook_description": "Use a webhook to send the message with reaction roles",
+    "own": "**📝 Own Message** - Use existing message (Reaction only)",
+    "own_description": "Use an existing message for reaction roles (Reaction method only)"
+  },
+  "actions": {
+    "add_role": "Add Role",
+    "remove_role": "Remove Role",
+    "edit_message": "Edit Message",
+    "complete_setup": "Complete Setup",
+    "configure_message": "Configure Message",
+    "open_config_modal": "Open Configuration Modal",
+    "add_more_roles": "Add More Roles",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next"
+  },
+  "messages": {
+    "no_roles": "No roles configured yet",
+    "role_added": "Role {{roleName}} added successfully",
+    "role_removed": "Role {{roleName}} removed successfully",
+    "role_management_coming_soon": "{{-icon}} | Role management feature will be implemented soon!",
+    "setup_complete": "Reaction role setup completed successfully!",
+    "setup_cancelled": "Reaction role setup cancelled",
+    "invalid_role": "Invalid role provided",
+    "invalid_channel": "Invalid channel provided",
+    "invalid_message": "Invalid message provided",
+    "webhook_created": "Webhook created successfully",
+    "message_sent": "Message sent successfully"
+  },
+  "modals": {
+    "config": {
+      "title": "Configuration Settings",
+      "webhook_url_label": "Webhook URL (Optional)",
+      "webhook_url_placeholder": "https://discord.com/api/webhooks/...",
+      "bot_message_label": "Bot Message (Optional)",
+      "bot_message_placeholder": "Enter the message the bot should send..."
+    }
+  },
+  "errors": {
+    "invalid_selection": "Invalid selection. Please try again.",
+    "timeout": "Configuration session timed out. Please start over.",
+    "permission_denied": "Permission denied. Please check bot permissions.",
+    "role_not_found": "Role not found. Please check role ID.",
+    "channel_not_found": "Channel not found. Please check channel ID.",
+    "message_not_found": "Message not found. Please check message ID.",
+    "webhook_failed": "Failed to create webhook. Please check permissions.",
+    "embed_failed": "Failed to create embed. Please try again.",
+    "database_error": "Database error occurred. Please try again.",
+    "guild_not_found": "Guild not found. Please try again.",
+    "bot_not_found": "Bot member not found. Please try again.",
+    "no_manageable_roles": "No manageable roles found. The bot needs roles below its highest role to manage.",
+    "role_selection_failed": "Failed to process role selection. Please try again."
+  },
+  "role_select": {
+    "description": "Position: {{position}} | Members: {{members}}"
+  }
+} 
