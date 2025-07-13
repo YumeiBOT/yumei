@@ -38,7 +38,7 @@
     },
     "select_method": {
       "title": "🎭 Select Method",
-      "description": "You've selected: **{{method}}**\n\n**Available Role Change Types:**\n{{roleChangeTypes}}\n\nPlease choose the role change type:",
+      "description": "You've selected: **{{method}}**\n\n**Available Role Change Types:**\n{{-roleChangeTypes}}\n\nPlease choose the role change type:",
       "footer": "React with the corresponding emoji to continue"
     },
     "select_reply_type": {
@@ -54,27 +54,37 @@
     },
     "select_channel": {
       "title": "🎭 Select Channel",
-      "description": "You've selected: **{{method}}** with **{{messageType}}**\n\n**Next Step:** Choose the channel where the bot/webhook message will be sent.\n\nPlease select a text channel from the dropdown menu:",
+      "description": "You've selected: **{{method}}** with **{{-messageType}}**\n\n**Next Step:** Choose the channel where the bot/webhook message will be sent.\n\nPlease select a text channel from the dropdown menu:",
       "footer": "Select a channel to continue"
+    },
+    "configure_webhook": {
+      "title": "🎭 Configure Webhook",
+      "description": "You've selected: **{{method}}** with **{{-messageType}}**\n\n**Next Step:** Configure the webhook settings (title and image).\n\nPlease click the button below to open the webhook configuration modal:",
+      "footer": "Click the configure webhook button to continue"
+    },
+    "create_message": {
+      "title": "🎭 Create Message",
+      "description": "You've selected: **{{method}}** with **{{-messageType}}**\n\n**Next Step:** Create the message that will be sent to the channel.\n\nPlease click the button below to open the message creation modal:",
+      "footer": "Click the create message button to continue"
     },
     "configure_message": {
       "title": "🎭 Configure Message",
-      "description": "You've selected: **{{method}}** with **{{messageType}}**\n\n**Next Step:** Configure the message content and webhook settings.\n\nPlease click the button below to open the configuration modal:",
+      "description": "You've selected: **{{method}}** with **{{-messageType}}**\n\n**Next Step:** Configure the message content and embed settings.\n\nPlease click the button below to open the configuration modal:",
       "footer": "Click the configure button to continue"
     },
     "open_config_modal": {
       "title": "🎭 Configure Message Content",
-      "description": "You've selected: **{{method}}** with **{{messageType}}**\n\n**Next Step:** Fill in the message content and webhook URL in the modal.\n\nPlease click the button below to open the configuration modal:",
+      "description": "You've selected: **{{method}}** with **{{-messageType}}**\n\n**Next Step:** Fill in the message content, webhook URL, and embed settings in the modal.\n\n**Available Embed Settings:**\n• Title and description\n• Color customization\n• Message content\n\nPlease click the button below to open the configuration modal:",
       "footer": "Click the open modal button to continue"
     },
     "define_roles": {
       "title": "🎭 Define Roles",
-      "description": "You've selected: **{{method}}** with **{{roleChangeType}}**, **{{replyType}}**, and **{{messageType}}**\n\n**Current Configuration:**\n• Channel: <#{{channelId}}>\n• Message Type: {{messageType}}\n• Reply Type: {{replyType}}\n• Role Change Type: {{roleChangeType}}\n\n**Next Steps:**\n1. Add roles using the buttons below\n2. Configure message content\n3. Complete setup\n\n**Current Roles:**\n{{rolesList}}",
+      "description": "You've selected: **{{method}}** with **{{roleChangeType}}**, **{{replyType}}**, and **{{-messageType}}**\n\n**Current Configuration:**\n• Channel: <#{{channelId}}>\n• Message Type: {{-messageType}}\n• Reply Type: {{replyType}}\n• Role Change Type: {{roleChangeType}}\n\n**Next Steps:**\n1. Add roles using the buttons below\n2. Configure message content\n3. Complete setup\n\n**Current Roles:**\n{{rolesList}}",
       "footer": "Use the buttons below to manage roles and complete setup"
     },
     "confirm": {
       "title": "🎭 Confirm Configuration",
-      "description": "**Final Configuration Review:**\n\n**Method:** {{method}}\n**Channel:** <#{{channelId}}>\n**Message Type:** {{messageType}}\n**Reply Type:** {{replyType}}\n**Role Change Type:** {{roleChangeType}}\n\n**Roles:**\n{{rolesList}}\n\n**Message Content:**\n{{messageContent}}\n\nPlease confirm this configuration:",
+      "description": "**Final Configuration Review:**\n\n**Method:** {{method}}\n**Channel:** <#{{channelId}}>\n**Message Type:** {{-messageType}}\n**Reply Type:** {{replyType}}\n**Role Change Type:** {{roleChangeType}}\n\n**Roles:**\n{{rolesList}}\n\n**Message Content:**\n{{messageContent}}\n\nPlease confirm this configuration:",
       "footer": "React with ✅ to confirm or ❌ to cancel"
     }
   },
@@ -127,6 +137,8 @@
     "remove_role": "Remove Role",
     "edit_message": "Edit Message",
     "complete_setup": "Complete Setup",
+    "configure_webhook": "Configure Webhook",
+    "create_message": "Create Message",
     "configure_message": "Configure Message",
     "open_config_modal": "Open Configuration Modal",
     "add_more_roles": "Add More Roles",
@@ -146,15 +158,46 @@
     "invalid_channel": "Invalid channel provided",
     "invalid_message": "Invalid message provided",
     "webhook_created": "Webhook created successfully",
-    "message_sent": "Message sent successfully"
+    "message_sent": "Message sent successfully",
+    "embed_preview_title": "📋 Message Preview",
+    "embed_preview_description": "Below is a preview of how your message will look:",
+    "embed_preview_default_title": "Preview",
+    "embed_preview_default_description": "No description"
   },
   "modals": {
+    "webhook_config": {
+      "title": "Webhook Configuration",
+      "webhook_title_label": "Webhook Title (Optional)",
+      "webhook_title_placeholder": "Enter webhook title...",
+      "webhook_image_label": "Webhook Image URL (Optional)",
+      "webhook_image_placeholder": "Enter webhook image URL..."
+    },
+    "message_creation": {
+      "title": "Create Message",
+      "message_content_label": "Message Content (Optional)",
+      "message_content_placeholder": "Enter the message content...",
+      "embed_title_label": "Embed Title (Optional)",
+      "embed_title_placeholder": "Enter the embed title...",
+      "embed_body_label": "Embed Description (Optional)",
+      "embed_body_placeholder": "Enter the embed description...",
+      "embed_color_label": "Embed Color (Optional)",
+      "embed_color_placeholder": "Enter hex color (e.g., #00FF00)...",
+      "embed_image_label": "Embed Image URL (Optional)",
+      "embed_image_placeholder": "Enter embed image URL..."
+    },
     "config": {
       "title": "Configuration Settings",
       "webhook_url_label": "Webhook URL (Optional)",
       "webhook_url_placeholder": "https://discord.com/api/webhooks/...",
       "bot_message_label": "Bot Message (Optional)",
-      "bot_message_placeholder": "Enter the message the bot should send..."
+      "bot_message_placeholder": "Enter the message the bot should send...",
+      "embed_title_label": "Embed Title (Optional)",
+      "embed_title_placeholder": "Enter the embed title...",
+      "embed_body_label": "Embed Description (Optional)",
+      "embed_body_placeholder": "Enter the embed description...",
+      "embed_color_label": "Embed Color (Optional)",
+      "embed_color_placeholder": "Enter hex color (e.g., #00FF00)...",
+      "embed_image_note": "Note: Embed image configuration will be available in a future update"
     }
   },
   "errors": {

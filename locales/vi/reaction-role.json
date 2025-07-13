@@ -57,14 +57,24 @@
       "description": "Bạn đã chọn: **{{method}}** với **{{messageType}}**\n\n**Bước tiếp theo:** Chọn kênh nơi tin nhắn bot/webhook sẽ được gửi.\n\nVui lòng chọn một kênh văn bản từ menu dropdown:",
       "footer": "Chọn một kênh để tiếp tục"
     },
+    "configure_webhook": {
+      "title": "🎭 Cấu hình Webhook",
+      "description": "Bạn đã chọn: **{{method}}** với **{{messageType}}**\n\n**Bước tiếp theo:** Cấu hình cài đặt webhook (tiêu đề và hình ảnh).\n\nVui lòng nhấp vào nút bên dưới để mở modal cấu hình webhook:",
+      "footer": "Nhấp vào nút cấu hình webhook để tiếp tục"
+    },
+    "create_message": {
+      "title": "🎭 Tạo Tin nhắn",
+      "description": "Bạn đã chọn: **{{method}}** với **{{messageType}}**\n\n**Bước tiếp theo:** Tạo tin nhắn sẽ được gửi đến kênh.\n\nVui lòng nhấp vào nút bên dưới để mở modal tạo tin nhắn:",
+      "footer": "Nhấp vào nút tạo tin nhắn để tiếp tục"
+    },
     "configure_message": {
       "title": "🎭 Cấu hình Tin nhắn",
-      "description": "Bạn đã chọn: **{{method}}** với **{{messageType}}**\n\n**Bước tiếp theo:** Cấu hình nội dung tin nhắn và cài đặt webhook.\n\nVui lòng nhấp vào nút bên dưới để mở modal cấu hình:",
+      "description": "Bạn đã chọn: **{{method}}** với **{{messageType}}**\n\n**Bước tiếp theo:** Cấu hình nội dung tin nhắn và cài đặt embed.\n\nVui lòng nhấp vào nút bên dưới để mở modal cấu hình:",
       "footer": "Nhấp vào nút cấu hình để tiếp tục"
     },
     "open_config_modal": {
       "title": "🎭 Cấu hình Nội dung Tin nhắn",
-      "description": "Bạn đã chọn: **{{method}}** với **{{messageType}}**\n\n**Bước tiếp theo:** Điền nội dung tin nhắn và URL webhook trong modal.\n\nVui lòng nhấp vào nút bên dưới để mở modal cấu hình:",
+      "description": "Bạn đã chọn: **{{method}}** với **{{messageType}}**\n\n**Bước tiếp theo:** Điền nội dung tin nhắn, URL webhook và cài đặt embed trong modal.\n\n**Cài đặt Embed có sẵn:**\n• Tiêu đề và mô tả\n• Tùy chỉnh màu sắc\n• Nội dung tin nhắn\n\nVui lòng nhấp vào nút bên dưới để mở modal cấu hình:",
       "footer": "Nhấp vào nút mở modal để tiếp tục"
     },
     "define_roles": {
@@ -127,6 +137,8 @@
     "remove_role": "Xóa Vai trò",
     "edit_message": "Chỉnh sửa Tin nhắn",
     "complete_setup": "Hoàn thành Thiết lập",
+    "configure_webhook": "Cấu hình Webhook",
+    "create_message": "Tạo Tin nhắn",
     "configure_message": "Cấu hình Tin nhắn",
     "open_config_modal": "Mở Modal Cấu hình",
     "add_more_roles": "Thêm Vai trò Khác",
@@ -146,15 +158,46 @@
     "invalid_channel": "Kênh không hợp lệ",
     "invalid_message": "Tin nhắn không hợp lệ",
     "webhook_created": "Webhook đã được tạo thành công",
-    "message_sent": "Tin nhắn đã được gửi thành công"
+    "message_sent": "Tin nhắn đã được gửi thành công",
+    "embed_preview_title": "📋 Xem trước Tin nhắn",
+    "embed_preview_description": "Dưới đây là xem trước cách tin nhắn của bạn sẽ trông như thế:",
+    "embed_preview_default_title": "Xem trước",
+    "embed_preview_default_description": "Không có mô tả"
   },
   "modals": {
+    "webhook_config": {
+      "title": "Cấu hình Webhook",
+      "webhook_title_label": "Tiêu đề Webhook (Tùy chọn)",
+      "webhook_title_placeholder": "Nhập tiêu đề webhook...",
+      "webhook_image_label": "URL Hình ảnh Webhook (Tùy chọn)",
+      "webhook_image_placeholder": "Nhập URL hình ảnh webhook..."
+    },
+    "message_creation": {
+      "title": "Tạo Tin nhắn",
+      "message_content_label": "Nội dung Tin nhắn (Tùy chọn)",
+      "message_content_placeholder": "Nhập nội dung tin nhắn...",
+      "embed_title_label": "Tiêu đề Embed (Tùy chọn)",
+      "embed_title_placeholder": "Nhập tiêu đề embed...",
+      "embed_body_label": "Mô tả Embed (Tùy chọn)",
+      "embed_body_placeholder": "Nhập mô tả embed...",
+      "embed_color_label": "Màu Embed (Tùy chọn)",
+      "embed_color_placeholder": "Nhập mã màu hex (ví dụ: #00FF00)...",
+      "embed_image_label": "URL Hình ảnh Embed (Tùy chọn)",
+      "embed_image_placeholder": "Nhập URL hình ảnh embed..."
+    },
     "config": {
       "title": "Cài đặt Cấu hình",
       "webhook_url_label": "URL Webhook (Tùy chọn)",
       "webhook_url_placeholder": "https://discord.com/api/webhooks/...",
       "bot_message_label": "Tin nhắn Bot (Tùy chọn)",
-      "bot_message_placeholder": "Nhập tin nhắn mà bot sẽ gửi..."
+      "bot_message_placeholder": "Nhập tin nhắn mà bot sẽ gửi...",
+      "embed_title_label": "Tiêu đề Embed (Tùy chọn)",
+      "embed_title_placeholder": "Nhập tiêu đề embed...",
+      "embed_body_label": "Mô tả Embed (Tùy chọn)",
+      "embed_body_placeholder": "Nhập mô tả embed...",
+      "embed_color_label": "Màu Embed (Tùy chọn)",
+      "embed_color_placeholder": "Nhập mã màu hex (ví dụ: #00FF00)...",
+      "embed_image_note": "Lưu ý: Cấu hình hình ảnh embed sẽ có sẵn trong bản cập nhật tương lai"
     }
   },
   "errors": {
