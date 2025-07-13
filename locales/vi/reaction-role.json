@@ -3,27 +3,23 @@
     "name": "Khởi tạo Reaction Role",
     "description": "Tạo cấu hình reaction role mới",
     "example": "```{{-prefix}}{{alias}}```",
-    "success": "{{-icon}} | {{-author}}, cấu hình reaction role đã được **khởi tạo** thành công!",
-    "error": "{{-icon}} | {{-author}}, không thể khởi tạo cấu hình reaction role. Vui lòng thử lại.",
     "already_exists": "{{-icon}} | {{-author}}, đã có một cấu hình reaction role đang trong quá trình thiết lập. Vui lòng hoàn thành hoặc hủy phiên hiện tại trước.",
     "session_not_found": "{{-icon}} | {{-author}}, không tìm thấy phiên cấu hình reaction role đang hoạt động.",
-    "session_cancelled": "{{-icon}} | {{-author}}, phiên cấu hình reaction role đã được **hủy bỏ**.",
-    "session_completed": "{{-icon}} | {{-author}}, cấu hình reaction role đã được **hoàn thành** và lưu thành công!",
-    "timeout": "{{-icon}} | {{-author}}, phiên cấu hình reaction role đã **hết thời gian**. Vui lòng bắt đầu lại.",
-    "invalid_input": "{{-icon}} | {{-author}}, đầu vào không hợp lệ. Vui lòng thử lại.",
     "permission_error": "{{-icon}} | {{-author}}, bạn không có quyền quản lý vai trò trong máy chủ này.",
-    "bot_permission_error": "{{-icon}} | {{-author}}, tôi không có quyền cần thiết để quản lý vai trò.",
-    "channel_not_found": "{{-icon}} | {{-author}}, không tìm thấy kênh được chỉ định.",
-    "role_not_found": "{{-icon}} | {{-author}}, một hoặc nhiều vai trò được chỉ định không tìm thấy.",
-    "message_not_found": "{{-icon}} | {{-author}}, tin nhắn được chỉ định không tìm thấy.",
-    "webhook_error": "{{-icon}} | {{-author}}, không thể tạo hoặc truy cập webhook. Vui lòng kiểm tra quyền.",
-    "embed_error": "{{-icon}} | {{-author}}, không thể tạo tin nhắn embed. Vui lòng thử lại."
+    "session_cancelled": "{{-icon}} | {{-author}}, cấu hình reaction role đã được hủy.",
+    "session_completed": "{{-icon}} | {{-author}}, cấu hình reaction role đã được hoàn thành thành công! ID tin nhắn: {{messageId}}",
+    "error": "{{-icon}} | {{-author}}, đã xảy ra lỗi khi thiết lập cấu hình reaction role."
   },
   "flow": {
     "welcome": {
       "title": "🎭 Cấu hình Reaction Role",
       "description": "Chào mừng đến với trình hướng dẫn cấu hình reaction role! Tôi sẽ hướng dẫn bạn thiết lập hệ thống reaction role.\n\n**Các phương thức có sẵn:**\n• 🎯 **Reaction (Emoji)** - Người dùng phản ứng bằng emoji để nhận vai trò\n• 🔘 **Button** - Người dùng nhấp vào nút để nhận vai trò\n• 📋 **Select Menu** - Người dùng chọn từ menu dropdown\n\nVui lòng chọn phương thức ưa thích của bạn:",
       "footer": "Phản ứng với emoji tương ứng để tiếp tục"
+    },
+    "select_channel": {
+      "title": "🎭 Chọn Kênh",
+      "description": "Bạn đã chọn: **{{method}}** với **{{messageType}}**\n\n**Bước tiếp theo:** Chọn kênh nơi bot/webhook sẽ gửi tin nhắn.\n\nVui lòng chọn một kênh văn bản từ menu dropdown:",
+      "footer": "Chọn một kênh để tiếp tục"
     },
     "select_roles": {
       "title": "🎭 Chọn Vai trò",
@@ -52,30 +48,15 @@
       "footer": "Chọn từ menu dropdown để tiếp tục",
       "placeholder": "Chọn loại tin nhắn..."
     },
-    "select_channel": {
-      "title": "🎭 Chọn Kênh",
-      "description": "Bạn đã chọn: **{{method}}** với **{{messageType}}**\n\n**Bước tiếp theo:** Chọn kênh nơi tin nhắn bot/webhook sẽ được gửi.\n\nVui lòng chọn một kênh văn bản từ menu dropdown:",
-      "footer": "Chọn một kênh để tiếp tục"
-    },
-    "configure_webhook": {
-      "title": "🎭 Cấu hình Webhook",
-      "description": "Bạn đã chọn: **{{method}}** với **{{messageType}}**\n\n**Bước tiếp theo:** Cấu hình cài đặt webhook (tiêu đề và hình ảnh).\n\nVui lòng nhấp vào nút bên dưới để mở modal cấu hình webhook:",
-      "footer": "Nhấp vào nút cấu hình webhook để tiếp tục"
-    },
     "create_message": {
       "title": "🎭 Tạo Tin nhắn",
       "description": "Bạn đã chọn: **{{method}}** với **{{messageType}}**\n\n**Bước tiếp theo:** Tạo tin nhắn sẽ được gửi đến kênh.\n\nVui lòng nhấp vào nút bên dưới để mở modal tạo tin nhắn:",
       "footer": "Nhấp vào nút tạo tin nhắn để tiếp tục"
     },
-    "configure_message": {
-      "title": "🎭 Cấu hình Tin nhắn",
-      "description": "Bạn đã chọn: **{{method}}** với **{{messageType}}**\n\n**Bước tiếp theo:** Cấu hình nội dung tin nhắn và cài đặt embed.\n\nVui lòng nhấp vào nút bên dưới để mở modal cấu hình:",
-      "footer": "Nhấp vào nút cấu hình để tiếp tục"
-    },
-    "open_config_modal": {
-      "title": "🎭 Cấu hình Nội dung Tin nhắn",
-      "description": "Bạn đã chọn: **{{method}}** với **{{messageType}}**\n\n**Bước tiếp theo:** Điền nội dung tin nhắn, URL webhook và cài đặt embed trong modal.\n\n**Cài đặt Embed có sẵn:**\n• Tiêu đề và mô tả\n• Tùy chỉnh màu sắc\n• Nội dung tin nhắn\n\nVui lòng nhấp vào nút bên dưới để mở modal cấu hình:",
-      "footer": "Nhấp vào nút mở modal để tiếp tục"
+    "configure_webhook": {
+      "title": "🎭 Cấu hình Webhook",
+      "description": "Bạn đã chọn: **{{method}}** với **{{messageType}}**\n\n**Bước tiếp theo:** Cấu hình cài đặt webhook (tiêu đề và hình ảnh).\n\nVui lòng nhấp vào nút bên dưới để mở modal cấu hình webhook:",
+      "footer": "Nhấp vào nút cấu hình webhook để tiếp tục"
     },
     "define_roles": {
       "title": "🎭 Định nghĩa Vai trò",
@@ -149,16 +130,10 @@
   },
   "messages": {
     "no_roles": "Chưa cấu hình vai trò nào",
-    "role_added": "Vai trò {{roleName}} đã được thêm thành công",
-    "role_removed": "Vai trò {{roleName}} đã được xóa thành công",
-    "role_management_coming_soon": "{{-icon}} | Tính năng quản lý vai trò sẽ được triển khai sớm!",
-    "setup_complete": "Thiết lập reaction role hoàn thành thành công!",
-    "setup_cancelled": "Thiết lập reaction role đã bị hủy",
-    "invalid_role": "Vai trò không hợp lệ",
-    "invalid_channel": "Kênh không hợp lệ",
-    "invalid_message": "Tin nhắn không hợp lệ",
-    "webhook_created": "Webhook đã được tạo thành công",
-    "message_sent": "Tin nhắn đã được gửi thành công",
+    "role_added": "{{-icon}} | Vai trò {{roleName}} đã được thêm thành công",
+    "role_removed": "{{-icon}} | Vai trò {{roleName}} đã được xóa thành công",
+    "role_updated": "{{-icon}} | Vai trò đã được cập nhật thành công",
+    "dm_sent": "{{-icon}} | Tin nhắn đã được gửi đến DM của bạn",
     "embed_preview_title": "📋 Xem trước Tin nhắn",
     "embed_preview_description": "Dưới đây là xem trước cách tin nhắn của bạn sẽ trông như thế:",
     "embed_preview_default_title": "Xem trước",
@@ -184,36 +159,20 @@
       "embed_color_placeholder": "Nhập mã màu hex (ví dụ: #00FF00)...",
       "embed_image_label": "URL Hình ảnh Embed (Tùy chọn)",
       "embed_image_placeholder": "Nhập URL hình ảnh embed..."
-    },
-    "config": {
-      "title": "Cài đặt Cấu hình",
-      "webhook_url_label": "URL Webhook (Tùy chọn)",
-      "webhook_url_placeholder": "https://discord.com/api/webhooks/...",
-      "bot_message_label": "Tin nhắn Bot (Tùy chọn)",
-      "bot_message_placeholder": "Nhập tin nhắn mà bot sẽ gửi...",
-      "embed_title_label": "Tiêu đề Embed (Tùy chọn)",
-      "embed_title_placeholder": "Nhập tiêu đề embed...",
-      "embed_body_label": "Mô tả Embed (Tùy chọn)",
-      "embed_body_placeholder": "Nhập mô tả embed...",
-      "embed_color_label": "Màu Embed (Tùy chọn)",
-      "embed_color_placeholder": "Nhập mã màu hex (ví dụ: #00FF00)...",
-      "embed_image_note": "Lưu ý: Cấu hình hình ảnh embed sẽ có sẵn trong bản cập nhật tương lai"
     }
   },
   "errors": {
-    "invalid_selection": "Lựa chọn không hợp lệ. Vui lòng thử lại.",
-    "timeout": "Phiên cấu hình đã hết thời gian. Vui lòng bắt đầu lại.",
-    "permission_denied": "Quyền bị từ chối. Vui lòng kiểm tra quyền của bot.",
     "role_not_found": "Không tìm thấy vai trò. Vui lòng kiểm tra ID vai trò.",
-    "channel_not_found": "Không tìm thấy kênh. Vui lòng kiểm tra ID kênh.",
-    "message_not_found": "Không tìm thấy tin nhắn. Vui lòng kiểm tra ID tin nhắn.",
-    "webhook_failed": "Không thể tạo webhook. Vui lòng kiểm tra quyền.",
-    "embed_failed": "Không thể tạo embed. Vui lòng thử lại.",
-    "database_error": "Đã xảy ra lỗi cơ sở dữ liệu. Vui lòng thử lại.",
     "guild_not_found": "Không tìm thấy máy chủ. Vui lòng thử lại.",
     "bot_not_found": "Không tìm thấy thành viên bot. Vui lòng thử lại.",
     "no_manageable_roles": "Không tìm thấy vai trò có thể quản lý. Bot cần vai trò dưới vai trò cao nhất của nó để quản lý.",
-    "role_selection_failed": "Không thể xử lý lựa chọn vai trò. Vui lòng thử lại."
+    "role_selection_failed": "Không thể xử lý lựa chọn vai trò. Vui lòng thử lại.",
+    "config_not_found": "{{-icon}} | Không tìm thấy cấu hình reaction role.",
+    "role_already_assigned": "{{-icon}} | Bạn đã có vai trò này rồi.",
+    "role_not_assigned": "{{-icon}} | Bạn chưa có vai trò này.",
+    "unknown_role_change_type": "{{-icon}} | Loại thay đổi vai trò không xác định.",
+    "dm_failed": "{{-icon}} | Không thể gửi DM. Vui lòng kiểm tra cài đặt quyền riêng tư của bạn.",
+    "role_assignment_failed": "{{-icon}} | Không thể gán/xóa vai trò. Vui lòng thử lại."
   },
   "role_select": {
     "description": "Vị trí: {{position}} | Thành viên: {{members}}"
