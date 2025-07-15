@@ -62,5 +62,19 @@
     "available_list": "{{commands}}",
     "no_enabled": "No commands are enabled in this channel."
   },
-  "command_disabled_error": "{{-icon}} | {{-author}}, command `{{commandId}}` is **disabled** in this channel."
+  "command_disabled_error": "{{-icon}} | {{-author}}, command `{{commandId}}` is **disabled** in this channel.",
+  "config_confession": {
+    "name": "Configure Confession",
+    "description": "Configure confession channels and screening settings",
+    "confession_channel_option": "Channel for confessions",
+    "screening_option": "Enable confession screening",
+    "screening_channel_option": "Channel for screening confessions",
+    "success": "{{-icon}} | {{-author}}, confession configuration updated successfully",
+    "confession_channel_set": "{{-icon}} | {{-author}}, confession channel set to <#{{channelId}}>",
+    "screening_enabled": "{{-icon}} | {{-author}}, confession screening enabled with channel <#{{screeningChannelId}}>",
+    "screening_disabled": "{{-icon}} | {{-author}}, confession screening disabled",
+    "error": "{{-icon}} | {{-author}}, failed to update confession configuration",
+    "invalid_channel": "{{-icon}} | {{-author}}, invalid channel provided",
+    "example": "```{{-prefix}}config_confession #confessions on #screening\n{{-prefix}}config_confession #confessions off```"
+  }
 }

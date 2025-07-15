@@ -62,5 +62,19 @@
     "available_list": "{{commands}}",
     "no_enabled": "Không có lệnh nào đang được bật trong kênh này."
   },
-  "command_disabled_error": "{{-icon}} | {{-author}}, lệnh `{{commandId}}` đã bị **vô hiệu hóa** trong kênh này."
+  "command_disabled_error": "{{-icon}} | {{-author}}, lệnh `{{commandId}}` đã bị **vô hiệu hóa** trong kênh này.",
+  "config_confession": {
+    "name": "Cấu hình Confession",
+    "description": "Cấu hình kênh confession và thiết lập kiểm duyệt",
+    "confession_channel_option": "Kênh cho confessions",
+    "screening_option": "Bật kiểm duyệt confession",
+    "screening_channel_option": "Kênh kiểm duyệt confessions",
+    "success": "{{-icon}} | {{-author}}, cấu hình confession đã được cập nhật thành công",
+    "confession_channel_set": "{{-icon}} | {{-author}}, kênh confession đã được thiết lập tại <#{{channelId}}>",
+    "screening_enabled": "{{-icon}} | {{-author}}, kiểm duyệt confession đã được bật với kênh <#{{screeningChannelId}}>",
+    "screening_disabled": "{{-icon}} | {{-author}}, kiểm duyệt confession đã được tắt",
+    "error": "{{-icon}} | {{-author}}, không thể cập nhật cấu hình confession",
+    "invalid_channel": "{{-icon}} | {{-author}}, kênh không hợp lệ",
+    "example": "```{{-prefix}}config_confession #confessions on #screening\n{{-prefix}}config_confession #confessions off```"
+  }
 }
