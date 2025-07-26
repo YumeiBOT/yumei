@@ -76,5 +76,23 @@
     "error": "{{-icon}} | {{-author}}, không thể cập nhật cấu hình confession",
     "invalid_channel": "{{-icon}} | {{-author}}, kênh không hợp lệ",
     "example": "```{{-prefix}}config_confession #confessions on #screening\n{{-prefix}}config_confession #confessions off```"
+  },
+  "giveaway": {
+    "create_command_desc": "Khởi tạo giveaway: thời lượng, số người thắng, phần thưởng, mô tả huyền bí.",
+    "modal_title": "Giveaway Mới",
+    "modal_duration": "Thời lượng (ví dụ: 1h, 30m)",
+    "modal_winners": "Số người chiến thắng",
+    "modal_prize": "Phần thưởng",
+    "modal_description": "Mô tả (tối đa 1000 ký tự)",
+    "success": "{{-icon}} Giveaway đã được tạo thành công! Hãy chờ đợi vận may mỉm cười.",
+    "invalid_winners": "Vui lòng nhập số người chiến thắng hợp lệ (ít nhất 1).",
+    "invalid_duration": "Vui lòng nhập thời lượng hợp lệ (ví dụ: 1h, 30m).",
+    "cancelled": "Quá trình tạo giveaway đã được hủy bỏ. Mọi phép màu tạm dừng tại đây.",
+    "hosted_by": "Chủ trì",
+    "ends": "Kết thúc",
+    "join_not_found": "{{-icon}} Không tìm thấy giveaway này.",
+    "join_already": "{{-icon}} Bạn đã tham gia giveaway này rồi!",
+    "join_success": "{{-icon}} Bạn đã tham gia giveaway! Chúc may mắn và phép màu sẽ đến! 🎉",
+    "participants": "Người tham gia"
   }
 }
