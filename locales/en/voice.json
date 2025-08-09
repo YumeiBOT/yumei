@@ -44,29 +44,59 @@
     "name": "Set bitrate command",
     "example": "```{{-prefix}}{{alias}} {bitrate}```",
     "description": "Set bitrate of voice channel",
-    "illegal": "**{{-icon}} | {{-username}} | **Your channel only allow bitrate {{-min_bitrate}}kbps - {{-max_bitrate}}kbps!!!"
+    "bitrate_description": "Set the bitrate for your voice channel",
+    "illegal": "**{{-icon}} | {{-username}} | **Your channel only allow bitrate {{-min_bitrate}}kbps - {{-max_bitrate}}kbps!!!",
+    "success": "**{{-icon}} | {{-author}}** Set bitrate to {{-bitrate}}kbps successfully!",
+    "error": "**{{-icon}} | {{-author}}** Failed to set bitrate!",
+    "not_voice_channel": "**{{-icon}} | {{-author}}** This is not a voice channel!",
+    "invalid_bitrate": "**{{-icon}} | {{-author}}** Invalid bitrate! Please enter a number between 8-96."
   },
   "change_region": {
     "name": "Change Region command",
     "example": "```{{-prefix}}{{alias}} {region} | {list}```",
     "description": "Set region for voice channel and get regions list",
-    "illegal": "**{{-icon}} | {{-username}} | **Region is illegal!!! \n Use `{{-prefix}}{{alias}} {list}` to get list regions."
+    "option_description": "Change the voice region for your channel",
+    "illegal": "**{{-icon}} | {{-username}} | **Region is illegal!!! \n Use `{{-prefix}}{{alias}} {list}` to get list regions.",
+    "success": "**{{-icon}} | {{-author}}** Changed region to {{-region}} successfully!",
+    "not_voice_channel": "**{{-icon}} | {{-author}}** This is not a voice channel!",
+    "no_region": "**{{-icon}} | {{-author}}** No region specified! Use `{{-prefix}}{{alias}} {list}` to see available regions."
+  },
+  "voice_setting": {
+    "description": "Manage voice channel settings and permissions",
+    "example": "```{{-prefix}}{{alias}}```",
+    "embed_title": "🎛️ Voice Channel Settings",
+    "embed_description": "Use the buttons below to manage your voice channel settings and permissions.",
+    "embed_footer": "Voice Channel Control Panel"
   },
   "clan": {
     "create_team": {
       "description": "Create clan(team) room",
+      "name_description": "Create a new clan voice channel",
       "req_team_name": "**{{-icon}} | {{-author}},** Please input Clan(Team) Name",
       "req_clan_settings": "**{{-icon}} | {{-author}},** Server setting for clan is not setup yet. Contact admin for setup Clan Voice Setting",
       "success": "**{{-icon}} | {{-author}},** Create room successfully!",
       "having_room": "**{{-icon}} | {{-author}},** You already own your own story room"
     },
     "room_member": {
+      "add_description": "Add a member to your clan room",
+      "remove_description": "Remove a member from your clan room",
+      "user_description": "The user to add/remove from the room",
+      "invalid_command": "Invalid command. Use 'add' or 'remove'.",
       "no_permission": "**{{-icon}} | {{-author}}, ** You don't have permission to add/remove member",
       "add": "**{{-icon}} | {{-author}}, ** Added member successfully ",
       "remove": "**{{-icon}} | {{-author}}, ** Removed member successfully "
     }
   },
   "server_clan_voice_setting": {
-    "success": "**✅ | {{-author}},** Saved clan chat room settings successfully\nIf you need to add more categories use the command \\` \\`"
+    "description": "Configure server clan voice channel settings",
+    "example": "```{{-prefix}}{{alias}}```",
+    "category_description": "Select the category for clan voice channels",
+    "category2_description": "Select the second category for clan voice channels",
+    "category3_description": "Select the third category for clan voice channels",
+    "allow_bot_description": "Allow bots to create clan rooms",
+    "allow_user_description": "Allow users to create clan rooms",
+    "success": "**✅ | {{-author}},** Saved clan chat room settings successfully\nIf you need to add more categories use the command \\` \\`",
+    "error": "**❌ | {{-author}},** Failed to save clan chat room settings",
+    "slash_only": "This command can only be used as a slash command."
   }
 }
