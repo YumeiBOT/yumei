@@ -24,7 +24,7 @@
     },
     "roles_selected": {
       "title": "🎭 Roles Selected",
-      "description": "You've selected: **{{method}}** with **{{roleChangeType}}**, **{{replyType}}**, and **{{messageType}}**\n\n**Selected Roles ({{roleCount}}):**\n{{-rolesList}}\n\n**Next Steps:**\n1. Configure message content\n2. Complete setup\n\nPlease choose your next action:",
+      "description": "You've selected: **{{method}}** with **{{roleChangeType}}**, **{{replyType}}**, and **{{messageType}}**\n\n**Selected Roles ({{roleCount}}):**\n{{-rolesList}}\n\n**Next Steps:**\n1. Configure message content\n2. Complete setup\n\n**💡 Tip:** For custom emojis, type `\\<emoji>` in any message to get the emoji ID format.\n\nPlease choose your next action:",
       "footer": "Use the buttons below to continue with setup"
     },
     "select_method": {
@@ -65,6 +65,16 @@
       "title": "🎭 Define Roles",
       "description": "You've selected: **{{method}}** with **{{roleChangeType}}**, **{{replyType}}**, and **{{-messageType}}**\n\n**Current Configuration:**\n• Channel: <#{{channelId}}>\n• Message Type: {{-messageType}}\n• Reply Type: {{replyType}}\n• Role Change Type: {{roleChangeType}}\n\n**Next Steps:**\n1. Add roles using the buttons below\n2. Configure message content\n3. Complete setup\n\n**Current Roles:**\n{{-rolesList}}",
       "footer": "Use the buttons below to manage roles and complete setup"
+    },
+    "customize_buttons": {
+      "title": "🎭 Customize Buttons",
+      "description": "You've selected: **{{method}}** with **{{roleChangeType}}**, **{{replyType}}**, and **{{-messageType}}**\n\n**Current Configuration:**\n• Channel: <#{{channelId}}>\n• Message Type: {{-messageType}}\n• Reply Type: {{replyType}}\n• Role Change Type: {{roleChangeType}}\n\n**Button Customization Progress:**\n• Configured: {{configuredCount}}/{{totalCount}} buttons\n• Current: {{currentRoleName}}\n\n**Available Button Styles:**\n• 🔵 **Primary** - Blue button\n• ⚪ **Secondary** - Gray button\n• 🟢 **Success** - Green button\n• 🔴 **Danger** - Red button\n\n**💡 Tip:** For custom emojis, type `\\<emoji>` in any message to get the emoji ID format.\n\nPlease select a button style for the current role:",
+      "footer": "Select a button style to customize the current role button"
+    },
+    "customize_emojis": {
+      "title": "🎭 Customize Emojis",
+      "description": "You've selected: **{{method}}** with **{{roleChangeType}}**, **{{replyType}}**, and **{{-messageType}}**\n\n**Current Configuration:**\n• Channel: <#{{channelId}}>\n• Message Type: {{-messageType}}\n• Reply Type: {{replyType}}\n• Role Change Type: {{roleChangeType}}\n\n**Emoji Customization Progress:**\n• Configured: {{configuredCount}}/{{totalCount}} emojis\n• Current: {{currentRoleName}}\n\n**How to add emoji:**\n1. React to this message with any emoji you want for this role\n2. The emoji will be automatically assigned to the current role\n3. You can use both regular emojis (🎭, 😄) and custom server emojis\n\n**💡 Tip:** For custom emojis, type `\\<emoji>` in any message to get the emoji ID format.\n\nPlease react with an emoji for the current role:",
+      "footer": "React with an emoji to customize the current role"
     },
     "confirm": {
       "title": "🎭 Confirm Configuration",
@@ -129,7 +139,11 @@
     "cancel": "Cancel",
     "confirm": "Confirm",
     "back": "Back",
-    "next": "Next"
+    "next": "Next",
+    "primary": "Primary",
+    "secondary": "Secondary",
+    "success": "Success",
+    "danger": "Danger"
   },
   "messages": {
     "no_roles": "No roles configured yet",
@@ -145,23 +159,31 @@
   "modals": {
     "webhook_config": {
       "title": "Webhook Configuration",
-      "webhook_title_label": "Webhook Title (Optional)",
+      "webhook_title_label": "Webhook Title",
       "webhook_title_placeholder": "Enter webhook title...",
-      "webhook_image_label": "Webhook Image URL (Optional)",
+      "webhook_image_label": "Webhook Image URL",
       "webhook_image_placeholder": "Enter webhook image URL..."
     },
     "message_creation": {
       "title": "Create Message",
-      "message_content_label": "Message Content (Optional)",
+      "message_content_label": "Message Content",
       "message_content_placeholder": "Enter the message content...",
-      "embed_title_label": "Embed Title (Optional)",
+      "embed_title_label": "Embed Title",
       "embed_title_placeholder": "Enter the embed title...",
-      "embed_body_label": "Embed Description (Optional)",
+      "embed_body_label": "Embed Description",
       "embed_body_placeholder": "Enter the embed description...",
-      "embed_color_label": "Embed Color (Optional)",
+      "embed_color_label": "Embed Color",
       "embed_color_placeholder": "Enter hex color (e.g., #00FF00)...",
-      "embed_image_label": "Embed Image URL (Optional)",
+      "embed_image_label": "Embed Image URL",
       "embed_image_placeholder": "Enter embed image URL..."
+    },
+    "button_customization": {
+      "title": "Customize Button",
+      "button_text_label": "Button Text",
+      "button_text_placeholder": "Enter button text (leave empty to use role name)...",
+      "button_emoji_label": "Button Emoji",
+      "button_emoji_placeholder": "Enter emoji (e.g., 🎭, 😄) or custom emoji ID...",
+      "emoji_help": "💡 **How to get custom emoji ID:** Type `\\<emoji>` in any message to get the ID format like `<a:lewlew:740475899366998086>`"
     }
   },
   "errors": {
