@@ -45,8 +45,9 @@
     },
     "select_channel": {
       "title": "🎭 Select Channel",
-      "description": "You've selected: **{{method}}** with **{{messageType}}**\n\n**Next Step:** Choose the channel where the bot/webhook message will be sent.\n\nPlease select a text channel from the dropdown menu:",
-      "footer": "Select a channel to continue"
+      "description": "You've selected: **{{method}}** with **{{messageType}}**\n\n**Next Step:** Choose the channel where the bot/webhook message will be sent.\n\nPlease select a text or announcement channel from the dropdown menu:",
+      "footer": "Select a channel to continue",
+      "placeholder": "Select a text or announcement channel for bot/webhook message"
     },
 
     "create_message": {

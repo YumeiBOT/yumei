@@ -18,9 +18,9 @@
     },
     "select_channel": {
       "title": "🎭 Chọn Kênh",
-      "description": "Bạn đã chọn: **{{method}}** với **{{messageType}}**\n\n**Bước tiếp theo:** Chọn kênh nơi bot/webhook sẽ gửi tin nhắn.\n\nVui lòng chọn một kênh văn bản từ menu dropdown:",
+      "description": "Bạn đã chọn: **{{method}}** với **{{messageType}}**\n\n**Bước tiếp theo:** Chọn kênh nơi bot/webhook sẽ gửi tin nhắn.\n\nVui lòng chọn một kênh văn bản hoặc kênh thông báo từ menu dropdown:",
       "footer": "Chọn một kênh để tiếp tục",
-      "placeholder": "Chọn kênh cho tin nhắn bot/webhook"
+      "placeholder": "Chọn kênh văn bản hoặc kênh thông báo cho tin nhắn bot/webhook"
     },
     "select_roles": {
       "title": "🎭 Chọn Vai trò",
