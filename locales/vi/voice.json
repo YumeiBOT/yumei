@@ -44,29 +44,59 @@
     "name": "Mã lệnh Set bitrate",
     "example": "```{{-prefix}}{{alias}} {bitrate}```",
     "description": "Cài đặt bitrate của kênh trò chuyện",
-    "illegal": "**{{-icon}} | {{-username}} | **Kênh trò chuyện có bitrate hợp lệ {{-min_bitrate}} - {{-max_bitrate}}!!!"
+    "bitrate_description": "Cài đặt bitrate cho kênh thoại của bạn (chất lượng âm thanh đấy! 🎵)",
+    "illegal": "**{{-icon}} | {{-username}} | **Kênh trò chuyện có bitrate hợp lệ {{-min_bitrate}} - {{-max_bitrate}}!!!",
+    "success": "**{{-icon}} | {{-author}}** Đã cài đặt bitrate thành {{-bitrate}}kbps thành công!",
+    "error": "**{{-icon}} | {{-author}}** Cài đặt bitrate thất bại!",
+    "not_voice_channel": "**{{-icon}} | {{-author}}** Đây không phải kênh thoại!",
+    "invalid_bitrate": "**{{-icon}} | {{-author}}** Bitrate không hợp lệ! Vui lòng nhập số từ 8-96."
   },
   "change_region": {
     "name": "Mã lệnh Change Region",
     "example": "```{{-prefix}}{{alias}} {region} | {list}```",
     "description": "Cài đặt khu vực cho kênh trò chuyện và lấy danh sách khu vực",
-    "illegal": "**{{-icon}} | {{-username}} | **Khu vực không hợp lệ!!! \n Sử dụng `{{-prefix}}{{alias}} {list}` để lấy danh sách khu vực."
+    "option_description": "Thay đổi khu vực cho kênh thoại của bạn (chọn server gần nhất để lag ít thôi! 🌍)",
+    "illegal": "**{{-icon}} | {{-username}} | **Khu vực không hợp lệ!!! \n Sử dụng `{{-prefix}}{{alias}} {list}` để lấy danh sách khu vực.",
+    "success": "**{{-icon}} | {{-author}}** Đã thay đổi khu vực thành {{-region}} thành công!",
+    "not_voice_channel": "**{{-icon}} | {{-author}}** Đây không phải kênh thoại!",
+    "no_region": "**{{-icon}} | {{-author}}** Chưa chỉ định khu vực! Sử dụng `{{-prefix}}{{alias}} {list}` để xem các khu vực có sẵn."
+  },
+  "voice_setting": {
+    "description": "Quản lý cài đặt và quyền kênh thoại (bạn có thể làm chủ kênh thoại của mình đấy! 😎)",
+    "example": "```{{-prefix}}{{alias}}```",
+    "embed_title": "🎛️ Bảng Điều Khiển Kênh Thoại",
+    "embed_description": "Sử dụng các nút bên dưới để quản lý cài đặt và quyền kênh thoại của bạn nhé!",
+    "embed_footer": "Trung Tâm Điều Khiển Kênh Thoại"
   },
   "clan": {
     "create_team": {
       "description": "Tạo phòng CLB(nhóm)",
+      "name_description": "Tạo kênh thoại CLB mới (hãy tạo phòng riêng cho team của bạn nhé! 🎉)",
       "req_team_name": "**{{-icon}} | {{-author}},** Vui lòng nhập tên CLB(nhóm)",
       "req_clan_settings": "**{{-icon}} | {{-author}},** Máy chủ chưa thiết lập cài đặt cho CLB. Vui lòng liên hệ quản lí máy chủ để cài đặt",
       "success": "**{{-icon}} | {{-author}},** Tạo phòng thành công",
       "having_room": "**{{-icon}} | {{-author}},** Bạn đã sở hữu cho mình một phòng trò truyện"
     },
     "room_member": {
+      "add_description": "Thêm thành viên vào phòng CLB của bạn (mời bạn bè vào chơi thôi! 😊)",
+      "remove_description": "Xóa thành viên khỏi phòng CLB (bye bye người không hợp! 👋)",
+      "user_description": "Người dùng để thêm/xóa khỏi phòng",
+      "invalid_command": "Lệnh không hợp lệ. Sử dụng 'add' hoặc 'remove' nhé!",
       "no_permission": "**{{-icon}} | {{-author}}, ** Bạn không có quyền thêm/xóa thành viên phòng này",
       "add": "**{{-icon}} | {{-author}}, ** Thêm thành viên thành công",
       "remove": "**{{-icon}} | {{-author}}, ** Xóa thành viên thành công"
     }
   },
   "server_clan_voice_setting": {
-    "success": "**✅ | {{-author}},** Lưu cài đặt phòng trò chuyện clan thành công\nNếu bạn cần thêm nhiều category hơn hãy dùng lệnh \\` \\`"
+    "description": "Cấu hình cài đặt kênh thoại CLB cho máy chủ",
+    "example": "```{{-prefix}}{{alias}}```",
+    "category_description": "Chọn danh mục cho kênh thoại CLB",
+    "category2_description": "Chọn danh mục thứ hai cho kênh thoại CLB",
+    "category3_description": "Chọn danh mục thứ ba cho kênh thoại CLB",
+    "allow_bot_description": "Cho phép bot tạo phòng CLB",
+    "allow_user_description": "Cho phép người dùng tạo phòng CLB",
+    "success": "**✅ | {{-author}},** Lưu cài đặt phòng trò chuyện clan thành công\nNếu bạn cần thêm nhiều category hơn hãy dùng lệnh \\` \\`",
+    "error": "**❌ | {{-author}},** Lưu cài đặt phòng trò chuyện clan thất bại",
+    "slash_only": "Lệnh này chỉ có thể sử dụng dưới dạng slash command thôi!"
   }
 }
