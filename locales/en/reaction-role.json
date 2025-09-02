@@ -80,7 +80,8 @@
       "title": "🎭 Confirm Configuration",
       "description": "**Final Configuration Review:**\n\n**Method:** {{method}}\n**Channel:** <#{{channelId}}>\n**Message Type:** {{-messageType}}\n**Reply Type:** {{replyType}}\n**Role Change Type:** {{roleChangeType}}\n\n**Roles:**\n{{-rolesList}}\n\n**Message Content:**\n{{messageContent}}\n\nPlease confirm this configuration:",
       "footer": "React with ✅ to confirm or ❌ to cancel"
-    }
+    },
+    "proceeding_to_confirm": "{{-icon}} | Proceeding to final review and confirmation..."
   },
   "methods": {
     "reaction": "Reaction (Emoji)",
@@ -197,7 +198,9 @@
     "role_not_assigned": "{{-icon}} | You don't have this role.",
     "unknown_role_change_type": "{{-icon}} | Unknown role change type.",
     "dm_failed": "{{-icon}} | Failed to send DM. Please check your privacy settings.",
-    "role_assignment_failed": "{{-icon}} | Failed to assign/remove role. Please try again."
+    "role_assignment_failed": "{{-icon}} | Failed to assign/remove role. Please try again.",
+    "no_available_channels": "{{-icon}} | No available text channels for bot/webhook messages.",
+    "bot_member_not_found": "{{-icon}} | Bot member not found. Please try again."
   },
   "role_select": {
     "description": "Position: {{position}} | Members: {{members}}"

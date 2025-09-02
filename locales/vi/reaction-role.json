@@ -19,7 +19,8 @@
     "select_channel": {
       "title": "🎭 Chọn Kênh",
       "description": "Bạn đã chọn: **{{method}}** với **{{messageType}}**\n\n**Bước tiếp theo:** Chọn kênh nơi bot/webhook sẽ gửi tin nhắn.\n\nVui lòng chọn một kênh văn bản từ menu dropdown:",
-      "footer": "Chọn một kênh để tiếp tục"
+      "footer": "Chọn một kênh để tiếp tục",
+      "placeholder": "Chọn kênh cho tin nhắn bot/webhook"
     },
     "select_roles": {
       "title": "🎭 Chọn Vai trò",
@@ -77,7 +78,8 @@
       "title": "🎭 Xác nhận Cấu hình",
       "description": "**Đánh giá Cấu hình Cuối cùng:**\n\n**Phương thức:** {{method}}\n**Kênh:** <#{{channelId}}>\n**Loại tin nhắn:** {{messageType}}\n**Loại phản hồi:** {{replyType}}\n**Loại thay đổi vai trò:** {{roleChangeType}}\n\n**Vai trò:**\n{{rolesList}}\n\n**Nội dung tin nhắn:**\n{{messageContent}}\n\nVui lòng xác nhận cấu hình này:",
       "footer": "Phản ứng với ✅ để xác nhận hoặc ❌ để hủy"
-    }
+    },
+    "proceeding_to_confirm": "{{-icon}} | Tiến đến xem xét cuối cùng và xác nhận..."
   },
   "methods": {
     "reaction": "Reaction (Emoji)",
@@ -194,7 +196,9 @@
     "role_not_assigned": "{{-icon}} | Bạn chưa có vai trò này.",
     "unknown_role_change_type": "{{-icon}} | Loại thay đổi vai trò không xác định.",
     "dm_failed": "{{-icon}} | Không thể gửi DM. Vui lòng kiểm tra cài đặt quyền riêng tư của bạn.",
-    "role_assignment_failed": "{{-icon}} | Không thể gán/xóa vai trò. Vui lòng thử lại."
+    "role_assignment_failed": "{{-icon}} | Không thể gán/xóa vai trò. Vui lòng thử lại.",
+    "no_available_channels": "{{-icon}} | Không có kênh văn bản nào khả dụng cho tin nhắn bot/webhook.",
+    "bot_member_not_found": "{{-icon}} | Không tìm thấy thành viên bot. Vui lòng thử lại."
   },
   "role_select": {
     "description": "Vị trí: {{position}} | Thành viên: {{members}}"
