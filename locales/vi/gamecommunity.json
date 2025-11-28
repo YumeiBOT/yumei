@@ -1,0 +1,90 @@
+{
+  "lobby": {
+    "title": "Tuyển thành viên • {{game}}",
+    "description": {
+      "host": "Chủ phòng: {{-host}}",
+      "mode": "Chế độ: **{{mode}}**",
+      "status": "Trạng thái: {{status}}",
+      "need": "Cần thêm **{{remaining}}** thành viên{{suffix}}"
+    },
+    "capacity": "{{maxPlayers}} người chơi",
+    "fields": {
+      "voice_channel": "Kênh voice",
+      "capacity": "Sức chứa",
+      "requirements": "Yêu cầu"
+    },
+    "status": {
+      "recruiting": "Đang tuyển",
+      "full": "ĐỦ NGƯỜI",
+      "closed": "ĐÃ ĐÓNG",
+      "cancelled": "ĐÃ HỦY",
+      "expired": "HẾT HẠN",
+      "old": "Thông báo cũ - vui lòng xem thông báo mới phía trên"
+    },
+    "buttons": {
+      "join": "Tham gia phòng",
+      "leave": "Rời phòng",
+      "close": "Đóng phòng",
+      "continue": "Tiếp tục tuyển",
+      "cancel": "Hủy phòng",
+      "join_voice": "Vào kênh voice"
+    },
+    "messages": {
+      "closed": "Phòng đã được đóng và xóa.",
+      "cancelled": "Phòng đã được hủy và xóa.",
+      "continued": "Đã đăng thông báo tuyển mới! Đếm nhắc lại đã được đặt lại.",
+      "already_host": "Bạn đang là chủ của phòng này rồi.",
+      "already_joined": "Bạn đã tham gia phòng này rồi.",
+      "not_part_of_lobby": "Bạn không nằm trong phòng này.",
+      "no_longer_available": "Phòng này hiện không còn tồn tại.",
+      "disabled": "Tính năng tuyển phòng đã bị tắt ở máy chủ này.",
+      "left": "Bạn đã rời khỏi phòng.",
+      "joined": "Bạn đã tham gia {{game}}.",
+      "close_permission": "Chỉ chủ phòng mới có thể đóng phòng.",
+      "continue_permission": "Chỉ chủ phòng mới có thể tiếp tục tuyển.",
+      "cancel_permission": "Chỉ chủ phòng mới có thể hủy phòng.",
+      "not_recruiting": "Phòng này không còn tuyển nữa.",
+      "channel_missing": "Không tìm thấy kênh của phòng này.",
+      "guild_missing": "Không tìm thấy máy chủ của phòng này.",
+      "channel_inaccessible": "Không thể truy cập kênh của phòng này.",
+      "info_missing": "Không thể lấy thông tin phòng.",
+      "unknown_action": "Hành động không xác định.",
+      "reminder_dm_warning": "⚠️ Hãy bật DM từ thành viên máy chủ để nhận nhắc nhở riêng.",
+      "updated": "Phòng đã được cập nhật."
+    },
+    "reminder": {
+      "title": "Nhắc nhở phòng • {{game}}",
+      "expired_title": "Nhắc nhở hết hạn • {{game}}",
+      "final_title": "Nhắc nhở cuối cùng • {{game}}",
+      "body": "{{-host}}, phòng của bạn vẫn cần **{{remaining}}** thành viên{{suffix}} nữa!",
+      "prompt": "Bạn muốn tiếp tục tuyển thêm hay hủy phòng này?",
+      "note_final": "Phòng đã được tự động đóng do không hoạt động.",
+      "note_expired_new": "Nhắc nhở này đã được xác nhận. Đã gửi thông báo tuyển mới.",
+      "footer_active": "Nhắc nhở {{current}}/{{total}} • ID phòng: {{lobbyId}}",
+      "footer_expired": "Nhắc nhở hết hạn • ID phòng: {{lobbyId}}",
+      "footer_final": "Nhắc nhở cuối • ID phòng: {{lobbyId}}"
+    },
+    "errors": {
+      "guild_only": "Lệnh này chỉ dùng được trong kênh của máy chủ.",
+      "voice_required": "Bạn cần ở trong kênh voice trước khi tuyển thành viên.",
+      "select_valid_option": "Hãy chọn game và chế độ hợp lệ từ danh sách gợi ý.",
+      "game_not_supported": "Game `{{game}}` chưa được hỗ trợ.",
+      "mode_not_available": "Chế độ `{{mode}}` không có trong {{game}}.",
+      "lobby_missing": "Phòng này không còn tồn tại."
+    },
+    "autocomplete": {
+      "no_games": "❌ Không tìm thấy game",
+      "error_games": "⚠️ Lỗi khi tải danh sách game",
+      "select_game_first": "Chọn game trước đã",
+      "no_modes": "❌ Không tìm thấy chế độ",
+      "error_modes": "⚠️ Lỗi khi tải chế độ",
+      "game_not_found": "❌ Không thấy game"
+    },
+    "dm": {
+      "join_title": "Bạn đã tham gia {{game}}!",
+      "status_need": "Cần thêm {{remaining}} thành viên{{suffix}}",
+      "status_full": "Phòng đã đủ người!",
+      "voice_hint": "Bấm nút bên dưới để vào kênh voice:"
+    }
+  }
+}

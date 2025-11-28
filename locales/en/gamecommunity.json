@@ -1,0 +1,92 @@
+{
+  "lobby": {
+    "title": "Lobby Recruit • {{game}}",
+    "description": {
+      "host": "Host: {{-host}}",
+      "mode": "Mode: **{{mode}}**",
+      "status": "Status: {{status}}",
+      "need": "Need **{{remaining}}** more teammate{{suffix}}"
+    },
+    "capacity": "{{maxPlayers}} players",
+    "fields": {
+      "voice_channel": "Voice Channel",
+      "capacity": "Capacity",
+      "requirements": "Requirements"
+    },
+    "status": {
+      "recruiting": "Recruiting",
+      "full": "FULL",
+      "closed": "CLOSED",
+      "cancelled": "CANCELLED",
+      "expired": "EXPIRED",
+      "old": "Old announcement - See new message above"
+    },
+    "buttons": {
+      "join": "Join Lobby",
+      "leave": "Leave",
+      "close": "Close",
+      "continue": "Continue Recruiting",
+      "cancel": "Cancel Lobby",
+      "join_voice": "Join Voice Channel"
+    },
+    "messages": {
+      "closed": "Lobby closed and removed.",
+      "cancelled": "Lobby cancelled and removed.",
+      "continued": "New recruit message posted! Reminder reset.",
+      "already_host": "You're already hosting this lobby.",
+      "already_joined": "You already joined this lobby.",
+      "not_part_of_lobby": "You are not part of this lobby.",
+      "no_longer_available": "This lobby is no longer available.",
+      "disabled": "Lobby recruiting is disabled for this guild.",
+      "left": "You left the lobby.",
+      "joined": "You joined {{game}}.",
+      "close_permission": "Only the lobby host can close this lobby.",
+      "continue_permission": "Only the lobby host can continue recruiting.",
+      "cancel_permission": "Only the lobby host can cancel this lobby.",
+      "not_recruiting": "This lobby is no longer recruiting.",
+      "channel_missing": "Cannot find the channel for this lobby.",
+      "guild_missing": "Cannot find the guild for this lobby.",
+      "channel_inaccessible": "Cannot access the channel for this lobby.",
+      "info_missing": "Cannot retrieve lobby information.",
+      "unknown_action": "Unknown lobby action.",
+      "reminder_dm_warning": "⚠️ Please enable DMs from server members to receive private reminders.",
+      "updated": "Lobby updated."
+    },
+    "reminder": {
+      "title": "Lobby Reminder • {{game}}",
+      "expired_title": "Expired Reminder • {{game}}",
+      "final_title": "Final Reminder • {{game}}",
+      "body": "{{-host}}, your lobby still needs **{{remaining}}** more teammate{{suffix}}!",
+      "prompt": "Would you like to continue recruiting or cancel this lobby?",
+      "note_final": "This lobby has been automatically closed due to inactivity.",
+      "note_expired_new": "This reminder has been acknowledged. A new reminder has been sent.",
+      "footer_active": "Reminder {{current}}/{{total}} • Lobby ID: {{lobbyId}}",
+      "footer_expired": "Expired reminder • Lobby ID: {{lobbyId}}",
+      "footer_final": "Final reminder • Lobby ID: {{lobbyId}}"
+    },
+    "errors": {
+      "guild_only": "This command can only be used inside a server channel.",
+      "voice_required": "You need to be in a voice channel to start recruiting.",
+      "select_valid_option": "Please select a valid game and mode from the autocomplete list.",
+      "game_not_supported": "Game `{{game}}` is not supported.",
+      "mode_not_available": "Mode `{{mode}}` is not available for {{game}}.",
+      "lobby_missing": "This lobby is no longer available."
+    },
+    "autocomplete": {
+      "no_games": "❌ No games found",
+      "error_games": "⚠️ Error loading games",
+      "select_game_first": "Select a game first",
+      "no_modes": "❌ No modes found",
+      "error_modes": "⚠️ Error loading modes",
+      "game_not_found": "❌ Game not found"
+    },
+    "dm": {
+      "join_title": "You joined {{game}}!",
+      "status_need": "Need {{remaining}} more teammate{{suffix}}",
+      "status_full": "Lobby is full!",
+      "voice_hint": "Click the button below to join the voice channel:"
+    }
+  }
+}
+
+
