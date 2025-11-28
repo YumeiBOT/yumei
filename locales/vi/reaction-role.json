@@ -18,8 +18,9 @@
     },
     "select_channel": {
       "title": "🎭 Chọn Kênh",
-      "description": "Bạn đã chọn: **{{method}}** với **{{messageType}}**\n\n**Bước tiếp theo:** Chọn kênh nơi bot/webhook sẽ gửi tin nhắn.\n\nVui lòng chọn một kênh văn bản từ menu dropdown:",
-      "footer": "Chọn một kênh để tiếp tục"
+      "description": "Bạn đã chọn: **{{method}}** với **{{messageType}}**\n\n**Bước tiếp theo:** Chọn kênh nơi bot/webhook sẽ gửi tin nhắn.\n\nVui lòng chọn một kênh văn bản hoặc kênh thông báo từ menu dropdown:",
+      "footer": "Chọn một kênh để tiếp tục",
+      "placeholder": "Chọn kênh văn bản hoặc kênh thông báo cho tin nhắn bot/webhook"
     },
     "select_roles": {
       "title": "🎭 Chọn Vai trò",
@@ -29,7 +30,7 @@
     },
     "roles_selected": {
       "title": "🎭 Vai trò Đã Chọn",
-      "description": "Bạn đã chọn: **{{method}}** với **{{roleChangeType}}**, **{{replyType}}**, và **{{messageType}}**\n\n**Vai trò Đã Chọn ({{roleCount}}):**\n{{rolesList}}\n\n**Các bước tiếp theo:**\n1. Cấu hình nội dung tin nhắn\n2. Hoàn thành thiết lập\n\nVui lòng chọn hành động tiếp theo của bạn:",
+      "description": "Bạn đã chọn: **{{method}}** với **{{roleChangeType}}**, **{{replyType}}**, và **{{messageType}}**\n\n**Vai trò Đã Chọn ({{roleCount}}):**\n{{rolesList}}\n\n**Các bước tiếp theo:**\n1. Cấu hình nội dung tin nhắn\n2. Hoàn thành thiết lập\n\n**💡 Mẹo:** Để sử dụng emoji tùy chỉnh, gõ `\\<emoji>` trong bất kỳ tin nhắn nào để lấy định dạng ID emoji.\n\nVui lòng chọn hành động tiếp theo của bạn:",
       "footer": "Sử dụng các nút bên dưới để tiếp tục thiết lập"
     },
     "select_method": {
@@ -63,11 +64,22 @@
       "description": "Bạn đã chọn: **{{method}}** với **{{roleChangeType}}**, **{{replyType}}**, và **{{messageType}}**\n\n**Cấu hình hiện tại:**\n• Kênh: <#{{channelId}}>\n• Loại tin nhắn: {{messageType}}\n• Loại phản hồi: {{replyType}}\n• Loại thay đổi vai trò: {{roleChangeType}}\n\n**Các bước tiếp theo:**\n1. Thêm vai trò bằng các nút bên dưới\n2. Cấu hình nội dung tin nhắn\n3. Hoàn thành thiết lập\n\n**Vai trò hiện tại:**\n{{rolesList}}",
       "footer": "Sử dụng các nút bên dưới để quản lý vai trò và hoàn thành thiết lập"
     },
+    "customize_buttons": {
+      "title": "🎭 Tùy chỉnh Nút",
+      "description": "Bạn đã chọn: **{{method}}** với **{{roleChangeType}}**, **{{replyType}}**, và **{{messageType}}**\n\n**Cấu hình hiện tại:**\n• Kênh: <#{{channelId}}>\n• Loại tin nhắn: {{messageType}}\n• Loại phản hồi: {{replyType}}\n• Loại thay đổi vai trò: {{roleChangeType}}\n\n**Tiến độ Tùy chỉnh Nút:**\n• Đã cấu hình: {{configuredCount}}/{{totalCount}} nút\n• Hiện tại: {{currentRoleName}}\n\n**Các kiểu Nút có sẵn:**\n• 🔵 **Primary** - Nút xanh dương\n• ⚪ **Secondary** - Nút xám\n• 🟢 **Success** - Nút xanh lá\n• 🔴 **Danger** - Nút đỏ\n\n**💡 Mẹo:** Để sử dụng emoji tùy chỉnh, gõ `\\<emoji>` trong bất kỳ tin nhắn nào để lấy định dạng ID emoji.\n\nVui lòng chọn kiểu nút cho vai trò hiện tại:",
+      "footer": "Chọn kiểu nút để tùy chỉnh nút vai trò hiện tại"
+    },
+    "customize_emojis": {
+      "title": "🎭 Tùy chỉnh Emoji",
+      "description": "Bạn đã chọn: **{{method}}** với **{{roleChangeType}}**, **{{replyType}}**, và **{{messageType}}**\n\n**Cấu hình hiện tại:**\n• Kênh: <#{{channelId}}>\n• Loại tin nhắn: {{messageType}}\n• Loại phản hồi: {{replyType}}\n• Loại thay đổi vai trò: {{roleChangeType}}\n\n**Tiến độ Tùy chỉnh Emoji:**\n• Đã cấu hình: {{configuredCount}}/{{totalCount}} emoji\n• Hiện tại: {{currentRoleName}}\n\n**Cách thêm emoji:**\n1. Phản ứng với tin nhắn này bằng emoji bạn muốn cho vai trò này\n2. Emoji sẽ được tự động gán cho vai trò hiện tại\n3. Bạn có thể sử dụng cả emoji thường (🎭, 😄) và emoji tùy chỉnh của máy chủ\n\n**💡 Mẹo:** Để sử dụng emoji tùy chỉnh, gõ `\\<emoji>` trong bất kỳ tin nhắn nào để lấy định dạng ID emoji.\n\nVui lòng phản ứng với emoji cho vai trò hiện tại:",
+      "footer": "Phản ứng với emoji để tùy chỉnh vai trò hiện tại"
+    },
     "confirm": {
       "title": "🎭 Xác nhận Cấu hình",
       "description": "**Đánh giá Cấu hình Cuối cùng:**\n\n**Phương thức:** {{method}}\n**Kênh:** <#{{channelId}}>\n**Loại tin nhắn:** {{messageType}}\n**Loại phản hồi:** {{replyType}}\n**Loại thay đổi vai trò:** {{roleChangeType}}\n\n**Vai trò:**\n{{rolesList}}\n\n**Nội dung tin nhắn:**\n{{messageContent}}\n\nVui lòng xác nhận cấu hình này:",
       "footer": "Phản ứng với ✅ để xác nhận hoặc ❌ để hủy"
-    }
+    },
+    "proceeding_to_confirm": "{{-icon}} | Tiến đến xem xét cuối cùng và xác nhận..."
   },
   "methods": {
     "reaction": "Reaction (Emoji)",
@@ -126,7 +138,11 @@
     "cancel": "Hủy",
     "confirm": "Xác nhận",
     "back": "Quay lại",
-    "next": "Tiếp theo"
+    "next": "Tiếp theo",
+    "primary": "Primary",
+    "secondary": "Secondary",
+    "success": "Success",
+    "danger": "Danger"
   },
   "messages": {
     "no_roles": "Chưa cấu hình vai trò nào",
@@ -142,23 +158,31 @@
   "modals": {
     "webhook_config": {
       "title": "Cấu hình Webhook",
-      "webhook_title_label": "Tiêu đề Webhook (Tùy chọn)",
+      "webhook_title_label": "Tiêu đề Webhook",
       "webhook_title_placeholder": "Nhập tiêu đề webhook...",
-      "webhook_image_label": "URL Hình ảnh Webhook (Tùy chọn)",
+      "webhook_image_label": "URL Hình ảnh Webhook",
       "webhook_image_placeholder": "Nhập URL hình ảnh webhook..."
     },
     "message_creation": {
       "title": "Tạo Tin nhắn",
-      "message_content_label": "Nội dung Tin nhắn (Tùy chọn)",
+      "message_content_label": "Nội dung Tin nhắn",
       "message_content_placeholder": "Nhập nội dung tin nhắn...",
-      "embed_title_label": "Tiêu đề Embed (Tùy chọn)",
+      "embed_title_label": "Tiêu đề Embed",
       "embed_title_placeholder": "Nhập tiêu đề embed...",
-      "embed_body_label": "Mô tả Embed (Tùy chọn)",
+      "embed_body_label": "Mô tả Embed",
       "embed_body_placeholder": "Nhập mô tả embed...",
-      "embed_color_label": "Màu Embed (Tùy chọn)",
+      "embed_color_label": "Màu Embed",
       "embed_color_placeholder": "Nhập mã màu hex (ví dụ: #00FF00)...",
-      "embed_image_label": "URL Hình ảnh Embed (Tùy chọn)",
+      "embed_image_label": "URL Hình ảnh Embed",
       "embed_image_placeholder": "Nhập URL hình ảnh embed..."
+    },
+    "button_customization": {
+      "title": "Tùy chỉnh Nút",
+      "button_text_label": "Văn bản Nút",
+      "button_text_placeholder": "Nhập văn bản nút (để trống để dùng tên vai trò)...",
+      "button_emoji_label": "Emoji Nút",
+      "button_emoji_placeholder": "Nhập emoji (ví dụ: 🎭, 😄) hoặc ID emoji tùy chỉnh...",
+      "emoji_help": "💡 **Cách lấy ID emoji tùy chỉnh:** Gõ `\\<emoji>` trong bất kỳ tin nhắn nào để lấy định dạng ID như `<a:lewlew:740475899366998086>`"
     }
   },
   "errors": {
@@ -172,7 +196,9 @@
     "role_not_assigned": "{{-icon}} | Bạn chưa có vai trò này.",
     "unknown_role_change_type": "{{-icon}} | Loại thay đổi vai trò không xác định.",
     "dm_failed": "{{-icon}} | Không thể gửi DM. Vui lòng kiểm tra cài đặt quyền riêng tư của bạn.",
-    "role_assignment_failed": "{{-icon}} | Không thể gán/xóa vai trò. Vui lòng thử lại."
+    "role_assignment_failed": "{{-icon}} | Không thể gán/xóa vai trò. Vui lòng thử lại.",
+    "no_available_channels": "{{-icon}} | Không có kênh văn bản nào khả dụng cho tin nhắn bot/webhook.",
+    "bot_member_not_found": "{{-icon}} | Không tìm thấy thành viên bot. Vui lòng thử lại."
   },
   "role_select": {
     "description": "Vị trí: {{position}} | Thành viên: {{members}}"
