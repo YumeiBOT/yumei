@@ -13,6 +13,9 @@
       "capacity": "Capacity",
       "requirements": "Requirements"
     },
+    "footer": {
+      "quick_lobby": "Quick Lobby • ID: {{messageId}}"
+    },
     "status": {
       "recruiting": "Recruiting",
       "full": "FULL",

@@ -13,6 +13,9 @@
       "capacity": "Sức chứa",
       "requirements": "Yêu cầu"
     },
+    "footer": {
+      "quick_lobby": "Phòng nhanh • ID: {{messageId}}"
+    },
     "status": {
       "recruiting": "Đang tuyển",
       "full": "ĐỦ NGƯỜI",
