@@ -11,7 +11,12 @@
     "fields": {
       "voice_channel": "Kênh voice",
       "capacity": "Sức chứa",
-      "requirements": "Yêu cầu"
+      "requirements": "Yêu cầu",
+      "participants": "Người đã vào phòng"
+    },
+    "participants": {
+      "empty": "Chưa ai xếp hàng vào phòng cả.",
+      "more": "...và còn {{count}} người nữa đang rón rén chờ."
     },
     "footer": {
       "quick_lobby": "Phòng nhanh • ID: {{messageId}}"
@@ -73,6 +78,7 @@
       "select_valid_option": "Hãy chọn game và chế độ hợp lệ từ danh sách gợi ý.",
       "game_not_supported": "Game `{{game}}` chưa được hỗ trợ.",
       "mode_not_available": "Chế độ `{{mode}}` không có trong {{game}}.",
+      "too_many_needed": "Chế độ này tối đa {{maxPlayers}} người, bạn chỉ có thể tuyển thêm {{max}} thành viên thôi nha.",
       "lobby_missing": "Phòng này không còn tồn tại."
     },
     "autocomplete": {

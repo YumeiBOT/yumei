@@ -11,7 +11,12 @@
     "fields": {
       "voice_channel": "Voice Channel",
       "capacity": "Capacity",
-      "requirements": "Requirements"
+      "requirements": "Requirements",
+      "participants": "Participants"
+    },
+    "participants": {
+      "empty": "No one has joined yet.",
+      "more": "...and {{count}} more"
     },
     "footer": {
       "quick_lobby": "Quick Lobby • ID: {{messageId}}"
@@ -73,6 +78,7 @@
       "select_valid_option": "Please select a valid game and mode from the autocomplete list.",
       "game_not_supported": "Game `{{game}}` is not supported.",
       "mode_not_available": "Mode `{{mode}}` is not available for {{game}}.",
+      "too_many_needed": "You can only request up to {{max}} teammates for {{mode}} ({{maxPlayers}} players total).",
       "lobby_missing": "This lobby is no longer available."
     },
     "autocomplete": {
