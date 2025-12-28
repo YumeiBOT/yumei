@@ -93,5 +93,23 @@
     "reason": "💬┆Reason",
     "user_who_warned": "👤┆User",
     "number_warn": "💬┆Number of warn"
+  },
+  "setwarn": {
+    "name": "setwarn",
+    "example": "",
+    "description": "Set warning count for a user",
+    "user_option": "The user to set warnings for",
+    "count_option": "The warning count to set (0 to clear)",
+    "reason_option": "Reason for changing warning count",
+    "success": "{{-icon}} Warning count has been set to {{count}}!",
+    "success_cleared": "{{-icon}} All warnings have been cleared!",
+    "adjusted_in": "Warnings adjusted in {{guildName}}",
+    "adjusted_by": "👤┆Adjusted by",
+    "new_count": "🔢┆New count",
+    "reason": "💬┆Reason",
+    "not_given": "Not given",
+    "invalid_count": "{{-icon}} Count must be 0 or greater",
+    "invalid_member": "{{-icon}} Invalid member specified",
+    "error": "{{-icon}} Failed to set warning count"
   }
 }

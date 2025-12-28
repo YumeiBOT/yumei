@@ -1,0 +1,15 @@
+{
+  "errors": {
+    "panel_not_found": "Không tìm thấy bảng điều khiển vé.",
+    "panel_disabled": "Bảng điều khiển vé hiện đang bị vô hiệu hóa.",
+    "blacklisted": "Bạn không được phép tạo vé.",
+    "no_category": "Chưa cấu hình danh mục vé.",
+    "invalid_category": "Danh mục vé không hợp lệ.",
+    "no_permissions": "Bot thiếu quyền cần thiết.",
+    "creation_failed": "Không thể tạo vé. Vui lòng liên hệ quản trị viên máy chủ.",
+    "cooldown": "Vui lòng đợi {{seconds}} giây trước khi tạo vé khác."
+  },
+  "success": {
+    "created": "Đã tạo vé: {{-channel}}"
+  }
+}

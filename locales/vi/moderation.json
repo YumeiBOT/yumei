@@ -93,5 +93,23 @@
     "reason": "💬┆Lý do",
     "user_who_warned": "👤┆Người dùng",
     "number_warn": "💬┆Số lần cảnh báo"
+  },
+  "setwarn": {
+    "name": "setwarn",
+    "example": "",
+    "description": "Đặt số lượng cảnh báo cho người dùng",
+    "user_option": "Người dùng cần đặt số lượng cảnh báo",
+    "count_option": "Số lượng cảnh báo cần đặt (0 để xóa tất cả)",
+    "reason_option": "Lý do thay đổi số lượng cảnh báo",
+    "success": "{{-icon}} Số lượng cảnh báo đã được đặt thành {{count}}!",
+    "success_cleared": "{{-icon}} Tất cả cảnh báo đã được xóa!",
+    "adjusted_in": "Đã điều chỉnh cảnh báo trong {{guildName}}",
+    "adjusted_by": "👤┆Điều chỉnh bởi",
+    "new_count": "🔢┆Số mới",
+    "reason": "💬┆Lý do",
+    "not_given": "Không có lý do cụ thể",
+    "invalid_count": "{{-icon}} Số lượng phải lớn hơn hoặc bằng 0",
+    "invalid_member": "{{-icon}} Thành viên không hợp lệ",
+    "error": "{{-icon}} Không thể đặt số lượng cảnh báo"
   }
 }

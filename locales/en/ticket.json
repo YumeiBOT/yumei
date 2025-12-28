@@ -1,0 +1,15 @@
+{
+  "errors": {
+    "panel_not_found": "Ticket panel not found.",
+    "panel_disabled": "This ticket panel is currently disabled.",
+    "blacklisted": "You are not allowed to create tickets.",
+    "no_category": "Ticket category not configured.",
+    "invalid_category": "Invalid ticket category.",
+    "no_permissions": "Bot lacks required permissions.",
+    "creation_failed": "Failed to create ticket. Please contact server admin.",
+    "cooldown": "Please wait {{seconds}} seconds before creating another ticket."
+  },
+  "success": {
+    "created": "Ticket created: {{-channel}}"
+  }
+}
