@@ -30,5 +30,45 @@
       "initial_room": "Phòng vừa chọn không hợp lệ vui lòng chọn phòng trò chuyện",
       "timeout": "Hết thời gian cài đặt vui lòng làm lại từ đầu"
     }
+  },
+  "command_disable": {
+    "name": "Command Disable command",
+    "description": "Disable a command in the server",
+    "command_option": "The command to disable",
+    "success": "**{{-icon}} | {{-author}}, ** Command {{command}} has been disabled",
+    "already_disabled": "**{{-icon}} | {{-author}}, ** Command {{command}} is already disabled",
+    "disabled_title": "Disabled Commands",
+    "no_disabled": "No commands are currently disabled",
+    "error": "**{{-icon}} | {{-author}}, ** An error occurred while disabling the command"
+  },
+  "command_enable": {
+    "name": "Command Enable command",
+    "description": "Enable a disabled command in the server",
+    "command_option": "The command to enable",
+    "success": "**{{-icon}} | {{-author}}, ** Command {{command}} has been enabled",
+    "not_disabled": "**{{-icon}} | {{-author}}, ** Command {{command}} is not disabled",
+    "enabled_title": "Enabled Commands",
+    "no_enabled": "No commands are currently enabled (all are disabled)",
+    "error": "**{{-icon}} | {{-author}}, ** An error occurred while enabling the command"
+  },
+  "config_confession": {
+    "name": "Config Confession command",
+    "description": "Configure confession settings for the server",
+    "confession_channel_option": "The channel where confessions will be posted",
+    "screening_option": "Enable confession screening (require approval)",
+    "screening_channel_option": "The channel where screened confessions are held for approval",
+    "success": "**{{-icon}} | {{-author}}, ** Confession settings have been updated",
+    "error": "**{{-icon}} | {{-author}}, ** An error occurred while updating confession settings"
+  },
+  "giveaway": {
+    "name": "Giveaway command",
+    "create_command_desc": "Create a new giveaway",
+    "modal_title": "Create Giveaway",
+    "modal_prize": "Prize",
+    "modal_description": "Description",
+    "modal_duration": "Duration (minutes)",
+    "modal_winners": "Number of winners",
+    "success": "**{{-icon}} | {{-author}}, ** Giveaway created successfully",
+    "error": "**{{-icon}} | {{-author}}, ** An error occurred while creating the giveaway"
   }
 }

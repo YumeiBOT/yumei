@@ -1,11 +1,22 @@
 {
   "tts": {
+    "name": "TTS command",
+    "description": "Play text-to-speech in voice channel",
+    "text_option": "The text to speak",
+    "text_description": "The text to speak",
     "min_char": "**{{-icon}} | {{-author}}, ** Nothing to say",
     "max_char": "**{{-icon}} | {{-author}}, ** Currently BOT only supports maximum 100 characters",
     "invalid_input": "**{{-icon}} | {{-author}}, ** Please enter text between 1-100 characters",
     "playing": "**{{-icon}} | {{-author}}, ** Playing text-to-speech",
     "voice_error": "**{{-icon}} | {{-author}}, ** Error playing audio in voice channel",
     "error": "**{{-icon}} | {{-author}}, ** An error occurred with text-to-speech"
+  },
+  "tts_setting": {
+    "name": "TTS Setting command",
+    "description": "Configure text-to-speech settings",
+    "language_option": "The language for text-to-speech",
+    "success": "**{{-icon}} | {{-author}}, ** TTS language has been set to {{language}}",
+    "error": "**{{-icon}} | {{-author}}, ** An error occurred while updating TTS settings"
   },
   "join": {
     "used": "**{{-icon}} | {{-author}}, ** Bot is being used in another channel",

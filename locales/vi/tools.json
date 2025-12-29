@@ -1,0 +1,13 @@
+{
+  "emojify": {
+    "name": "Lệnh Emojify",
+    "description": "Chuyển đổi văn bản sang kiểu emoji",
+    "example": "emojify xin chào",
+    "text_option": "Văn bản cần chuyển đổi thành emoji",
+    "error": {
+      "generic": "Đã xảy ra lỗi khi chuyển đổi văn bản sang emoji",
+      "no_text": "Vui lòng cung cấp văn bản để chuyển đổi",
+      "too_long": "Văn bản quá dài (tối đa {{max}} ký tự)"
+    }
+  }
+}

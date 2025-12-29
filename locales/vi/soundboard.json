@@ -1,11 +1,22 @@
 {
   "tts": {
+    "name": "Lệnh TTS",
+    "description": "Phát văn bản thành giọng nói trong kênh thoại",
+    "text_option": "Văn bản cần đọc",
+    "text_description": "Văn bản cần đọc",
     "min_char": "**{{-icon}} | {{-author}}, ** Không có chữ thì làm sao nói?",
     "max_char": "**{{-icon}} | {{-author}}, ** Hiện tại BOT chỉ hỗ trợ tối đa 100 kí tự",
     "invalid_input": "**{{-icon}} | {{-author}}, ** Vui lòng nhập văn bản từ 1-100 ký tự",
     "playing": "**{{-icon}} | {{-author}}, ** Đang phát văn bản thành giọng nói",
     "voice_error": "**{{-icon}} | {{-author}}, ** Lỗi phát âm thanh trong kênh thoại",
     "error": "**{{-icon}} | {{-author}}, ** Đã xảy ra lỗi với chức năng chuyển văn bản thành giọng nói"
+  },
+  "tts_setting": {
+    "name": "Lệnh TTS Setting",
+    "description": "Cấu hình cài đặt chuyển văn bản thành giọng nói",
+    "language_option": "Ngôn ngữ cho chuyển văn bản thành giọng nói",
+    "success": "**{{-icon}} | {{-author}}, ** Ngôn ngữ TTS đã được đặt thành {{language}}",
+    "error": "**{{-icon}} | {{-author}}, ** Đã xảy ra lỗi khi cập nhật cài đặt TTS"
   },
   "join": {
     "used": "**{{-icon}} | {{-author}}, ** Bot đang được sử dụng ở một kênh khác",

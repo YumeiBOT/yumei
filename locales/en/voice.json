@@ -1,31 +1,66 @@
 {
   "set_bitrate": {
     "name": "Set bitrate command",
-    "example": "```{{-prefix}}{{alias}} {bitrate}```",
     "description": "Set bitrate of voice channel",
-    "illegal": "**{{-icon}} | {{-author}}, ** Your channel only allow bitrate {{-min_bitrate}}kbps - {{-max_bitrate}}kbps!!!"
+    "bitrate_option": "The bitrate to set (in kbps)",
+    "bitrate_description": "The bitrate to set (in kbps)",
+    "illegal": "**{{-icon}} | {{-author}}, ** Your channel only allow bitrate {{-min_bitrate}}kbps - {{-max_bitrate}}kbps!!!",
+    "success": "**{{-icon}} | {{-author}}, ** Bitrate has been set to {{bitrate}}kbps",
+    "error": "**{{-icon}} | {{-author}}, ** An error occurred while setting bitrate",
+    "invalid_bitrate": "**{{-icon}} | {{-author}}, ** Invalid bitrate specified",
+    "not_voice_channel": "**{{-icon}} | {{-author}}, ** You must be in a voice channel to use this command"
   },
   "change_region": {
     "name": "Change Region command",
-    "example": "```{{-prefix}}{{alias}} {region} | {list}```",
     "description": "Set region for voice channel and get regions list",
-    "illegal": "**{{-icon}} | {{-author}}, ** Region is illegal!!! \n Use `{{-prefix}}{{alias}} {list}` to get list regions."
+    "option_description": "The region to set (or 'list' to see available regions)",
+    "illegal": "**{{-icon}} | {{-author}}, ** Region is illegal!!! \n Use `{{-prefix}}{{alias}} {list}` to get list regions.",
+    "success": "**{{-icon}} | {{-author}}, ** Voice region has been set to {{region}}",
+    "not_voice_channel": "**{{-icon}} | {{-author}}, ** You must be in a voice channel to use this command"
   },
   "clan": {
     "create_team": {
+      "name": "Create Team command",
       "description": "Create clan(team) room",
+      "name_description": "The name of the clan/team",
       "req_team_name": "**{{-icon}} | {{-author}},** Please input Clan(Team) Name",
       "req_clan_settings": "**{{-icon}} | {{-author}},** Server setting for clan is not setup yet. Contact admin for setup Clan Voice Setting",
       "success": "**{{-icon}}  | {{-author}},** Create room successfully!",
-      "having_room": "**{{-icon}}  | {{-author}},** You already own your own story room"
+      "having_room": "**{{-icon}}  | {{-author}},** You already own your own story room",
+      "error": "**{{-icon}} | {{-author}},** An error occurred while creating clan room"
     },
     "room_member": {
+      "name": "Room Member command",
+      "description": "Add or remove members from clan room",
+      "user_description": "The user to add or remove",
+      "add_description": "Add a member to the clan room",
+      "remove_description": "Remove a member from the clan room",
       "no_permission": "**{{-icon}}  | {{-author}}, ** You don't have permission to add/remove member",
       "add": "**{{-icon}}  | {{-author}}, ** Added member successfully ",
-      "remove": "**{{-icon}}  | {{-author}}, ** Removed member successfully "
+      "remove": "**{{-icon}}  | {{-author}}, ** Removed member successfully ",
+      "invalid_command": "**{{-icon}} | {{-author}},** Invalid command. Use add or remove",
+      "error": "**{{-icon}} | {{-author}},** An error occurred while updating room members"
     }
   },
   "server_clan_voice_setting": {
-    "success": "**✅ | {{-author}},** Saved clan chat room settings successfully\nIf you need to add more categories use the command \\` \\``"
+    "name": "Server Clan Voice Setting command",
+    "description": "Configure clan voice settings for the server",
+    "category_description": "The first category for clan rooms",
+    "category2_description": "The second category for clan rooms",
+    "category3_description": "The third category for clan rooms",
+    "allow_bot_description": "Allow bots in clan rooms",
+    "allow_user_description": "Allow users to create clan rooms",
+    "success": "**✅ | {{-author}},** Saved clan chat room settings successfully\nIf you need to add more categories use the command \\` \\``",
+    "error": "**{{-icon}} | {{-author}},** An error occurred while saving clan voice settings",
+    "slash_only": "**{{-icon}} | {{-author}},** This command only works with slash commands"
+  },
+  "voice_setting": {
+    "name": "Voice Setting command",
+    "description": "Configure voice settings",
+    "embed_title": "Voice Settings",
+    "embed_description": "Current voice settings for the server",
+    "embed_footer": "Use the command buttons to modify settings",
+    "success": "**{{-icon}} | {{-author}},** Voice settings have been updated",
+    "error": "**{{-icon}} | {{-author}},** An error occurred while updating voice settings"
   }
 }

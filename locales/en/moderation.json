@@ -3,18 +3,23 @@
     "name": "ban",
     "example": "",
     "description": "Ban users from the server",
+    "user_option": "The user to ban",
+    "reason_option": "The reason for banning",
     "success_ban_from": "You've been banned in {{guildName}}",
     "success": "The specified user has been successfully banned and successfully received a notification!",
     "success_no_notification": "The given user has been successfully banned, but has not received a notification!",
     "banned_by": "👤┆Banned by",
     "user_who_banned": "👤┆Banned user",
     "reason": "💬┆Reason",
-    "not_given": "Not given"
+    "not_given": "Not given",
+    "error": "**{{-icon}} | {{-author}}, ** An error occurred while trying to ban the user",
+    "invalid_member": "**{{-icon}} | {{-author}}, ** Invalid member specified"
   },
   "clear": {
     "name": "clear",
     "example": "",
     "description": "Clear message of some channel",
+    "amount_description": "The number of messages to delete (1-100)",
     "more_than_100": "**{{-icon}} | {{-author}}, ** I cannot delete more than 100 messages at a time!",
     "less_than_1": "**{{-icon}} | {{-author}}, ** I cannot delete less than 1 message!",
     "invalid_amount": "**{{-icon}} | {{-author}}, ** Please specify a valid number between 1 and 100",
@@ -26,6 +31,10 @@
     "name": "clearuser",
     "example": "",
     "description": "Clear message of someone",
+    "option": {
+      "user": "The user whose messages to clear",
+      "amount": "The number of messages to delete (1-100)"
+    },
     "invalid_args": "**{{-icon}} | {{-author}}, ** Please specify a valid number between 1 and 100 or a user mention",
     "user_not_found": "I cannot find the user you mentioned",
     "update_soon": "TODO"
@@ -34,27 +43,61 @@
     "name": "kick",
     "example": "",
     "description": "Kick users from the server",
-    "success": "The specified user has been successfully banned and successfully received a notification!",
-    "success_kick_from": "You've been banned in {{guildName}}",
-    "success_no_notification": "The given user has been successfully banned, but has not received a notification!",
+    "user_option": "The user to kick",
+    "reason_option": "The reason for kicking",
+    "success": "The specified user has been successfully kicked and successfully received a notification!",
+    "success_kick_from": "You've been kicked from {{guildName}}",
+    "success_no_notification": "The given user has been successfully kicked, but has not received a notification!",
     "kicked_by": "👤┆Kicked by",
     "reason": "💬┆Reason",
     "user_who_kicked": "👤┆Kicked user",
-    "not_given": "Not given"
+    "not_given": "Not given",
+    "error": "**{{-icon}} | {{-author}}, ** An error occurred while trying to kick the user",
+    "invalid_member": "**{{-icon}} | {{-author}}, ** Invalid member specified"
   },
-  "mute": {
+  "setwarn": {
+    "name": "setwarn",
+    "example": "",
+    "description": "Set warning level for a user",
+    "user_option": "The user to set warnings for",
+    "count_option": "The number of warnings to set",
+    "reason_option": "The reason for setting warnings",
+    "success": "**{{-icon}} | {{-author}}, ** Set warnings to {{new_count}} for {{user}}",
+    "adjusted_by": "👤┆Adjusted by",
+    "adjusted_in": "🏠┆Adjusted in",
+    "new_count": "⚠️┆New count",
+    "not_given": "Not given",
+    "reason": "💬┆Reason",
+    "invalid_count": "**{{-icon}} | {{-author}}, ** Invalid warning count specified",
+    "invalid_member": "**{{-icon}} | {{-author}}, ** Invalid member specified",
+    "error": "**{{-icon}} | {{-author}}, ** An error occurred while setting warnings"
+  },
+  "timeout": {
     "name": "timeout",
     "example": "",
-    "description": "Mute users for a certain time",
-    "more_than_28d": "Invalid input time or time is larger than 28 days",
-    "success": "{{userName}} successfully timed out {{prettyMilliseconds}}",
+    "description": "Timeout users for a certain time",
+    "user_option": "The user to timeout",
+    "duration_option": "The duration of the timeout",
+    "reason_option": "The reason for timeout",
+    "duration": "⏱️┆Duration",
+    "reason": "💬┆Reason",
+    "more_than_28d": "**{{-icon}} | {{-author}}, ** Invalid input time or time is larger than 28 days",
+    "success": "**{{-icon}} | {{-author}}, ** {{userName}} successfully timed out for {{prettyMilliseconds}}",
     "not_given": "Not given",
-    "reason": "💬┆Reason"
+    "already_timed_out": "**{{-icon}} | {{-author}}, ** User is already timed out",
+    "invalid_duration": "**{{-icon}} | {{-author}}, ** Invalid duration specified",
+    "invalid_member": "**{{-icon}} | {{-author}}, ** Invalid member specified",
+    "error": "**{{-icon}} | {{-author}}, ** An error occurred while trying to timeout the user",
+    "success_timeout_from": "You have been timed out in {{guildName}}",
+    "timed_out_by": "👤┆Timed out by",
+    "user_who_timed_out": "👤┆Timed out user"
   },
   "warn": {
     "name": "warn",
     "example": "",
     "description": "Warning user for something",
+    "user_option": "The user to warn",
+    "reason_option": "The reason for warning",
     "success": "User has received a warning!",
     "not_given": "Not given",
     "title": "🔨・Warn",
@@ -62,6 +105,7 @@
     "moderator": "👤┆Moderator",
     "reason": "💬┆Reason",
     "user_who_warned": "👤┆User",
-    "number_warn": "💬┆Number of warn"
+    "number_warn": "💬┆Number of warn",
+    "error": "**{{-icon}} | {{-author}}, ** An error occurred while trying to warn the user"
   }
 }

@@ -1,0 +1,89 @@
+{
+  "rank": {
+    "name": "Rank command",
+    "description": "View current rankings for voice or text activity",
+    "example": "rank voice week",
+    "type_description": "Choose ranking type (voice or text)",
+    "timetype_description": "Choose time period",
+    "voice": "Voice",
+    "text": "Text",
+    "day": "Day",
+    "week": "Week",
+    "month": "Month",
+    "year": "Year",
+    "no_data": "No ranking data available for {{type}} - {{timeType}}",
+    "result": "**{{type}} Rankings: {{timeType}}**\n\n{{entries}}"
+  },
+  "rank_history": {
+    "name": "Rank History command",
+    "description": "View historical rankings for voice or text activity",
+    "example": "```{{-prefix}}{{alias}} text month```",
+    "type_description": "Choose ranking type (voice or text)",
+    "period_description": "Choose time period (week or month)",
+    "voice": "Voice",
+    "text": "Text",
+    "week": "Week",
+    "month": "Month",
+    "invalid_year": "**{{-icon}} | {{-author}}, ** You cannot view rankings from past years.",
+    "invalid_month": "**{{-icon}} | {{-author}}, ** You cannot view rankings from future months.",
+    "week_requires_month_and_week": "**{{-icon}} | {{-author}}, ** Please select both month and week for weekly rankings.",
+    "invalid_week": "**{{-icon}} | {{-author}}, ** Week {{maxWeeks}} does not exist for the selected month.",
+    "no_data": "**{{-icon}} | {{-author}}, ** No ranking data available for {{type}} - {{period}}",
+    "week_period_display": "Week {{week}} ({{monthName}} {{year}}): {{dateRange}}",
+    "month_period_display": "{{month}}/{{year}}",
+    "result": "**{{type}} Rankings: {{period}}**\n\n{{entries}}",
+    "error": "**{{-icon}} | {{-author}}, ** An error occurred: {{error}}",
+    "select_month": "Please select a month",
+    "select_week": "Please select a week for month {{month}}",
+    "timeout": "Selection timed out. Please try again.",
+    "select_month_placeholder": "Select a month",
+    "select_week_placeholder": "Select a week"
+  },
+  "confession": {
+    "name": "Confession command",
+    "description": "Send an anonymous confession to a server",
+    "server_id_description": "The ID of the server to send confession to",
+    "content_description": "The content of your confession",
+    "attachment_prompt": "**{{icon}} | Please attach up to {{max_attachments}} images (optional)**",
+    "prefix_not_supported": "**{{icon}} | {{author}}, ** This command only works with slash commands. Please use /confession",
+    "embed_title": "Confession #{{confession_count}} from {{server_name}}",
+    "embed_footer": "Anonymous confession",
+    "screening_title": "Confession #{{confession_number}} - Awaiting Review",
+    "screening_author": "Author",
+    "screening_attachments": "Attachments",
+    "screening_id": "Confession ID",
+    "screening_footer": "Pending moderation review",
+    "end_button": "End & Send",
+    "approve_button": "Approve",
+    "reject_button": "Reject",
+    "success": "**{{icon}} | Confession submitted successfully! Your confession number is #{{confession_number}}**",
+    "extra_attachment": "**{{icon}} | Confession #{{confession_number}} - Additional attachment {{attachment_index}} of {{attachment_total}}**",
+    "screening_approved": "Approved by moderator",
+    "screening_rejected": "Rejected by moderator",
+    "approved_success": "**{{icon}} | Confession {{confession_id}} has been approved and posted.**",
+    "rejected_success": "**{{icon}} | Confession {{confession_id}} has been rejected.**",
+    "attachment_received": "**{{icon}} | Attachment received! ({{attachment_count}}/{{max_attachments}}) - {{remaining_slots}} slots remaining**",
+    "no_content": "**{{icon}} | No confession content provided. Please try again.**",
+    "timeout": "**{{icon}} | Confession timed out. Please try again.**",
+    "errors": {
+      "unknown": "**{{icon}} | An unknown error occurred: {{error}}**",
+      "server_not_found": "**{{icon}} | Server not found or confession not configured.**",
+      "confession_not_found": "**{{icon}} | Confession not found.**",
+      "invalid_channel": "**{{icon}} | Invalid confession channel.**"
+    }
+  },
+  "event_invite": {
+    "name": "Event Invite command",
+    "description": "Manage event invitations",
+    "example": "Create a managed invite link for your event",
+    "leaderboard": {
+      "description": "View invite leaderboard for this server",
+      "example": "invite-leaderboard"
+    }
+  },
+  "invites_snapshot": {
+    "name": "Invites Snapshot command",
+    "description": "Take a snapshot of current invite counts",
+    "example": "invites-snapshot"
+  }
+}

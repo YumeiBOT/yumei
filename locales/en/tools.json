@@ -1,0 +1,13 @@
+{
+  "emojify": {
+    "name": "Emojify command",
+    "description": "Convert text to emoji style",
+    "example": "emojify hello world",
+    "text_option": "The text to convert to emojis",
+    "error": {
+      "generic": "An error occurred while converting text to emojis",
+      "no_text": "Please provide text to convert",
+      "too_long": "Text is too long (max {{max}} characters)"
+    }
+  }
+}

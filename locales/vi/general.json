@@ -1,0 +1,89 @@
+{
+  "rank": {
+    "name": "Mã lệnh Xếp hạng",
+    "description": "Xem xếp hạng hiện tại cho hoạt động voice hoặc text",
+    "example": "rank voice week",
+    "type_description": "Chọn loại xếp hạng (voice hoặc text)",
+    "timetype_description": "Chọn khoảng thời gian",
+    "voice": "Voice",
+    "text": "Text",
+    "day": "Ngày",
+    "week": "Tuần",
+    "month": "Tháng",
+    "year": "Năm",
+    "no_data": "Không có dữ liệu xếp hạng cho {{type}} - {{timeType}}",
+    "result": "**Xếp hạng {{type}}: {{timeType}}**\n\n{{entries}}"
+  },
+  "rank_history": {
+    "name": "Mã lệnh Lịch sử Xếp hạng",
+    "description": "Xem lịch sử xếp hạng cho hoạt động voice hoặc text",
+    "example": "```{{-prefix}}{{alias}} text month```",
+    "type_description": "Chọn loại xếp hạng (voice hoặc text)",
+    "period_description": "Chọn khoảng thời gian (week hoặc month)",
+    "voice": "Voice",
+    "text": "Text",
+    "week": "Tuần",
+    "month": "Tháng",
+    "invalid_year": "**{{-icon}} | {{-author}}, ** Bạn không thể xem xếp hạng từ các năm trước.",
+    "invalid_month": "**{{-icon}} | {{-author}}, ** Bạn không thể xem xếp hạng từ các tháng trong tương lai.",
+    "week_requires_month_and_week": "**{{-icon}} | {{-author}}, ** Vui lòng chọn cả tháng và tuần cho xếp hạng hàng tuần.",
+    "invalid_week": "**{{-icon}} | {{-author}}, ** Tuần {{maxWeeks}} không tồn tại cho tháng đã chọn.",
+    "no_data": "**{{-icon}} | {{-author}}, ** Không có dữ liệu xếp hạng cho {{type}} - {{period}}",
+    "week_period_display": "Tuần {{week}} ({{monthName}} {{year}}): {{dateRange}}",
+    "month_period_display": "{{month}}/{{year}}",
+    "result": "**Xếp hạng {{type}}: {{period}}**\n\n{{entries}}",
+    "error": "**{{-icon}} | {{-author}}, ** Đã xảy ra lỗi: {{error}}",
+    "select_month": "Vui lòng chọn một tháng",
+    "select_week": "Vui lòng chọn một tuần cho tháng {{month}}",
+    "timeout": "Hết thời gian chọn. Vui lòng thử lại.",
+    "select_month_placeholder": "Chọn tháng",
+    "select_week_placeholder": "Chọn tuần"
+  },
+  "confession": {
+    "name": "Lệnh Confession",
+    "description": "Gửi một confession ẩn danh đến máy chủ",
+    "server_id_description": "ID của máy chủ để gửi confession",
+    "content_description": "Nội dung confession của bạn",
+    "attachment_prompt": "**{{icon}} | Vui lòng đính kèm tối đa {{max_attachments}} hình ảnh (tùy chọn)**",
+    "prefix_not_supported": "**{{icon}} | {{author}}, ** Lệnh này chỉ hoạt động với lệnh slash. Vui lòng sử dụng /confession",
+    "embed_title": "Confession #{{confession_count}} từ {{server_name}}",
+    "embed_footer": "Confession ẩn danh",
+    "screening_title": "Confession #{{confession_number}} - Chờ xét duyệt",
+    "screening_author": "Người gửi",
+    "screening_attachments": "Đính kèm",
+    "screening_id": "ID Confession",
+    "screening_footer": "Chờ xét duyệt",
+    "end_button": "Kết thúc & Gửi",
+    "approve_button": "Duyệt",
+    "reject_button": "Từ chối",
+    "success": "**{{icon}} | Confession đã được gửi thành công! Số confession của bạn là #{{confession_number}}**",
+    "extra_attachment": "**{{icon}} | Confession #{{confession_number}} - Đính kèm thêm {{attachment_index}} của {{attachment_total}}**",
+    "screening_approved": "Đã được duyệt bởi điều hành viên",
+    "screening_rejected": "Đã bị từ chối bởi điều hành viên",
+    "approved_success": "**{{icon}} | Confession {{confession_id}} đã được duyệt và đăng.**",
+    "rejected_success": "**{{icon}} | Confession {{confession_id}} đã bị từ chối.**",
+    "attachment_received": "**{{icon}} | Đã nhận đính kèm! ({{attachment_count}}/{{max_attachments}}) - còn {{remaining_slots}} chỗ**",
+    "no_content": "**{{icon}} | Không có nội dung confession. Vui lòng thử lại.**",
+    "timeout": "**{{icon}} | Hết thời gian confession. Vui lòng thử lại.**",
+    "errors": {
+      "unknown": "**{{icon}} | Đã xảy ra lỗi không xác định: {{error}}**",
+      "server_not_found": "**{{icon}} | Không tìm thấy máy chủ hoặc confession chưa được cấu hình.**",
+      "confession_not_found": "**{{icon}} | Không tìm thấy confession.**",
+      "invalid_channel": "**{{icon}} | Kênh confession không hợp lệ.**"
+    }
+  },
+  "event_invite": {
+    "name": "Lệnh Event Invite",
+    "description": "Quản lý lời mời sự kiện",
+    "example": "Tạo liên kết mời được quản lý cho sự kiện của bạn",
+    "leaderboard": {
+      "description": "Xem bảng xếp hạng mời của máy chủ này",
+      "example": "invite-leaderboard"
+    }
+  },
+  "invites_snapshot": {
+    "name": "Lệnh Invites Snapshot",
+    "description": "Chụp ảnh nhanh số lượng mời hiện tại",
+    "example": "invites-snapshot"
+  }
+}

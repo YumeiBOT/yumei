@@ -30,5 +30,45 @@
       "initial_room": "Phòng vừa chọn không hợp lệ vui lòng chọn phòng trò chuyện",
       "timeout": "Hết thời gian cài đặt vui lòng làm lại từ đầu"
     }
+  },
+  "command_disable": {
+    "name": "Lệnh Command Disable",
+    "description": "Tắt một lệnh trong máy chủ",
+    "command_option": "Lệnh cần tắt",
+    "success": "**{{-icon}} | {{-author}}, ** Lệnh {{command}} đã bị tắt",
+    "already_disabled": "**{{-icon}} | {{-author}}, ** Lệnh {{command}} đã bị tắt từ trước",
+    "disabled_title": "Các Lệnh Đã Tắt",
+    "no_disabled": "Hiện không có lệnh nào bị tắt",
+    "error": "**{{-icon}} | {{-author}}, ** Đã xảy ra lỗi khi tắt lệnh"
+  },
+  "command_enable": {
+    "name": "Lệnh Command Enable",
+    "description": "Bật một lệnh đã bị tắt trong máy chủ",
+    "command_option": "Lệnh cần bật",
+    "success": "**{{-icon}} | {{-author}}, ** Lệnh {{command}} đã được bật",
+    "not_disabled": "**{{-icon}} | {{-author}}, ** Lệnh {{command}} không bị tắt",
+    "enabled_title": "Các Lệnh Đã Bật",
+    "no_enabled": "Hiện không có lệnh nào được bật (tất cả đều bị tắt)",
+    "error": "**{{-icon}} | {{-author}}, ** Đã xảy ra lỗi khi bật lệnh"
+  },
+  "config_confession": {
+    "name": "Lệnh Config Confession",
+    "description": "Cấu hình cài đặt confession cho máy chủ",
+    "confession_channel_option": "Kênh nơi confession sẽ được đăng",
+    "screening_option": "Bật chế độ xét duyệt confession (cần phê duyệt)",
+    "screening_channel_option": "Kênh nơi confession được xét duyệt để phê duyệt",
+    "success": "**{{-icon}} | {{-author}}, ** Cài đặt confession đã được cập nhật",
+    "error": "**{{-icon}} | {{-author}}, ** Đã xảy ra lỗi khi cập nhật cài đặt confession"
+  },
+  "giveaway": {
+    "name": "Lệnh Giveaway",
+    "create_command_desc": "Tạo giveaway mới",
+    "modal_title": "Tạo Giveaway",
+    "modal_prize": "Phần thưởng",
+    "modal_description": "Mô tả",
+    "modal_duration": "Thời lượng (phút)",
+    "modal_winners": "Số người chiến thắng",
+    "success": "**{{-icon}} | {{-author}}, ** Đã tạo giveaway thành công",
+    "error": "**{{-icon}} | {{-author}}, ** Đã xảy ra lỗi khi tạo giveaway"
   }
 }
