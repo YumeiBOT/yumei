@@ -3,13 +3,13 @@
     "name": "Set bitrate command",
     "example": "```{{-prefix}}{{alias}} {bitrate}```",
     "description": "Set bitrate of voice channel",
-    "illegal": "**{{-icon}} | {{-username}} | **Your channel only allow bitrate {{-min_bitrate}}kbps - {{-max_bitrate}}kbps!!!"
+    "illegal": "**{{-icon}} | {{-author}}, ** Your channel only allow bitrate {{-min_bitrate}}kbps - {{-max_bitrate}}kbps!!!"
   },
   "change_region": {
     "name": "Change Region command",
     "example": "```{{-prefix}}{{alias}} {region} | {list}```",
     "description": "Set region for voice channel and get regions list",
-    "illegal": "**{{-icon}} | {{-username}} | **Region is illegal!!! \n Use `{{-prefix}}{{alias}} {list}` to get list regions."
+    "illegal": "**{{-icon}} | {{-author}}, ** Region is illegal!!! \n Use `{{-prefix}}{{alias}} {list}` to get list regions."
   },
   "clan": {
     "create_team": {

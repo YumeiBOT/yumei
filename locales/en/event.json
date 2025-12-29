@@ -1,7 +1,3 @@
 {
-  "message_create": {
-    "warning_invite_link": "**{{-icon}} | {{-author}} | **Please don't send the invite links from another server!!!"
-  },
-  "mention_prefix": "My prefix(es) in this guild is: `{{-prefixes}}`",
-  "global_error": "**{{-icon}} | {{-author}} | **Something went wrong, try it later!!!"
+  "mention_prefix": "My prefix(es) in this guild is: `{{-prefixes}}`"
 }

@@ -1,16 +1,10 @@
 {
   "set_server_language": {
     "name": "Mã lệnh Set Server Language",
-    "success": "**{{-icon}} | **Ngôn ngữ hiện tại: {{-lng}}",
-    "error": "**{{-icon}} | **Có lỗi xảy ra, vui lòng thử lại sau nha",
-    "no_support_lng": "**{{-icon}} | **Hiện tại **{{-botName}}** chưa hỗ trợ ngôn ngữ này nha!!!",
     "example": "```{{-prefix}}{{alias}} vi \n{{-prefix}}{{alias}} en```",
     "description": "Cài đặt ngôn ngữ"
   },
-  "set_server_channel": {
-    "success": "**{{-icon}} | {{-author }},** Đã thiết lập **{{type}}** tại <#{{channelId}}>",
-    "error": "**{{-icon}} | {{-author }},** danh mục **{{type}}** không được hỗ trợ\n**{{-blankEmoji}} |** Danh mục hỗ trợ: {{supportTypes}}"
-  },
+  "set_server_channel": {},
   "set_server_temp_voice": {
     "ask": {
       "initial_room": "Vui lòng chọn phòng khởi tạo `( Kênh tham gia sẽ tạo ra phòng tạm )`. \n**Hướng dẫn : Nhập ** `<!tên_phòng>` hoặc `<#id_phòng>` hoặc `id_phòng`",

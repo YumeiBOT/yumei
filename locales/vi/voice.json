@@ -3,13 +3,13 @@
     "name": "Mã lệnh Set bitrate",
     "example": "```{{-prefix}}{{alias}} {bitrate}```",
     "description": "Cài đặt bitrate của kênh trò chuyện",
-    "illegal": "**{{-icon}} | {{-username}} | **Kênh trò chuyện có bitrate hợp lệ {{-min_bitrate}} - {{-max_bitrate}}!!!"
+    "illegal": "**{{-icon}} | {{-author}}, ** Kênh trò chuyện có bitrate hợp lệ {{-min_bitrate}} - {{-max_bitrate}}!!!"
   },
   "change_region": {
     "name": "Mã lệnh Change Region",
     "example": "```{{-prefix}}{{alias}} {region} | {list}```",
     "description": "Cài đặt khu vực cho kênh trò chuyện và lấy danh sách khu vực",
-    "illegal": "**{{-icon}} | {{-username}} | **Khu vực không hợp lệ!!! \n Sử dụng `{{-prefix}}{{alias}} {list}` để lấy danh sách khu vực."
+    "illegal": "**{{-icon}} | {{-author}}, ** Khu vực không hợp lệ!!! \n Sử dụng `{{-prefix}}{{alias}} {list}` để lấy danh sách khu vực."
   },
   "clan": {
     "create_team": {

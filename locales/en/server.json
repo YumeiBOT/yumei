@@ -1,16 +1,10 @@
 {
   "set_server_language": {
     "name": "Set Server Language command",
-    "success": "**{{-icon}} | **Current language: {{-lng}}",
-    "error": "**{{-icon}} | **Some error, please try again",
-    "no_support_lng": "**{{-icon}} | {{-botName}}** Does not support this language!!!",
     "example": "```{{-prefix}}{{alias}} vi \n{{-prefix}}{{alias}} en```",
     "description": "Set language server"
   },
-  "set_server_channel": {
-    "success": "**{{-icon}}  | {{-author}},** I have set **{{type}}** at <#{{channelId}}>",
-    "error": "**{{-icon}} | {{-author}},** Input type **{{type}}** is not supported \n**{{-blankEmoji}} |** List support type: {{supportTypes}}"
-  },
+  "set_server_channel": {},
   "set_server_temp_voice": {
     "ask": {
       "initial_room": "Vui lòng chọn phòng khởi tạo `( Kênh tham gia sẽ tạo ra phòng tạm )`. \n**Hướng dẫn : Nhập ** `<!tên_phòng>` hoặc `<#id_phòng>` hoặc `id_phòng`",

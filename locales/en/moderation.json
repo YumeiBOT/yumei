@@ -15,18 +15,18 @@
     "name": "clear",
     "example": "",
     "description": "Clear message of some channel",
-    "more_than_100": "I cannot delete more than 100 messages at a time!",
-    "less_than_1": "I cannot delete less than 1 message!",
-    "invalid_amount": "Please specify a valid number between 1 and 100",
-    "older_than_14d": "You can only bulk delete messages that are under 14 days old.",
-    "success": "I have successfully deleted {{amount}} the messages",
-    "error": "There was an error trying to delete messages in this channel!"
+    "more_than_100": "**{{-icon}} | {{-author}}, ** I cannot delete more than 100 messages at a time!",
+    "less_than_1": "**{{-icon}} | {{-author}}, ** I cannot delete less than 1 message!",
+    "invalid_amount": "**{{-icon}} | {{-author}}, ** Please specify a valid number between 1 and 100",
+    "older_than_14d": "**{{-icon}} | {{-author}}, ** You can only bulk delete messages that are under 14 days old.",
+    "success": "**{{-icon}} | {{-author}}, ** I have successfully deleted {{amount}} the messages",
+    "error": "**{{-icon}} | {{-author}}, ** There was an error trying to delete messages in this channel!"
   },
   "clearuser": {
     "name": "clearuser",
     "example": "",
     "description": "Clear message of someone",
-    "invalid_args": "Please specify a valid number between 1 and 100 or a user mention",
+    "invalid_args": "**{{-icon}} | {{-author}}, ** Please specify a valid number between 1 and 100 or a user mention",
     "user_not_found": "I cannot find the user you mentioned",
     "update_soon": "TODO"
   },

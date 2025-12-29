@@ -3,12 +3,12 @@
     "name": "Initialize Reaction Role",
     "description": "Create a new reaction role configuration",
     "example": "```{{-prefix}}{{alias}}```",
-    "already_exists": "{{-icon}} | {{-author}}, a reaction role configuration is already in progress. Please complete or cancel the current session first.",
-    "session_not_found": "{{-icon}} | {{-author}}, no active reaction role configuration session found.",
-    "permission_error": "{{-icon}} | {{-author}}, you don't have permission to manage roles in this server.",
-    "session_cancelled": "{{-icon}} | {{-author}}, reaction role configuration has been cancelled.",
-    "session_completed": "{{-icon}} | {{-author}}, reaction role configuration has been completed successfully! Message ID: {{messageId}}",
-    "error": "{{-icon}} | {{-author}}, an error occurred while setting up the reaction role configuration."
+    "already_exists": "**{{-icon}} | {{-author}}, ** A reaction role configuration is already in progress. Please complete or cancel the current session first.",
+    "session_not_found": "**{{-icon}} | {{-author}}, ** No active reaction role configuration session found.",
+    "permission_error": "**{{-icon}} | {{-author}}, ** You don't have permission to manage roles in this server.",
+    "session_cancelled": "**{{-icon}} | {{-author}}, ** Reaction role configuration has been cancelled.",
+    "session_completed": "**{{-icon}} | {{-author}}, ** Reaction role configuration has been completed successfully! Message ID: {{messageId}}",
+    "error": "**{{-icon}} | {{-author}}, ** An error occurred while setting up the reaction role configuration."
   },
   "flow": {
     "welcome": {
@@ -82,7 +82,7 @@
       "description": "**Final Configuration Review:**\n\n**Method:** {{method}}\n**Channel:** <#{{channelId}}>\n**Message Type:** {{-messageType}}\n**Reply Type:** {{replyType}}\n**Role Change Type:** {{roleChangeType}}\n\n**Roles:**\n{{-rolesList}}\n\n**Message Content:**\n{{messageContent}}\n\nPlease confirm this configuration:",
       "footer": "React with ✅ to confirm or ❌ to cancel"
     },
-    "proceeding_to_confirm": "{{-icon}} | Proceeding to final review and confirmation..."
+    "proceeding_to_confirm": "**{{-icon}} | {{-author}}, ** Proceeding to final review and confirmation..."
   },
   "methods": {
     "reaction": "Reaction (Emoji)",
@@ -189,19 +189,19 @@
     }
   },
   "errors": {
-    "role_not_found": "Role not found. Please check role ID.",
-    "guild_not_found": "Guild not found. Please try again.",
-    "bot_not_found": "Bot member not found. Please try again.",
-    "no_manageable_roles": "No manageable roles found. The bot needs roles below its highest role to manage.",
-    "role_selection_failed": "Failed to process role selection. Please try again.",
-    "config_not_found": "{{-icon}} | Reaction role configuration not found.",
-    "role_already_assigned": "{{-icon}} | You already have this role.",
-    "role_not_assigned": "{{-icon}} | You don't have this role.",
-    "unknown_role_change_type": "{{-icon}} | Unknown role change type.",
-    "dm_failed": "{{-icon}} | Failed to send DM. Please check your privacy settings.",
-    "role_assignment_failed": "{{-icon}} | Failed to assign/remove role. Please try again.",
-    "no_available_channels": "{{-icon}} | No available text channels for bot/webhook messages.",
-    "bot_member_not_found": "{{-icon}} | Bot member not found. Please try again."
+    "role_not_found": "**{{-icon}} | {{-author}}, ** Role not found. Please check role ID.",
+    "guild_not_found": "**{{-icon}} | {{-author}}, ** Guild not found. Please try again.",
+    "bot_not_found": "**{{-icon}} | {{-author}}, ** Bot member not found. Please try again.",
+    "no_manageable_roles": "**{{-icon}} | {{-author}}, ** No manageable roles found. The bot needs roles below its highest role to manage.",
+    "role_selection_failed": "**{{-icon}} | {{-author}}, ** Failed to process role selection. Please try again.",
+    "config_not_found": "**{{-icon}} | {{-author}}, ** Reaction role configuration not found.",
+    "role_already_assigned": "**{{-icon}} | {{-author}}, ** You already have this role.",
+    "role_not_assigned": "**{{-icon}} | {{-author}}, ** You don't have this role.",
+    "unknown_role_change_type": "**{{-icon}} | {{-author}}, ** Unknown role change type.",
+    "dm_failed": "**{{-icon}} | {{-author}}, ** Failed to send DM. Please check your privacy settings.",
+    "role_assignment_failed": "**{{-icon}} | {{-author}}, ** Failed to assign/remove role. Please try again.",
+    "no_available_channels": "**{{-icon}} | {{-author}}, ** No available text channels for bot/webhook messages.",
+    "bot_member_not_found": "**{{-icon}} | {{-author}}, ** Bot member not found. Please try again."
   },
   "role_select": {
     "description": "Position: {{position}} | Members: {{members}}"

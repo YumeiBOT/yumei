@@ -1,7 +1,7 @@
 {
   "list_participant": "List of participants:",
   "leaderboard": {
-    "not_found": "**{{-icon}} | {{-author}},** Can't get request type",
+    "not_found": "**{{-icon}} | {{-author}}, ** Can't get request type",
     "title": "{{-icon}} **Leaderboard** {{-icon}}"
   },
   "xmas": {

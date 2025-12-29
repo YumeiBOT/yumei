@@ -15,19 +15,19 @@
     "name": "clear",
     "example": "",
     "description": "Xóa tin nhắn trong một nhóm",
-    "more_than_100": "Tôi không thể xóa nhiều hơn 100 tin nhắn !",
-    "less_than_1": "Tôi không thể xóa ít hơn 1 tin nhắn !",
-    "success": "Tôi đã xóa thành công {{amount}} tin nhắn",
-    "older_than_14d": "Bạn chỉ có thể xóa tin nhắn cách đây dưới 14 ngày",
-    "error": "Đã xảy ra lỗi khi xóa tin nhắn trong kênh này!",
-    "invalid_amount": "TODO"
+    "more_than_100": "**{{-icon}} | {{-author}}, ** Tôi không thể xóa nhiều hơn 100 tin nhắn !",
+    "less_than_1": "**{{-icon}} | {{-author}}, ** Tôi không thể xóa ít hơn 1 tin nhắn !",
+    "success": "**{{-icon}} | {{-author}}, ** Tôi đã xóa thành công {{amount}} tin nhắn",
+    "older_than_14d": "**{{-icon}} | {{-author}}, ** Bạn chỉ có thể xóa tin nhắn cách đây dưới 14 ngày",
+    "error": "**{{-icon}} | {{-author}}, ** Đã xảy ra lỗi khi xóa tin nhắn trong kênh này!",
+    "invalid_amount": "**{{-icon}} | {{-author}}, ** TODO"
   },
   "clearuser": {
     "name": "clearuser",
     "example": "",
     "description": "Xóa tin nhắn của một người dùng nào đó",
     "update_soon": "Sẽ sớm cập nhật thêm...",
-    "invalid_args": "TODO",
+    "invalid_args": "**{{-icon}} | {{-author}}, ** TODO",
     "user_not_found": "TODO"
   },
   "kick": {

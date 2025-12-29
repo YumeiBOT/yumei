@@ -3,12 +3,12 @@
     "name": "Khởi tạo Reaction Role",
     "description": "Tạo cấu hình reaction role mới",
     "example": "```{{-prefix}}{{alias}}```",
-    "already_exists": "{{-icon}} | {{-author}}, đã có một cấu hình reaction role đang trong quá trình thiết lập. Vui lòng hoàn thành hoặc hủy phiên hiện tại trước.",
-    "session_not_found": "{{-icon}} | {{-author}}, không tìm thấy phiên cấu hình reaction role đang hoạt động.",
-    "permission_error": "{{-icon}} | {{-author}}, bạn không có quyền quản lý vai trò trong máy chủ này.",
-    "session_cancelled": "{{-icon}} | {{-author}}, cấu hình reaction role đã được hủy.",
-    "session_completed": "{{-icon}} | {{-author}}, cấu hình reaction role đã được hoàn thành thành công! ID tin nhắn: {{messageId}}",
-    "error": "{{-icon}} | {{-author}}, đã xảy ra lỗi khi thiết lập cấu hình reaction role."
+    "already_exists": "**{{-icon}} | {{-author}}, ** Đã có một cấu hình reaction role đang trong quá trình thiết lập. Vui lòng hoàn thành hoặc hủy phiên hiện tại trước.",
+    "session_not_found": "**{{-icon}} | {{-author}}, ** Không tìm thấy phiên cấu hình reaction role đang hoạt động.",
+    "permission_error": "**{{-icon}} | {{-author}}, ** Bạn không có quyền quản lý vai trò trong máy chủ này.",
+    "session_cancelled": "**{{-icon}} | {{-author}}, ** Cấu hình reaction role đã được hủy.",
+    "session_completed": "**{{-icon}} | {{-author}}, ** Cấu hình reaction role đã được hoàn thành thành công! ID tin nhắn: {{messageId}}",
+    "error": "**{{-icon}} | {{-author}}, ** Đã xảy ra lỗi khi thiết lập cấu hình reaction role."
   },
   "flow": {
     "welcome": {
@@ -79,7 +79,7 @@
       "description": "**Đánh giá Cấu hình Cuối cùng:**\n\n**Phương thức:** {{method}}\n**Kênh:** <#{{channelId}}>\n**Loại tin nhắn:** {{messageType}}\n**Loại phản hồi:** {{replyType}}\n**Loại thay đổi vai trò:** {{roleChangeType}}\n\n**Vai trò:**\n{{rolesList}}\n\n**Nội dung tin nhắn:**\n{{messageContent}}\n\nVui lòng xác nhận cấu hình này:",
       "footer": "Phản ứng với ✅ để xác nhận hoặc ❌ để hủy"
     },
-    "proceeding_to_confirm": "{{-icon}} | Tiến đến xem xét cuối cùng và xác nhận..."
+    "proceeding_to_confirm": "**{{-icon}} | {{-author}}, ** Tiến đến xem xét cuối cùng và xác nhận..."
   },
   "methods": {
     "reaction": "Reaction (Emoji)",
@@ -186,19 +186,19 @@
     }
   },
   "errors": {
-    "role_not_found": "Không tìm thấy vai trò. Vui lòng kiểm tra ID vai trò.",
-    "guild_not_found": "Không tìm thấy máy chủ. Vui lòng thử lại.",
-    "bot_not_found": "Không tìm thấy thành viên bot. Vui lòng thử lại.",
-    "no_manageable_roles": "Không tìm thấy vai trò có thể quản lý. Bot cần vai trò dưới vai trò cao nhất của nó để quản lý.",
-    "role_selection_failed": "Không thể xử lý lựa chọn vai trò. Vui lòng thử lại.",
-    "config_not_found": "{{-icon}} | Không tìm thấy cấu hình reaction role.",
-    "role_already_assigned": "{{-icon}} | Bạn đã có vai trò này rồi.",
-    "role_not_assigned": "{{-icon}} | Bạn chưa có vai trò này.",
-    "unknown_role_change_type": "{{-icon}} | Loại thay đổi vai trò không xác định.",
-    "dm_failed": "{{-icon}} | Không thể gửi DM. Vui lòng kiểm tra cài đặt quyền riêng tư của bạn.",
-    "role_assignment_failed": "{{-icon}} | Không thể gán/xóa vai trò. Vui lòng thử lại.",
-    "no_available_channels": "{{-icon}} | Không có kênh văn bản nào khả dụng cho tin nhắn bot/webhook.",
-    "bot_member_not_found": "{{-icon}} | Không tìm thấy thành viên bot. Vui lòng thử lại."
+    "role_not_found": "**{{-icon}} | {{-author}}, ** Không tìm thấy vai trò. Vui lòng kiểm tra ID vai trò.",
+    "guild_not_found": "**{{-icon}} | {{-author}}, ** Không tìm thấy máy chủ. Vui lòng thử lại.",
+    "bot_not_found": "**{{-icon}} | {{-author}}, ** Không tìm thấy thành viên bot. Vui lòng thử lại.",
+    "no_manageable_roles": "**{{-icon}} | {{-author}}, ** Không tìm thấy vai trò có thể quản lý. Bot cần vai trò dưới vai trò cao nhất của nó để quản lý.",
+    "role_selection_failed": "**{{-icon}} | {{-author}}, ** Không thể xử lý lựa chọn vai trò. Vui lòng thử lại.",
+    "config_not_found": "**{{-icon}} | {{-author}}, ** Không tìm thấy cấu hình reaction role.",
+    "role_already_assigned": "**{{-icon}} | {{-author}}, ** Bạn đã có vai trò này rồi.",
+    "role_not_assigned": "**{{-icon}} | {{-author}}, ** Bạn chưa có vai trò này.",
+    "unknown_role_change_type": "**{{-icon}} | {{-author}}, ** Loại thay đổi vai trò không xác định.",
+    "dm_failed": "**{{-icon}} | {{-author}}, ** Không thể gửi DM. Vui lòng kiểm tra cài đặt quyền riêng tư của bạn.",
+    "role_assignment_failed": "**{{-icon}} | {{-author}}, ** Không thể gán/xóa vai trò. Vui lòng thử lại.",
+    "no_available_channels": "**{{-icon}} | {{-author}}, ** Không có kênh văn bản nào khả dụng cho tin nhắn bot/webhook.",
+    "bot_member_not_found": "**{{-icon}} | {{-author}}, ** Không tìm thấy thành viên bot. Vui lòng thử lại."
   },
   "role_select": {
     "description": "Vị trí: {{position}} | Thành viên: {{members}}"

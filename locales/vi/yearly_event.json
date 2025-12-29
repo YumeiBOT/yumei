@@ -1,7 +1,7 @@
 {
   "list_participant": "Những người tham gia:",
   "leaderboard": {
-    "not_found": "**{{- icon }}| {{-author }},** Không tìm thấy kiểu cần truy cứu",
+    "not_found": "**{{-icon}} | {{-author}}, ** Không tìm thấy kiểu cần truy cứu",
     "title": "{{- icon }} **Bảng xếp hạng** {{- icon }}"
   },
   "xmas": {

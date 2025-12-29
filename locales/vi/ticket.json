@@ -1,15 +1,15 @@
 {
   "errors": {
-    "panel_not_found": "Không tìm thấy bảng điều khiển vé.",
-    "panel_disabled": "Bảng điều khiển vé hiện đang bị vô hiệu hóa.",
-    "blacklisted": "Bạn không được phép tạo vé.",
-    "no_category": "Chưa cấu hình danh mục vé.",
-    "invalid_category": "Danh mục vé không hợp lệ.",
-    "no_permissions": "Bot thiếu quyền cần thiết.",
-    "creation_failed": "Không thể tạo vé. Vui lòng liên hệ quản trị viên máy chủ.",
-    "cooldown": "Vui lòng đợi {{seconds}} giây trước khi tạo vé khác."
+    "panel_not_found": "**{{-icon}} | {{-author}}, ** Không tìm thấy bảng điều khiển vé.",
+    "panel_disabled": "**{{-icon}} | {{-author}}, ** Bảng điều khiển vé hiện đang bị vô hiệu hóa.",
+    "blacklisted": "**{{-icon}} | {{-author}}, ** Bạn không được phép tạo vé.",
+    "no_category": "**{{-icon}} | {{-author}}, ** Chưa cấu hình danh mục vé.",
+    "invalid_category": "**{{-icon}} | {{-author}}, ** Danh mục vé không hợp lệ.",
+    "no_permissions": "**{{-icon}} | {{-author}}, ** Bot thiếu quyền cần thiết.",
+    "creation_failed": "**{{-icon}} | {{-author}}, ** Không thể tạo vé. Vui lòng liên hệ quản trị viên máy chủ.",
+    "cooldown": "**{{-icon}} | {{-author}}, ** Vui lòng đợi {{seconds}} giây trước khi tạo vé khác."
   },
   "success": {
-    "created": "Đã tạo vé: {{-channel}}"
+    "created": "**{{-icon}} | {{-author}}, ** Đã tạo vé: {{-channel}}"
   }
 }
