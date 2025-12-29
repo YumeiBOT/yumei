@@ -8,8 +8,8 @@
     "description": "Cài đặt ngôn ngữ"
   },
   "set_server_channel": {
-    "success": "**{{-emoji}} | {{-author }},** Đã thiết lập **{{type}}** tại <#{{channelId}}>",
-    "error": "**{{-emoji}} | {{-author }},** danh mục **{{type}}** không được hỗ trợ\n**{{-blankEmoji}} |** Danh mục hỗ trợ: {{supportTypes}}"
+    "success": "**{{-icon}} | {{-author }},** Đã thiết lập **{{type}}** tại <#{{channelId}}>",
+    "error": "**{{-icon}} | {{-author }},** danh mục **{{type}}** không được hỗ trợ\n**{{-blankEmoji}} |** Danh mục hỗ trợ: {{supportTypes}}"
   },
   "set_server_temp_voice": {
     "ask": {
@@ -36,63 +36,5 @@
       "initial_room": "Phòng vừa chọn không hợp lệ vui lòng chọn phòng trò chuyện",
       "timeout": "Hết thời gian cài đặt vui lòng làm lại từ đầu"
     }
-  },
-  "command_disable": {
-    "description": "Vô hiệu hóa một lệnh trong kênh này.",
-    "command_option": "ID lệnh cần vô hiệu hóa (ví dụ: help, ping)",
-    "success": "{{-icon}} | {{-author}}, lệnh `{{commandId}}` đã được **vô hiệu hóa** tại <#{{channelId}}>",
-    "already_disabled": "{{-icon}} | {{-author}}, lệnh `{{commandId}}` đã bị vô hiệu hóa tại <#{{channelId}}>",
-    "error": "{{-icon}} | {{-author}}, không thể vô hiệu hóa lệnh `{{commandId}}` tại <#{{channelId}}>. Vui lòng thử lại.",
-    "enabled_list": "Các lệnh đang bật trong kênh này: {{commands}}",
-    "no_enabled": "Không có lệnh nào đang bật trong kênh này.",
-    "disabled_title": "Các lệnh đã bị vô hiệu hóa trong kênh này",
-    "disabled_title_single": "Lệnh đã bị vô hiệu hóa: /{{commandId}}",
-    "disabled_list": "{{commands}}",
-    "no_disabled": "Không có lệnh nào bị vô hiệu hóa trong kênh này."
-  },
-  "command_enable": {
-    "description": "Kích hoạt lại một lệnh trong kênh này.",
-    "command_option": "ID lệnh cần kích hoạt (ví dụ: help, ping)",
-    "success": "{{-icon}} | {{-author}}, lệnh `{{commandId}}` đã được **kích hoạt** lại tại <#{{channelId}}>",
-    "not_disabled": "{{-icon}} | {{-author}}, lệnh `{{commandId}}` hiện không bị vô hiệu hóa tại <#{{channelId}}>",
-    "error": "{{-icon}} | {{-author}}, không thể kích hoạt lại lệnh `{{commandId}}` tại <#{{channelId}}>. Vui lòng thử lại.",
-    "disabled_list": "Các lệnh đã bị vô hiệu hóa trong kênh này: {{commands}}",
-    "no_disabled": "Không có lệnh nào bị vô hiệu hóa trong kênh này.",
-    "enabled_title": "Các lệnh đang được bật trong kênh này",
-    "available_list": "{{commands}}",
-    "no_enabled": "Không có lệnh nào đang được bật trong kênh này."
-  },
-  "command_disabled_error": "{{-icon}} | {{-author}}, lệnh `{{commandId}}` đã bị **vô hiệu hóa** trong kênh này.",
-  "config_confession": {
-    "name": "Cấu hình Confession",
-    "description": "Cấu hình kênh confession và thiết lập kiểm duyệt",
-    "confession_channel_option": "Kênh cho confessions",
-    "screening_option": "Bật kiểm duyệt confession",
-    "screening_channel_option": "Kênh kiểm duyệt confessions",
-    "success": "{{-icon}} | {{-author}}, cấu hình confession đã được cập nhật thành công",
-    "confession_channel_set": "{{-icon}} | {{-author}}, kênh confession đã được thiết lập tại <#{{channelId}}>",
-    "screening_enabled": "{{-icon}} | {{-author}}, kiểm duyệt confession đã được bật với kênh <#{{screeningChannelId}}>",
-    "screening_disabled": "{{-icon}} | {{-author}}, kiểm duyệt confession đã được tắt",
-    "error": "{{-icon}} | {{-author}}, không thể cập nhật cấu hình confession",
-    "invalid_channel": "{{-icon}} | {{-author}}, kênh không hợp lệ",
-    "example": "```{{-prefix}}config_confession #confessions on #screening\n{{-prefix}}config_confession #confessions off```"
-  },
-  "giveaway": {
-    "create_command_desc": "Khởi tạo giveaway: thời lượng, số người thắng, phần thưởng, mô tả huyền bí.",
-    "modal_title": "Giveaway Mới",
-    "modal_duration": "Thời lượng (ví dụ: 1h, 30m)",
-    "modal_winners": "Số người chiến thắng",
-    "modal_prize": "Phần thưởng",
-    "modal_description": "Mô tả (tối đa 1000 ký tự)",
-    "success": "{{-icon}} Giveaway đã được tạo thành công! Hãy chờ đợi vận may mỉm cười.",
-    "invalid_winners": "Vui lòng nhập số người chiến thắng hợp lệ (ít nhất 1).",
-    "invalid_duration": "Vui lòng nhập thời lượng hợp lệ (ví dụ: 1h, 30m).",
-    "cancelled": "Quá trình tạo giveaway đã được hủy bỏ. Mọi phép màu tạm dừng tại đây.",
-    "hosted_by": "Chủ trì",
-    "ends": "Kết thúc",
-    "join_not_found": "{{-icon}} Không tìm thấy giveaway này.",
-    "join_already": "{{-icon}} Bạn đã tham gia giveaway này rồi!",
-    "join_success": "{{-icon}} Bạn đã tham gia giveaway! Chúc may mắn và phép màu sẽ đến! 🎉",
-    "participants": "Người tham gia"
   }
 }

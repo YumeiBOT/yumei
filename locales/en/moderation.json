@@ -1,22 +1,15 @@
 {
-  "links": {
-    "blocked": "❌ {{-author}}, your message was removed because it contained a link."
-  },
   "ban": {
     "name": "ban",
     "example": "",
     "description": "Ban users from the server",
-    "user_option": "The user to ban from the server",
-    "reason_option": "The reason for banning the user",
     "success_ban_from": "You've been banned in {{guildName}}",
-    "success": "{{-icon}} The specified user has been successfully banned and received a notification!",
-    "success_no_notification": "{{-icon}} The user has been successfully banned, but has not received a notification!",
+    "success": "The specified user has been successfully banned and successfully received a notification!",
+    "success_no_notification": "The given user has been successfully banned, but has not received a notification!",
     "banned_by": "👤┆Banned by",
     "user_who_banned": "👤┆Banned user",
     "reason": "💬┆Reason",
-    "not_given": "Not given",
-    "invalid_member": "{{-icon}} Invalid member specified",
-    "error": "{{-icon}} Failed to ban the user"
+    "not_given": "Not given"
   },
   "clear": {
     "name": "clear",
@@ -35,23 +28,19 @@
     "description": "Clear message of someone",
     "invalid_args": "Please specify a valid number between 1 and 100 or a user mention",
     "user_not_found": "I cannot find the user you mentioned",
-    "update_soon": "More updates coming soon..."
+    "update_soon": "TODO"
   },
   "kick": {
     "name": "kick",
     "example": "",
     "description": "Kick users from the server",
-    "user_option": "The user to kick from the server",
-    "reason_option": "The reason for kicking the user",
-    "success": "{{-icon}} The specified user has been successfully kicked and received a notification!",
-    "success_kick_from": "You've been kicked from {{guildName}}",
-    "success_no_notification": "{{-icon}} The user has been successfully kicked, but has not received a notification!",
+    "success": "The specified user has been successfully banned and successfully received a notification!",
+    "success_kick_from": "You've been banned in {{guildName}}",
+    "success_no_notification": "The given user has been successfully banned, but has not received a notification!",
     "kicked_by": "👤┆Kicked by",
     "reason": "💬┆Reason",
     "user_who_kicked": "👤┆Kicked user",
-    "not_given": "Not given",
-    "invalid_member": "{{-icon}} Invalid member specified",
-    "error": "{{-icon}} Failed to kick the user"
+    "not_given": "Not given"
   },
   "mute": {
     "name": "timeout",
@@ -61,25 +50,6 @@
     "success": "{{userName}} successfully timed out {{prettyMilliseconds}}",
     "not_given": "Not given",
     "reason": "💬┆Reason"
-  },
-  "timeout": {
-    "name": "timeout",
-    "example": "",
-    "description": "Timeout users for a certain time",
-    "user_option": "The user to timeout",
-    "duration_option": "The duration of the timeout (e.g., 1h, 30m, 1d)",
-    "reason_option": "The reason for the timeout",
-    "success_timeout_from": "You've been timed out in {{guildName}}",
-    "success": "{{-icon}} The user has been successfully timed out!",
-    "timed_out_by": "👤┆Timed out by",
-    "duration": "⏰┆Duration",
-    "user_who_timed_out": "👤┆Timed out user",
-    "reason": "💬┆Reason",
-    "not_given": "Not given",
-    "invalid_member": "{{-icon}} Invalid member specified",
-    "already_timed_out": "{{-icon}} User is already timed out",
-    "invalid_duration": "{{-icon}} Invalid duration. Maximum is {{maxDays}} days",
-    "error": "{{-icon}} Failed to timeout the user"
   },
   "warn": {
     "name": "warn",
@@ -93,23 +63,5 @@
     "reason": "💬┆Reason",
     "user_who_warned": "👤┆User",
     "number_warn": "💬┆Number of warn"
-  },
-  "setwarn": {
-    "name": "setwarn",
-    "example": "",
-    "description": "Set warning count for a user",
-    "user_option": "The user to set warnings for",
-    "count_option": "The warning count to set (0 to clear)",
-    "reason_option": "Reason for changing warning count",
-    "success": "{{-icon}} Warning count has been set to {{count}}!",
-    "success_cleared": "{{-icon}} All warnings have been cleared!",
-    "adjusted_in": "Warnings adjusted in {{guildName}}",
-    "adjusted_by": "👤┆Adjusted by",
-    "new_count": "🔢┆New count",
-    "reason": "💬┆Reason",
-    "not_given": "Not given",
-    "invalid_count": "{{-icon}} Count must be 0 or greater",
-    "invalid_member": "{{-icon}} Invalid member specified",
-    "error": "{{-icon}} Failed to set warning count"
   }
 }

@@ -3,8 +3,8 @@
     "description": "Inventory's item",
     "describle": "Item usage tutorial:",
     "tutorial": "use <item_code> to use item",
-    "item_content": "{{- itemIcon }}: **{{quantity}}**",
-    "pagination": "Page {{ current_page }}/{{ total_page }}"
+    "item_content": "{{-itemIcon}}: **{{quantity}}**",
+    "pagination": "Page {{current_page}}/{{total_page}}"
   },
   "use": {
     "err1": "Please input item code you want to use",

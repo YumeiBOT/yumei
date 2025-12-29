@@ -1,22 +1,15 @@
 {
-  "links": {
-    "blocked": "❌ {{-author}}, tin nhắn của bạn đã bị xóa vì chứa liên kết."
-  },
   "ban": {
     "name": "ban",
     "example": "",
     "description": "Cấm người dùng khỏi server",
-    "user_option": "Người dùng cần cấm khỏi server",
-    "reason_option": "Lý do cấm người dùng",
     "success_ban_from": "Bạn đã bị cấm tại {{guildName}}",
-    "success": "{{-icon}} Người dùng được chỉ định đã bị cấm thành công và nhận được thông báo!",
-    "success_no_notification": "{{-icon}} Người dùng cụ thể đã bị cấm thành công nhưng chưa nhận được thông báo!",
+    "success": "Người dùng được chỉ định đã bị cấm thành công và nhận được thông báo!",
+    "success_no_notification": "Người dùng cụ thể đã bị cấm thành công nhưng chưa nhận được thông báo!",
     "banned_by": "👤┆Bị cấm bởi",
     "user_who_banned": "👤┆Người bị cấm",
     "reason": "💬┆Lý do",
-    "not_given": "Không có lý do cụ thể",
-    "invalid_member": "{{-icon}} Thành viên không hợp lệ",
-    "error": "{{-icon}} Không thể cấm người dùng"
+    "not_given": "Không có lý do cụ thể"
   },
   "clear": {
     "name": "clear",
@@ -27,31 +20,27 @@
     "success": "Tôi đã xóa thành công {{amount}} tin nhắn",
     "older_than_14d": "Bạn chỉ có thể xóa tin nhắn cách đây dưới 14 ngày",
     "error": "Đã xảy ra lỗi khi xóa tin nhắn trong kênh này!",
-    "invalid_amount": "Vui lòng nhập một số hợp lệ từ 1 đến 100"
+    "invalid_amount": "TODO"
   },
   "clearuser": {
     "name": "clearuser",
     "example": "",
     "description": "Xóa tin nhắn của một người dùng nào đó",
     "update_soon": "Sẽ sớm cập nhật thêm...",
-    "invalid_args": "Vui lòng đề cập người dùng và nhập một số hợp lệ từ 1 đến 100",
-    "user_not_found": "Không thể tìm thấy người dùng bạn đã đề cập"
+    "invalid_args": "TODO",
+    "user_not_found": "TODO"
   },
   "kick": {
     "name": "kick",
     "example": "",
     "description": "Xóa người dùng khỏi server",
-    "user_option": "Người dùng cần xóa khỏi server",
-    "reason_option": "Lý do xóa người dùng",
-    "success": "{{-icon}} Người dùng được chỉ định đã bị xóa thành công và nhận được thông báo!",
+    "success": "Người dùng được chỉ định đã bị xóa thành công và nhận được thông báo!",
     "success_kick_from": "Bạn đã bị xóa khỏi server {{guildName}}",
-    "success_no_notification": "{{-icon}} Người dùng cụ thể đã bị xóa thành công nhưng chưa nhận được thông báo!",
+    "success_no_notification": "Người dùng cụ thể đã bị xóa thành công nhưng chưa nhận được thông báo!",
     "kicked_by": "👤┆Bị xóa bởi",
     "reason": "💬┆Lý do",
     "user_who_kicked": "👤┆Người bị xóa",
-    "not_given": "Không có lý do cụ thể",
-    "invalid_member": "{{-icon}} Thành viên không hợp lệ",
-    "error": "{{-icon}} Không thể xóa người dùng"
+    "not_given": "Không có lý do cụ thể"
   },
   "mute": {
     "name": "timeout",
@@ -61,25 +50,6 @@
     "success": "{{userName}} đã bị tắt tiếng trong {{prettyMilliseconds}}",
     "not_given": "Không có lý do cụ thể",
     "reason": "💬┆Lý do"
-  },
-  "timeout": {
-    "name": "timeout",
-    "example": "",
-    "description": "Tắt tiếng người dùng trong một khoảng thời gian nhất định",
-    "user_option": "Người dùng cần tắt tiếng",
-    "duration_option": "Thời gian tắt tiếng (ví dụ: 1h, 30m, 1d)",
-    "reason_option": "Lý do tắt tiếng",
-    "success_timeout_from": "Bạn đã bị tắt tiếng trong {{guildName}}",
-    "success": "{{-icon}} Người dùng đã bị tắt tiếng thành công!",
-    "timed_out_by": "👤┆Bị tắt tiếng bởi",
-    "duration": "⏰┆Thời gian",
-    "user_who_timed_out": "👤┆Người bị tắt tiếng",
-    "reason": "💬┆Lý do",
-    "not_given": "Không có lý do cụ thể",
-    "invalid_member": "{{-icon}} Thành viên không hợp lệ",
-    "already_timed_out": "{{-icon}} Người dùng đã bị tắt tiếng",
-    "invalid_duration": "{{-icon}} Thời gian không hợp lệ. Tối đa là {{maxDays}} ngày",
-    "error": "{{-icon}} Không thể tắt tiếng người dùng"
   },
   "warn": {
     "name": "warn",
@@ -93,23 +63,5 @@
     "reason": "💬┆Lý do",
     "user_who_warned": "👤┆Người dùng",
     "number_warn": "💬┆Số lần cảnh báo"
-  },
-  "setwarn": {
-    "name": "setwarn",
-    "example": "",
-    "description": "Đặt số lượng cảnh báo cho người dùng",
-    "user_option": "Người dùng cần đặt số lượng cảnh báo",
-    "count_option": "Số lượng cảnh báo cần đặt (0 để xóa tất cả)",
-    "reason_option": "Lý do thay đổi số lượng cảnh báo",
-    "success": "{{-icon}} Số lượng cảnh báo đã được đặt thành {{count}}!",
-    "success_cleared": "{{-icon}} Tất cả cảnh báo đã được xóa!",
-    "adjusted_in": "Đã điều chỉnh cảnh báo trong {{guildName}}",
-    "adjusted_by": "👤┆Điều chỉnh bởi",
-    "new_count": "🔢┆Số mới",
-    "reason": "💬┆Lý do",
-    "not_given": "Không có lý do cụ thể",
-    "invalid_count": "{{-icon}} Số lượng phải lớn hơn hoặc bằng 0",
-    "invalid_member": "{{-icon}} Thành viên không hợp lệ",
-    "error": "{{-icon}} Không thể đặt số lượng cảnh báo"
   }
 }

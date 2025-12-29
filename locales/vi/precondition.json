@@ -1,7 +1,0 @@
-{
-  "owner_only": "**{{-icon}} | {{-author}},** Lệnh chỉ dùng cho chủ sở hữu BOT",
-  "server_created": {
-    "error": "**{{-icon}} | {{-author}},** Không có hoặc không thể tạo bản ghi của server"
-  },
-  "cooldown": "**{{-icon}} | {{author}},** Hãy chờ {{-remaining}} trước khi bạn có thể sử dụng lại `{{commandId}}`. Thời gian chờ giữa 2 lần sử dụng: `{{interval}}` giây."
-}

@@ -1,7 +1,0 @@
-{
-  "owner_only": "**{{-icon}} | {{-author}},** This command can only be used by the owner.",
-  "server_created": {
-    "error": "**{{-icon}} | {{-author}},** Not found or can not create server record"
-  },
-  "cooldown": "**{{-icon}} | {{author}},** Please wait {{-remaining}} before you can use `{{commandId}}` again. Cooldown interval: `{{interval}}` seconds."
-}

@@ -1,6 +1,6 @@
 {
   "set_server_language": {
-    "name": "Set Server Language",
+    "name": "Set Server Language command",
     "success": "**{{-icon}} | **Current language: {{-lng}}",
     "error": "**{{-icon}} | **Some error, please try again",
     "no_support_lng": "**{{-icon}} | {{-botName}}** Does not support this language!!!",
@@ -8,90 +8,33 @@
     "description": "Set language server"
   },
   "set_server_channel": {
-    "success": "**{{-emoji}}  | {{- author }},** I have set **{{type}}** at <#{{channelId}}>",
-    "error": "**{{-emoji}} | {{- author }},** Input type **{{type}}** is not supported \n**{{-blankEmoji}} |** List support type: {{supportTypes}}"
+    "success": "**{{-icon}}  | {{-author}},** I have set **{{type}}** at <#{{channelId}}>",
+    "error": "**{{-icon}} | {{-author}},** Input type **{{type}}** is not supported \n**{{-blankEmoji}} |** List support type: {{supportTypes}}"
   },
   "set_server_temp_voice": {
     "ask": {
-      "initial_room": "Vui lòng chọn phòng khởi tạo `( Kênh tham gia sẽ tạo ra phòng tạm )`. \n**Hướng dẫn : Nhập ** `<!tên_phòng>` hoặc `<#id_phòng>` hoặc `id_phòng`",
-      "limit": "Vui lòng nhập vào số người tối đa của room tự động tạo",
-      "type_room": "Vui lòng chọn loại phòng"
+      "initial_room": "Vui lòng chọn phòng khởi tạo `( Kênh tham gia sẽ tạo ra phòng tạm )`. \n**Hướng dẫn : Nhập ** `<!tên_phòng>` hoặc `<#id_phòng>` hoặc `id_phòng`",
+      "limit": "Vui lòng nhập vào số người tối đa của room tự động tạo",
+      "type_room": "Vui lòng chọn loại phòng"
     },
     "room_type": {
       "private": {
         "label": "Riêng tư",
-        "description": "Phòng riêng tư chỉ người được cho phép mới có thể vào"
+        "description": "Phòng riêng tư chỉ người được cho phép mới có thể vào"
       },
       "public": {
         "label": "Công khai",
-        "description": "Phòng công khai ai cũng có thể vào"
+        "description": "Phòng công khai ai cũng có thể vào"
       }
     },
     "answer": {
-      "initial_room": "Phòng khởi tạo được chọn là : <#{{-id}}>",
-      "type_room": "Bạn đã chọn phòng loại: ",
-      "limit": "Số lượng thành viên tối đa của phòng tự động là : {{-limit}}"
+      "initial_room": "Phòng khởi tạo được chọn là : <#{{-id}}>",
+      "type_room": "Bạn đã chọn phòng loại: ",
+      "limit": "Số lượng thành viên tối đa của phòng tự động là : {{-limit}}"
     },
     "error": {
-      "initial_room": "Phòng vừa chọn không hợp lệ vui lòng chọn phòng trò chuyện",
-      "timeout": "Hết thời gian cài đặt vui lòng làm lại từ đầu"
+      "initial_room": "Phòng vừa chọn không hợp lệ vui lòng chọn phòng trò chuyện",
+      "timeout": "Hết thời gian cài đặt vui lòng làm lại từ đầu"
     }
-  },
-  "command_disable": {
-    "description": "Disable a command in this channel.",
-    "command_option": "Command ID to disable (e.g. help, ping)",
-    "success": "{{-icon}} | {{-author}}, command `{{commandId}}` is now **disabled** in <#{{channelId}}>",
-    "already_disabled": "{{-icon}} | {{-author}}, command `{{commandId}}` is already disabled in <#{{channelId}}>",
-    "error": "{{-icon}} | {{-author}}, failed to disable command `{{commandId}}` in <#{{channelId}}>",
-    "enabled_list": "Enabled commands in this channel: {{commands}}",
-    "no_enabled": "No enabled commands in this channel.",
-    "disabled_title": "Disabled commands in this channel",
-    "disabled_title_single": "Disabled command: /{{commandId}}",
-    "disabled_list": "{{commands}}",
-    "no_disabled": "No commands are disabled in this channel."
-  },
-  "command_enable": {
-    "description": "Enable a command in this channel.",
-    "command_option": "Command ID to enable (e.g. help, ping)",
-    "success": "{{-icon}} | {{-author}}, command `{{commandId}}` is now **enabled** in <#{{channelId}}>",
-    "not_disabled": "{{-icon}} | {{-author}}, command `{{commandId}}` is not disabled in <#{{channelId}}>",
-    "error": "{{-icon}} | {{-author}}, failed to enable command `{{commandId}}` in <#{{channelId}}>",
-    "disabled_list": "Disabled commands in this channel: {{commands}}",
-    "no_disabled": "No disabled commands in this channel.",
-    "enabled_title": "Enabled commands in this channel",
-    "available_list": "{{commands}}",
-    "no_enabled": "No commands are enabled in this channel."
-  },
-  "command_disabled_error": "{{-icon}} | {{-author}}, command `{{commandId}}` is **disabled** in this channel.",
-  "config_confession": {
-    "name": "Configure Confession",
-    "description": "Configure confession channels and screening settings",
-    "confession_channel_option": "Channel for confessions",
-    "screening_option": "Enable confession screening",
-    "screening_channel_option": "Channel for screening confessions",
-    "success": "{{-icon}} | {{-author}}, confession configuration updated successfully",
-    "confession_channel_set": "{{-icon}} | {{-author}}, confession channel set to <#{{channelId}}>",
-    "screening_enabled": "{{-icon}} | {{-author}}, confession screening enabled with channel <#{{screeningChannelId}}>",
-    "screening_disabled": "{{-icon}} | {{-author}}, confession screening disabled",
-    "error": "{{-icon}} | {{-author}}, failed to update confession configuration",
-    "invalid_channel": "{{-icon}} | {{-author}}, invalid channel provided",
-    "example": "```{{-prefix}}config_confession #confessions on #screening\n{{-prefix}}config_confession #confessions off```"
-  },
-  "giveaway": {
-    "create_command_desc": "Start a new giveaway with duration, winners, prize, and description.",
-    "modal_title": "New Giveaway",
-    "modal_duration": "Duration (e.g. 1h, 30m)",
-    "modal_winners": "Number of Winners",
-    "modal_prize": "Prize",
-    "modal_description": "Description (max 1000 chars)",
-    "success": "{{-icon}} Giveaway created successfully!",
-    "invalid_winners": "Please enter a valid number of winners (at least 1).",
-    "invalid_duration": "Please enter a valid duration (e.g. 1h, 30m).",
-    "hosted_by": "Hosted by",
-    "ends": "Ends",
-    "join_not_found": "{{-icon}} Giveaway not found.",
-    "join_already": "{{-icon}} You have already joined this giveaway!",
-    "join_success": "{{-icon}} You have joined the giveaway! 🎉",
-    "participants": "Participants"
   }
 }
