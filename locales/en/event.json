@@ -1,3 +1,20 @@
 {
-  "mention_prefix": "My prefix(es) in this guild is: `{{-prefixes}}`"
+  "mention_prefix": "My prefix(es) in this guild is: `{{-prefixes}}`",
+  "action_log": {
+    "member_update": {
+      "title": "Member Updated",
+      "desc": "{{-icon}} Member updated by {{-moderator}}\n**Author:** {{-author}}\n**Target:** {{-target}}",
+      "avatar_changed": "Avatar changed",
+      "nickname_changed": "Nickname changed from `{{-old}}` to `{{-new}}`",
+      "nickname_added": "Nickname added: `{{-new}}`",
+      "nickname_removed": "Nickname removed: `{{-old}}`",
+      "roles_added": "Roles added: {{-roles}}",
+      "roles_removed": "Roles removed: {{-roles}}",
+      "timeout_added": "Member timed out until {{-until}}",
+      "timeout_removed": "Timeout removed",
+      "username_changed": "Username changed from `{{-old}}` to `{{-new}}`",
+      "discriminator_changed": "Discriminator changed from `{{-old}}` to `{{-new}}`",
+      "no_changes": "No changes detected"
+    }
+  }
 }

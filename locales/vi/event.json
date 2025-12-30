@@ -1,3 +1,20 @@
 {
-  "mention_prefix": "Tiếp đầu ngữ trong server: `{{-prefixes}}`"
+  "mention_prefix": "Tiếp đầu ngữ trong server: `{{-prefixes}}`",
+  "action_log": {
+    "member_update": {
+      "title": "Thành Viên Đã Cập Nhật",
+      "desc": "{{-icon}} Thành viên được cập nhật bởi {{-moderator}}\n**Tác giả:** {{-author}}\n**Mục tiêu:** {{-target}}",
+      "avatar_changed": "Ảnh đại diện đã thay đổi",
+      "nickname_changed": "Biệt danh thay đổi từ `{{-old}}` thành `{{-new}}`",
+      "nickname_added": "Đã thêm biệt danh: `{{-new}}`",
+      "nickname_removed": "Đã xóa biệt danh: `{{-old}}`",
+      "roles_added": "Đã thêm vai trò: {{-roles}}",
+      "roles_removed": "Đã xóa vai trò: {{-roles}}",
+      "timeout_added": "Thành viên bị giới hạn cho đến {{-until}}",
+      "timeout_removed": "Đã xóa giới hạn",
+      "username_changed": "Tên người dùng thay đổi từ `{{-old}}` thành `{{-new}}`",
+      "discriminator_changed": "Discriminator thay đổi từ `{{-old}}` thành `{{-new}}`",
+      "no_changes": "Không phát hiện thay đổi"
+    }
+  }
 }
