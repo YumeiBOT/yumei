@@ -67,15 +67,19 @@
   },
   "whitelist": {
     "add_button": "Thêm",
+    "add_external_button": "Thêm từ bên ngoài",
     "remove_button": "Xóa",
     "menu_title": "Quản lý (Danh sách trắng)",
     "select_add_placeholder": "Chọn người dùng để cấp quyền PrioritySpeaker",
+    "select_add_external_placeholder": "Tìm kiếm người dùng để thêm vào danh sách trắng",
     "select_remove_placeholder": "Chọn người dùng để thu hồi quyền PrioritySpeaker",
     "select_add_user": "Vui lòng chọn người dùng để thêm vào danh sách trắng.",
+    "select_add_external_user": "Tìm kiếm và chọn người dùng để thêm vào danh sách trắng.",
     "select_remove_user": "Vui lòng chọn người dùng để xóa khỏi danh sách trắng.",
     "no_eligible_users": "**{{-icon}} | {{-author}},** Tất cả người dùng trong kênh đều đã có quyền PrioritySpeaker.",
     "no_whitelisted_users": "**{{-icon}} | {{-author}},** Không có người dùng nào có quyền PrioritySpeaker trong kênh này.",
     "added": "**{{-icon}} | {{-author}}** Đã thêm {{-target}}",
+    "added_external": "**{{-icon}} | {{-author}}** Đã thêm {{-count}} người dùng vào danh sách trắng",
     "removed": "**{{-icon}} | {{-author}}** Đã xóa {{-target}}"
   },
   "interaction": {
@@ -99,6 +103,7 @@
     "select_mute_user": "Vui lòng chọn người bạn muốn tắt tiếng.",
     "select_deafen_user": "Vui lòng chọn người bạn muốn tắt tai nghe.",
     "user_not_found": "Không tìm thấy người dùng trong kênh thoại.",
+    "no_users_selected": "**{{-icon}} | {{-author}},** Không có người dùng nào được chọn.",
     "updating": "Đang cập nhật ...",
     "select_placeholder": "Chưa chọn gì",
     "unknown_user": "người dùng"

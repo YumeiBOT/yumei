@@ -65,15 +65,19 @@
   },
   "whitelist": {
     "add_button": "Add",
+    "add_external_button": "Add External",
     "remove_button": "Remove",
     "menu_title": "Manage (Whitelist)",
     "select_add_placeholder": "Select user to grant PrioritySpeaker",
+    "select_add_external_placeholder": "Search users to add to whitelist",
     "select_remove_placeholder": "Select user to revoke PrioritySpeaker",
     "select_add_user": "Please select a user to add to the whitelist.",
+    "select_add_external_user": "Search and select users to add to the whitelist.",
     "select_remove_user": "Please select a user to remove from the whitelist.",
     "no_eligible_users": "**{{-icon}} | {{-author}},** All users in the channel already have PrioritySpeaker permission.",
     "no_whitelisted_users": "**{{-icon}} | {{-author}},** There are no users with PrioritySpeaker permission in this channel.",
     "added": "**{{-icon}} | {{-author}}** Added {{-target}}",
+    "added_external": "**{{-icon}} | {{-author}}** Added {{-count}} user(s) to whitelist",
     "removed": "**{{-icon}} | {{-author}}** Removed {{-target}}"
   },
   "interaction": {
@@ -97,6 +101,7 @@
     "select_mute_user": "Please select the one you want to mute.",
     "select_deafen_user": "Please select the one you want to deafen.",
     "user_not_found": "User not found in voice channel.",
+    "no_users_selected": "**{{-icon}} | {{-author}},** No users selected.",
     "updating": "Updating ...",
     "select_placeholder": "Nothing selected",
     "unknown_user": "the user"
