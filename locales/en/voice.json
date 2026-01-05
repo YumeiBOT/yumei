@@ -62,5 +62,46 @@
     "embed_footer": "Use the command buttons to modify settings",
     "success": "**{{-icon}} | {{-author}},** Voice settings have been updated",
     "error": "**{{-icon}} | {{-author}},** An error occurred while updating voice settings"
+  },
+  "interaction": {
+    "lock": "**🔒 | {{-author}}** Locked the voice channel",
+    "unlock": "**🔓 | {{-author}}** Unlocked the voice channel",
+    "hide": "**👁️ | {{-author}}** Hidden the voice channel",
+    "show": "**👁️ | {{-author}}** Shown the voice channel",
+    "mute": "**🔇 | {{-author}}** Muted the voice channel",
+    "unmute": "**🔊 | {{-author}}** Unmuted the voice channel",
+    "user_mute": "**{{-icon}} | {{-author}}** Muted {{-target}} in the voice channel",
+    "user_unmute": "**{{-icon}} | {{-author}}** Unmuted {{-target}} in the voice channel",
+    "user_deafen": "**{{-icon}} | {{-author}}** Deafened {{-target}} in the voice channel",
+    "user_undeafen": "**{{-icon}} | {{-author}}** Undeafened {{-target}} in the voice channel",
+    "ban": "**{{-icon}} | {{-author}}** Banned {{-target}} from the voice channel",
+    "kick": "**{{-icon}} | {{-author}}** Kicked {{-target}} from the voice channel",
+    "transfer": "**{{-icon}} | {{-author}}** Transferred ownership to {{-target}}",
+    "select_new_owner": "Please select the new owner.",
+    "no_users_found": "Error: Cannot find users in the voice channel.",
+    "select_ban_user": "Please select the one you want to ban.",
+    "select_kick_user": "Please select the one you want to kick.",
+    "select_mute_user": "Please select the one you want to mute.",
+    "select_deafen_user": "Please select the one you want to deafen.",
+    "user_not_found": "User not found in voice channel.",
+    "updating": "Updating ...",
+    "select_placeholder": "Nothing selected",
+    "unknown_user": "the user"
+  },
+  "modal": {
+    "change_name": {
+      "title": "Change VC Name",
+      "label": "Name",
+      "placeholder": "Type name here",
+      "invalid_input": "**{{-icon}} | {{-author}}** Invalid name input. Name must be between 1-100 characters.",
+      "success": "**{{-icon}} | {{-author}}** Changed voice channel name to: {{-name}}"
+    },
+    "set_limit": {
+      "title": "Set User limit",
+      "label": "User limit",
+      "placeholder": "Type number here",
+      "invalid_input": "**{{-icon}} | {{-author}}** Invalid limit input. Please enter a number between 0-99.",
+      "success": "**{{-icon}} | {{-author}}** Set voice channel user limit to: {{-limit}}"
+    }
   }
 }
