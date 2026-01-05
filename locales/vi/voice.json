@@ -68,15 +68,15 @@
   "whitelist": {
     "add_button": "Thêm",
     "remove_button": "Xóa",
-    "menu_title": "Quản lý PrioritySpeaker (Danh sách trắng)",
+    "menu_title": "Quản lý (Danh sách trắng)",
     "select_add_placeholder": "Chọn người dùng để cấp quyền PrioritySpeaker",
     "select_remove_placeholder": "Chọn người dùng để thu hồi quyền PrioritySpeaker",
     "select_add_user": "Vui lòng chọn người dùng để thêm vào danh sách trắng.",
     "select_remove_user": "Vui lòng chọn người dùng để xóa khỏi danh sách trắng.",
     "no_eligible_users": "**{{-icon}} | {{-author}},** Tất cả người dùng trong kênh đều đã có quyền PrioritySpeaker.",
     "no_whitelisted_users": "**{{-icon}} | {{-author}},** Không có người dùng nào có quyền PrioritySpeaker trong kênh này.",
-    "added": "**{{-icon}} | {{-author}}** Đã cấp quyền PrioritySpeaker cho {{-target}}",
-    "removed": "**{{-icon}} | {{-author}}** Đã thu hồi quyền PrioritySpeaker từ {{-target}}"
+    "added": "**{{-icon}} | {{-author}}** Đã thêm {{-target}}",
+    "removed": "**{{-icon}} | {{-author}}** Đã xóa {{-target}}"
   },
   "interaction": {
     "lock": "**🔒 | {{-author}}** Đã khóa kênh thoại",
