@@ -63,6 +63,19 @@
     "success": "**{{-icon}} | {{-author}},** Voice settings have been updated",
     "error": "**{{-icon}} | {{-author}},** An error occurred while updating voice settings"
   },
+  "whitelist": {
+    "add_button": "Add",
+    "remove_button": "Remove",
+    "menu_title": "Manage PrioritySpeaker (Whitelist)",
+    "select_add_placeholder": "Select user to grant PrioritySpeaker",
+    "select_remove_placeholder": "Select user to revoke PrioritySpeaker",
+    "select_add_user": "Please select a user to add to the whitelist.",
+    "select_remove_user": "Please select a user to remove from the whitelist.",
+    "no_eligible_users": "**{{-icon}} | {{-author}},** All users in the channel already have PrioritySpeaker permission.",
+    "no_whitelisted_users": "**{{-icon}} | {{-author}},** There are no users with PrioritySpeaker permission in this channel.",
+    "added": "**{{-icon}} | {{-author}}** Granted PrioritySpeaker permission to {{-target}}",
+    "removed": "**{{-icon}} | {{-author}}** Revoked PrioritySpeaker permission from {{-target}}"
+  },
   "interaction": {
     "lock": "**🔒 | {{-author}}** Locked the voice channel",
     "unlock": "**🔓 | {{-author}}** Unlocked the voice channel",
