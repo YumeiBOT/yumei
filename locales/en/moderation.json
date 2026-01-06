@@ -107,5 +107,18 @@
     "user_who_warned": "👤┆User",
     "number_warn": "💬┆Number of warn",
     "error": "**{{-icon}} | {{-author}}, ** An error occurred while trying to warn the user"
+  },
+  "thread_remove": {
+    "name": "thread_remove",
+    "example": "",
+    "description": "Remove a user from the thread",
+    "user_option": "The user to remove from the thread",
+    "archived": "**{{-icon}} | {{-author}}, ** This thread is archived",
+    "not_member": "**{{-icon}} | {{-author}}, ** You are not a member of this thread",
+    "target_not_member": "**{{-icon}} | {{-author}}, ** {{target}} is not a member of this thread",
+    "success": "**{{-icon}} | {{-author}}, ** Successfully removed {{target}} from the thread",
+    "error": "**{{-icon}} | {{-author}}, ** An error occurred while removing the user",
+    "invalid_usage": "**{{-icon}} | {{-author}}, ** Invalid usage. Mention a user to remove",
+    "not_thread": "**{{-icon}} | {{-author}}, ** This command can only be used in threads"
   }
 }

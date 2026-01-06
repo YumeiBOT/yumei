@@ -4,12 +4,20 @@
     "panel_disabled": "**{{-icon}} | {{-author}}, ** This ticket panel is currently disabled.",
     "blacklisted": "**{{-icon}} | {{-author}}, ** You are not allowed to create tickets.",
     "no_category": "**{{-icon}} | {{-author}}, ** Ticket category not configured.",
+    "no_panel_channel": "**{{-icon}} | {{-author}}, ** Panel channel must be configured for thread mode.",
     "invalid_category": "**{{-icon}} | {{-author}}, ** Invalid ticket category.",
     "no_permissions": "**{{-icon}} | {{-author}}, ** Bot lacks required permissions.",
     "creation_failed": "**{{-icon}} | {{-author}}, ** Failed to create ticket. Please contact server admin.",
-    "cooldown": "**{{-icon}} | {{-author}}, ** Please wait {{seconds}} seconds before creating another ticket."
+    "cooldown": "**{{-icon}} | {{-author}}, ** Please wait {{seconds}} seconds before creating another ticket.",
+    "form_not_found": "**{{-icon}} | {{-author}}, ** Form configuration not found.",
+    "form_load_failed": "**{{-icon}} | {{-author}}, ** Failed to load ticket form.",
+    "form_submission_failed": "**{{-icon}} | {{-author}}, ** Failed to process form submission.",
+    "thread_parent_invalid": "**{{-icon}} | {{-author}}, ** Thread parent must be a text channel.",
+    "no_thread_permission": "**{{-icon}} | {{-author}}, ** Bot lacks permission to create threads."
   },
   "success": {
-    "created": "**{{-icon}} | {{-author}}, ** Ticket created: {{-channel}}"
+    "created": "**{{-icon}} | {{-author}}, ** Ticket created: {{-channel}}",
+    "form_submitted": "**{{-icon}} | {{-author}}, ** Form submitted! Ticket created: {{-channel}}",
+    "thread_created": "**{{-icon}} | {{-author}}, ** Ticket thread created: {{-channel}}"
   }
 }
