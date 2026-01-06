@@ -107,5 +107,18 @@
     "user_who_warned": "👤┆Người dùng",
     "number_warn": "💬┆Số lần cảnh báo",
     "error": "**{{-icon}} | {{-author}}, ** Đã xảy ra lỗi khi cố gắng cảnh báo người dùng"
+  },
+  "thread_remove": {
+    "name": "thread_remove",
+    "example": "/thread_remove @user",
+    "description": "Xóa thành viên khỏi luồng thảo luận này",
+    "user_option": "Thành viên cần xóa khỏi luồng",
+    "not_thread": "**{{-icon}} | {{-author}}, ** Lệnh này chỉ có thể được sử dụng trong luồng thảo luận",
+    "archived": "**{{-icon}} | {{-author}}, ** Không thể xóa thành viên khỏi luồng đã lưu trữ",
+    "not_member": "**{{-icon}} | {{-author}}, ** Bạn phải là thành viên của luồng riêng tư này để xóa người khác",
+    "target_not_member": "**{{-icon}} | {{-author}}, ** {{target}} không phải là thành viên của luồng này",
+    "success": "**{{-icon}} | {{-author}}, ** Đã xóa thành công {{target}} khỏi luồng",
+    "error": "**{{-icon}} | {{-author}}, ** Không thể xóa thành viên khỏi luồng",
+    "invalid_usage": "**{{-icon}} | {{-author}}, ** Cách dùng: /thread_remove @user"
   }
 }

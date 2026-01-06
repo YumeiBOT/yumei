@@ -77,7 +77,7 @@
     "no_eligible_users": "**{{-icon}} | {{-author}},** All users in the channel already have PrioritySpeaker permission.",
     "no_whitelisted_users": "**{{-icon}} | {{-author}},** There are no users with PrioritySpeaker permission in this channel.",
     "added": "**{{-icon}} | {{-author}}** Added {{-target}}",
-    "added_external": "**{{-icon}} | {{-author}}** Added {{-count}} user(s) to whitelist",
+    "added_external": "**{{-icon}} | {{-author}}** Added {{-users}} to whitelist",
     "removed": "**{{-icon}} | {{-author}}** Removed {{-target}}"
   },
   "interaction": {

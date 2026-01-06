@@ -79,7 +79,7 @@
     "no_eligible_users": "**{{-icon}} | {{-author}},** Tất cả người dùng trong kênh đều đã có quyền PrioritySpeaker.",
     "no_whitelisted_users": "**{{-icon}} | {{-author}},** Không có người dùng nào có quyền PrioritySpeaker trong kênh này.",
     "added": "**{{-icon}} | {{-author}}** Đã thêm {{-target}}",
-    "added_external": "**{{-icon}} | {{-author}}** Đã thêm {{-count}} người dùng vào danh sách trắng",
+    "added_external": "**{{-icon}} | {{-author}}** Đã thêm {{-users}} vào danh sách trắng",
     "removed": "**{{-icon}} | {{-author}}** Đã xóa {{-target}}"
   },
   "interaction": {
