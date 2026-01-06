@@ -110,15 +110,15 @@
   },
   "thread_remove": {
     "name": "thread_remove",
-    "example": "",
-    "description": "Xóa người dùng khỏi luồng",
-    "user_option": "Người dùng cần xóa khỏi luồng",
-    "archived": "**{{-icon}} | {{-author}}, ** Luồng này đã được lưu trữ",
-    "not_member": "**{{-icon}} | {{-author}}, ** Bạn không phải là thành viên của luồng này",
+    "example": "/thread_remove @user",
+    "description": "Xóa thành viên khỏi luồng thảo luận này",
+    "user_option": "Thành viên cần xóa khỏi luồng",
+    "not_thread": "**{{-icon}} | {{-author}}, ** Lệnh này chỉ có thể được sử dụng trong luồng thảo luận",
+    "archived": "**{{-icon}} | {{-author}}, ** Không thể xóa thành viên khỏi luồng đã lưu trữ",
+    "not_member": "**{{-icon}} | {{-author}}, ** Bạn phải là thành viên của luồng riêng tư này để xóa người khác",
     "target_not_member": "**{{-icon}} | {{-author}}, ** {{target}} không phải là thành viên của luồng này",
     "success": "**{{-icon}} | {{-author}}, ** Đã xóa thành công {{target}} khỏi luồng",
-    "error": "**{{-icon}} | {{-author}}, ** Đã xảy ra lỗi khi xóa người dùng",
-    "invalid_usage": "**{{-icon}} | {{-author}}, ** Cách sử dụng không hợp lệ. Hãy đề cập người dùng cần xóa",
-    "not_thread": "**{{-icon}} | {{-author}}, ** Lệnh này chỉ có thể được sử dụng trong luồng"
+    "error": "**{{-icon}} | {{-author}}, ** Không thể xóa thành viên khỏi luồng",
+    "invalid_usage": "**{{-icon}} | {{-author}}, ** Cách dùng: /thread_remove @user"
   }
 }
