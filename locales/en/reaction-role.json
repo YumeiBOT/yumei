@@ -14,7 +14,7 @@
   "flow": {
     "welcome": {
       "title": "🎭 Reaction Role Configuration",
-      "description": "Welcome to the reaction role configuration wizard! I'll guide you through setting up a reaction role system.\n\n**🎯 Reaction (Emoji)**\n```Best for: 1-10 roles, small servers (<500 members)```\n✅ **Pros:** Fastest response, intuitive, lowest latency (~5-10ms)\n❌ **Cons:** 20 emoji limit, can look cluttered, higher server load\n\n**🔘 Button**\n```Best for: 5-15 roles, any server size```\n✅ **Pros:** Clean UI, 25 button limit, better for mobile, scalable\n❌ **Cons:** Requires button click, slightly higher latency (~10-20ms)\n\n**📋 Select Menu**\n```Best for: 10-25 roles, large servers (2K+ members)```\n✅ **Pros:** Cleanest UI, supports multi-select, most scalable, lowest server load\n❌ **Cons:** Requires click, no custom emojis\n\n💡 **Recommendation:** Use **Select Menu** for 15+ roles or large servers.\n\nPlease choose your preferred method:",
+      "description": "Welcome to the reaction role configuration wizard! I\u0027ll guide you through setting up a reaction role system.\n\n**🎯 Reaction (Emoji)**\n```Best for: 1-10 roles, small servers (<500 members)```\n✅ **Pros:** Fastest response, intuitive, lowest latency (~5-10ms)\n❌ **Cons:** 20 emoji limit, can look cluttered, higher server load\n\n**🔘 Button**\n```Best for: 5-15 roles, any server size```\n✅ **Pros:** Clean UI, 25 button limit, better for mobile, scalable\n❌ **Cons:** Requires button click, slightly higher latency (~10-20ms)\n\n**📋 Select Menu**\n```Best for: 10-25 roles, large servers (2K+ members)```\n✅ **Pros:** Cleanest UI, supports multi-select, most scalable, lowest server load\n❌ **Cons:** Requires click, no custom emojis\n\n💡 **Recommendation:** Use **Select Menu** for 15+ roles or large servers.\n\nPlease choose your preferred method:",
       "footer": "Click a button below to continue"
     },
     "select_roles": {
@@ -40,7 +40,7 @@
     },
     "select_message_type": {
       "title": "🎭 Select Message Type",
-      "description": "You've selected: **{{method}}** with {{replyType}}\n\n**Available Message Types:**\n• 🤖 **Bot Message** - I'll send the message\n• 🔗 **Webhook** - Use webhook to send message\n• 📝 **Own Message** - Use existing message (Reaction only)\n\nPlease choose the message type:",
+      "description": "You've selected: **{{method}}** with {{replyType}}\n\n**Available Message Types:**\n• 🤖 **Bot Message** - I\u0027ll send the message\n• 🔗 **Webhook** - Use webhook to send message\n• 📝 **Own Message** - Use existing message (Reaction only)\n\nPlease choose the message type:",
       "footer": "Select from the dropdown menu to continue",
       "placeholder": "Choose message type..."
     },
@@ -120,16 +120,16 @@
     }
   },
   "reply_types": {
-    "dm": "💬 DM - Send private message to user",
-    "no_message": "🔇 No Message - Silent role changes",
-    "secret_reply": "🔒 Secret Reply - Ephemeral interaction reply"
+    "dm": "**💬 DM** - Send private message to user",
+    "no_message": "**🔇 No Message** - Silent role changes",
+    "secret_reply": "**🔒 Secret Reply** - Ephemeral interaction reply"
   },
   "message_types": {
-    "bot": "🤖 Bot Message - I'll send the message",
+    "bot": "**🤖 Bot Message** - I\u0027ll send the message",
     "bot_description": "The bot will send the message with reaction roles",
-    "webhook": "🔗 Webhook - Use webhook to send message",
+    "webhook": "**🔗 Webhook** - Use webhook to send message",
     "webhook_description": "Use a webhook to send the message with reaction roles",
-    "own": "📝 Own Message - Use existing message (Reaction only)",
+    "own": "**📝 Own Message** - Use existing message (Reaction only)",
     "own_description": "Use an existing message for reaction roles (Reaction method only)"
   },
   "actions": {
