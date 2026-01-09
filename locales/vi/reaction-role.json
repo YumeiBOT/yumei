@@ -19,67 +19,67 @@
     },
     "select_channel": {
       "title": "🎭 Chọn Kênh",
-      "description": "Bạn đã chọn: **{{method}}** với {{messageType}}\n\n**Bước tiếp theo:** Chọn kênh nơi bot/webhook sẽ gửi tin nhắn.\n\nVui lòng chọn một kênh văn bản hoặc kênh thông báo từ menu dropdown:",
+      "description": "Bạn đã chọn: **{{-method}}** với {{-messageType}}\n\n**Bước tiếp theo:** Chọn kênh nơi bot/webhook sẽ gửi tin nhắn.\n\nVui lòng chọn một kênh văn bản hoặc kênh thông báo từ menu dropdown:",
       "footer": "Chọn một kênh để tiếp tục",
       "placeholder": "Chọn kênh văn bản hoặc kênh thông báo cho tin nhắn bot/webhook"
     },
     "select_roles": {
       "title": "🎭 Chọn Vai trò",
-      "description": "Bạn đã chọn: **{{method}}** với {{roleChangeType}}, {{replyType}}, và {{messageType}}\n\n**Vai trò có sẵn:** {{roleCount}} vai trò dưới vai trò cao nhất của bot\n\nVui lòng chọn các vai trò bạn muốn bao gồm trong hệ thống reaction role này:",
+      "description": "Bạn đã chọn: **{{-method}}** với {{-roleChangeType}}, {{-replyType}}, và {{-messageType}}\n\n**Vai trò có sẵn:** {{roleCount}} vai trò dưới vai trò cao nhất của bot\n\nVui lòng chọn các vai trò bạn muốn bao gồm trong hệ thống reaction role này:",
       "footer": "Chọn một hoặc nhiều vai trò từ menu dropdown",
       "placeholder": "Chọn vai trò để bao gồm..."
     },
     "roles_selected": {
       "title": "🎭 Vai trò Đã Chọn",
-      "description": "Bạn đã chọn: **{{method}}** với {{roleChangeType}}, {{replyType}}, và {{messageType}}\n\n**Vai trò Đã Chọn ({{roleCount}}):**\n{{rolesList}}\n\n**Các bước tiếp theo:**\n1. Cấu hình nội dung tin nhắn\n2. Hoàn thành thiết lập\n\n**💡 Mẹo:** Để sử dụng emoji tùy chỉnh, gõ `\\<emoji>` trong bất kỳ tin nhắn nào để lấy định dạng ID emoji.\n\nVui lòng chọn hành động tiếp theo của bạn:",
+      "description": "Bạn đã chọn: **{{-method}}** với {{-roleChangeType}}, {{-replyType}}, và {{-messageType}}\n\n**Vai trò Đã Chọn ({{roleCount}}):**\n{{-rolesList}}\n\n**Các bước tiếp theo:**\n1. Cấu hình nội dung tin nhắn\n2. Hoàn thành thiết lập\n\n**💡 Mẹo:** Để sử dụng emoji tùy chỉnh, gõ `\\<emoji>` trong bất kỳ tin nhắn nào để lấy định dạng ID emoji.\n\nVui lòng chọn hành động tiếp theo của bạn:",
       "footer": "Sử dụng các nút bên dưới để tiếp tục thiết lập"
     },
     "select_method": {
       "title": "🎭 Chọn Phương thức",
-      "description": "Bạn đã chọn: **{{method}}**\n\n**Các loại thay đổi vai trò có sẵn:**\n{{roleChangeTypes}}\n\nVui lòng chọn loại thay đổi vai trò:",
+      "description": "Bạn đã chọn: **{{-method}}**\n\n**Các loại thay đổi vai trò có sẵn:**\n{{roleChangeTypes}}\n\nVui lòng chọn loại thay đổi vai trò:",
       "footer": "Phản ứng với emoji tương ứng để tiếp tục"
     },
     "select_reply_type": {
       "title": "🎭 Chọn Loại Phản hồi",
-      "description": "Bạn đã chọn: **{{method}}** với {{roleChangeType}}\n\n**Các loại phản hồi có sẵn:**\n{{replyTypes}}\n\nVui lòng chọn loại phản hồi:",
+      "description": "Bạn đã chọn: **{{-method}}** với {{-roleChangeType}}\n\n**Các loại phản hồi có sẵn:**\n{{replyTypes}}\n\nVui lòng chọn loại phản hồi:",
       "footer": "Phản ứng với emoji tương ứng để tiếp tục"
     },
     "select_message_type": {
       "title": "🎭 Chọn Loại Tin nhắn",
-      "description": "Bạn đã chọn: **{{method}}** với {{replyType}}\n\n**Các loại tin nhắn có sẵn:**\n• 🤖 **Tin nhắn Bot** - Tôi sẽ gửi tin nhắn\n• 🔗 **Webhook** - Sử dụng webhook để gửi tin nhắn\n• 📝 **Tin nhắn Riêng** - Sử dụng tin nhắn hiện có (Chỉ Reaction)\n\nVui lòng chọn loại tin nhắn:",
+      "description": "Bạn đã chọn: **{{-method}}** với {{-replyType}}\n\n**Các loại tin nhắn có sẵn:**\n• 🤖 **Tin nhắn Bot** - Tôi sẽ gửi tin nhắn\n• 🔗 **Webhook** - Sử dụng webhook để gửi tin nhắn\n• 📝 **Tin nhắn Riêng** - Sử dụng tin nhắn hiện có (Chỉ Reaction)\n\nVui lòng chọn loại tin nhắn:",
       "footer": "Chọn từ menu dropdown để tiếp tục",
       "placeholder": "Chọn loại tin nhắn..."
     },
     "create_message": {
       "title": "🎭 Tạo Tin nhắn",
-      "description": "Bạn đã chọn: **{{method}}** với {{messageType}}\n\n**Bước tiếp theo:** Tạo tin nhắn sẽ được gửi đến kênh.\n\nVui lòng nhấp vào nút bên dưới để mở modal tạo tin nhắn:",
+      "description": "Bạn đã chọn: **{{-method}}** với {{-messageType}}\n\n**Bước tiếp theo:** Tạo tin nhắn sẽ được gửi đến kênh.\n\nVui lòng nhấp vào nút bên dưới để mở modal tạo tin nhắn:",
       "footer": "Nhấp vào nút tạo tin nhắn để tiếp tục"
     },
     "configure_webhook": {
       "title": "🎭 Cấu hình Webhook",
-      "description": "Bạn đã chọn: **{{method}}** với {{messageType}}\n\n**Bước tiếp theo:** Cấu hình cài đặt webhook (tiêu đề và hình ảnh).\n\nVui lòng nhấp vào nút bên dưới để mở modal cấu hình webhook:",
+      "description": "Bạn đã chọn: **{{-method}}** với {{-messageType}}\n\n**Bước tiếp theo:** Cấu hình cài đặt webhook (tiêu đề và hình ảnh).\n\nVui lòng nhấp vào nút bên dưới để mở modal cấu hình webhook:",
       "footer": "Nhấp vào nút cấu hình webhook để tiếp tục"
     },
     "define_roles": {
       "title": "🎭 Định nghĩa Vai trò",
-      "description": "Bạn đã chọn: **{{method}}** với {{roleChangeType}}, {{replyType}}, và {{messageType}}\n\n**Cấu hình hiện tại:**\n• Kênh: <#{{channelId}}>\n• Loại tin nhắn: {{messageType}}\n• Loại phản hồi: {{replyType}}\n• Loại thay đổi vai trò: {{roleChangeType}}\n\n**Các bước tiếp theo:**\n1. Thêm vai trò bằng các nút bên dưới\n2. Cấu hình nội dung tin nhắn\n3. Hoàn thành thiết lập\n\n**Vai trò hiện tại:**\n{{rolesList}}",
+      "description": "Bạn đã chọn: **{{-method}}** với {{-roleChangeType}}, {{-replyType}}, và {{-messageType}}\n\n**Cấu hình hiện tại:**\n• Kênh: <#{{channelId}}>\n• Loại tin nhắn: {{-messageType}}\n• Loại phản hồi: {{-replyType}}\n• Loại thay đổi vai trò: {{-roleChangeType}}\n\n**Các bước tiếp theo:**\n1. Thêm vai trò bằng các nút bên dưới\n2. Cấu hình nội dung tin nhắn\n3. Hoàn thành thiết lập\n\n**Vai trò hiện tại:**\n{{-rolesList}}",
       "footer": "Sử dụng các nút bên dưới để quản lý vai trò và hoàn thành thiết lập"
     },
     "customize_buttons": {
       "title": "🎭 Tùy chỉnh Nút",
-      "description": "Bạn đã chọn: **{{method}}** với {{roleChangeType}}, {{replyType}}, và {{messageType}}\n\n**Cấu hình hiện tại:**\n• Kênh: <#{{channelId}}>\n• Loại tin nhắn: {{messageType}}\n• Loại phản hồi: {{replyType}}\n• Loại thay đổi vai trò: {{roleChangeType}}\n\n**Tiến độ Tùy chỉnh Nút:**\n• Đã cấu hình: {{configuredCount}}/{{totalCount}} nút\n• Hiện tại: {{currentRoleName}}\n\n**Các kiểu Nút có sẵn:**\n• 🔵 **Primary** - Nút xanh dương\n• ⚪ **Secondary** - Nút xám\n• 🟢 **Success** - Nút xanh lá\n• 🔴 **Danger** - Nút đỏ\n\n**💡 Mẹo:** Để sử dụng emoji tùy chỉnh, gõ `\\<emoji>` trong bất kỳ tin nhắn nào để lấy định dạng ID emoji.\n\nVui lòng chọn kiểu nút cho vai trò hiện tại:",
+      "description": "Bạn đã chọn: **{{-method}}** với {{-roleChangeType}}, {{-replyType}}, và {{-messageType}}\n\n**Cấu hình hiện tại:**\n• Kênh: <#{{channelId}}>\n• Loại tin nhắn: {{-messageType}}\n• Loại phản hồi: {{-replyType}}\n• Loại thay đổi vai trò: {{-roleChangeType}}\n\n**Tiến độ Tùy chỉnh Nút:**\n• Đã cấu hình: {{configuredCount}}/{{totalCount}} nút\n• Hiện tại: {{currentRoleName}}\n\n**Các kiểu Nút có sẵn:**\n• 🔵 **Primary** - Nút xanh dương\n• ⚪ **Secondary** - Nút xám\n• 🟢 **Success** - Nút xanh lá\n• 🔴 **Danger** - Nút đỏ\n\n**💡 Mẹo:** Để sử dụng emoji tùy chỉnh, gõ `\\<emoji>` trong bất kỳ tin nhắn nào để lấy định dạng ID emoji.\n\nVui lòng chọn kiểu nút cho vai trò hiện tại:",
       "footer": "Chọn kiểu nút để tùy chỉnh nút vai trò hiện tại"
     },
     "customize_emojis": {
       "title": "🎭 Tùy chỉnh Emoji",
-      "description": "Bạn đã chọn: **{{method}}** với {{roleChangeType}}, {{replyType}}, và {{messageType}}\n\n**Cấu hình hiện tại:**\n• Kênh: <#{{channelId}}>\n• Loại tin nhắn: {{messageType}}\n• Loại phản hồi: {{replyType}}\n• Loại thay đổi vai trò: {{roleChangeType}}\n\n**Tiến độ Tùy chỉnh Emoji:**\n• Đã cấu hình: {{configuredCount}}/{{totalCount}} emoji\n• Hiện tại: {{currentRoleName}}\n\n**Cách thêm emoji:**\n1. Phản ứng với tin nhắn này bằng emoji bạn muốn cho vai trò này\n2. Emoji sẽ được tự động gán cho vai trò hiện tại\n3. Bạn có thể sử dụng cả emoji thường (🎭, 😄) và emoji tùy chỉnh của máy chủ\n\n**💡 Mẹo:** Để sử dụng emoji tùy chỉnh, gõ `\\<emoji>` trong bất kỳ tin nhắn nào để lấy định dạng ID emoji.\n\nVui lòng phản ứng với emoji cho vai trò hiện tại:",
+      "description": "Bạn đã chọn: **{{-method}}** với {{-roleChangeType}}, {{-replyType}}, và {{-messageType}}\n\n**Cấu hình hiện tại:**\n• Kênh: <#{{channelId}}>\n• Loại tin nhắn: {{-messageType}}\n• Loại phản hồi: {{-replyType}}\n• Loại thay đổi vai trò: {{-roleChangeType}}\n\n**Tiến độ Tùy chỉnh Emoji:**\n• Đã cấu hình: {{configuredCount}}/{{totalCount}} emoji\n• Hiện tại: {{currentRoleName}}\n\n**Cách thêm emoji:**\n1. Phản ứng với tin nhắn này bằng emoji bạn muốn cho vai trò này\n2. Emoji sẽ được tự động gán cho vai trò hiện tại\n3. Bạn có thể sử dụng cả emoji thường (🎭, 😄) và emoji tùy chỉnh của máy chủ\n\n**💡 Mẹo:** Để sử dụng emoji tùy chỉnh, gõ `\\<emoji>` trong bất kỳ tin nhắn nào để lấy định dạng ID emoji.\n\nVui lòng phản ứng với emoji cho vai trò hiện tại:",
       "footer": "Phản ứng với emoji để tùy chỉnh vai trò hiện tại"
     },
     "confirm": {
       "title": "🎭 Xác nhận Cấu hình",
-      "description": "**Đánh giá Cấu hình Cuối cùng:**\n\n**Phương thức:** {{method}}\n**Kênh:** <#{{channelId}}>\n**Loại tin nhắn:** {{messageType}}\n**Loại phản hồi:** {{replyType}}\n**Loại thay đổi vai trò:** {{roleChangeType}}\n\n**Vai trò:**\n{{rolesList}}\n\n**Nội dung tin nhắn:**\n{{messageContent}}\n\nVui lòng xác nhận cấu hình này:",
+      "description": "**Đánh giá Cấu hình Cuối cùng:**\n\n**Phương thức:** {{-method}}\n**Kênh:** <#{{channelId}}>\n**Loại tin nhắn:** {{-messageType}}\n**Loại phản hồi:** {{-replyType}}\n**Loại thay đổi vai trò:** {{-roleChangeType}}\n\n**Vai trò:**\n{{rolesList}}\n\n**Nội dung tin nhắn:**\n{{messageContent}}\n\nVui lòng xác nhận cấu hình này:",
       "footer": "Xem lại cấu hình của bạn trước khi xác nhận",
-      "own_message_prompt": "**🎭 Đánh giá Cấu hình Cuối cùng:**\n\n**Phương thức:** {{method}}\n**Loại tin nhắn:** {{messageType}}\n**Loại phản hồi:** {{replyType}}\n**Loại thay đổi vai trò:** {{roleChangeType}}\n\n**Vai trò Đã Chọn ({{roleCount}}):**\n{{rolesList}}\n\n**Bước tiếp theo:** Cung cấp ID tin nhắn của tin nhắn hiện có của bạn.\n\n**💡 Mẹo:** Nhấp chuột phải vào tin nhắn → Copy ID để lấy ID tin nhắn.",
+      "own_message_prompt": "**🎭 Đánh giá Cấu hình Cuối cùng:**\n\n**Phương thức:** {{-method}}\n**Loại tin nhắn:** {{-messageType}}\n**Loại phản hồi:** {{-replyType}}\n**Loại thay đổi vai trò:** {{-roleChangeType}}\n\n**Vai trò Đã Chọn ({{roleCount}}):**\n{{rolesList}}\n\n**Bước tiếp theo:** Cung cấp ID tin nhắn của tin nhắn hiện có của bạn.\n\n**💡 Mẹo:** Nhấp chuột phải vào tin nhắn → Copy ID để lấy ID tin nhắn.",
       "own_message_info": "📝 Tin nhắn Riêng",
       "own_message_description": "Bot sẽ lắng nghe tin nhắn: `{{messageId}}`"
     },
