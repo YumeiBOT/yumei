@@ -14,8 +14,8 @@
   "flow": {
     "welcome": {
       "title": "🎭 Cấu hình Reaction Role",
-      "description": "Chào mừng đến với trình hướng dẫn cấu hình reaction role! Tôi sẽ hướng dẫn bạn thiết lập hệ thống reaction role.\n\n**Các phương thức có sẵn:**\n• 🎯 **Reaction (Emoji)** - Người dùng phản ứng bằng emoji để nhận vai trò\n• 🔘 **Button** - Người dùng nhấp vào nút để nhận vai trò\n• 📋 **Select Menu** - Người dùng chọn từ menu dropdown\n\nVui lòng chọn phương thức ưa thích của bạn:",
-      "footer": "Phản ứng với emoji tương ứng để tiếp tục"
+      "description": "Chào mừng đến với trình hướng dẫn cấu hình reaction role! Tôi sẽ hướng dẫn bạn thiết lập hệ thống reaction role.\n\n**🎯 Reaction (Emoji)**\n```Tốt nhất cho: 1-10 vai trò, máy chủ nhỏ (<500 thành viên)```\n✅ **Ưu điểm:** Phản hồi nhanh nhất, trực quan, độ trễ thấp nhất (~5-10ms)\n❌ **Nhược điểm:** Giới hạn 20 emoji, có thể trông lộn xộn, tải server cao hơn\n\n**🔘 Button**\n```Tốt nhất cho: 5-15 vai trò, mọi kích thước máy chủ```\n✅ **Ưu điểm:** UI sạch sẽ, giới hạn 25 nút, tốt cho di động, có thể mở rộng\n❌ **Nhược điểm:** Cần nhấp nút, độ trễ cao hơn một chút (~10-20ms)\n\n**📋 Select Menu**\n```Tốt nhất cho: 10-25 vai trò, máy chủ lớn (2K+ thành viên)```\n✅ **Ưu điểm:** UI sạch nhất, hỗ trợ đa lựa chọn, có thể mở rộng nhất, tải server thấp nhất\n❌ **Nhược điểm:** Cần nhấp, không hỗ trợ emoji tùy chỉnh\n\n💡 **Khuyến nghị:** Sử dụng **Select Menu** cho 15+ vai trò hoặc máy chủ lớn.\n\nVui lòng chọn phương thức ưa thích của bạn:",
+      "footer": "Nhấp vào nút bên dưới để tiếp tục"
     },
     "select_channel": {
       "title": "🎭 Chọn Kênh",

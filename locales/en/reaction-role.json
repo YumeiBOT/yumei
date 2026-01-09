@@ -14,8 +14,8 @@
   "flow": {
     "welcome": {
       "title": "🎭 Reaction Role Configuration",
-      "description": "Welcome to the reaction role configuration wizard! I'll guide you through setting up a reaction role system.\n\n**Available Methods:**\n• 🎯 **Reaction (Emoji)** - Users react with emojis to get roles\n• 🔘 **Button** - Users click buttons to get roles\n• 📋 **Select Menu** - Users select from dropdown menus\n\nPlease choose your preferred method:",
-      "footer": "React with the corresponding emoji to continue"
+      "description": "Welcome to the reaction role configuration wizard! I'll guide you through setting up a reaction role system.\n\n**🎯 Reaction (Emoji)**\n```Best for: 1-10 roles, small servers (<500 members)```\n✅ **Pros:** Fastest response, intuitive, lowest latency (~5-10ms)\n❌ **Cons:** 20 emoji limit, can look cluttered, higher server load\n\n**🔘 Button**\n```Best for: 5-15 roles, any server size```\n✅ **Pros:** Clean UI, 25 button limit, better for mobile, scalable\n❌ **Cons:** Requires button click, slightly higher latency (~10-20ms)\n\n**📋 Select Menu**\n```Best for: 10-25 roles, large servers (2K+ members)```\n✅ **Pros:** Cleanest UI, supports multi-select, most scalable, lowest server load\n❌ **Cons:** Requires click, no custom emojis\n\n💡 **Recommendation:** Use **Select Menu** for 15+ roles or large servers.\n\nPlease choose your preferred method:",
+      "footer": "Click a button below to continue"
     },
     "select_roles": {
       "title": "🎭 Select Roles",
