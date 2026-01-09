@@ -8,6 +8,7 @@
     "permission_error": "**{{-icon}} | {{-author}}, ** Bạn không có quyền quản lý vai trò trong máy chủ này.",
     "session_cancelled": "**{{-icon}} | {{-author}}, ** Cấu hình reaction role đã được hủy.",
     "session_completed": "**{{-icon}} | {{-author}}, ** Cấu hình reaction role đã được hoàn thành thành công! ID tin nhắn: {{messageId}}",
+    "own_message_instruction": "**{{-icon}} | {{-author}}, ** Vui lòng cung cấp ID tin nhắn của tin nhắn hiện có của bạn. Nhấp chuột phải vào tin nhắn → Copy ID.",
     "error": "**{{-icon}} | {{-author}}, ** Đã xảy ra lỗi khi thiết lập cấu hình reaction role."
   },
   "flow": {
@@ -77,7 +78,10 @@
     "confirm": {
       "title": "🎭 Xác nhận Cấu hình",
       "description": "**Đánh giá Cấu hình Cuối cùng:**\n\n**Phương thức:** {{method}}\n**Kênh:** <#{{channelId}}>\n**Loại tin nhắn:** {{messageType}}\n**Loại phản hồi:** {{replyType}}\n**Loại thay đổi vai trò:** {{roleChangeType}}\n\n**Vai trò:**\n{{rolesList}}\n\n**Nội dung tin nhắn:**\n{{messageContent}}\n\nVui lòng xác nhận cấu hình này:",
-      "footer": "Phản ứng với ✅ để xác nhận hoặc ❌ để hủy"
+      "footer": "Phản ứng với ✅ để xác nhận hoặc ❌ để hủy",
+      "own_message_prompt": "**🎭 Đánh giá Cấu hình Cuối cùng:**\n\n**Phương thức:** {{method}}\n**Loại tin nhắn:** {{messageType}}\n**Loại phản hồi:** {{replyType}}\n**Loại thay đổi vai trò:** {{roleChangeType}}\n\n**Vai trò Đã Chọn ({{roleCount}}):**\n{{rolesList}}\n\n**Bước tiếp theo:** Cung cấp ID tin nhắn của tin nhắn hiện có của bạn.\n\n**💡 Mẹo:** Nhấp chuột phải vào tin nhắn → Copy ID để lấy ID tin nhắn.",
+      "own_message_info": "📝 Tin nhắn Riêng",
+      "own_message_description": "Bot sẽ lắng nghe tin nhắn: `{{messageId}}`"
     },
     "proceeding_to_confirm": "**{{-icon}} | {{-author}}, ** Tiến đến xem xét cuối cùng và xác nhận..."
   },
@@ -135,6 +139,7 @@
     "configure_message": "Cấu hình Tin nhắn",
     "open_config_modal": "Mở Modal Cấu hình",
     "add_more_roles": "Thêm Vai trò Khác",
+    "provide_message_id": "Cung cấp ID Tin nhắn",
     "cancel": "Hủy",
     "confirm": "Xác nhận",
     "back": "Quay lại",
@@ -162,6 +167,11 @@
       "webhook_title_placeholder": "Nhập tiêu đề webhook...",
       "webhook_image_label": "URL Hình ảnh Webhook",
       "webhook_image_placeholder": "Nhập URL hình ảnh webhook..."
+    },
+    "message_id": {
+      "title": "Cung cấp ID Tin nhắn",
+      "message_id_label": "ID Tin nhắn",
+      "message_id_placeholder": "Nhập ID tin nhắn (nhấp chuột phải vào tin nhắn → Copy ID)..."
     },
     "message_creation": {
       "title": "Tạo Tin nhắn",
@@ -198,7 +208,8 @@
     "dm_failed": "**{{-icon}} | {{-author}}, ** Không thể gửi DM. Vui lòng kiểm tra cài đặt quyền riêng tư của bạn.",
     "role_assignment_failed": "**{{-icon}} | {{-author}}, ** Không thể gán/xóa vai trò. Vui lòng thử lại.",
     "no_available_channels": "**{{-icon}} | {{-author}}, ** Không có kênh văn bản nào khả dụng cho tin nhắn bot/webhook.",
-    "bot_member_not_found": "**{{-icon}} | {{-author}}, ** Không tìm thấy thành viên bot. Vui lòng thử lại."
+    "bot_member_not_found": "**{{-icon}} | {{-author}}, ** Không tìm thấy thành viên bot. Vui lòng thử lại.",
+    "invalid_message_id": "**{{-icon}} | {{-author}}, ** ID tin nhắn không hợp lệ. Vui lòng nhấp chuột phải vào tin nhắn → Copy ID."
   },
   "role_select": {
     "description": "Vị trí: {{position}} | Thành viên: {{members}}"

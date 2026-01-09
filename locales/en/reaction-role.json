@@ -8,6 +8,7 @@
     "permission_error": "**{{-icon}} | {{-author}}, ** You don't have permission to manage roles in this server.",
     "session_cancelled": "**{{-icon}} | {{-author}}, ** Reaction role configuration has been cancelled.",
     "session_completed": "**{{-icon}} | {{-author}}, ** Reaction role configuration has been completed successfully! Message ID: {{messageId}}",
+    "own_message_instruction": "**{{-icon}} | {{-author}}, ** Please provide the message ID of your existing message. Right-click the message → Copy ID.",
     "error": "**{{-icon}} | {{-author}}, ** An error occurred while setting up the reaction role configuration."
   },
   "flow": {
@@ -80,7 +81,10 @@
     "confirm": {
       "title": "🎭 Confirm Configuration",
       "description": "**Final Configuration Review:**\n\n**Method:** {{method}}\n**Channel:** <#{{channelId}}>\n**Message Type:** {{-messageType}}\n**Reply Type:** {{replyType}}\n**Role Change Type:** {{roleChangeType}}\n\n**Roles:**\n{{-rolesList}}\n\n**Message Content:**\n{{messageContent}}\n\nPlease confirm this configuration:",
-      "footer": "React with ✅ to confirm or ❌ to cancel"
+      "footer": "React with ✅ to confirm or ❌ to cancel",
+      "own_message_prompt": "**🎭 Final Configuration Review:**\n\n**Method:** {{method}}\n**Message Type:** {{-messageType}}\n**Reply Type:** {{replyType}}\n**Role Change Type:** {{roleChangeType}}\n\n**Selected Roles ({{roleCount}}):**\n{{-rolesList}}\n\n**Next Step:** Provide the message ID of your existing message.\n\n**💡 Tip:** Right-click the message → Copy ID to get the message ID.",
+      "own_message_info": "📝 Own Message",
+      "own_message_description": "The bot will listen to message: `{{messageId}}`"
     },
     "proceeding_to_confirm": "**{{-icon}} | {{-author}}, ** Proceeding to final review and confirmation..."
   },
@@ -138,6 +142,7 @@
     "configure_message": "Configure Message",
     "open_config_modal": "Open Configuration Modal",
     "add_more_roles": "Add More Roles",
+    "provide_message_id": "Provide Message ID",
     "cancel": "Cancel",
     "confirm": "Confirm",
     "back": "Back",
@@ -165,6 +170,11 @@
       "webhook_title_placeholder": "Enter webhook title...",
       "webhook_image_label": "Webhook Image URL",
       "webhook_image_placeholder": "Enter webhook image URL..."
+    },
+    "message_id": {
+      "title": "Provide Message ID",
+      "message_id_label": "Message ID",
+      "message_id_placeholder": "Enter the message ID (right-click message → Copy ID)..."
     },
     "message_creation": {
       "title": "Create Message",
@@ -201,7 +211,8 @@
     "dm_failed": "**{{-icon}} | {{-author}}, ** Failed to send DM. Please check your privacy settings.",
     "role_assignment_failed": "**{{-icon}} | {{-author}}, ** Failed to assign/remove role. Please try again.",
     "no_available_channels": "**{{-icon}} | {{-author}}, ** No available text channels for bot/webhook messages.",
-    "bot_member_not_found": "**{{-icon}} | {{-author}}, ** Bot member not found. Please try again."
+    "bot_member_not_found": "**{{-icon}} | {{-author}}, ** Bot member not found. Please try again.",
+    "invalid_message_id": "**{{-icon}} | {{-author}}, ** Invalid message ID provided. Please right-click the message → Copy ID."
   },
   "role_select": {
     "description": "Position: {{position}} | Members: {{members}}"
