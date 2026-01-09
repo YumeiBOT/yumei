@@ -78,7 +78,7 @@
     "confirm": {
       "title": "🎭 Xác nhận Cấu hình",
       "description": "**Đánh giá Cấu hình Cuối cùng:**\n\n**Phương thức:** {{method}}\n**Kênh:** <#{{channelId}}>\n**Loại tin nhắn:** {{messageType}}\n**Loại phản hồi:** {{replyType}}\n**Loại thay đổi vai trò:** {{roleChangeType}}\n\n**Vai trò:**\n{{rolesList}}\n\n**Nội dung tin nhắn:**\n{{messageContent}}\n\nVui lòng xác nhận cấu hình này:",
-      "footer": "Phản ứng với ✅ để xác nhận hoặc ❌ để hủy",
+      "footer": "Xem lại cấu hình của bạn trước khi xác nhận",
       "own_message_prompt": "**🎭 Đánh giá Cấu hình Cuối cùng:**\n\n**Phương thức:** {{method}}\n**Loại tin nhắn:** {{messageType}}\n**Loại phản hồi:** {{replyType}}\n**Loại thay đổi vai trò:** {{roleChangeType}}\n\n**Vai trò Đã Chọn ({{roleCount}}):**\n{{rolesList}}\n\n**Bước tiếp theo:** Cung cấp ID tin nhắn của tin nhắn hiện có của bạn.\n\n**💡 Mẹo:** Nhấp chuột phải vào tin nhắn → Copy ID để lấy ID tin nhắn.",
       "own_message_info": "📝 Tin nhắn Riêng",
       "own_message_description": "Bot sẽ lắng nghe tin nhắn: `{{messageId}}`"
@@ -209,7 +209,8 @@
     "role_assignment_failed": "**{{-icon}} | {{-author}}, ** Không thể gán/xóa vai trò. Vui lòng thử lại.",
     "no_available_channels": "**{{-icon}} | {{-author}}, ** Không có kênh văn bản nào khả dụng cho tin nhắn bot/webhook.",
     "bot_member_not_found": "**{{-icon}} | {{-author}}, ** Không tìm thấy thành viên bot. Vui lòng thử lại.",
-    "invalid_message_id": "**{{-icon}} | {{-author}}, ** ID tin nhắn không hợp lệ. Vui lòng nhấp chuột phải vào tin nhắn → Copy ID."
+    "invalid_message_id": "**{{-icon}} | {{-author}}, ** ID tin nhắn không hợp lệ. Vui lòng nhấp chuột phải vào tin nhắn → Copy ID.",
+    "message_not_found": "**{{-icon}} | {{-author}}, ** Không tìm thấy tin nhắn (ID: {{messageId}}). Vui lòng kiểm tra ID tin nhắn và thử lại."
   },
   "role_select": {
     "description": "Vị trí: {{position}} | Thành viên: {{members}}"

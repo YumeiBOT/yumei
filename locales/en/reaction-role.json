@@ -81,7 +81,7 @@
     "confirm": {
       "title": "🎭 Confirm Configuration",
       "description": "**Final Configuration Review:**\n\n**Method:** {{method}}\n**Channel:** <#{{channelId}}>\n**Message Type:** {{-messageType}}\n**Reply Type:** {{replyType}}\n**Role Change Type:** {{roleChangeType}}\n\n**Roles:**\n{{-rolesList}}\n\n**Message Content:**\n{{messageContent}}\n\nPlease confirm this configuration:",
-      "footer": "React with ✅ to confirm or ❌ to cancel",
+      "footer": "Review your configuration before confirming",
       "own_message_prompt": "**🎭 Final Configuration Review:**\n\n**Method:** {{method}}\n**Message Type:** {{-messageType}}\n**Reply Type:** {{replyType}}\n**Role Change Type:** {{roleChangeType}}\n\n**Selected Roles ({{roleCount}}):**\n{{-rolesList}}\n\n**Next Step:** Provide the message ID of your existing message.\n\n**💡 Tip:** Right-click the message → Copy ID to get the message ID.",
       "own_message_info": "📝 Own Message",
       "own_message_description": "The bot will listen to message: `{{messageId}}`"
@@ -212,7 +212,8 @@
     "role_assignment_failed": "**{{-icon}} | {{-author}}, ** Failed to assign/remove role. Please try again.",
     "no_available_channels": "**{{-icon}} | {{-author}}, ** No available text channels for bot/webhook messages.",
     "bot_member_not_found": "**{{-icon}} | {{-author}}, ** Bot member not found. Please try again.",
-    "invalid_message_id": "**{{-icon}} | {{-author}}, ** Invalid message ID provided. Please right-click the message → Copy ID."
+    "invalid_message_id": "**{{-icon}} | {{-author}}, ** Invalid message ID provided. Please right-click the message → Copy ID.",
+    "message_not_found": "**{{-icon}} | {{-author}}, ** Message not found (ID: {{messageId}}). Please check the message ID and try again."
   },
   "role_select": {
     "description": "Position: {{position}} | Members: {{members}}"
