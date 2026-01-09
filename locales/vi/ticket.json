@@ -4,12 +4,20 @@
     "panel_disabled": "**{{-icon}} | {{-author}}, ** Bảng điều khiển vé hiện đang bị vô hiệu hóa.",
     "blacklisted": "**{{-icon}} | {{-author}}, ** Bạn không được phép tạo vé.",
     "no_category": "**{{-icon}} | {{-author}}, ** Chưa cấu hình danh mục vé.",
+    "no_panel_channel": "**{{-icon}} | {{-author}}, ** Phải cấu hình kênh bảng điều khiển cho chế độ luồng.",
     "invalid_category": "**{{-icon}} | {{-author}}, ** Danh mục vé không hợp lệ.",
     "no_permissions": "**{{-icon}} | {{-author}}, ** Bot thiếu quyền cần thiết.",
     "creation_failed": "**{{-icon}} | {{-author}}, ** Không thể tạo vé. Vui lòng liên hệ quản trị viên máy chủ.",
-    "cooldown": "**{{-icon}} | {{-author}}, ** Vui lòng đợi {{seconds}} giây trước khi tạo vé khác."
+    "cooldown": "**{{-icon}} | {{-author}}, ** Vui lòng đợi {{seconds}} giây trước khi tạo vé khác.",
+    "form_not_found": "**{{-icon}} | {{-author}}, ** Không tìm thấy cấu hình biểu mẫu.",
+    "form_load_failed": "**{{-icon}} | {{-author}}, ** Không thể tải biểu mẫu vé.",
+    "form_submission_failed": "**{{-icon}} | {{-author}}, ** Không thể xử lý gửi biểu mẫu.",
+    "thread_parent_invalid": "**{{-icon}} | {{-author}}, ** Chủ đề luồng phải là kênh văn bản.",
+    "no_thread_permission": "**{{-icon}} | {{-author}}, ** Bot thiếu quyền tạo luồng."
   },
   "success": {
-    "created": "**{{-icon}} | {{-author}}, ** Đã tạo vé: {{-channel}}"
+    "created": "**{{-icon}} | {{-author}}, ** Đã tạo vé: {{-channel}}",
+    "form_submitted": "**{{-icon}} | {{-author}}, ** Đã gửi biểu mẫu! Đã tạo vé: {{-channel}}",
+    "thread_created": "**{{-icon}} | {{-author}}, ** Đã tạo luồng vé: {{-channel}}"
   }
 }
