@@ -86,9 +86,9 @@
     "proceeding_to_confirm": "**{{-icon}} | {{-author}}, ** Tiến đến xem xét cuối cùng và xác nhận..."
   },
   "methods": {
-    "reaction": "Reaction (Emoji)",
-    "button": "Button",
-    "select": "Select Menu"
+    "reaction": "🎯 Reaction (Emoji)",
+    "button": "🔘 Button",
+    "select": "📋 Select Menu"
   },
   "role_change_types": {
     "reaction": {
@@ -117,16 +117,16 @@
     }
   },
   "reply_types": {
-    "dm": "**💬 DM** - Gửi tin nhắn riêng tư cho người dùng",
-    "no_message": "**🔇 Không tin nhắn** - Thay đổi vai trò im lặng",
-    "secret_reply": "**🔒 Phản hồi Bí mật** - Phản hồi tương tác tạm thời"
+    "dm": "💬 DM - Gửi tin nhắn riêng tư cho người dùng",
+    "no_message": "🔇 Không tin nhắn - Thay đổi vai trò im lặng",
+    "secret_reply": "🔒 Phản hồi Bí mật - Phản hồi tương tác tạm thời"
   },
   "message_types": {
-    "bot": "**🤖 Tin nhắn Bot** - Tôi sẽ gửi tin nhắn",
+    "bot": "🤖 Tin nhắn Bot - Tôi sẽ gửi tin nhắn",
     "bot_description": "Bot sẽ gửi tin nhắn với reaction roles",
-    "webhook": "**🔗 Webhook** - Sử dụng webhook để gửi tin nhắn",
+    "webhook": "🔗 Webhook - Sử dụng webhook để gửi tin nhắn",
     "webhook_description": "Sử dụng webhook để gửi tin nhắn với reaction roles",
-    "own": "**📝 Tin nhắn Riêng** - Sử dụng tin nhắn hiện có (Chỉ Reaction)",
+    "own": "📝 Tin nhắn Riêng - Sử dụng tin nhắn hiện có (Chỉ Reaction)",
     "own_description": "Sử dụng tin nhắn hiện có cho reaction roles (Chỉ phương thức Reaction)"
   },
   "actions": {

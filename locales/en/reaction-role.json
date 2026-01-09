@@ -89,9 +89,9 @@
     "proceeding_to_confirm": "**{{-icon}} | {{-author}}, ** Proceeding to final review and confirmation..."
   },
   "methods": {
-    "reaction": "Reaction (Emoji)",
-    "button": "Button",
-    "select": "Select Menu"
+    "reaction": "🎯 Reaction (Emoji)",
+    "button": "🔘 Button",
+    "select": "📋 Select Menu"
   },
   "role_change_types": {
     "reaction": {
@@ -120,16 +120,16 @@
     }
   },
   "reply_types": {
-    "dm": "**💬 DM** - Send private message to user",
-    "no_message": "**🔇 No Message** - Silent role changes",
-    "secret_reply": "**🔒 Secret Reply** - Ephemeral interaction reply"
+    "dm": "💬 DM - Send private message to user",
+    "no_message": "🔇 No Message - Silent role changes",
+    "secret_reply": "🔒 Secret Reply - Ephemeral interaction reply"
   },
   "message_types": {
-    "bot": "**🤖 Bot Message** - I'll send the message",
+    "bot": "🤖 Bot Message - I'll send the message",
     "bot_description": "The bot will send the message with reaction roles",
-    "webhook": "**🔗 Webhook** - Use webhook to send message",
+    "webhook": "🔗 Webhook - Use webhook to send message",
     "webhook_description": "Use a webhook to send the message with reaction roles",
-    "own": "**📝 Own Message** - Use existing message (Reaction only)",
+    "own": "📝 Own Message - Use existing message (Reaction only)",
     "own_description": "Use an existing message for reaction roles (Reaction method only)"
   },
   "actions": {
