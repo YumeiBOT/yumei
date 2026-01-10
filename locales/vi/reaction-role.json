@@ -214,5 +214,18 @@
   },
   "role_select": {
     "description": "Vị trí: {{position}} | Thành viên: {{members}}"
+  },
+  "select_menu": {
+    "help_note": "💡 **Cách sử dụng:** Nhấp để chọn vai trò. Đóng menu để chọn lại.",
+    "descriptions": {
+      "standard": "Bật/tắt vai trò này",
+      "reverse": "Loại bỏ khi phản ứng, thêm khi phản ứng",
+      "inverse": "Ngược với hành vi chuẩn",
+      "selection": "Chọn để nhận vai trò này",
+      "single_role": "Chọn vai trò này (loại bỏ các khác)",
+      "single_select": "Lựa chọn một lần, vĩnh viễn",
+      "select_only": "Thêm vai trò này",
+      "unselect_only": "Loại bỏ vai trò này"
+    }
   }
 } 

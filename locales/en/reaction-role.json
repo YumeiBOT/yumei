@@ -217,5 +217,18 @@
   },
   "role_select": {
     "description": "Position: {{position}} | Members: {{members}}"
+  },
+  "select_menu": {
+    "help_note": "💡 **How to use:** Click to select roles. Close menu to select again.",
+    "descriptions": {
+      "standard": "Toggle this role on/off",
+      "reverse": "Remove on reaction, add on reaction",
+      "inverse": "Opposite of standard behavior",
+      "selection": "Select to receive this role",
+      "single_role": "Select this role (removes others)",
+      "single_select": "One-time selection, permanent",
+      "select_only": "Add this role",
+      "unselect_only": "Remove this role"
+    }
   }
 } 
