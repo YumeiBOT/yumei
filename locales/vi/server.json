@@ -60,6 +60,24 @@
     "success": "**{{-icon}} | {{-author}}, ** Cài đặt confession đã được cập nhật",
     "error": "**{{-icon}} | {{-author}}, ** Đã xảy ra lỗi khi cập nhật cài đặt confession"
   },
+  "auto_settings": {
+    "name": "Cài Đặt Tự Động",
+    "description": "Cấu hình cài đặt máy chủ bằng ngôn ngữ tự nhiên",
+    "request_option": "Mô tả những gì bạn muốn cấu hình",
+    "example": "```{{-prefix}}as Tạo 5 vai trò màu sắc có tên Color01 đến Color05```",
+    "result_title": "Kết Quả Cài Đặt Tự Động",
+    "not_config_request": "{{-icon}} Tôi chỉ có thể giúp với cấu hình máy chủ. Vui lòng hỏi về tạo vai trò, kênh, hoặc thiết lập quyền hạn.",
+    "no_request": "{{-icon}} Vui lòng cung cấp yêu cầu. Cách dùng: {{-prefix}}{{-alias}} <yêu_cầu>",
+    "no_action": "{{-icon}} Không có hành động nào được thực hiện dựa trên yêu cầu của bạn. Vui lòng cụ thể hơn về những gì bạn muốn cấu hình.",
+    "no_action_detailed": "{{-icon}} Không có hành động nào được thực hiện. Yêu cầu của bạn có thể không được hỗ trợ. Vui lòng xem bên dưới để biết những gì tôi có thể giúp.",
+    "error": "{{-icon}} Đã xảy ra lỗi khi xử lý yêu cầu của bạn. Vui lòng thử lại.",
+    "request_too_long": "{{-icon}} Yêu cầu quá dài (tối đa {{-maxLength}} ký tự).",
+    "supported_operations_title": "Hoạt Động Được Hỗ Trợ",
+    "supported_operations": "**{{-info}} Những gì tôi có thể giúp bạn:**\n\n**{{-roles}} Quản Lý Vai Trò:**\n• Tạo vai trò với màu tùy chỉnh\n• Cập nhật màu, tên, và vị trí vai trò\n• Xóa vai trò theo tên hoặc mẫu\n\n**{{-channels}} Quản Lý Kênh:**\n• Tạo kênh văn bản, голос, và danh mục\n• Xóa kênh theo tên hoặc mẫu\n\n**{{-info}} Thông Tin Máy Chủ:**\n• Truy vấn số lượng vai trò và kênh",
+    "query_roles": "Máy chủ của bạn có {{-count}} vai trò.",
+    "query_channels": "Máy chủ của bạn có {{-count}} kênh.",
+    "query_all": "Máy chủ của bạn có {{-roleCount}} vai trò và {{-channelCount}} kênh."
+  },
   "giveaway": {
     "name": "Lệnh Giveaway",
     "create_command_desc": "Tạo giveaway mới",

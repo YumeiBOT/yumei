@@ -60,6 +60,24 @@
     "success": "**{{-icon}} | {{-author}}, ** Confession settings have been updated",
     "error": "**{{-icon}} | {{-author}}, ** An error occurred while updating confession settings"
   },
+  "auto_settings": {
+    "name": "Auto Settings",
+    "description": "Configure server settings using natural language",
+    "request_option": "Describe what you want to configure",
+    "example": "```{{-prefix}}as Create 5 color roles named Color01 to Color05```",
+    "result_title": "Auto Settings Result",
+    "not_config_request": "{{-icon}} I can only help with server configuration. Please ask about creating roles, channels, or setting permissions.",
+    "no_request": "{{-icon}} Please provide a request. Usage: {{-prefix}}{{-alias}} <request>",
+    "no_action": "{{-icon}} No action was taken based on your request. Please be more specific about what you want to configure.",
+    "no_action_detailed": "{{-icon}} No action was taken. Your request may not be supported. Please see the embed below for what I can help you with.",
+    "error": "{{-icon}} An error occurred while processing your request. Please try again.",
+    "request_too_long": "{{-icon}} Request too long (max {{-maxLength}} characters).",
+    "supported_operations_title": "Supported Operations",
+    "supported_operations": "**{{-info}} What I can help you with:**\n\n**{{-roles}} Role Management:**\n• Create roles with custom colors\n• Update role colors, names, and positions\n• Delete roles by name or pattern\n\n**{{-channels}} Channel Management:**\n• Create text, voice, and category channels\n• Delete channels by name or pattern\n\n**{{-info}} Server Information:**\n• Query role and channel counts",
+    "query_roles": "Your server has {{-count}} role{{#eq count 1}}{{else}}s{{/eq}}.",
+    "query_channels": "Your server has {{-count}} channel{{#eq count 1}}{{else}}s{{/eq}}.",
+    "query_all": "Your server has {{-roleCount}} role{{#eq roleCount 1}}{{else}}s{{/eq}} and {{-channelCount}} channel{{#eq channelCount 1}}{{else}}s{{/eq}}."
+  },
   "giveaway": {
     "name": "Giveaway command",
     "create_command_desc": "Create a new giveaway",

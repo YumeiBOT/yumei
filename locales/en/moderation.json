@@ -120,5 +120,22 @@
     "success": "**{{-icon}} | {{-author}}, ** Successfully removed {{target}} from the thread",
     "error": "**{{-icon}} | {{-author}}, ** Failed to remove member from thread",
     "invalid_usage": "**{{-icon}} | {{-author}}, ** Usage: /thread_remove @user"
+  },
+  "cleanspam": {
+    "name": "cleanspam",
+    "description": "Delete all messages from a user in the last 3 days across all channels",
+    "option": {
+      "user": "The user whose messages to delete"
+    },
+    "scanning": "Scanning channels for spam messages...",
+    "progress": "{{current}}/{{total}} channels checked...",
+    "scanning_channel": "Scanning {{channel}}...",
+    "found_messages": "Found {{count}} messages in {{channel}}",
+    "deleting": "Deleting messages...",
+    "success": "Successfully deleted {{total}} messages from {{user}} across {{channels}} channels",
+    "not_found": "No messages found from {{user}} in the last 3 days",
+    "error": "Error cleaning spam messages",
+    "no_permission": "No permission in {{channel}}",
+    "rate_limit": "Rate limited, waiting..."
   }
 }

@@ -120,5 +120,22 @@
     "success": "**{{-icon}} | {{-author}}, ** Đã xóa thành công {{target}} khỏi luồng",
     "error": "**{{-icon}} | {{-author}}, ** Không thể xóa thành viên khỏi luồng",
     "invalid_usage": "**{{-icon}} | {{-author}}, ** Cách dùng: /thread_remove @user"
+  },
+  "cleanspam": {
+    "name": "cleanspam",
+    "description": "Xóa tất cả tin nhắn của người dùng trong 3 ngày qua trên tất cả các kênh",
+    "option": {
+      "user": "Người dùng có tin nhắn cần xóa"
+    },
+    "scanning": "Đang quét các kênh để tìm tin nhắn spam...",
+    "progress": "{{current}}/{{total}} kênh đã kiểm tra...",
+    "scanning_channel": "Đang quét {{channel}}...",
+    "found_messages": "Tìm thấy {{count}} tin nhắn trong {{channel}}",
+    "deleting": "Đang xóa tin nhắn...",
+    "success": "Đã xóa thành công {{total}} tin nhắn của {{user}} trên {{channels}} kênh",
+    "not_found": "Không tìm thấy tin nhắn nào của {{user}} trong 3 ngày qua",
+    "error": "Lỗi khi xóa tin nhắn spam",
+    "no_permission": "Không có quyền trong {{channel}}",
+    "rate_limit": "Đã đạt giới hạn速率, đang chờ..."
   }
 }
