@@ -25,7 +25,8 @@
     "invalid_amount": "**{{-icon}} | {{-author}}, ** Vui lòng chỉ định số hợp lệ từ 1 đến 100",
     "older_than_14d": "**{{-icon}} | {{-author}}, ** Bạn chỉ có thể xóa tin nhắn cách đây dưới 14 ngày",
     "success": "**{{-icon}} | {{-author}}, ** Tôi đã xóa thành công {{amount}} tin nhắn",
-    "error": "**{{-icon}} | {{-author}}, ** Đã xảy ra lỗi khi xóa tin nhắn trong kênh này!"
+    "error": "**{{-icon}} | {{-author}}, ** Đã xảy ra lỗi khi xóa tin nhắn trong kênh này!",
+    "no_messages_found": "**{{-icon}} | {{-author}}, ** Không tìm thấy tin nhắn nào của {{user}} trong 14 ngày qua"
   },
   "clearuser": {
     "name": "clearuser",

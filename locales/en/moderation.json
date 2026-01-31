@@ -25,7 +25,8 @@
     "invalid_amount": "**{{-icon}} | {{-author}}, ** Please specify a valid number between 1 and 100",
     "older_than_14d": "**{{-icon}} | {{-author}}, ** You can only bulk delete messages that are under 14 days old.",
     "success": "**{{-icon}} | {{-author}}, ** I have successfully deleted {{amount}} the messages",
-    "error": "**{{-icon}} | {{-author}}, ** There was an error trying to delete messages in this channel!"
+    "error": "**{{-icon}} | {{-author}}, ** There was an error trying to delete messages in this channel!",
+    "no_messages_found": "**{{-icon}} | {{-author}}, ** No messages found from {{user}} in the last 14 days"
   },
   "clearuser": {
     "name": "clearuser",
