@@ -13,11 +13,21 @@
     "form_load_failed": "**{{-icon}} | {{-author}}, ** Không thể tải biểu mẫu vé.",
     "form_submission_failed": "**{{-icon}} | {{-author}}, ** Không thể xử lý gửi biểu mẫu.",
     "thread_parent_invalid": "**{{-icon}} | {{-author}}, ** Chủ đề luồng phải là kênh văn bản.",
-    "no_thread_permission": "**{{-icon}} | {{-author}}, ** Bot thiếu quyền tạo luồng."
+    "no_thread_permission": "**{{-icon}} | {{-author}}, ** Bot thiếu quyền tạo luồng.",
+    "channel_not_found": "**{{-icon}} | {{-author}}, ** Không tìm thấy kênh vé.",
+    "not_support": "**{{-icon}} | {{-author}}, ** Chỉ thành viên nhóm hỗ trợ mới có thể thực hiện hành động này.",
+    "action_failed": "**{{-icon}} | {{-author}}, ** Không thể thực hiện hành động vé. Vui lòng thử lại."
   },
   "success": {
     "created": "**{{-icon}} | {{-author}}, ** Đã tạo vé: {{-channel}}",
     "form_submitted": "**{{-icon}} | {{-author}}, ** Đã gửi biểu mẫu! Đã tạo vé: {{-channel}}",
     "thread_created": "**{{-icon}} | {{-author}}, ** Đã tạo luồng vé: {{-channel}}"
+  },
+  "claim": {
+    "success": "**{{-icon}} | {{-author}}, ** {{user}} đã nhận vé này."
+  },
+  "close": {
+    "success": "**{{-icon}} | {{-author}}, ** Đã đóng vé. Kênh này sẽ bị xóa sớm.",
+    "success_with_reason": "**{{-icon}} | {{-author}}, ** Đã đóng vé. Lý do: {{reason}}. Kênh này sẽ bị xóa sớm."
   }
 }

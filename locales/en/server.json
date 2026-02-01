@@ -76,7 +76,8 @@
     "supported_operations": "**{{-info}} What I can help you with:**\n\n**{{-roles}} Role Management:**\n• Create roles with custom colors\n• Update role colors, names, and positions\n• Delete roles by name or pattern\n\n**{{-channels}} Channel Management:**\n• Create text, voice, and category channels\n• Delete channels by name or pattern\n\n**{{-info}} Server Information:**\n• Query role and channel counts",
     "query_roles": "Your server has {{-count}} role{{#eq count 1}}{{else}}s{{/eq}}.",
     "query_channels": "Your server has {{-count}} channel{{#eq count 1}}{{else}}s{{/eq}}.",
-    "query_all": "Your server has {{-roleCount}} role{{#eq roleCount 1}}{{else}}s{{/eq}} and {{-channelCount}} channel{{#eq channelCount 1}}{{else}}s{{/eq}}."
+    "query_all": "Your server has {{-roleCount}} role{{#eq roleCount 1}}{{else}}s{{/eq}} and {{-channelCount}} channel{{#eq channelCount 1}}{{else}}s{{/eq}}.",
+    "security_violation": "{{-icon}} Security violation: Attempted to execute action on a different server."
   },
   "giveaway": {
     "name": "Giveaway command",

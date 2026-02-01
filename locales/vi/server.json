@@ -76,7 +76,8 @@
     "supported_operations": "**{{-info}} Những gì tôi có thể giúp bạn:**\n\n**{{-roles}} Quản Lý Vai Trò:**\n• Tạo vai trò với màu tùy chỉnh\n• Cập nhật màu, tên, và vị trí vai trò\n• Xóa vai trò theo tên hoặc mẫu\n\n**{{-channels}} Quản Lý Kênh:**\n• Tạo kênh văn bản, голос, và danh mục\n• Xóa kênh theo tên hoặc mẫu\n\n**{{-info}} Thông Tin Máy Chủ:**\n• Truy vấn số lượng vai trò và kênh",
     "query_roles": "Máy chủ của bạn có {{-count}} vai trò.",
     "query_channels": "Máy chủ của bạn có {{-count}} kênh.",
-    "query_all": "Máy chủ của bạn có {{-roleCount}} vai trò và {{-channelCount}} kênh."
+    "query_all": "Máy chủ của bạn có {{-roleCount}} vai trò và {{-channelCount}} kênh.",
+    "security_violation": "{{-icon}} Vi phạm bảo mật: Đã cố gắng thực hiện hành động trên máy chủ khác."
   },
   "giveaway": {
     "name": "Lệnh Giveaway",

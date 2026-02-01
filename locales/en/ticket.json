@@ -13,11 +13,21 @@
     "form_load_failed": "**{{-icon}} | {{-author}}, ** Failed to load ticket form.",
     "form_submission_failed": "**{{-icon}} | {{-author}}, ** Failed to process form submission.",
     "thread_parent_invalid": "**{{-icon}} | {{-author}}, ** Thread parent must be a text channel.",
-    "no_thread_permission": "**{{-icon}} | {{-author}}, ** Bot lacks permission to create threads."
+    "no_thread_permission": "**{{-icon}} | {{-author}}, ** Bot lacks permission to create threads.",
+    "channel_not_found": "**{{-icon}} | {{-author}}, ** Ticket channel not found.",
+    "not_support": "**{{-icon}} | {{-author}}, ** Only support team members can perform this action.",
+    "action_failed": "**{{-icon}} | {{-author}}, ** Failed to perform ticket action. Please try again."
   },
   "success": {
     "created": "**{{-icon}} | {{-author}}, ** Ticket created: {{-channel}}",
     "form_submitted": "**{{-icon}} | {{-author}}, ** Form submitted! Ticket created: {{-channel}}",
     "thread_created": "**{{-icon}} | {{-author}}, ** Ticket thread created: {{-channel}}"
+  },
+  "claim": {
+    "success": "**{{-icon}} | {{-author}}, ** Ticket claimed by {{user}}."
+  },
+  "close": {
+    "success": "**{{-icon}} | {{-author}}, ** Ticket closed. This channel will be deleted shortly.",
+    "success_with_reason": "**{{-icon}} | {{-author}}, ** Ticket closed. Reason: {{reason}}. This channel will be deleted shortly."
   }
 }
