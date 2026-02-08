@@ -27,7 +27,7 @@
     "success": "**{{-icon}} | {{-author}}, ** Ticket claimed by {{user}}."
   },
   "close": {
-    "success": "**{{-icon}} | {{-author}}, ** Ticket closed. This channel will be deleted shortly.",
-    "success_with_reason": "**{{-icon}} | {{-author}}, ** Ticket closed. Reason: {{reason}}. This channel will be deleted shortly."
+    "success": "**{{-icon}} | {{-author}}, ** Ticket closed by {{-user}}. This channel will be deleted shortly.",
+    "success_with_reason": "**{{-icon}} | {{-author}}, ** Ticket closed by {{-user}}. Reason: {{reason}}. This channel will be deleted shortly."
   }
 }

@@ -27,7 +27,7 @@
     "success": "**{{-icon}} | {{-author}}, ** {{user}} đã nhận vé này."
   },
   "close": {
-    "success": "**{{-icon}} | {{-author}}, ** Đã đóng vé. Kênh này sẽ bị xóa sớm.",
-    "success_with_reason": "**{{-icon}} | {{-author}}, ** Đã đóng vé. Lý do: {{reason}}. Kênh này sẽ bị xóa sớm."
+    "success": "**{{-icon}} | {{-author}}, ** Đã đóng vé bởi {{-user}}. Kênh này sẽ bị xóa sớm.",
+    "success_with_reason": "**{{-icon}} | {{-author}}, ** Đã đóng vé bởi {{-user}}. Lý do: {{reason}}. Kênh này sẽ bị xóa sớm."
   }
 }
