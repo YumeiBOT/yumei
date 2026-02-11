@@ -16,6 +16,7 @@
     "no_thread_permission": "**{{-icon}} | {{-author}}, ** Bot thiếu quyền tạo luồng.",
     "channel_not_found": "**{{-icon}} | {{-author}}, ** Không tìm thấy kênh vé.",
     "not_support": "**{{-icon}} | {{-author}}, ** Chỉ thành viên nhóm hỗ trợ mới có thể thực hiện hành động này.",
+    "premium_required": "**{{-icon}} | {{-author}}, ** Tính năng vé yêu cầu đăng ký cao cấp.",
     "action_failed": "**{{-icon}} | {{-author}}, ** Không thể thực hiện hành động vé. Vui lòng thử lại."
   },
   "success": {

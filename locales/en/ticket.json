@@ -16,6 +16,7 @@
     "no_thread_permission": "**{{-icon}} | {{-author}}, ** Bot lacks permission to create threads.",
     "channel_not_found": "**{{-icon}} | {{-author}}, ** Ticket channel not found.",
     "not_support": "**{{-icon}} | {{-author}}, ** Only support team members can perform this action.",
+    "premium_required": "**{{-icon}} | {{-author}}, ** Ticket feature requires premium subscription.",
     "action_failed": "**{{-icon}} | {{-author}}, ** Failed to perform ticket action. Please try again."
   },
   "success": {
