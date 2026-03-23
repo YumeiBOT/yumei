@@ -212,7 +212,12 @@
     "no_available_channels": "**{{-icon}} | {{-author}}, ** No available text channels for bot/webhook messages.",
     "bot_member_not_found": "**{{-icon}} | {{-author}}, ** Bot member not found. Please try again.",
     "invalid_message_id": "**{{-icon}} | {{-author}}, ** Invalid message ID provided. Please right-click the message → Copy ID.",
-    "message_not_found": "**{{-icon}} | {{-author}}, ** Message not found (ID: {{messageId}}). Please check the message ID and try again."
+    "message_not_found": "**{{-icon}} | {{-author}}, ** Message not found (ID: {{messageId}}). Please check the message ID and try again.",
+    "role_is_managed": "**{{-icon}} | {{-author}}, ** Cannot manage role **{{roleName}}**. This role is managed by an integration (bot subscription or booster role) and cannot be assigned/removed by bots.",
+    "bot_role_too_low": "**{{-icon}} | {{-author}}, ** Cannot manage role **{{roleName}}**. The bot's highest role (**{{botRoleName}}**) must be positioned higher in the role hierarchy than the target role. Please move the bot's role above **{{roleName}}** in Server Settings → Roles.",
+    "missing_manage_roles_permission": "**{{-icon}} | {{-author}}, ** Bot lacks **Manage Roles** permission in this server. Please grant the bot the \"Manage Roles\" permission in Server Settings → Roles.",
+    "discord_permission_denied": "**{{-icon}} | {{-author}}, ** Discord denied permission to manage role **{{roleName}}**. This could be due to role hierarchy or missing permissions. Check the server logs for details.",
+    "dm_only": "**{{-icon}} | {{-author}}, ** This action can only be performed in a server, not in direct messages."
   },
   "role_select": {
     "description": "Position: {{position}} | Members: {{members}}"

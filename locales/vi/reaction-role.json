@@ -209,7 +209,12 @@
     "no_available_channels": "**{{-icon}} | {{-author}}, ** Không có kênh văn bản nào khả dụng cho tin nhắn bot/webhook.",
     "bot_member_not_found": "**{{-icon}} | {{-author}}, ** Không tìm thấy thành viên bot. Vui lòng thử lại.",
     "invalid_message_id": "**{{-icon}} | {{-author}}, ** ID tin nhắn không hợp lệ. Vui lòng nhấp chuột phải vào tin nhắn → Copy ID.",
-    "message_not_found": "**{{-icon}} | {{-author}}, ** Không tìm thấy tin nhắn (ID: {{messageId}}). Vui lòng kiểm tra ID tin nhắn và thử lại."
+    "message_not_found": "**{{-icon}} | {{-author}}, ** Không tìm thấy tin nhắn (ID: {{messageId}}). Vui lòng kiểm tra ID tin nhắn và thử lại.",
+    "role_is_managed": "**{{-icon}} | {{-author}}, ** Không thể quản lý vai trò **{{roleName}}**. Vai trò này được quản lý bởi tích hợp (vai trò booster hoặc bot) và không thể được gán/xóa bởi bot.",
+    "bot_role_too_low": "**{{-icon}} | {{-author}}, ** Không thể quản lý vai trò **{{roleName}}**. Vai trò cao nhất của bot (**{{botRoleName}}**) phải được đặt cao hơn trong phân cấp vai trò hơn vai trò đích. Vui lòng di chuyển vai trò của bot lên trên **{{roleName}}** trong Cài đặt Máy chủ → Vai trò.",
+    "missing_manage_roles_permission": "**{{-icon}} | {{-author}}, ** Bot thiếu quyền **Quản lý vai trò** trong máy chủ này. Vui lòng cấp cho bot quyền \"Quản lý vai trò\" trong Cài đặt Máy chủ → Vai trò.",
+    "discord_permission_denied": "**{{-icon}} | {{-author}}, ** Discord từ chối quyền quản lý vai trò **{{roleName}}**. Điều này có thể do phân cấp vai trò hoặc thiếu quyền. Kiểm tra nhật ký máy chủ để biết chi tiết.",
+    "dm_only": "**{{-icon}} | {{-author}}, ** Hành động này chỉ có thể thực hiện trong máy chủ, không phải trong tin nhắn trực tiếp."
   },
   "role_select": {
     "description": "Vị trí: {{position}} | Thành viên: {{members}}"
