@@ -97,7 +97,6 @@
     "reaction": {
       "standard": "**🔄 Standard** - Add/remove roles on reaction",
       "reverse": "**🔄 Reverse** - Remove/add roles on reaction",
-      "inverse": "**🔄 Inverse** - Opposite of standard behavior",
       "single_role": "**🎯 Single Role** - Only one role allowed",
       "single_select": "**🎯 Single Select** - One-time role selection",
       "select_only": "**➕ Select Only** - Can only add roles",
@@ -223,7 +222,6 @@
     "descriptions": {
       "standard": "Toggle this role on/off",
       "reverse": "Remove on reaction, add on reaction",
-      "inverse": "Opposite of standard behavior",
       "selection": "Select to receive this role",
       "single_role": "Select this role (removes others)",
       "single_select": "One-time selection, permanent",

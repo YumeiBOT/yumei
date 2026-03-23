@@ -94,7 +94,6 @@
     "reaction": {
       "standard": "**🔄 Chuẩn** - Thêm/xóa vai trò khi phản ứng",
       "reverse": "**🔄 Ngược** - Xóa/thêm vai trò khi phản ứng",
-      "inverse": "**🔄 Đảo ngược** - Hành vi ngược với chuẩn",
       "single_role": "**🎯 Vai trò Đơn** - Chỉ cho phép một vai trò",
       "single_select": "**🎯 Chọn Đơn** - Chọn vai trò một lần",
       "select_only": "**➕ Chỉ Chọn** - Chỉ có thể thêm vai trò",
@@ -220,7 +219,6 @@
     "descriptions": {
       "standard": "Bật/tắt vai trò này",
       "reverse": "Loại bỏ khi phản ứng, thêm khi phản ứng",
-      "inverse": "Ngược với hành vi chuẩn",
       "selection": "Chọn để nhận vai trò này",
       "single_role": "Chọn vai trò này (loại bỏ các khác)",
       "single_select": "Lựa chọn một lần, vĩnh viễn",
