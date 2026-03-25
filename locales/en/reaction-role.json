@@ -95,27 +95,27 @@
   },
   "role_change_types": {
     "reaction": {
-      "standard": "**🔄 Standard** - Add/remove roles on reaction",
+      "standard": "**🔄 Standard** - Clicking the button will give roles / remove roles",
       "reverse": "**🔄 Reverse** - Remove/add roles on reaction",
-      "single_role": "**🎯 Single Role** - Only one role allowed",
-      "single_select": "**🎯 Single Select** - One-time role selection",
-      "select_only": "**➕ Select Only** - Can only add roles",
-      "unselect_only": "**➖ Unselect Only** - Can only remove roles"
+      "single_role": "**🎯 Single Role** - User is only able to select one role from the group",
+      "single_select": "**🎯 Single Select** - User can only select one role of the group and can't change it",
+      "select_only": "**➕ Select Only** - Users can only get roles (As many they want)",
+      "unselect_only": "**➖ Unselect Only** - Users can only remove roles"
     },
     "button": {
-      "standard": "**🔄 Standard** - Add/remove roles on click",
-      "single_role": "**🎯 Single Role** - Only one role allowed",
-      "single_select": "**🎯 Single Select** - One-time role selection",
-      "select_only": "**➕ Select Only** - Can only add roles",
-      "unselect_only": "**➖ Unselect Only** - Can only remove roles"
+      "standard": "**🔄 Standard** - Clicking the button will give roles / remove roles",
+      "single_role": "**🎯 Single Role** - User is only able to select one role from the group",
+      "single_select": "**🎯 Single Select** - User can only select one role of the group and can't change it",
+      "select_only": "**➕ Select Only** - Users can only get roles (As many they want)",
+      "unselect_only": "**➖ Unselect Only** - Users can only remove roles"
     },
     "select": {
       "selection": "**📋 Selection** - Add/remove based on selection",
-      "standard": "**🔄 Standard** - Add/remove roles on selection",
-      "single_role": "**🎯 Single Role** - Only one role allowed",
-      "single_select": "**🎯 Single Select** - One-time role selection",
-      "select_only": "**➕ Select Only** - Can only add roles",
-      "unselect_only": "**➖ Unselect Only** - Can only remove roles"
+      "standard": "**🔄 Standard** - Clicking the button will give roles / remove roles",
+      "single_role": "**🎯 Single Role** - User is only able to select one role from the group",
+      "single_select": "**🎯 Single Select** - User can only select one role of the group and can't change it",
+      "select_only": "**➕ Select Only** - Users can only get roles (As many they want)",
+      "unselect_only": "**➖ Unselect Only** - Users can only remove roles"
     }
   },
   "reply_types": {
@@ -225,13 +225,13 @@
   "select_menu": {
     "help_note": "💡 **How to use:** Click to select roles. Close menu to select again.",
     "descriptions": {
-      "standard": "Toggle this role on/off",
+      "standard": "Clicking the button will give roles / remove roles",
       "reverse": "Remove on reaction, add on reaction",
       "selection": "Select to receive this role",
-      "single_role": "Select this role (removes others)",
-      "single_select": "One-time selection, permanent",
-      "select_only": "Add this role",
-      "unselect_only": "Remove this role"
+      "single_role": "User is only able to select one role from the group",
+      "single_select": "User can only select one role of the group and can't change it",
+      "select_only": "Users can only get roles (As many they want)",
+      "unselect_only": "Users can only remove roles"
     }
   }
 } 

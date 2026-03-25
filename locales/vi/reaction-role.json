@@ -92,27 +92,27 @@
   },
   "role_change_types": {
     "reaction": {
-      "standard": "**🔄 Chuẩn** - Thêm/xóa vai trò khi phản ứng",
+      "standard": "**🔄 Chuẩn** - Nhấp vào nút sẽ cấp vai trò / xóa vai trò",
       "reverse": "**🔄 Ngược** - Xóa/thêm vai trò khi phản ứng",
-      "single_role": "**🎯 Vai trò Đơn** - Chỉ cho phép một vai trò",
-      "single_select": "**🎯 Chọn Đơn** - Chọn vai trò một lần",
-      "select_only": "**➕ Chỉ Chọn** - Chỉ có thể thêm vai trò",
-      "unselect_only": "**➖ Chỉ Bỏ chọn** - Chỉ có thể xóa vai trò"
+      "single_role": "**🎯 Vai trò Đơn** - Người dùng chỉ có thể chọn một vai trò từ nhóm",
+      "single_select": "**🎯 Chọn Đơn** - Người dùng chỉ có thể chọn một vai trò từ nhóm và không thể thay đổi",
+      "select_only": "**➕ Chỉ Chọn** - Người dùng chỉ có thể nhận vai trò (Không giới hạn)",
+      "unselect_only": "**➖ Chỉ Bỏ chọn** - Người dùng chỉ có thể xóa vai trò"
     },
     "button": {
-      "standard": "**🔄 Chuẩn** - Thêm/xóa vai trò khi nhấp",
-      "single_role": "**🎯 Vai trò Đơn** - Chỉ cho phép một vai trò",
-      "single_select": "**🎯 Chọn Đơn** - Chọn vai trò một lần",
-      "select_only": "**➕ Chỉ Chọn** - Chỉ có thể thêm vai trò",
-      "unselect_only": "**➖ Chỉ Bỏ chọn** - Chỉ có thể xóa vai trò"
+      "standard": "**🔄 Chuẩn** - Nhấp vào nút sẽ cấp vai trò / xóa vai trò",
+      "single_role": "**🎯 Vai trò Đơn** - Người dùng chỉ có thể chọn một vai trò từ nhóm",
+      "single_select": "**🎯 Chọn Đơn** - Người dùng chỉ có thể chọn một vai trò từ nhóm và không thể thay đổi",
+      "select_only": "**➕ Chỉ Chọn** - Người dùng chỉ có thể nhận vai trò (Không giới hạn)",
+      "unselect_only": "**➖ Chỉ Bỏ chọn** - Người dùng chỉ có thể xóa vai trò"
     },
     "select": {
       "selection": "**📋 Lựa chọn** - Thêm/xóa dựa trên lựa chọn",
-      "standard": "**🔄 Chuẩn** - Thêm/xóa vai trò khi chọn",
-      "single_role": "**🎯 Vai trò Đơn** - Chỉ cho phép một vai trò",
-      "single_select": "**🎯 Chọn Đơn** - Chọn vai trò một lần",
-      "select_only": "**➕ Chỉ Chọn** - Chỉ có thể thêm vai trò",
-      "unselect_only": "**➖ Chỉ Bỏ chọn** - Chỉ có thể xóa vai trò"
+      "standard": "**🔄 Chuẩn** - Nhấp vào nút sẽ cấp vai trò / xóa vai trò",
+      "single_role": "**🎯 Vai trò Đơn** - Người dùng chỉ có thể chọn một vai trò từ nhóm",
+      "single_select": "**🎯 Chọn Đơn** - Người dùng chỉ có thể chọn một vai trò từ nhóm và không thể thay đổi",
+      "select_only": "**➕ Chỉ Chọn** - Người dùng chỉ có thể nhận vai trò (Không giới hạn)",
+      "unselect_only": "**➖ Chỉ Bỏ chọn** - Người dùng chỉ có thể xóa vai trò"
     }
   },
   "reply_types": {
@@ -222,13 +222,13 @@
   "select_menu": {
     "help_note": "💡 **Cách sử dụng:** Nhấp để chọn vai trò. Đóng menu để chọn lại.",
     "descriptions": {
-      "standard": "Bật/tắt vai trò này",
+      "standard": "Nhấp vào nút sẽ cấp vai trò / xóa vai trò",
       "reverse": "Loại bỏ khi phản ứng, thêm khi phản ứng",
       "selection": "Chọn để nhận vai trò này",
-      "single_role": "Chọn vai trò này (loại bỏ các khác)",
-      "single_select": "Lựa chọn một lần, vĩnh viễn",
-      "select_only": "Thêm vai trò này",
-      "unselect_only": "Loại bỏ vai trò này"
+      "single_role": "Người dùng chỉ có thể chọn một vai trò từ nhóm",
+      "single_select": "Người dùng chỉ có thể chọn một vai trò từ nhóm và không thể thay đổi",
+      "select_only": "Người dùng chỉ có thể nhận vai trò (Không giới hạn)",
+      "unselect_only": "Người dùng chỉ có thể xóa vai trò"
     }
   }
 } 
