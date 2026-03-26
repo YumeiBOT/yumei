@@ -86,7 +86,7 @@
     "proceeding_to_confirm": "**{{-icon}} | {{-author}}, ** Tiến đến xem xét cuối cùng và xác nhận...",
     "temporary_settings": {
       "title": "⏰ Cài Đặt Role Tạm Thời",
-      "description": "Cấu hình gán role tạm thời cho **{{roleName}}**. Khi bật, người dùng sẽ nhận role trong thời gian giới hạn.",
+      "description": "Cấu hình gán role tạm thời cho **{{roleCount}} role**: {{rolesList}}. Khi bật, người dùng sẽ nhận role trong thời gian giới hạn.",
       "footer": "Cấu hình thời lượng role tạm thời"
     }
   },
@@ -101,6 +101,7 @@
       "reverse": "**🔄 Ngược** - Xóa/thêm vai trò khi phản ứng",
       "single_role": "**🎯 Vai trò Đơn** - Người dùng chỉ có thể chọn một vai trò từ nhóm",
       "single_select": "**🎯 Chọn Đơn** - Người dùng chỉ có thể chọn một vai trò từ nhóm và không thể thay đổi",
+      "temporary": "**⏰ Tạm Thời** - Vai trò hết hạn sau thời gian người dùng chọn",
       "select_only": "**➕ Chỉ Chọn** - Người dùng chỉ có thể nhận vai trò (Không giới hạn)",
       "unselect_only": "**➖ Chỉ Bỏ chọn** - Người dùng chỉ có thể xóa vai trò"
     },
@@ -108,6 +109,7 @@
       "standard": "**🔄 Chuẩn** - Nhấp vào nút sẽ cấp vai trò / xóa vai trò",
       "single_role": "**🎯 Vai trò Đơn** - Người dùng chỉ có thể chọn một vai trò từ nhóm",
       "single_select": "**🎯 Chọn Đơn** - Người dùng chỉ có thể chọn một vai trò từ nhóm và không thể thay đổi",
+      "temporary": "**⏰ Tạm Thời** - Vai trò hết hạn sau thời gian người dùng chọn",
       "select_only": "**➕ Chỉ Chọn** - Người dùng chỉ có thể nhận vai trò (Không giới hạn)",
       "unselect_only": "**➖ Chỉ Bỏ chọn** - Người dùng chỉ có thể xóa vai trò"
     },
@@ -116,6 +118,7 @@
       "standard": "**🔄 Chuẩn** - Nhấp vào nút sẽ cấp vai trò / xóa vai trò",
       "single_role": "**🎯 Vai trò Đơn** - Người dùng chỉ có thể chọn một vai trò từ nhóm",
       "single_select": "**🎯 Chọn Đơn** - Người dùng chỉ có thể chọn một vai trò từ nhóm và không thể thay đổi",
+      "temporary": "**⏰ Tạm Thời** - Vai trò hết hạn sau thời gian người dùng chọn",
       "select_only": "**➕ Chỉ Chọn** - Người dùng chỉ có thể nhận vai trò (Không giới hạn)",
       "unselect_only": "**➖ Chỉ Bỏ chọn** - Người dùng chỉ có thể xóa vai trò"
     }
@@ -236,6 +239,7 @@
       "selection": "Chọn để nhận vai trò này",
       "single_role": "Người dùng chỉ có thể chọn một vai trò từ nhóm",
       "single_select": "Người dùng chỉ có thể chọn một vai trò từ nhóm và không thể thay đổi",
+      "temporary": "Vai trò hết hạn sau thời gian người dùng chọn",
       "select_only": "Người dùng chỉ có thể nhận vai trò (Không giới hạn)",
       "unselect_only": "Người dùng chỉ có thể xóa vai trò"
     }

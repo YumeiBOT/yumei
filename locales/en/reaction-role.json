@@ -89,7 +89,7 @@
     "proceeding_to_confirm": "**{{-icon}} | {{-author}}, ** Proceeding to final review and confirmation...",
     "temporary_settings": {
       "title": "⏰ Temporary Role Settings",
-      "description": "Configure temporary role assignment for **{{roleName}}**. When enabled, users will receive the role for a limited time.",
+      "description": "Configure temporary role assignment for **{{roleCount}} role(s)**: {{rolesList}}. When enabled, users will receive roles for a limited time.",
       "footer": "Configure temporary role duration settings"
     }
   },
@@ -104,6 +104,7 @@
       "reverse": "**🔄 Reverse** - Remove/add roles on reaction",
       "single_role": "**🎯 Single Role** - User is only able to select one role from the group",
       "single_select": "**🎯 Single Select** - User can only select one role of the group and can't change it",
+      "temporary": "**⏰ Temporary** - Role expires after selected duration (user chooses duration)",
       "select_only": "**➕ Select Only** - Users can only get roles (As many they want)",
       "unselect_only": "**➖ Unselect Only** - Users can only remove roles"
     },
@@ -111,6 +112,7 @@
       "standard": "**🔄 Standard** - Clicking the button will give roles / remove roles",
       "single_role": "**🎯 Single Role** - User is only able to select one role from the group",
       "single_select": "**🎯 Single Select** - User can only select one role of the group and can't change it",
+      "temporary": "**⏰ Temporary** - Role expires after selected duration (user chooses duration)",
       "select_only": "**➕ Select Only** - Users can only get roles (As many they want)",
       "unselect_only": "**➖ Unselect Only** - Users can only remove roles"
     },
@@ -119,6 +121,7 @@
       "standard": "**🔄 Standard** - Clicking the button will give roles / remove roles",
       "single_role": "**🎯 Single Role** - User is only able to select one role from the group",
       "single_select": "**🎯 Single Select** - User can only select one role of the group and can't change it",
+      "temporary": "**⏰ Temporary** - Role expires after selected duration (user chooses duration)",
       "select_only": "**➕ Select Only** - Users can only get roles (As many they want)",
       "unselect_only": "**➖ Unselect Only** - Users can only remove roles"
     }
@@ -239,6 +242,7 @@
       "selection": "Select to receive this role",
       "single_role": "User is only able to select one role from the group",
       "single_select": "User can only select one role of the group and can't change it",
+      "temporary": "Role expires after user-selected duration",
       "select_only": "Users can only get roles (As many they want)",
       "unselect_only": "Users can only remove roles"
     }
