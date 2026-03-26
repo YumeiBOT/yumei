@@ -86,7 +86,12 @@
       "own_message_info": "📝 Own Message",
       "own_message_description": "The bot will listen to message: `{{messageId}}`"
     },
-    "proceeding_to_confirm": "**{{-icon}} | {{-author}}, ** Proceeding to final review and confirmation..."
+    "proceeding_to_confirm": "**{{-icon}} | {{-author}}, ** Proceeding to final review and confirmation...",
+    "temporary_settings": {
+      "title": "⏰ Temporary Role Settings",
+      "description": "Configure temporary role assignment for **{{roleName}}**. When enabled, users will receive the role for a limited time.",
+      "footer": "Configure temporary role duration settings"
+    }
   },
   "methods": {
     "reaction": "🎯 Reaction (Emoji)",
@@ -233,5 +238,52 @@
       "select_only": "Users can only get roles (As many they want)",
       "unselect_only": "Users can only remove roles"
     }
+  },
+  "flow": {
+    "temporary_settings": {
+      "title": "⏰ Temporary Role Settings",
+      "description": "Configure temporary role assignment for **{{roleName}}**. When enabled, users will receive the role for a limited time.",
+      "footer": "Configure temporary role duration settings"
+    }
+  },
+  "temporary": {
+    "enable": "Enable Temporary Mode",
+    "disable": "Disable Temporary Mode",
+    "enabled": "Temporary mode **enabled**",
+    "disabled": "Temporary mode **disabled**",
+    "max_days_label": "Maximum Duration",
+    "max_days_description": "Users can select durations up to **{{maxDays}} days**",
+    "select_max_days": "Select Maximum Duration",
+    "role_assigned": "{{-icon}} **{{-author}}**, you've been assigned the **{{roleName}}** role for **{{duration}}**. It will expire at {{expiresAt}}.",
+    "role_expired": "{{-icon}} **{{-author}}**, your **{{roleName}}** role has expired and been removed.",
+    "already_has_role": "{{-icon}} **{{-author}}**, you already have the **{{roleName}}** role. It will expire in **{{timeLeft}}**.",
+    "assignment_failed": "{{-icon}} **{{-author}}**, failed to assign temporary role. Please try again.",
+    "invalid_duration": "{{-icon}} **{{-author}}**, invalid duration selected. Please try again."
+  },
+  "duration": {
+    "title": "⏰ Select Duration",
+    "description": "Choose how long you want to have the **{{roleName}}** role.",
+    "select_placeholder": "Select duration...",
+    "options": {
+      "1h": "1 Hour",
+      "6h": "6 Hours",
+      "12h": "12 Hours",
+      "1d": "1 Day",
+      "3d": "3 Days",
+      "7d": "7 Days",
+      "custom": "Custom..."
+    },
+    "custom_title": "Custom Duration",
+    "custom_label": "Duration (max {{maxDays}} days)",
+    "custom_placeholder": "2d, 12h, 90m, or 48 (hours)",
+    "custom_description": "Examples: 2d = 2 days, 12h = 12 hours, 3d 6h = 3 days 6 hours, 90m = 90 minutes, 48 = 48 hours"
+  },
+  "actions": {
+    "temp_enable": "Enable Temporary",
+    "temp_disable": "Keep Permanent",
+    "select_days": "{{days}} Days"
+  },
+  "errors": {
+    "duration_too_long": "{{-icon}} **{{-author}}**, duration exceeds maximum allowed ({{maxDays}} days)."
   }
 } 

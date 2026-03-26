@@ -230,5 +230,52 @@
       "select_only": "Người dùng chỉ có thể nhận vai trò (Không giới hạn)",
       "unselect_only": "Người dùng chỉ có thể xóa vai trò"
     }
+  },
+  "flow": {
+    "temporary_settings": {
+      "title": "⏰ Cài Đặt Role Tạm Thời",
+      "description": "Cấu hình gán role tạm thời cho **{{roleName}}**. Khi bật, người dùng sẽ nhận role trong thời gian giới hạn.",
+      "footer": "Cấu hình thời lượng role tạm thời"
+    }
+  },
+  "temporary": {
+    "enable": "Bật Chế Độ Tạm Thời",
+    "disable": "Tắt Chế Độ Tạm Thời",
+    "enabled": "Chế độ tạm thời **đã bật**",
+    "disabled": "Chế độ tạm thời **đã tắt**",
+    "max_days_label": "Thời Lượng Tối Đa",
+    "max_days_description": "Người dùng có thể chọn thời lượng tối đa **{{maxDays}} ngày**",
+    "select_max_days": "Chọn Thời Lượng Tối Đa",
+    "role_assigned": "{{-icon}} **{{-author}}**, bạn đã được gán role **{{roleName}}** trong **{{duration}}**. Sẽ hết hạn vào {{expiresAt}}.",
+    "role_expired": "{{-icon}} **{{-author}}**, role **{{roleName}}** của bạn đã hết hạn và bị xóa.",
+    "already_has_role": "{{-icon}} **{{-author}}**, bạn đã có role **{{roleName}}**. Sẽ hết hạn sau **{{timeLeft}}**.",
+    "assignment_failed": "{{-icon}} **{{-author}}**, không thể gán role tạm thời. Vui lòng thử lại.",
+    "invalid_duration": "{{-icon}} **{{-author}}**, thời lượng không hợp lệ. Vui lòng thử lại."
+  },
+  "duration": {
+    "title": "⏰ Chọn Thời Lượng",
+    "description": "Chọn thời gian bạn muốn có role **{{roleName}}**.",
+    "select_placeholder": "Chọn thời lượng...",
+    "options": {
+      "1h": "1 Giờ",
+      "6h": "6 Giờ",
+      "12h": "12 Giờ",
+      "1d": "1 Ngày",
+      "3d": "3 Ngày",
+      "7d": "7 Ngày",
+      "custom": "Tùy Chỉnh..."
+    },
+    "custom_title": "Thời Lượng Tùy Chỉnh",
+    "custom_label": "Thời lượng (tối đa {{maxDays}} ngày)",
+    "custom_placeholder": "2d, 12h, 90m, hoặc 48 (giờ)",
+    "custom_description": "Ví dụ: 2d = 2 ngày, 12h = 12 giờ, 3d 6h = 3 ngày 6 giờ, 90m = 90 phút, 48 = 48 giờ"
+  },
+  "actions": {
+    "temp_enable": "Bật Tạm Thời",
+    "temp_disable": "Giữ Vĩnh Viễn",
+    "select_days": "{{days}} Ngày"
+  },
+  "errors": {
+    "duration_too_long": "{{-icon}} **{{-author}}**, thời lượng vượt quá giới hạn ({{maxDays}} ngày)."
   }
 } 
