@@ -154,7 +154,10 @@
     "primary": "Primary",
     "secondary": "Secondary",
     "success": "Success",
-    "danger": "Danger"
+    "danger": "Danger",
+    "temp_enable": "Enable Temporary",
+    "temp_disable": "Keep Permanent",
+    "select_days": "{{days}} Days"
   },
   "messages": {
     "no_roles": "No roles configured yet",
@@ -222,7 +225,8 @@
     "bot_role_too_low": "**{{-icon}} | {{-author}}, ** Cannot manage role **{{roleName}}**. The bot's highest role (**{{botRoleName}}**) must be positioned higher in the role hierarchy than the target role. Please move the bot's role above **{{roleName}}** in Server Settings → Roles.",
     "missing_manage_roles_permission": "**{{-icon}} | {{-author}}, ** Bot lacks **Manage Roles** permission in this server. Please grant the bot the \"Manage Roles\" permission in Server Settings → Roles.",
     "discord_permission_denied": "**{{-icon}} | {{-author}}, ** Discord denied permission to manage role **{{roleName}}**. This could be due to role hierarchy or missing permissions. Check the server logs for details.",
-    "dm_only": "**{{-icon}} | {{-author}}, ** This action can only be performed in a server, not in direct messages."
+    "dm_only": "**{{-icon}} | {{-author}}, ** This action can only be performed in a server, not in direct messages.",
+    "duration_too_long": "{{-icon}} **{{-author}}**, duration exceeds maximum allowed ({{maxDays}} days)."
   },
   "role_select": {
     "description": "Position: {{position}} | Members: {{members}}"
@@ -237,13 +241,6 @@
       "single_select": "User can only select one role of the group and can't change it",
       "select_only": "Users can only get roles (As many they want)",
       "unselect_only": "Users can only remove roles"
-    }
-  },
-  "flow": {
-    "temporary_settings": {
-      "title": "⏰ Temporary Role Settings",
-      "description": "Configure temporary role assignment for **{{roleName}}**. When enabled, users will receive the role for a limited time.",
-      "footer": "Configure temporary role duration settings"
     }
   },
   "temporary": {
@@ -277,13 +274,5 @@
     "custom_label": "Duration (max {{maxDays}} days)",
     "custom_placeholder": "2d, 12h, 90m, or 48 (hours)",
     "custom_description": "Examples: 2d = 2 days, 12h = 12 hours, 3d 6h = 3 days 6 hours, 90m = 90 minutes, 48 = 48 hours"
-  },
-  "actions": {
-    "temp_enable": "Enable Temporary",
-    "temp_disable": "Keep Permanent",
-    "select_days": "{{days}} Days"
-  },
-  "errors": {
-    "duration_too_long": "{{-icon}} **{{-author}}**, duration exceeds maximum allowed ({{maxDays}} days)."
   }
 } 

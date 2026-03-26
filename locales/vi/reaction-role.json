@@ -83,7 +83,12 @@
       "own_message_info": "📝 Tin nhắn Riêng",
       "own_message_description": "Bot sẽ lắng nghe tin nhắn: `{{messageId}}`"
     },
-    "proceeding_to_confirm": "**{{-icon}} | {{-author}}, ** Tiến đến xem xét cuối cùng và xác nhận..."
+    "proceeding_to_confirm": "**{{-icon}} | {{-author}}, ** Tiến đến xem xét cuối cùng và xác nhận...",
+    "temporary_settings": {
+      "title": "⏰ Cài Đặt Role Tạm Thời",
+      "description": "Cấu hình gán role tạm thời cho **{{roleName}}**. Khi bật, người dùng sẽ nhận role trong thời gian giới hạn.",
+      "footer": "Cấu hình thời lượng role tạm thời"
+    }
   },
   "methods": {
     "reaction": "🎯 Reaction (Emoji)",
@@ -146,7 +151,10 @@
     "primary": "Primary",
     "secondary": "Secondary",
     "success": "Success",
-    "danger": "Danger"
+    "danger": "Danger",
+    "temp_enable": "Bật Tạm Thời",
+    "temp_disable": "Giữ Vĩnh Viễn",
+    "select_days": "{{days}} Ngày"
   },
   "messages": {
     "no_roles": "Chưa cấu hình vai trò nào",
@@ -214,7 +222,8 @@
     "bot_role_too_low": "**{{-icon}} | {{-author}}, ** Không thể quản lý vai trò **{{roleName}}**. Vai trò cao nhất của bot (**{{botRoleName}}**) phải được đặt cao hơn trong phân cấp vai trò hơn vai trò đích. Vui lòng di chuyển vai trò của bot lên trên **{{roleName}}** trong Cài đặt Máy chủ → Vai trò.",
     "missing_manage_roles_permission": "**{{-icon}} | {{-author}}, ** Bot thiếu quyền **Quản lý vai trò** trong máy chủ này. Vui lòng cấp cho bot quyền \"Quản lý vai trò\" trong Cài đặt Máy chủ → Vai trò.",
     "discord_permission_denied": "**{{-icon}} | {{-author}}, ** Discord từ chối quyền quản lý vai trò **{{roleName}}**. Điều này có thể do phân cấp vai trò hoặc thiếu quyền. Kiểm tra nhật ký máy chủ để biết chi tiết.",
-    "dm_only": "**{{-icon}} | {{-author}}, ** Hành động này chỉ có thể thực hiện trong máy chủ, không phải trong tin nhắn trực tiếp."
+    "dm_only": "**{{-icon}} | {{-author}}, ** Hành động này chỉ có thể thực hiện trong máy chủ, không phải trong tin nhắn trực tiếp.",
+    "duration_too_long": "{{-icon}} **{{-author}}**, thời gian vượt quá mức tối đa cho phép ({{maxDays}} ngày)."
   },
   "role_select": {
     "description": "Vị trí: {{position}} | Thành viên: {{members}}"
@@ -229,13 +238,6 @@
       "single_select": "Người dùng chỉ có thể chọn một vai trò từ nhóm và không thể thay đổi",
       "select_only": "Người dùng chỉ có thể nhận vai trò (Không giới hạn)",
       "unselect_only": "Người dùng chỉ có thể xóa vai trò"
-    }
-  },
-  "flow": {
-    "temporary_settings": {
-      "title": "⏰ Cài Đặt Role Tạm Thời",
-      "description": "Cấu hình gán role tạm thời cho **{{roleName}}**. Khi bật, người dùng sẽ nhận role trong thời gian giới hạn.",
-      "footer": "Cấu hình thời lượng role tạm thời"
     }
   },
   "temporary": {
@@ -269,13 +271,5 @@
     "custom_label": "Thời lượng (tối đa {{maxDays}} ngày)",
     "custom_placeholder": "2d, 12h, 90m, hoặc 48 (giờ)",
     "custom_description": "Ví dụ: 2d = 2 ngày, 12h = 12 giờ, 3d 6h = 3 ngày 6 giờ, 90m = 90 phút, 48 = 48 giờ"
-  },
-  "actions": {
-    "temp_enable": "Bật Tạm Thời",
-    "temp_disable": "Giữ Vĩnh Viễn",
-    "select_days": "{{days}} Ngày"
-  },
-  "errors": {
-    "duration_too_long": "{{-icon}} **{{-author}}**, thời lượng vượt quá giới hạn ({{maxDays}} ngày)."
   }
 } 
