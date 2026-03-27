@@ -160,7 +160,8 @@
     "danger": "Danger",
     "temp_enable": "Enable Temporary",
     "temp_disable": "Keep Permanent",
-    "select_days": "{{days}} Days"
+    "select_days": "{{days}} Days",
+    "set_duration": "Set Duration ({{days}} days)"
   },
   "messages": {
     "no_roles": "No roles configured yet",
@@ -253,6 +254,8 @@
     "disable": "Disable Temporary Mode",
     "enabled": "Temporary mode **enabled**",
     "disabled": "Temporary mode **disabled**",
+    "duration_label": "Fixed Duration",
+    "duration_description": "All users will receive the role for **{{durationDays}} days**",
     "max_days_label": "Maximum Duration",
     "max_days_description": "Users can select durations up to **{{maxDays}} days**",
     "select_max_days": "Select Maximum Duration",
@@ -260,7 +263,8 @@
     "role_expired": "{{-icon}} **{{-author}}**, your **{{roleName}}** role has expired and been removed.",
     "already_has_role": "{{-icon}} **{{-author}}**, you already have the **{{roleName}}** role. It will expire in **{{timeLeft}}**.",
     "assignment_failed": "{{-icon}} **{{-author}}**, failed to assign temporary role. Please try again.",
-    "invalid_duration": "{{-icon}} **{{-author}}**, invalid duration selected. Please try again."
+    "invalid_duration": "{{-icon}} **{{-author}}**, invalid duration selected. Please enter a number between 1 and 7.",
+    "duration_set": "{{-icon}} **{{-author}}**, duration set to **{{days}} days**."
   },
   "duration": {
     "title": "⏰ Select Duration",

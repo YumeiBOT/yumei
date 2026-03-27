@@ -157,7 +157,8 @@
     "danger": "Danger",
     "temp_enable": "Bật Tạm Thời",
     "temp_disable": "Giữ Vĩnh Viễn",
-    "select_days": "{{days}} Ngày"
+    "select_days": "{{days}} Ngày",
+    "set_duration": "Đặt Thời Lượng ({{days}} ngày)"
   },
   "messages": {
     "no_roles": "Chưa cấu hình vai trò nào",
@@ -250,6 +251,8 @@
     "disable": "Tắt Chế Độ Tạm Thời",
     "enabled": "Chế độ tạm thời **đã bật**",
     "disabled": "Chế độ tạm thời **đã tắt**",
+    "duration_label": "Thời Lượng Cố Định",
+    "duration_description": "Tất cả người dùng sẽ nhận role trong **{{durationDays}} ngày**",
     "max_days_label": "Thời Lượng Tối Đa",
     "max_days_description": "Người dùng có thể chọn thời lượng tối đa **{{maxDays}} ngày**",
     "select_max_days": "Chọn Thời Lượng Tối Đa",
@@ -257,7 +260,8 @@
     "role_expired": "{{-icon}} **{{-author}}**, role **{{roleName}}** của bạn đã hết hạn và bị xóa.",
     "already_has_role": "{{-icon}} **{{-author}}**, bạn đã có role **{{roleName}}**. Sẽ hết hạn sau **{{timeLeft}}**.",
     "assignment_failed": "{{-icon}} **{{-author}}**, không thể gán role tạm thời. Vui lòng thử lại.",
-    "invalid_duration": "{{-icon}} **{{-author}}**, thời lượng không hợp lệ. Vui lòng thử lại."
+    "invalid_duration": "{{-icon}} **{{-author}}**, thời lượng không hợp lệ. Vui lòng nhập số từ 1 đến 7.",
+    "duration_set": "{{-icon}} **{{-author}}**, đã đặt thời lượng là **{{days}} ngày**."
   },
   "duration": {
     "title": "⏰ Chọn Thời Lượng",
