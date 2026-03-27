@@ -226,7 +226,8 @@
     "missing_manage_roles_permission": "**{{-icon}} | {{-author}}, ** Bot thiếu quyền **Quản lý vai trò** trong máy chủ này. Vui lòng cấp cho bot quyền \"Quản lý vai trò\" trong Cài đặt Máy chủ → Vai trò.",
     "discord_permission_denied": "**{{-icon}} | {{-author}}, ** Discord từ chối quyền quản lý vai trò **{{roleName}}**. Điều này có thể do phân cấp vai trò hoặc thiếu quyền. Kiểm tra nhật ký máy chủ để biết chi tiết.",
     "dm_only": "**{{-icon}} | {{-author}}, ** Hành động này chỉ có thể thực hiện trong máy chủ, không phải trong tin nhắn trực tiếp.",
-    "duration_too_long": "{{-icon}} **{{-author}}**, thời gian vượt quá mức tối đa cho phép ({{maxDays}} ngày)."
+    "duration_too_long": "{{-icon}} **{{-author}}**, thời gian vượt quá mức tối đa cho phép ({{maxDays}} ngày).",
+    "race_condition": "{{-icon}} **{{-author}}**, vui lòng đợi trước khi nhấp lại. Một hành động khác đang được xử lý."
   },
   "role_select": {
     "description": "Vị trí: {{position}} | Thành viên: {{members}}"
