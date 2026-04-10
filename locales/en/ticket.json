@@ -25,7 +25,7 @@
     "thread_created": "**{{-icon}} | {{-author}}, ** Ticket thread created: {{-channel}}"
   },
   "claim": {
-    "success": "**{{-icon}} | {{-author}}, ** Ticket claimed by {{user}}."
+    "success": "**{{-icon}} | {{-author}}, ** Ticket claimed by {{-user}}."
   },
   "close": {
     "success": "**{{-icon}} | {{-author}}, ** Ticket closed by {{-user}}. This channel will be deleted shortly.",
