@@ -9,5 +9,8 @@
       "mute": "**{{-icon}} | {{-author}} , ** Phòng của bạn đã được tắt tiếng thành công",
       "unmute": "**{{-icon}} | {{-author}} , ** Phòng của bạn đã được bật tiếng thành công"
     }
+  },
+  "invite_log": {
+    "message": "{{-user}} 🤞 vừa được thêm vào server bởi {{inviterUsername}}"
   }
 }

@@ -9,5 +9,8 @@
       "mute": "**{{-icon}} | {{-author}} , ** Your room have been muted successfully",
       "unmute": "**{{-icon}} | {{-author}} , ** Your room have been unmuteed successfully"
     }
+  },
+  "invite_log": {
+    "message": "{{-user}} 🤞 was just added to server by {{inviterUsername}}"
   }
 }
