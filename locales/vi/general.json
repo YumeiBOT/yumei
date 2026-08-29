@@ -12,6 +12,7 @@
     "month": "Tháng",
     "year": "Năm",
     "no_data": "Không có dữ liệu xếp hạng cho {{type}} - {{timeType}}",
+    "premium_required": "Xếp hạng **{{type}}** yêu cầu gói premium. Vui lòng nâng cấp để sử dụng tính năng này.",
     "result": "**Xếp hạng {{type}}: {{timeType}}**\n\n{{entries}}"
   },
   "rank_history": {

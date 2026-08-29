@@ -12,6 +12,7 @@
     "month": "Month",
     "year": "Year",
     "no_data": "No ranking data available for {{type}} - {{timeType}}",
+    "premium_required": "**{{type}}** ranking requires premium subscription. Please upgrade to access this feature.",
     "result": "**{{type}} Rankings: {{timeType}}**\n\n{{entries}}"
   },
   "rank_history": {
